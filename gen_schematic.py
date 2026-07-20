@@ -186,3 +186,13 @@ def junction(x, y):
 def no_connect(x, y):
     items.append(f'\t(no_connect\n\t\t(at {x} {y})\n\t\t(uuid "{u()}")\n\t)')
 
+
+def glabel(text, x, y, angle=0, justify="left"):
+    items.append(
+        f'\t(global_label "{text}"\n\t\t(shape bidirectional)\n\t\t(at {x} {y} {angle})\n'
+        f'\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t\t(justify {justify})\n\t\t)\n'
+        f'\t\t(uuid "{u()}")\n'
+        f'\t\t(property "Intersheetrefs" "${{INTERSHEET_REFS}}"\n'
+        f'\t\t\t(at {x} {y} 0)\n'
+        f'\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(hide yes)\n\t\t\t)\n\t\t)\n\t)')
+
