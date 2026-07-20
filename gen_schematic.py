@@ -164,3 +164,8 @@ GRID = 1.27
 def snap(v):
     return round(round(v / GRID) * GRID, 4)
 
+
+def ep(px, py, lib_id, pin):
+    lx, ly = PIN_XY[lib_id][pin]
+    return (round(snap(px) + lx, 4), round(snap(py) - ly, 4))
+
