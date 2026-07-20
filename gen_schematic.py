@@ -331,3 +331,21 @@ def section_power():
     wire(58.42, fy - 2.54, 58.42, fy)
     pwr_flag_at(58.42, fy)
 
+
+def tap_dir(spec, x, y, side, length=2.54):
+    """spec: ('gnd',) | ('pwr', net) | ('lbl', net) | ('nc',). side: L/R/U/D."""
+    if spec[0] == 'nc':
+        no_connect(x, y)
+        return
+    dx, dy = {'L': (-length, 0), 'R': (length, 0), 'U': (0, -length), 'D': (0, length)}[side]
+    ex, ey = round(x + dx, 4), round(y + dy, 4)
+    if dx or dy:
+        wire(x, y, ex, ey)
+    if spec[0] == 'gnd':
+        pwr("GND", ex, ey)
+    elif spec[0] == 'pwr':
+        pwr(spec[1], ex, ey)
+    else:  # lbl
+        just = {'L': 'right', 'R': 'left', 'U': 'left', 'D': 'left'}[side]
+        glabel(spec[1], ex, ey, 0, just)
+
