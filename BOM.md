@@ -71,3 +71,16 @@
 | USBLC6-2 | (download to datasheets/) | [ST](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) |
 
 ---
+
+## 5. NFC (v2.1 addition)
+
+| Ref | Part | Package | LCSC | Notes |
+|---|---|---|---|---|
+| U4 | ST25DV04KC-IE6S3 dynamic NFC tag | SO-8 | [C3304276](https://jlcpcb.com/partdetail/STMicroelectronics-ST25DV04KCIE6S3/C3304276) | Extended, Economic PCBA OK |
+| C11 | 100nF 0603 | 0603 | C14663 | VCC decoupling |
+| C12 | 62pF NP0/C0G 0603 | 0603 | select at order | antenna tuning — verify with VNA; 56–68pF window |
+| R14 | 100k 0603 | 0603 | C25803 | GPO open-drain pull-up |
+| ANT1 | PCB coil 12x24.5mm, 9 turns 0.3/0.3 | — | (bare copper) | net-tie footprint, excluded from BOM/CPL |
+
+Datasheet: [ST25DV04KC](https://www.st.com/resource/en/datasheet/st25dv04kc.pdf) — open in
+browser, save to `datasheets/` (ST blocks scripted downloads).
