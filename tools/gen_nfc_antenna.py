@@ -75,3 +75,39 @@ def smd_pad(num, x, y):
     return (f'  (pad "{num}" smd rect (at {x:.3f} {y:.3f}) (size 1.2 1.0)'
             f' (layers "B.Cu"))')
 
+
+def th_pad(num, x, y):
+    return (f'  (pad "{num}" thru_hole circle (at {x:.3f} {y:.3f}) (size 1.2 1.2)'
+            f' (drill 0.3) (layers "*.Cu"))')
+
+
+body = [f'(footprint "NFC_Antenna_13x24"',
+        '  (version 20240108) (generator "gen_nfc_antenna")',
+        '  (layer "B.Cu")',
+        '  (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)',
+        '  (net_tie_pad_groups "1,2,3")',
+        '  (fp_text reference "ANT1" (at 9 14.8) (layer "B.SilkS") (hide yes)'
+        ' (effects (font (size 1 1) (thickness 0.15))))',
+        '  (fp_text value "NFC_COIL" (at 9 15.4) (layer "B.Fab") (hide yes)'
+        ' (effects (font (size 1 1) (thickness 0.15))))',
+        # front silk tap mark, left side of the coil window (axis labels sit
+        # at x=10.5, so keep the mark at x<8)
+        '  (fp_text user "NFC" (at 4.8 28.5 90) (layer "F.SilkS")'
+        ' (effects (font (size 1.6 1.6) (thickness 0.25))))',
+        '  (fp_text user "tap phone here" (at 7.0 28.5 90) (layer "F.SilkS")'
+        ' (effects (font (size 0.9 0.9) (thickness 0.14))))']
+for (x1, y1, x2, y2, layer, w) in lines:
+    body.append(fp_line(x1, y1, x2, y2, layer, w))
+body.append(smd_pad("1", *PAD1))
+body.append(th_pad("2", *PAD2))
+body.append(th_pad("3", *PAD3))
+body.append(')')
+
+out = "\n".join(body) + "\n"
+import os
+dest = os.path.join(os.path.dirname(__file__), "..", "NeuralCard.pretty",
+                    "NFC_Antenna_13x24.kicad_mod")
+open(dest, "w").write(out)
+n_b = sum(1 for l in lines if l[4] == "B.Cu")
+print(f"wrote {os.path.normpath(dest)}: {n_b} B.Cu segments, "
+      f"{sum(1 for l in lines if l[4]=='F.Cu')} F.Cu escape, {TURNS} turns")
