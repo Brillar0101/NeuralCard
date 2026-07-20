@@ -38,3 +38,20 @@ s = open(BRD).read()
 s = s.replace("NeuralCard v2.1 · barakaeli.dev", "NeuralCard v2.1 · princetekki.com")
 
 count = 0
+for content, (face, bold) in FONTS.items():
+    esc = re.escape(content)
+    # match gr_text/fp_text item start, then its first (font block
+    # (multiline: "(font" is followed by newline + indented children)
+    pat = re.compile(r'((?:gr_text|fp_text)(?: user| reference| value)? "'
+                     + esc + r'"[^“]*?\(font)(\s)(?!\s*\(face)', re.S)
+
+    def repl(m):
+        global count
+        count += 1
+        b = ' (bold yes)' if bold else ''
+        return m.group(1) + f' (face "{face}"){b}' + m.group(2)
+
+    s, _ = pat.subn(repl, s)
+
+open(BRD, "w").write(s)
+print(f"patched {count} text items with Red Hat faces")
