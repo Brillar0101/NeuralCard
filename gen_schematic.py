@@ -226,3 +226,14 @@ def place(lib_id, ref, value, x, y, angle, pins, props):
         f'\t\t(instances\n\t\t\t(project "{PROJECT}"\n\t\t\t\t(path "/{ROOT_UUID}"\n'
         f'\t\t\t\t\t(reference "{ref}")\n\t\t\t\t\t(unit 1)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)')
 
+
+def part(lib_id, ref, value, x, y, pins):
+    fp = FP.get(ref, "")
+    place(lib_id, ref, value, x, y, 0, pins, [
+        prop("Reference", ref, x + 2.54, y - 1.27, 0, "left"),
+        prop("Value", value, x + 2.54, y + 1.27, 0, "left"),
+        prop("Footprint", fp, x, y, 0, hide=True),
+        prop("Datasheet", "", x, y, 0, hide=True),
+        prop("Description", "", x, y, 0, hide=True),
+    ])
+
