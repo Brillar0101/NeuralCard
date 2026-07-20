@@ -479,3 +479,19 @@ def led_cp(ref, x, y, i, j):
     tap_dir(("lbl", f"CP{j}"), k[0], k[1], 'L')
     tap_dir(("lbl", f"CP{i}"), a[0], a[1], 'R')
 
+
+def section_leds():
+    section_box(26, 258, 360, 374,
+                "NEURON LEDs  (24x charlieplex on 6 GPIO)   input(6) > hidden(8) > output(10)",
+                28, 256)
+    # charlieplex current-limit resistors R1-R6: CHXn -> CPn (one node per GPIO line)
+    for n in range(1, 7):
+        rc_net("Device:R", f"R{n}", "220R", 40.64 + (n - 1) * 19.05, 272.0,
+               ("lbl", f"CHX{n}"), ("lbl", f"CP{n}"))
+    # 24 neuron LEDs across 24 ordered CP-node pairs (i=anode node, j=cathode node)
+    pairs = [(i, j) for i in range(1, 7) for j in range(1, 7) if i != j][:24]
+    cols = [60.96, 111.76, 162.56, 213.36, 264.16, 314.96]
+    rows = [299.72, 318.77, 337.82, 356.87]
+    for idx, (i, j) in enumerate(pairs):
+        led_cp(f"D{idx + 1}", cols[idx % 6], rows[idx // 6], i, j)
+
