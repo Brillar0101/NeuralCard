@@ -49,3 +49,14 @@ pads (bare copper). Flash once with a USB-serial adapter, then it runs on the co
 24 neuron LEDs (D1–D24). Brightest output = the guess. Labeled on silk.
 
 ---
+
+## 3. Power architecture (resolved)
+
+```
+ USB-C VBUS(5V) ──► ME6211 LDO ──► +3V3 rail ──► ESP32-S3 / IMU / LEDs
+                                      ▲
+ CR2032 (VCOIN) ──► Q1 AO3401A P-FET ─┘   (S=+3V3, D=VCOIN, G=VBUS, R13 100k bleeder)
+```
+- USB plugged → VBUS=5 V → gate high → **P-FET OFF**, coin disconnected (no back-charge); LDO powers rail.
+- USB absent → R13 pulls VBUS(gate)=0 → **P-FET ON**, coin powers rail at **full 3.0 V (no diode drop)**.
+- Radio OFF + bulk/ride-out caps (C8 10µF, C9 22µF, C10 100µF) absorb inference/LED peaks.
