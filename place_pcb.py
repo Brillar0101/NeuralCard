@@ -250,3 +250,48 @@ def add_stitching(board):
                    (24.0, 8.0), (52.0, 40.0)]:
         _via(board, mm((x, y)), gnd)
 
+
+def add_nfc_keepouts(board):
+    """Rule areas over the NFC coil on both layers: no pour, no tracks, no
+    vias. The coil itself is footprint copper (ANT1), which rule areas do not
+    restrict; this keeps the GND pour and the autorouter out of the field."""
+    x1, y1, x2, y2 = NFC_ZONE
+    for layer in (pcbnew.F_Cu, pcbnew.B_Cu):
+        z = pcbnew.ZONE(board)
+        z.SetIsRuleArea(True)
+        z.SetLayer(layer)
+        for setter in ("SetDoNotAllowCopperPour", "SetDoNotAllowZoneFills"):
+            if hasattr(z, setter):
+                getattr(z, setter)(True)
+                break
+        z.SetDoNotAllowTracks(True)
+        z.SetDoNotAllowVias(True)
+        z.SetDoNotAllowPads(False)        # ANT1's own pads + LED pads at the edge
+        z.SetDoNotAllowFootprints(False)
+        poly = z.Outline()
+        poly.NewOutline()
+        for (x, y) in [(x1, y1), (x2, y1), (x2, y2), (x1, y2)]:
+            poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
+        board.Add(z)
+    # guard strips over the coil feed stubs between the pads and the zone:
+    # freerouting cannot see ANT1's footprint copper, so forbid tracks there
+    for (gx1, gy1, gx2, gy2) in [(2.0, 14.75, 3.9, 15.45),     # pad1 stub (B.Cu)
+                                 (7.5, 14.75, 9.0, 15.45)]:    # pad2 escape (F.Cu)
+        for layer in (pcbnew.F_Cu, pcbnew.B_Cu):
+            z = pcbnew.ZONE(board)
+            z.SetIsRuleArea(True)
+            z.SetLayer(layer)
+            z.SetDoNotAllowTracks(True)
+            z.SetDoNotAllowVias(True)
+            z.SetDoNotAllowPads(False)
+            z.SetDoNotAllowFootprints(False)
+            for setter in ("SetDoNotAllowCopperPour", "SetDoNotAllowZoneFills"):
+                if hasattr(z, setter):
+                    getattr(z, setter)(True)
+                    break
+            poly = z.Outline()
+            poly.NewOutline()
+            for (x, y) in [(gx1, gy1), (gx2, gy1), (gx2, gy2), (gx1, gy2)]:
+                poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
+            board.Add(z)
+
