@@ -9118,3 +9118,132 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3ef7015-53ed-4814-8e7e-d410d375668d")
+		(property "Reference" "R5"
+			(at 118.61800000000001 270.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 118.61800000000001 273.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 116.84 272.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 116.84 272.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 116.84 272.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "5bcaafbd-3eb7-4d7e-8689-830a1923ad1e")
+		)
+		(pin "2"
+			(uuid "d767db35-ea16-4ce9-b496-2838c45bdcde")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 116.84 267.97) (xy 116.84 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65489938-0bba-42e5-9618-158a6a434b3f")
+	)
+	(global_label "CHX5"
+		(shape bidirectional)
+		(at 116.84 265.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "90adf43d-2fdb-4aad-a2c3-3e6cc515f2d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.84 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 116.84 275.59) (xy 116.84 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1163341f-2bf1-46a7-a1bc-dca540e60b96")
+	)
+	(global_label "CP5"
+		(shape bidirectional)
+		(at 116.84 278.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36b043c2-ecb9-41ff-bad7-9f32e2a89c50")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.84 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
