@@ -3692,3 +3692,82 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:C")
+		(at 127.0 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f78dff5-d7ab-46b2-898c-723b2e3a4542")
+		(property "Reference" "C10"
+			(at 128.778 72.64399999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF"
+			(at 128.778 74.92999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 127.0 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 127.0 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 127.0 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "a77c8ac8-9284-4a7a-a95a-19ff86484241")
+		)
+		(pin "2"
+			(uuid "f55f4984-d3d4-4745-81ac-36089c4db961")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 127.0 69.85) (xy 127.0 67.30999999999999)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e821c1-77bf-40a9-ac9f-bee96bd8b387")
+	)
