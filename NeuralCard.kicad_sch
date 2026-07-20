@@ -8261,3 +8261,98 @@
 		)
 		(uuid "2b92e5ac-d446-49ce-a538-82aa077418b4")
 	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 289.56 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6b9f0fb-8c20-43b4-87f3-e7bb3246e590")
+		(property "Reference" "#PWR037"
+			(at 289.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "+3V3"
+			(at 289.56 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 289.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 289.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 289.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "fa75e857-896e-456e-8a47-41304f9a1f91")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 289.56 132.08) (xy 289.56 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8ca1224-30b0-4068-b6bf-ab35c0b5ecf8")
+	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 289.56 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cc51431-1968-46d4-bfb5-6532b5afbbbc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 289.56 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
