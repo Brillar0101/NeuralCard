@@ -57,3 +57,12 @@ def components(frags, vias):
         groups.setdefault(find(k), []).append(k)
     return list(groups.values())
 
+
+def in_no_via_area(board, px, py):
+    pt = pcbnew.VECTOR2I(MM(px), MM(py))
+    for z in board.Zones():
+        if z.GetIsRuleArea() and z.GetDoNotAllowVias():
+            if z.Outline().Contains(pt):
+                return True
+    return False
+
