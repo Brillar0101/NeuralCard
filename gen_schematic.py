@@ -286,3 +286,10 @@ def tap_gnd(x, y, dx=0.0, dy=2.54):
     wire(x, y, ex, ey)
     pwr("GND", ex, ey)
 
+
+def tap_pwr(net, x, y, dx=0.0, dy=-2.54):
+    """net in +3V3/VBUS: stub then place power symbol at the stub end."""
+    ex, ey = x + dx, y + dy
+    wire(x, y, ex, ey)
+    pwr(net, ex, ey)
+
