@@ -316,3 +316,24 @@ def add_rule_strip(board):
         poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
     board.Add(z)
 
+
+def add_pours(board):
+    """GND copper pour on both layers (inset from board edge)."""
+    gnd = board.FindNet("GND")
+    pts = [(0.6, 0.6), (85.0, 0.6), (85.0, 53.38), (0.6, 53.38)]
+    for layer in (pcbnew.F_Cu, pcbnew.B_Cu):
+        z = pcbnew.ZONE(board)
+        z.SetLayer(layer)
+        z.SetNet(gnd)
+        z.SetAssignedPriority(0)
+        z.SetLocalClearance(pcbnew.FromMM(0.3))   # > 0.25 hole-to-copper rule
+        z.SetMinThickness(pcbnew.FromMM(0.2))
+        z.SetPadConnection(pcbnew.ZONE_CONNECTION_FULL)   # solid GND tie (no starved thermals)
+        z.SetIslandRemovalMode(pcbnew.ISLAND_REMOVAL_MODE_ALWAYS)   # drop isolated GND islands
+        poly = z.Outline()
+        poly.NewOutline()
+        for (x, y) in pts:
+            poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
+        z.SetIsFilled(False)
+        board.Add(z)
+
