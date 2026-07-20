@@ -360,3 +360,58 @@ def rc_net(lib_id, ref, val, x, y, top_spec, bot_spec):
 
 # ================================================================ SECTION 2
 # MCU CORE — ESP32-S3-WROOM-1 + USB-C/ESD + BOOT/RESET
+def section_mcu():
+    section_box(26, 112, 232, 250, "MCU CORE  (ESP32-S3-WROOM-1 + UART programming header)", 28, 110)
+
+    # --- ESP32-S3 module U1 ---
+    ux, uy = 130.0, 175.0
+    esp = "JLC:ESP32-S3-WROOM-1"
+    part(esp, "U1", "ESP32-S3-WROOM-1", ux, uy,
+         [str(i) for i in range(1, 42)])
+    specs = {
+        "1": ("gnd",), "2": ("pwr", "+3V3"), "3": ("lbl", "EN"),
+        "4": ("lbl", "CHX1"), "5": ("lbl", "CHX2"), "6": ("lbl", "CHX3"),
+        "7": ("lbl", "CHX4"), "8": ("lbl", "CHX5"), "9": ("lbl", "CHX6"),
+        "10": ("lbl", "SCL"), "11": ("lbl", "IMU_INT"), "12": ("lbl", "SDA"),
+        "13": ("nc",), "14": ("nc",),       # native USB unused (UART programming)
+        "27": ("lbl", "IO0"), "40": ("gnd",), "41": ("gnd",),
+    }
+    for n in range(15, 27):       # bottom row -> all unused
+        specs[str(n)] = ("nc",)
+    for n in range(28, 40):       # right-side unused (incl. 35/36/37 PSRAM)
+        specs[str(n)] = ("nc",)
+    specs["36"] = ("lbl", "RXD")  # RXD0 (GPIO44) -> prog header RX
+    specs["37"] = ("lbl", "TXD")  # TXD0 (GPIO43) -> prog header TX
+    specs["23"] = ("lbl", "NFC_GPO")  # GPIO21 <- ST25DV field-detect interrupt
+    for n in range(1, 42):
+        pn = str(n)
+        px, py = ep(ux, uy, esp, pn)
+        lx, ly = PIN_XY[esp][pn]
+        side = 'D' if ly < -30 else ('L' if lx < 0 else 'R')
+        tap_dir(specs[pn], px, py, side)
+
+    # --- decoupling: C1/C2/C3 100nF on +3V3 ---
+    for ref, cx in [("C1", 178.0), ("C2", 188.0), ("C3", 198.0)]:
+        rc_net("Device:C", ref, "100nF", cx, 132.0, ("pwr", "+3V3"), ("gnd",))
+
+    # --- EN reset: R9 10k (+3V3->EN), C4 100nF (EN->GND), SW2 RESET (EN<->GND) ---
+    rc_net("Device:R", "R9", "10k", 70.0, 132.0, ("pwr", "+3V3"), ("lbl", "EN"))
+    rc_net("Device:C", "C4", "100nF", 84.0, 132.0, ("lbl", "EN"), ("gnd",))
+    sw_btn("SW2", 64.0, 150.0, "EN")
+
+    # --- BOOT: R10 10k (+3V3->IO0), SW1 BOOT (IO0<->GND) ---
+    rc_net("Device:R", "R10", "10k", 210.0, 132.0, ("pwr", "+3V3"), ("lbl", "IO0"))
+    sw_btn("SW1", 200.0, 150.0, "IO0")
+
+    # --- UART programming header J1 (3V3, GND, TX, RX, EN, IO0) ---
+    jx, jy = 70.0, 215.0
+    hdr = "Connector_Generic:Conn_01x06"
+    part(hdr, "J1", "ProgPads", jx, jy, ["1", "2", "3", "4", "5", "6"])
+    hspec = {
+        "1": ("pwr", "+3V3"), "2": ("gnd",), "3": ("lbl", "TXD"),
+        "4": ("lbl", "RXD"), "5": ("lbl", "EN"), "6": ("lbl", "IO0"),
+    }
+    for pn, spec in hspec.items():
+        px, py = ep(jx, jy, hdr, pn)
+        tap_dir(spec, px, py, 'L')
+
