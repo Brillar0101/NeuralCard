@@ -65,3 +65,8 @@ seg(pts[-1], edge_stop(pts[-1], PAD3))             # spiral inner end -> crossov
 seg((PAD3[0], PAD3[1] - PAD_R), (PAD2[0], PAD2[1] + PAD_R),
     layer="F.Cu")                                  # front escape across top turns
 
+
+def fp_line(x1, y1, x2, y2, layer, w):
+    return (f'  (fp_line (start {x1:.3f} {y1:.3f}) (end {x2:.3f} {y2:.3f})'
+            f' (stroke (width {w}) (type solid)) (layer "{layer}"))')
+
