@@ -69,3 +69,10 @@ is marked select-at-order: pick any 0603 NP0 in the 56 to 68 pF range from
 their catalog. Check the antenna resonance on the first board with a VNA
 before ordering a big batch. The math says 13.6 MHz but copper nearby pulls
 it down, and the cap value is the knob.
+
+## Status
+
+Hardware is done and verified: ERC clean, 100% routed, DRC clean. The
+firmware (IMU capture, the actual digit model, LED playback) is specced in
+DESIGN.md but not written yet, so right now the card is a very elaborate
+NFC business card. That part alone already works.
