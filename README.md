@@ -76,3 +76,8 @@ Hardware is done and verified: ERC clean, 100% routed, DRC clean. The
 firmware (IMU capture, the actual digit model, LED playback) is specced in
 DESIGN.md but not written yet, so right now the card is a very elaborate
 NFC business card. That part alone already works.
+
+## License
+
+CERN-OHL-P v2. See LICENSE. Do whatever you want with it, attribution
+appreciated.
