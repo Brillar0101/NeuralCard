@@ -182,3 +182,7 @@ def junction(x, y):
         f'\t(junction\n\t\t(at {x} {y})\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n'
         f'\t\t(uuid "{u()}")\n\t)')
 
+
+def no_connect(x, y):
+    items.append(f'\t(no_connect\n\t\t(at {x} {y})\n\t\t(uuid "{u()}")\n\t)')
+
