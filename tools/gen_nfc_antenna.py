@@ -19,3 +19,14 @@ PITCH = 0.6      # mm turn-to-turn (0.3 track + 0.3 gap)
 TURNS = 9
 # outer centerline rectangle (zone x[2.5,14.5] y[16,40.5] minus track/2);
 # right edge stops at 14.5 so the input-LED column keeps a routing corridor.
+# Feed exits the TOP edge: U4 lives beside the IMU at the board's top-left.
+XL0, XR0 = 2.65, 14.35
+YT0, YB0 = 16.15, 40.35
+ENTRY_X = 3.2            # where pad-1 stub meets the outer turn
+PAD1 = (3.2, 14.2)       # outer terminal, above the coil, below U4
+PAD2 = (8.0, 14.2)       # inner terminal escape landing, outside the coil
+PAD3 = (8.5, 22.8)       # crossover TH pad inside the coil cavity
+PAD_R = 0.6              # TH pad radius (1.2 dia, 0.3 drill — JLCPCB minimum)
+
+lines = []                # (x1,y1,x2,y2,layer,width)
+
