@@ -176,3 +176,9 @@ def wire(x1, y1, x2, y2):
         f'\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n'
         f'\t\t(uuid "{u()}")\n\t)')
 
+
+def junction(x, y):
+    items.append(
+        f'\t(junction\n\t\t(at {x} {y})\n\t\t(diameter 0)\n\t\t(color 0 0 0 0)\n'
+        f'\t\t(uuid "{u()}")\n\t)')
+
