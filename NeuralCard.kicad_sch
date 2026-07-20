@@ -7458,3 +7458,116 @@
 		)
 		(uuid "793b50b2-a9a3-4543-9076-ab33be5e24db")
 	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 295.91 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a6640c6-ae9e-43d6-9fc7-4b2f2c7bea73")
+		(property "Reference" "#PWR030"
+			(at 295.91 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "+3V3"
+			(at 295.91 138.93800000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 295.91 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 295.91 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 295.91 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "36a162b9-2460-4eaa-b102-4a0f257b6320")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 298.45 144.78)
+		(uuid "508dc7dc-673d-4939-bdf7-1b685625229e")
+	)
+	(no_connect
+		(at 298.45 147.32)
+		(uuid "4fcf0494-11fa-4498-87a7-6c8251bd2978")
+	)
+	(wire
+		(pts
+			(xy 298.45 149.86) (xy 295.91 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d87bbc-f51b-409d-9b18-61fedbed64b2")
+	)
+	(global_label "IMU_INT"
+		(shape bidirectional)
+		(at 295.91 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "083f2d34-faef-42d4-a420-44443add484a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 295.91 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 298.45 152.4) (xy 295.91 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6370b7b0-3a4a-4a50-bb97-8993302ad62b")
+	)
