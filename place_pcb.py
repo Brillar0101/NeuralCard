@@ -167,3 +167,21 @@ def rect(board, x1, y1, x2, y2, layer, w):
     s.SetWidth(pcbnew.FromMM(w))
     board.Add(s)
 
+
+def text(board, t, x, y, size, layer, thick, justify=None, angle=0, mirror=False):
+    tx = pcbnew.PCB_TEXT(board)
+    tx.SetText(t)
+    tx.SetPosition(mm((x, y)))
+    tx.SetLayer(layer)
+    tx.SetTextSize(pcbnew.VECTOR2I(pcbnew.FromMM(size), pcbnew.FromMM(size)))
+    tx.SetTextThickness(pcbnew.FromMM(thick))
+    if justify == "left":
+        tx.SetHorizJustify(pcbnew.GR_TEXT_H_ALIGN_LEFT)
+    elif justify == "right":
+        tx.SetHorizJustify(pcbnew.GR_TEXT_H_ALIGN_RIGHT)
+    if angle:
+        tx.SetTextAngle(pcbnew.EDA_ANGLE(angle, pcbnew.DEGREES_T))
+    if mirror:
+        tx.SetMirrored(True)
+    board.Add(tx)
+
