@@ -87,3 +87,62 @@ def spot_in_both(frags, k_small, k_big):
                 return (px, py)
     return None
 
+
+def main():
+    board = pcbnew.LoadBoard(f"{H}/NeuralCard.kicad_pcb")
+    gnd = board.FindNet("GND")
+    gnd_code = gnd.GetNetCode()
+    for z in board.Zones():
+        if not z.GetIsRuleArea() and z.GetNetCode() == gnd_code:
+            z.SetIslandRemovalMode(pcbnew.ISLAND_REMOVAL_MODE_AREA)
+            z.SetMinIslandArea(int(MIN_ISLAND_MM2 * 1e12))   # nm^2
+
+    total_added = 0
+    for round_ in range(6):
+        frags = fragments(board, gnd_code)
+        vias = [t for t in board.GetTracks() if t.GetClass() == "PCB_VIA"
+                and t.GetNetCode() == gnd_code]
+        comps = components(frags, vias)
+        main_comp = max(comps, key=lambda c: sum(
+            frags[k][1].Outline(frags[k][2]).BBox().GetArea() for k in c))
+        orphans = [c for c in comps if c is not main_comp]
+        if not orphans:
+            break
+        added = 0
+        for comp in orphans:
+            done = False
+            for k_small in comp:
+                for k_big in main_comp:
+                    spot = spot_in_both(frags, k_small, k_big)
+                    if spot and in_no_via_area(board, *spot):
+                        spot = None
+                    if spot:
+                        v = pcbnew.PCB_VIA(board)
+                        v.SetPosition(pcbnew.VECTOR2I(MM(spot[0]), MM(spot[1])))
+                        v.SetWidth(MM(0.6))
+                        v.SetDrill(MM(0.3))
+                        v.SetNet(gnd)
+                        board.Add(v)
+                        added += 1
+                        done = True
+                        break
+                if done:
+                    break
+            if not done:
+                sizes = [f"{pcbnew.ToMM(frags[k][1].Outline(frags[k][2]).BBox().GetWidth()):.1f}x"
+                         f"{pcbnew.ToMM(frags[k][1].Outline(frags[k][2]).BBox().GetHeight()):.1f}"
+                         for k in comp]
+                print(f"  round {round_}: component unmergeable {sizes}")
+        total_added += added
+        board.BuildListOfNets()
+        pcbnew.ZONE_FILLER(board).Fill(board.Zones())
+        if added == 0:
+            break
+    pcbnew.SaveBoard(f"{H}/NeuralCard.kicad_pcb", board)
+    frags = fragments(board, gnd_code)
+    vias = [t for t in board.GetTracks() if t.GetClass() == "PCB_VIA"
+            and t.GetNetCode() == gnd_code]
+    print(f"added {total_added} vias; final components: {len(components(frags, vias))}")
+
+
+main()
