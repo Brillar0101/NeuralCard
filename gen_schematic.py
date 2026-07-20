@@ -465,3 +465,17 @@ def section_imu():
 
 # ================================================================ SECTION 4
 # NEURON LEDs — 24x charlieplexed on 6 GPIO (the neural-net art)
+def led_cp(ref, x, y, i, j):
+    """Horizontal LED: K(left)->CPj, A(right)->CPi."""
+    place("Device:LED", ref, "blue", x, y, 0, ["1", "2"], [
+        prop("Reference", ref, x, y - 2.794, 0, "left"),
+        prop("Value", "blue", x, y + 2.794, 0, "left"),
+        prop("Footprint", FP.get(ref, ""), x, y, 0, hide=True),
+        prop("Datasheet", "", x, y, 0, hide=True),
+        prop("Description", "", x, y, 0, hide=True),
+    ])
+    k = ep(x, y, "Device:LED", "1")   # cathode (left)
+    a = ep(x, y, "Device:LED", "2")   # anode (right)
+    tap_dir(("lbl", f"CP{j}"), k[0], k[1], 'L')
+    tap_dir(("lbl", f"CP{i}"), a[0], a[1], 'R')
+
