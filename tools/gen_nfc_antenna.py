@@ -30,3 +30,7 @@ PAD_R = 0.6              # TH pad radius (1.2 dia, 0.3 drill — JLCPCB minimum)
 
 lines = []                # (x1,y1,x2,y2,layer,width)
 
+
+def seg(a, b, layer="B.Cu", w=TRACK):
+    lines.append((a[0], a[1], b[0], b[1], layer, w))
+
