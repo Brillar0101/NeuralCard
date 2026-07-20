@@ -495,3 +495,6 @@ def section_leds():
     for idx, (i, j) in enumerate(pairs):
         led_cp(f"D{idx + 1}", cols[idx % 6], rows[idx // 6], i, j)
 
+
+# ================================================================ SECTION 5
+# NFC — ST25DV04KC dynamic tag (tap-to-share) on I2C + PCB loop antenna
