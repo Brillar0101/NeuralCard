@@ -1,0 +1,20 @@
+# routing intermediates (regenerated every run)
+NeuralCard.dsn
+NeuralCard.ses
+NeuralCard.net
+
+# KiCad local state and backups
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.lck
+
+# heavy binaries and regenerable assets
+tools/freerouting.jar
+*.blend
+*.blend1
+*.glb
+JLC.3dshapes/
+ST25DV.3dshapes/
+datasheets/
+.DS_Store
