@@ -79,3 +79,15 @@ back_major = {
 layout["ANT1"] = (0.0, 0.0, 0, False)   # coil footprint bakes absolute coords
 for ref, (x, y, d) in back_major.items():
     layout[ref] = (x, y, d, True)
+
+# ---- Back side: passives auto-placed in top/bottom edge rows ----
+passives = ([f"R{n}" for n in [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]]
+            + [f"C{n}" for n in [1, 2, 3, 4, 5, 8, 9, 10]])
+slots = []
+for x in linspace(8, 80, 12):
+    slots.append((x, 4.5))     # top edge row
+for x in linspace(8, 58, 6):
+    slots.append((x, 51.5))    # bottom edge row (left of prog pads)
+for ref, (x, y) in zip(passives, slots):
+    layout[ref] = (x, y, 0, True)
+
