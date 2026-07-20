@@ -156,3 +156,13 @@ QR on front silk should encode the same URL.
 **Status:** re-routed 100% (freerouting, 0 unrouted), **DRC 0 violations**;
 5 cosmetic same-net GND-pour fragment notices remain (every GND pad is
 track-routed; fragments are redundant copper). Fab outputs regenerated.
+
+### BOM verification note (v2.1, JLCPCB live check)
+All LCSC IDs verified against JLCPCB part pages. Three v2-era mismatches fixed:
+C2913204 is the **N8R2** module (BOM said N16R8) — fine for this design (PSRAM
+pins NC, int8 MLP fits 8MB flash easily); C8's old ID (C5674) was a 22uF part,
+now C15850 (true 10uF); C10's old ID (C15850) was 10uF, not 100uF — no basic
+100uF exists in 0805, so C10 is now 22uF (C45783), total bulk ~54uF. If more
+ride-out is wanted, move C10 to a 1206 100uF in the next rev. ESP32 + IMU are
+Standard-PCBA-only parts, so the board assembles as Standard regardless of the
+NFC chip being Economic-capable.
