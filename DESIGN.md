@@ -40,3 +40,12 @@ pads (bare copper). Flash once with a USB-serial adapter, then it runs on the co
 - **Display:** 24 LEDs at neuron nodes, charlieplexed from 6 GPIO (software PWM = activation glow).
 - **Power:** CR2032 coin + USB-C/LDO with **P-FET automatic source selection** (see §3).
 - **Program:** USB-C native (ESP32-S3 built-in USB) + BOOT/RESET tact buttons + USBLC6 ESD.
+
+### Neural-net art topology (the visible layout)
+```
+ INPUT (6) = IMU axes      HIDDEN (8)        OUTPUT (10) = digits 0-9
+  ax ay az gx gy gz   ->   o o o o o o o o  ->  0 1 2 3 4 5 6 7 8 9
+```
+24 neuron LEDs (D1–D24). Brightest output = the guess. Labeled on silk.
+
+---
