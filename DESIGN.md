@@ -60,3 +60,17 @@ pads (bare copper). Flash once with a USB-serial adapter, then it runs on the co
 - USB plugged → VBUS=5 V → gate high → **P-FET OFF**, coin disconnected (no back-charge); LDO powers rail.
 - USB absent → R13 pulls VBUS(gate)=0 → **P-FET ON**, coin powers rail at **full 3.0 V (no diode drop)**.
 - Radio OFF + bulk/ride-out caps (C8 10µF, C9 22µF, C10 100µF) absorb inference/LED peaks.
+
+### Pin map (as built in schematic — Power + MCU sections)
+| Function | Net | GPIO (module pin) |
+|---|---|---|
+| IMU I²C SDA | SDA | GPIO8 (p12) |
+| IMU I²C SCL | SCL | GPIO17 (p10) |
+| IMU INT1 | IMU_INT | GPIO18 (p11) |
+| Charlieplex lines 1–6 | CHX1..6 | GPIO4/5/6/7 (p4–7), GPIO15 (p8), GPIO16 (p9) |
+| USB D− / D+ | USB_DM / USB_DP | GPIO19 (p13) / GPIO20 (p14) |
+| BOOT / RESET | IO0 / EN | GPIO0 (p27)+SW1 / EN (p3)+SW2 |
+
+> GPIO35/36/37 (p28–30) reserved for octal PSRAM (N16R8) — left unconnected.
+
+---
