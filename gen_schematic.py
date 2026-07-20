@@ -237,3 +237,18 @@ def part(lib_id, ref, value, x, y, pins):
         prop("Description", "", x, y, 0, hide=True),
     ])
 
+
+def rc(lib_id, ref, value, x, y):
+    fp = FP.get(ref, "")
+    place(lib_id, ref, value, x, y, 0, ["1", "2"], [
+        prop("Reference", ref, x + 1.778, y - 1.016, 0, "left"),
+        prop("Value", value, x + 1.778, y + 1.27, 0, "left"),
+        prop("Footprint", fp, x, y, 0, hide=True),
+        prop("Datasheet", "", x, y, 0, hide=True),
+        prop("Description", "", x, y, 0, hide=True),
+    ])
+
+
+PWR_N = [0]
+PWR_LIB = {"GND": "power:GND", "+3V3": "power:+3V3", "VBUS": "power:VBUS"}
+
