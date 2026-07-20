@@ -31,3 +31,5 @@ FONTS = {
 }
 for ch in "0123456789":
     FONTS[ch] = ("Red Hat Mono SemiBold", False)
+for lab in ("ax", "ay", "az", "gx", "gy", "gz"):
+    FONTS[lab] = ("Red Hat Mono SemiBold", False)
