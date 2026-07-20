@@ -18,3 +18,4 @@ TRACK = 0.3      # mm copper width
 PITCH = 0.6      # mm turn-to-turn (0.3 track + 0.3 gap)
 TURNS = 9
 # outer centerline rectangle (zone x[2.5,14.5] y[16,40.5] minus track/2);
+# right edge stops at 14.5 so the input-LED column keeps a routing corridor.
