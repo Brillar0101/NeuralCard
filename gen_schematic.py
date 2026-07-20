@@ -252,3 +252,19 @@ def rc(lib_id, ref, value, x, y):
 PWR_N = [0]
 PWR_LIB = {"GND": "power:GND", "+3V3": "power:+3V3", "VBUS": "power:VBUS"}
 
+
+def pwr(net, x, y):
+    PWR_N[0] += 1
+    ref = f"#PWR0{PWR_N[0]:02d}"
+    vy = y + 3.302 if net == "GND" else y - 3.302
+    place(PWR_LIB[net], ref, net, x, y, 0, ["1"], [
+        prop("Reference", ref, x, y, 0, hide=True),
+        prop("Value", net, x, vy),
+        prop("Footprint", "", x, y, 0, hide=True),
+        prop("Datasheet", "", x, y, 0, hide=True),
+        prop("Description", "", x, y, 0, hide=True),
+    ])
+
+
+FLG_N = [0]
+
