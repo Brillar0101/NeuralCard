@@ -240,3 +240,13 @@ def add_routes(board):
             placed.append(b)
             rest.remove(b)
 
+
+def add_stitching(board):
+    """GND stitching vias tying the F.Cu and B.Cu ground pours together
+    (front pour has no GND pads of its own)."""
+    gnd = board.FindNet("GND")
+    for (x, y) in [(2.6, 12.0), (43.0, 2.4), (43.0, 51.6),
+                   (83.0, 51.0), (83.0, 12.0), (83.0, 27.0), (48.0, 27.0),
+                   (24.0, 8.0), (52.0, 40.0)]:
+        _via(board, mm((x, y)), gnd)
+
