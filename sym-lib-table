@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "JLC")(type "KiCad")(uri "${KIPRJMOD}/JLC.kicad_sym")(options "")(descr "JLCPCB/LCSC exact symbols (easyeda2kicad): ESP32-S3, IMU, USB-C, USBLC6, coin holder, tact, LDO, P-FET"))
+  (lib (name "NeuralCard_Custom")(type "KiCad")(uri "${KIPRJMOD}/NeuralCard_Custom.kicad_sym")(options "")(descr "Project-local custom symbols"))
+  (lib (name "ST25DV")(type "KiCad")(uri "${KIPRJMOD}/ST25DV.kicad_sym")(options "")(descr "ST25DV04KC NFC tag (easyeda2kicad C3304276)"))
+)
