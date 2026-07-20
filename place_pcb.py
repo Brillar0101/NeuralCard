@@ -51,3 +51,13 @@ def mm(v):
 def linspace(a, b, n):
     return [round(a + (b - a) * i / (n - 1), 3) for i in range(n)]
 
+
+# ---- Front neural-net art: LED neuron positions (x, y) mm on the card ----
+IN_X, HID_X, OUT_X = 17.0, 42.8, 68.6
+layout = {}             # ref -> (x, y, deg, back?)
+for k, y in enumerate(linspace(11, 43, 6)):     # input layer = D1..D6
+    layout[f"D{k+1}"] = (IN_X, y, 0, False)
+for k, y in enumerate(linspace(7, 47, 8)):      # hidden layer = D7..D14
+    layout[f"D{k+7}"] = (HID_X, y, 0, False)
+for k, y in enumerate(linspace(5, 49, 10)):     # output layer = D15..D24
+    layout[f"D{k+15}"] = (OUT_X, y, 0, False)
