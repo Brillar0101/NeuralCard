@@ -295,3 +295,24 @@ def add_nfc_keepouts(board):
                 poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
             board.Add(z)
 
+
+def add_rule_strip(board):
+    """No-track strip under the gold hairline (F.Mask opening at y=50.3):
+    keeps signal tracks out so the opening only ever exposes GND pour."""
+    z = pcbnew.ZONE(board)
+    z.SetIsRuleArea(True)
+    z.SetLayer(pcbnew.F_Cu)
+    z.SetDoNotAllowTracks(True)
+    z.SetDoNotAllowVias(True)
+    z.SetDoNotAllowPads(False)
+    z.SetDoNotAllowFootprints(False)
+    for setter in ("SetDoNotAllowCopperPour", "SetDoNotAllowZoneFills"):
+        if hasattr(z, setter):
+            getattr(z, setter)(False)     # pour stays: the gold IS the pour
+            break
+    poly = z.Outline()
+    poly.NewOutline()
+    for (x, y) in [(3.6, 49.9), (82.4, 49.9), (82.4, 50.7), (3.6, 50.7)]:
+        poly.Append(pcbnew.FromMM(x), pcbnew.FromMM(y))
+    board.Add(z)
+
