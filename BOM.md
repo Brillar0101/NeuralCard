@@ -43,3 +43,19 @@
 **Total placements: 56** (10 active/EM lines + 13 R + 10 C + 24 LEDs).
 
 ---
+
+## 3. ⚠️ Important ordering notes
+
+1. **LSM6DS3TR-C (U2) is JLC "Standard PCBA only" + needs an assembly fixture.** Because of this
+   one part, the whole board must use **JLCPCB Standard Assembly** (not Economic). Budget the
+   one-time fixture fee. Confirm on the [JLC part page](https://jlcpcb.com/partdetail/C967633).
+2. **Blue LED + coin cell (Vf vs 3.0 V):** blue LEDs need ~2.8–3.2 V forward. The P-FET auto-selector
+   passes the *full* coin voltage to the rail (no diode drop), so this is better than a Schottky-OR —
+   but headroom is still tight. For guaranteed brightness on coin power, swap D1–D24 to **red
+   (Vf ~1.8 V)** or **yellow-green (~2.0 V)** — same 0603 footprint, different LCSC code (e.g. red `C2286`).
+3. **Power source selection (Q1 P-FET):** USB→LDO powers the rail and auto-disconnects the coin
+   (no back-charge of the non-rechargeable CR2032, no diode drop). 100 % SMD.
+4. **CR2032 holder height** adds ~3.5 mm on one side — normal for coin-cell cards.
+5. Passive LCSC codes are common JLC Basic parts — **verify each value/voltage** at its link.
+
+---
