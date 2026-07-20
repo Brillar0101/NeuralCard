@@ -184,3 +184,11 @@ and rejected: saves nothing vs battery self-discharge, costs parts + reroute.
 - The /card landing page lives in the portfolio repo (CardPage.jsx): vCard 3.0
   download (public/card.vcf — keep in sync with src/config.js), social links,
   and it greets with the drawn digit when ?drew=N is appended by future firmware.
+
+### Typography (v2.1)
+Silkscreen uses the site's PatternFly faces (outline fonts, plotted as
+polygons): Red Hat Display Bold (name), Red Hat Text SemiBold (title,
+instruction), Red Hat Mono SemiBold (digits, axis labels, URL, microtext).
+SemiBold keeps small strokes above JLC's 0.15mm silk minimum. Applied by
+`tools/apply_fonts.py` — run it after place/route, BEFORE fab export.
+Fonts must be installed (RedHatOfficial/RedHatFont, already in ~/Library/Fonts).
