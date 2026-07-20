@@ -175,3 +175,12 @@ IMU wake-on-motion, wake ripple). Short press while on = user button
 (replay last inference / mode cycle). SW2 stays hard reset. NFC keeps
 working while "off" (RF-field powered). A hard-off latch IC was considered
 and rejected: saves nothing vs battery self-discharge, costs parts + reroute.
+
+### NFC/QR destinations (final)
+- QR (copper-permanent): **https://www.princetekki.com** (v3, EC-Q, regenerated
+  2026-07 — old matrix encoded a stale URL and was replaced).
+- NFC NDEF record (rewritable): write **https://www.princetekki.com/card?src=nfc**
+  with any NFC phone app (e.g. NXP TagWriter) once boards arrive — no firmware needed.
+- The /card landing page lives in the portfolio repo (CardPage.jsx): vCard 3.0
+  download (public/card.vcf — keep in sync with src/config.js), social links,
+  and it greets with the drawn digit when ?drew=N is appended by future firmware.
