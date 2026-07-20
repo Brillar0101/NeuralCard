@@ -537,3 +537,39 @@ def section_nfc():
         px, py = ep(ax, ay, ant, pn)
         tap_dir(("lbl", net), px, py, 'L')
 
+
+# ================================================================ build
+section_power()
+section_mcu()
+section_imu()
+section_leds()
+section_nfc()
+
+lib_symbols = build_lib_symbols()
+body = '\n'.join(items)
+out = f'''(kicad_sch
+\t(version 20250114)
+\t(generator "eeschema")
+\t(generator_version "9.0")
+\t(uuid "{ROOT_UUID}")
+\t(paper "A2")
+\t(title_block
+\t\t(title "NeuralCard")
+\t\t(rev "V0.1")
+\t\t(company "Barakaeli Lawuo")
+\t\t(comment 1 "AI business card - air-writing digit recognition, ESP32-S3")
+\t)
+\t(lib_symbols
+{lib_symbols}
+\t)
+{body}
+\t(sheet_instances
+\t\t(path "/"
+\t\t\t(page "1")
+\t\t)
+\t)
+\t(embedded_fonts no)
+)
+'''
+open("NeuralCard.kicad_sch", "w").write(out)
+print(f"wrote NeuralCard.kicad_sch: {len(out)} bytes, {len(items)} items")
