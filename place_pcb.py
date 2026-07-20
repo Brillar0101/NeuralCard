@@ -91,3 +91,58 @@ for x in linspace(8, 58, 6):
 for ref, (x, y) in zip(passives, slots):
     layout[ref] = (x, y, 0, True)
 
+
+def main():
+    import shutil
+    comps, nets = parse_netlist(NET)
+    shutil.copyfile(f"{H}/board_outline.kicad_pcb", BRD)   # always start from pristine outline
+    board = pcbnew.LoadBoard(BRD)
+
+    placed = {}
+    for ref, fpid in comps.items():
+        lib, name = fpid.split(":")
+        fp = pcbnew.FootprintLoad(LIB[lib], name)
+        if fp is None:
+            print("MISSING FP:", fpid); continue
+        fp.SetReference(ref)
+        x, y, deg, back = layout.get(ref, (42.8, 27.0, 0, True))
+        board.Add(fp)
+        fp.SetPosition(mm((x, y)))
+        if back:
+            fp.SetLayerAndFlip(pcbnew.B_Cu)
+        fp.SetOrientationDegrees(deg)
+        if not back or ref in ("SW1", "SW2"):
+            fp.Reference().SetVisible(False)   # front silk is art; SW get role labels
+        placed[ref] = fp
+
+    # nets
+    made = 0
+    for name, nodes in nets.items():
+        if not name:
+            continue
+        ni = board.FindNet(name)
+        if ni is None:
+            ni = pcbnew.NETINFO_ITEM(board, name)
+            board.Add(ni)
+        for ref, padnum in nodes:
+            fp = placed.get(ref)
+            if not fp:
+                continue
+            for pad in fp.Pads():
+                if pad.GetNumber() == padnum:
+                    pad.SetNet(ni)
+        made += 1
+
+    add_silk(board)
+    add_stitching(board)
+    add_nfc_keepouts(board)
+    add_rule_strip(board)
+    add_pours(board)
+
+    board.BuildListOfNets()
+    filler = pcbnew.ZONE_FILLER(board)
+    filler.Fill(board.Zones())
+    pcbnew.SaveBoard(BRD, board)
+    print(f"placed {len(placed)} footprints, {made} nets assigned, "
+          f"{board.Zones().GetCount() if hasattr(board.Zones(),'GetCount') else len(list(board.Zones()))} zones")
+
