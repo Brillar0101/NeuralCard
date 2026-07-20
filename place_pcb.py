@@ -185,3 +185,13 @@ def text(board, t, x, y, size, layer, thick, justify=None, angle=0, mirror=False
         tx.SetMirrored(True)
     board.Add(tx)
 
+
+def _track(board, p1, p2, layer, net, tw):
+    t = pcbnew.PCB_TRACK(board)
+    t.SetStart(p1)
+    t.SetEnd(p2)
+    t.SetWidth(tw)
+    t.SetLayer(layer)
+    t.SetNet(net)
+    board.Add(t)
+
