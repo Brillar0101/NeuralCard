@@ -214,3 +214,15 @@ def prop(name, value, x, y, angle=0, justify=None, hide=False):
     return (f'\t\t(property "{name}" "{value}"\n\t\t\t(at {x} {y} {angle})\n'
             f'\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t){j}\n\t\t\t){h}\n\t\t)')
 
+
+def place(lib_id, ref, value, x, y, angle, pins, props):
+    x, y = snap(x), snap(y)
+    pin_lines = '\n'.join(f'\t\t(pin "{p}"\n\t\t\t(uuid "{u()}")\n\t\t)' for p in pins)
+    props_txt = '\n'.join(props)
+    items.append(
+        f'\t(symbol\n\t\t(lib_id "{lib_id}")\n\t\t(at {x} {y} {angle})\n\t\t(unit 1)\n'
+        f'\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(dnp no)\n'
+        f'\t\t(uuid "{u()}")\n{props_txt}\n{pin_lines}\n'
+        f'\t\t(instances\n\t\t\t(project "{PROJECT}"\n\t\t\t\t(path "/{ROOT_UUID}"\n'
+        f'\t\t\t\t\t(reference "{ref}")\n\t\t\t\t\t(unit 1)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)')
+
