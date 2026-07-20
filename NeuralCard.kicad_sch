@@ -6965,3 +6965,94 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 69.85 214.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50584246-8e9f-4b63-b626-d1220b87c6e8")
+		(property "Reference" "J1"
+			(at 72.54 213.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ProgPads"
+			(at 72.54 216.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "NeuralCard:ProgPads_1x6"
+			(at 70.0 215.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 70.0 215.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 70.0 215.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "1a13b72b-5c45-4ee6-bc3b-1dd78c9bc434")
+		)
+		(pin "2"
+			(uuid "2723db4c-a6a5-45d8-a032-eebdd2ce1be7")
+		)
+		(pin "3"
+			(uuid "9d453357-e169-4b16-b063-786bcae3d7af")
+		)
+		(pin "4"
+			(uuid "97195bfa-9228-41c1-9bd7-9da57140bc87")
+		)
+		(pin "5"
+			(uuid "e12ccd5a-8121-44b2-a9c3-12c8dc2044fd")
+		)
+		(pin "6"
+			(uuid "bc6a20e7-6a6f-4af4-9b83-9c261eed0bdf")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 209.55) (xy 62.23 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d4692a3-2a57-43c2-aa8d-83d0472aa323")
+	)
