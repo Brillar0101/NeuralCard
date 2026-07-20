@@ -195,3 +195,12 @@ def _track(board, p1, p2, layer, net, tw):
     t.SetNet(net)
     board.Add(t)
 
+
+def _via(board, pos, net):
+    v = pcbnew.PCB_VIA(board)
+    v.SetPosition(pos)
+    v.SetWidth(pcbnew.FromMM(0.6))
+    v.SetDrill(pcbnew.FromMM(0.3))
+    v.SetNet(net)
+    board.Add(v)
+
