@@ -12660,3 +12660,168 @@
 		)
 		(uuid "48b02a2d-2808-47d0-8f35-a05744fc55df")
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 457.2 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "561e374c-74f5-41c7-8267-49996958fc26")
+		(property "Reference" "#PWR040"
+			(at 457.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "GND"
+			(at 457.2 167.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 457.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 457.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 457.2 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "9a46a199-f02e-44fe-90e3-965edfce0d3e")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 480.06 163.83) (xy 482.6 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b21dc9f-fec6-41ff-a524-8109e48c232e")
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 482.6 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49c3af67-9527-40dd-858c-87849ab71ad1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 482.6 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 480.06 161.29) (xy 482.6 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a793ee-2316-418f-afd5-1d0e6cc80c48")
+	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 482.6 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b1049bde-fc55-4879-b0e3-d3ccf93861f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 482.6 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 480.06 158.75) (xy 482.6 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82768dd0-0331-4d3a-b576-74751a8c6304")
+	)
+	(global_label "NFC_GPO"
+		(shape bidirectional)
+		(at 482.6 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e49fd66-4aef-4ee5-bd80-1a90b446ecb6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 482.6 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 480.06 156.21) (xy 482.6 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebfed0bd-7089-4705-a44f-02b1a2b1f269")
+	)
