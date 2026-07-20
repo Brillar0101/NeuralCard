@@ -300,3 +300,6 @@ def tap_label(net, x, y, dx=0.0, dy=0.0, just="left"):
         wire(x, y, ex, ey)
     glabel(net, ex, ey, 0, just)
 
+
+# ================================================================ SECTION 1
+# POWER — Coin (CR2032) + USB-C/LDO with P-FET auto source-selection
