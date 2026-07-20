@@ -17,3 +17,17 @@ since the tag is powered by the phone's field.
 
 ![front](render/NeuralCard_front_v21.png)
 ![back](render/NeuralCard_back_v21.png)
+
+## Hardware
+
+- ESP32-S3-WROOM-1 (radio off, coin cell life)
+- LSM6DS3TR-C accelerometer + gyro on I2C. Its six axes map one to one
+  onto the six input neurons.
+- 24 red LEDs charlieplexed on 6 GPIO, software PWM for the glow
+- ST25DV04KC dynamic NFC tag, 9-turn coil etched on the back copper,
+  tuned with a single external cap against the chip's internal 28.5 pF
+- CR2032 coin cell. No USB connector: you flash once through six UART
+  pads with a serial adapter, then it runs on the coin.
+
+Runs on a 2-layer board. Everything is assembled by JLCPCB except the coin
+cell.
