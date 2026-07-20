@@ -7131,3 +7131,215 @@
 		)
 		(uuid "6b67ecac-2e3d-4eef-945c-9fff1c7f87ce")
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 62.23 212.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d69dfb0-4cde-411c-85d4-7c22cc158fa5")
+		(property "Reference" "#PWR029"
+			(at 62.23 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "GND"
+			(at 62.23 215.392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 62.23 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 62.23 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "166b1522-424d-410a-8d07-693c096ededb")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 214.63) (xy 62.23 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41dd3998-3b43-4f12-aea8-3914059666ee")
+	)
+	(global_label "TXD"
+		(shape bidirectional)
+		(at 62.23 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f0dd510-5713-4fa0-a0b6-5faab529a0f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 217.17) (xy 62.23 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcbfb53b-378e-4c9a-ba09-5d647516954b")
+	)
+	(global_label "RXD"
+		(shape bidirectional)
+		(at 62.23 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d22a7227-10f4-4f6a-ba0d-c9149faa29f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 219.71) (xy 62.23 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acef0c84-0791-4731-a928-ca096df9dd39")
+	)
+	(global_label "EN"
+		(shape bidirectional)
+		(at 62.23 219.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31dfc07d-3c72-4f57-a6a3-cbeaf0639b9f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 222.25) (xy 62.23 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78477478-b683-4ae1-b078-47da0cca3a00")
+	)
+	(global_label "IO0"
+		(shape bidirectional)
+		(at 62.23 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97ceb1b2-4cb6-401d-8e1d-fe3309626d3b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(rectangle
+		(start 240 112)
+		(end 392 210)
+		(stroke
+			(width 0.1524)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4c49c1a0-e3de-4c00-b85c-1559dde8dae3")
+	)
+	(text "IMU  (LSM6DS3TR-C 6-axis, I2C addr 0x6B)"
+		(exclude_from_sim no)
+		(at 242 110 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+				(thickness 0.4)
+				(bold yes)
+				(color 30 90 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a813743b-f1e0-4a98-af83-99df4724897d")
+	)
