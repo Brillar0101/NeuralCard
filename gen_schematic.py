@@ -357,3 +357,6 @@ def rc_net(lib_id, ref, val, x, y, top_spec, bot_spec):
     tap_dir(top_spec, t[0], t[1], 'U')
     tap_dir(bot_spec, b[0], b[1], 'D')
 
+
+# ================================================================ SECTION 2
+# MCU CORE — ESP32-S3-WROOM-1 + USB-C/ESD + BOOT/RESET
