@@ -59,3 +59,15 @@
 5. Passive LCSC codes are common JLC Basic parts — **verify each value/voltage** at its link.
 
 ---
+
+## 4. Datasheets (local copies in `datasheets/`)
+
+| Part | Local file | Source link |
+|---|---|---|
+| ESP32-S3-WROOM-1 | `datasheets/ESP32-S3-WROOM-1.pdf` ✓ | [Espressif](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) |
+| LSM6DS3TR-C | ⚠ not downloaded (ST/LCSC block bots) | [ST datasheet](https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf) — open in browser, save to `datasheets/` |
+| ME6211C33M5G | — | [LCSC C82942](https://www.lcsc.com/product-detail/C82942.html) |
+| AO3401A | — | [LCSC C15127](https://www.lcsc.com/product-detail/C15127.html) |
+| USBLC6-2 | (download to datasheets/) | [ST](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) |
+
+---
