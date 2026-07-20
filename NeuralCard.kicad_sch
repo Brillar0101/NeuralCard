@@ -13412,3 +13412,139 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 480.06 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edb03ebd-7f77-4541-aafd-13937c26e109")
+		(property "Reference" "ANT1"
+			(at 482.54 188.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NFC_COIL"
+			(at 482.54 191.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "NeuralCard:NFC_Antenna_13x24"
+			(at 480.0 190.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 480.0 190.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 480.0 190.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "e7d329e0-d4f6-4af9-8cd4-62eec84fc2c8")
+		)
+		(pin "2"
+			(uuid "5d902a8c-a3ce-48e4-b090-4c1d15ec4352")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "ANT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 474.98 190.5) (xy 472.44 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae990ed-c89f-4612-b535-37c8dae79542")
+	)
+	(global_label "NFC_ANT_A"
+		(shape bidirectional)
+		(at 472.44 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e16429ba-8154-43dc-99d8-68674e1f9371")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 472.44 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 474.98 193.04) (xy 472.44 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6db1c881-eb99-42eb-bcbd-775f8c0b8296")
+	)
+	(global_label "NFC_ANT_B"
+		(shape bidirectional)
+		(at 472.44 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "689c5ed6-2882-44bc-8d83-185ac5a11387")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 472.44 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
