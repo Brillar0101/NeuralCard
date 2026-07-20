@@ -35,3 +35,4 @@ for lab in ("ax", "ay", "az", "gx", "gy", "gz"):
     FONTS[lab] = ("Red Hat Mono SemiBold", False)
 
 s = open(BRD).read()
+s = s.replace("NeuralCard v2.1 · barakaeli.dev", "NeuralCard v2.1 · princetekki.com")
