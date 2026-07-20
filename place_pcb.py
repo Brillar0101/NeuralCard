@@ -417,3 +417,30 @@ def add_silk(board):
     text(board, "BOOT", 12.0, 51.0, 0.9, B, 0.15, mirror=True)
     text(board, "RST", 24.0, 51.0, 0.9, B, 0.15, mirror=True)
 
+
+def draw_qr(board, x0=None, y0=1.6, mod=0.34, qz=2):
+    import json
+    path = f"{H}/qr_matrix.json"
+    if not os.path.exists(path):
+        return
+    m = json.load(open(path))
+    n = len(m)
+    span = (n + 2 * qz) * mod
+    if x0 is None:
+        x0 = 85.6 - 1.4 - span + qz * mod       # right-aligned, 1.4mm off edge
+    text(board, "princetekki.com", x0 + (n * mod) / 2, y0 + span - qz * mod + 1.0,
+         0.9, pcbnew.F_SilkS, 0.15)
+    for cy in range(-qz, n + qz):
+        for cx in range(-qz, n + qz):
+            if not (0 <= cy < n and 0 <= cx < n and m[cy][cx] == 1):
+                s = pcbnew.PCB_SHAPE(board)
+                s.SetShape(pcbnew.SHAPE_T_RECT)
+                s.SetStart(mm((x0 + cx * mod, y0 + cy * mod)))
+                s.SetEnd(mm((x0 + (cx + 1) * mod, y0 + (cy + 1) * mod)))
+                s.SetLayer(pcbnew.F_SilkS)
+                s.SetFilled(True)
+                s.SetWidth(pcbnew.FromMM(0.0))
+                board.Add(s)
+
+
+main()
