@@ -10,3 +10,17 @@ like `easyeda2kicad` doesn't trip macOS file-access protection).
 **KiCad:** v9 file format, `kicad-cli 10.0.3`.
 
 ---
+
+## 1. Form factor (ISO/IEC 7810 ID-1 — real credit card)
+
+| Spec | Value |
+|---|---|
+| Outline | **85.60 mm × 53.98 mm** rounded rectangle |
+| Corner radius | **3.18 mm** |
+| PCB thickness | **0.8 mm** (card-like) |
+| Layers | 2-layer |
+| Assembly | **100% SMD/SMT. Only non-soldered item = the CR2032 coin.** Fab: **JLCPCB**. |
+
+Board outline is on `Edge.Cuts` in `NeuralCard.kicad_pcb` (render-verified).
+
+---
