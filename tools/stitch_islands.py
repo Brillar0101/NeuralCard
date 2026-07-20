@@ -66,3 +66,24 @@ def in_no_via_area(board, px, py):
                 return True
     return False
 
+
+def spot_in_both(frags, k_small, k_big):
+    """Grid point inside fragment k_small that also lies in k_big."""
+    lay_s, sps_s, i_s = frags[k_small]
+    lay_b, sps_b, i_b = frags[k_big]
+    if lay_s == lay_b:
+        return None
+    bb = sps_s.Outline(i_s).BBox()
+    w, h = pcbnew.ToMM(bb.GetWidth()), pcbnew.ToMM(bb.GetHeight())
+    x0, y0 = pcbnew.ToMM(bb.GetLeft()), pcbnew.ToMM(bb.GetTop())
+    steps = 24
+    for gy in range(1, steps):
+        for gx in range(1, steps):
+            px, py = x0 + w * gx / steps, y0 + h * gy / steps
+            ok = all(sps.Contains(pcbnew.VECTOR2I(MM(px + dx), MM(py + dy)), i)
+                     for (sps, i) in ((sps_s, i_s), (sps_b, i_b))
+                     for dx in (-MARGIN, 0, MARGIN) for dy in (-MARGIN, 0, MARGIN))
+            if ok:
+                return (px, py)
+    return None
+
