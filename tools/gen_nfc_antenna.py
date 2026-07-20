@@ -52,3 +52,16 @@ def spiral():
 pts = spiral()
 for a, b in zip(pts, pts[1:]):
     seg(a, b)
+def edge_stop(frm, pad):
+    """Endpoint on the TH pad's annulus edge (stops copper short of the
+    hole so hole-clearance passes; touching the annulus still connects)."""
+    dx, dy = pad[0] - frm[0], pad[1] - frm[1]
+    d = (dx * dx + dy * dy) ** 0.5
+    return (round(pad[0] - dx / d * PAD_R, 3), round(pad[1] - dy / d * PAD_R, 3))
+
+
+seg(PAD1, (ENTRY_X, YT0))                          # pad1 stub into outer turn
+seg(pts[-1], edge_stop(pts[-1], PAD3))             # spiral inner end -> crossover
+seg((PAD3[0], PAD3[1] - PAD_R), (PAD2[0], PAD2[1] + PAD_R),
+    layer="F.Cu")                                  # front escape across top turns
+
