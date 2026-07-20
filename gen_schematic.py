@@ -207,3 +207,10 @@ def section_box(x1, y1, x2, y2, title, tx, ty):
         f'\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 2.0 2.0)\n\t\t\t\t(thickness 0.4)\n\t\t\t\t(bold yes)\n'
         f'\t\t\t\t(color 30 90 180 1)\n\t\t\t)\n\t\t\t(justify left bottom)\n\t\t)\n\t\t(uuid "{u()}")\n\t)')
 
+
+def prop(name, value, x, y, angle=0, justify=None, hide=False):
+    j = f'\n\t\t\t\t(justify {justify})' if justify else ''
+    h = '\n\t\t\t(hide yes)' if hide else ''
+    return (f'\t\t(property "{name}" "{value}"\n\t\t\t(at {x} {y} {angle})\n'
+            f'\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t){j}\n\t\t\t){h}\n\t\t)')
+
