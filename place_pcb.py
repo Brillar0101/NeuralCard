@@ -157,3 +157,13 @@ def seg(board, x1, y1, x2, y2, layer, w):
     s.SetWidth(pcbnew.FromMM(w))
     board.Add(s)
 
+
+def rect(board, x1, y1, x2, y2, layer, w):
+    s = pcbnew.PCB_SHAPE(board)
+    s.SetShape(pcbnew.SHAPE_T_RECT)
+    s.SetStart(mm((x1, y1)))
+    s.SetEnd(mm((x2, y2)))
+    s.SetLayer(layer)
+    s.SetWidth(pcbnew.FromMM(w))
+    board.Add(s)
+
