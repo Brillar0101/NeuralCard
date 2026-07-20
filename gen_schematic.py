@@ -293,3 +293,10 @@ def tap_pwr(net, x, y, dx=0.0, dy=-2.54):
     wire(x, y, ex, ey)
     pwr(net, ex, ey)
 
+
+def tap_label(net, x, y, dx=0.0, dy=0.0, just="left"):
+    ex, ey = x + dx, y + dy
+    if dx or dy:
+        wire(x, y, ex, ey)
+    glabel(net, ex, ey, 0, just)
+
