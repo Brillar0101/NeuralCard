@@ -349,3 +349,11 @@ def tap_dir(spec, x, y, side, length=2.54):
         just = {'L': 'right', 'R': 'left', 'U': 'left', 'D': 'left'}[side]
         glabel(spec[1], ex, ey, 0, just)
 
+
+def rc_net(lib_id, ref, val, x, y, top_spec, bot_spec):
+    rc(lib_id, ref, val, x, y)
+    t = ep(x, y, lib_id, "1")
+    b = ep(x, y, lib_id, "2")
+    tap_dir(top_spec, t[0], t[1], 'U')
+    tap_dir(bot_spec, b[0], b[1], 'D')
+
