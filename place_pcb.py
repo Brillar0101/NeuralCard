@@ -204,3 +204,39 @@ def _via(board, pos, net):
     v.SetNet(net)
     board.Add(v)
 
+
+def add_routes(board):
+    """Greedy MST router for non-GND nets (GND handled by pour)."""
+    from collections import defaultdict
+    tw = pcbnew.FromMM(0.2)
+    netpads = defaultdict(list)
+    for fp in board.GetFootprints():
+        for pad in fp.Pads():
+            n = pad.GetNetname()
+            if n and n != "GND" and pad.GetNumber():
+                netpads[n].append(pad)
+    for name, pads in netpads.items():
+        if len(pads) < 2:
+            continue
+        net = board.FindNet(name)
+        placed = [pads[0]]
+        rest = list(pads[1:])
+        while rest:
+            best = None
+            for a in placed:
+                pa = a.GetPosition()
+                for b in rest:
+                    pb = b.GetPosition()
+                    d = (pa.x - pb.x) ** 2 + (pa.y - pb.y) ** 2
+                    if best is None or d < best[0]:
+                        best = (d, a, b)
+            _, a, b = best
+            la = pcbnew.F_Cu if a.IsOnLayer(pcbnew.F_Cu) else pcbnew.B_Cu
+            lb = pcbnew.F_Cu if b.IsOnLayer(pcbnew.F_Cu) else pcbnew.B_Cu
+            pa, pb = a.GetPosition(), b.GetPosition()
+            _track(board, pa, pb, la, net, tw)
+            if la != lb:
+                _via(board, pb, net)
+            placed.append(b)
+            rest.remove(b)
+
