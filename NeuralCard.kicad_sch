@@ -6680,3 +6680,148 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "JLC:TS-1187A-B-A-B")
+		(at 199.39 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bcaeaa6d-5101-48c6-a97a-8562397f1299")
+		(property "Reference" "SW1"
+			(at 202.54 148.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 202.54 151.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5"
+			(at 200.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 200.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 200.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "44e5a7b8-e647-4957-93f6-a5580e8bc788")
+		)
+		(pin "2"
+			(uuid "c89b9113-cc2e-4766-a95c-8713e6e7829f")
+		)
+		(pin "3"
+			(uuid "9b69ecc3-f2d4-4781-9e36-0cf8f05042e8")
+		)
+		(pin "4"
+			(uuid "2ef58996-892a-4846-a8bc-65cf7bd0e721")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 147.32) (xy 191.77 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4979f244-736d-432c-8c9d-e1579a720a1e")
+	)
+	(global_label "IO0"
+		(shape bidirectional)
+		(at 191.77 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d49982b9-4b9d-45c5-9cef-0b31eaa751da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 154.94) (xy 191.77 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8037cb5f-5c67-4bae-9adb-f52d1b818b7c")
+	)
+	(global_label "IO0"
+		(shape bidirectional)
+		(at 191.77 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c588520a-19dc-4c88-875e-ef809609f9ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 204.47 147.32) (xy 207.01 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5284133-fafe-4447-a52f-dcd053c82b77")
+	)
