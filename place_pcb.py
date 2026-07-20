@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+"""Populate NeuralCard.kicad_pcb from the netlist and place footprints.
+
+Run with KiCad's bundled python (has pcbnew):
+  /Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3 place_pcb.py
+
+Front (F.Cu) = the neural-net art: 24 LEDs as neurons (6 input / 8 hidden / 10 output).
+Back  (B.Cu) = ESP32, USB-C, coin, IMU, LDO, P-FET, ESD, buttons, passives.
+"""
+import os
+import re
+import pcbnew
+
+H = os.path.expanduser("~/kicad-projects/NeuralCard")
+FPD = "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints"
+LIB = {"JLC": f"{H}/JLC.pretty",
+       "NeuralCard": f"{H}/NeuralCard.pretty",
+       "ST25DV": f"{H}/ST25DV.pretty",
+       "Resistor_SMD": f"{FPD}/Resistor_SMD.pretty",
+       "Capacitor_SMD": f"{FPD}/Capacitor_SMD.pretty"}
+
+# NFC antenna zone (B.Cu coil lives here; rule areas keep everything else out)
+NFC_ZONE = (1.9, 15.4, 15.05, 41.1)     # x1, y1, x2, y2 incl. margin; right
+                                        # edge leaves the D1-D6 column a corridor
+NET = f"{H}/NeuralCard.net"
+BRD = f"{H}/NeuralCard.kicad_pcb"
+
