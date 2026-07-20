@@ -3473,3 +3473,82 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a491e365-50ec-4c62-ac48-66a4283ea724")
+		(property "Reference" "C9"
+			(at 113.53800000000001 72.64399999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 113.53800000000001 74.92999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "5d4ab720-9f40-4d10-8827-a2964d7c0d20")
+		)
+		(pin "2"
+			(uuid "3f922f34-247c-45e8-89dc-d70921ae6a00")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 111.76 69.85) (xy 111.76 67.30999999999999)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d8dbeb7-3318-41b1-b2b0-4c14c1852024")
+	)
