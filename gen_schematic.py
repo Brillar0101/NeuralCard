@@ -303,3 +303,31 @@ def tap_label(net, x, y, dx=0.0, dy=0.0, just="left"):
 
 # ================================================================ SECTION 1
 # POWER — Coin (CR2032) + USB-C/LDO with P-FET auto source-selection
+def section_power():
+    section_box(26, 30, 150, 100, "POWER  (CR2032 coin -> 3V3 rail; also fed by prog-pad 3V3)", 28, 28)
+
+    # --- Coin cell BT1: pin1(+) -> +3V3, pin2(-) -> GND ---
+    bx, by = 55.88, 73.66
+    part("JLC:CR2032-BS-6-1", "BT1", "CR2032", bx, by, ["1", "2"])
+    p1 = ep(bx, by, "JLC:CR2032-BS-6-1", "1")   # + (left)
+    p2 = ep(bx, by, "JLC:CR2032-BS-6-1", "2")   # - (right)
+    tap_pwr("+3V3", p1[0], p1[1], dy=-2.54)      # + -> +3V3
+    tap_gnd(p2[0], p2[1])                         # - -> GND
+
+    # --- Bulk / ride-out caps on +3V3: C8 10uF, C9 22uF, C10 100uF ---
+    for ref, val, cx in [("C8", "10uF", 96.52), ("C9", "22uF", 111.76), ("C10", "100uF", 127.0)]:
+        rc("Device:C", ref, val, cx, 73.66)
+        ct = ep(cx, 73.66, "Device:C", "1")
+        cb = ep(cx, 73.66, "Device:C", "2")
+        tap_pwr("+3V3", ct[0], ct[1])
+        tap_gnd(cb[0], cb[1])
+
+    # --- PWR_FLAGs (GND + 3V3 are driven by the coin / prog pad) ---
+    fy = 44.45
+    pwr("GND", 40.64, fy + 2.54)
+    wire(40.64, fy + 2.54, 40.64, fy)
+    pwr_flag_at(40.64, fy)
+    pwr("+3V3", 58.42, fy - 2.54)
+    wire(58.42, fy - 2.54, 58.42, fy)
+    pwr_flag_at(58.42, fy)
+
