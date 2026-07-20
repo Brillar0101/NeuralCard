@@ -166,3 +166,12 @@ now C15850 (true 10uF); C10's old ID (C15850) was 10uF, not 100uF — no basic
 ride-out is wanted, move C10 to a 1206 100uF in the next rev. ESP32 + IMU are
 Standard-PCBA-only parts, so the board assembles as Standard regardless of the
 NFC chip being Economic-capable.
+
+### Power-button behavior (firmware spec, no hardware change)
+SW1/GPIO0 doubles as the power button: **long-press = off** (deep sleep,
+motion-wake disabled, only EXT0/GPIO0 button wake armed, ~7-10uA — years on
+the coin, comparable to CR2032 self-discharge); **press = on** (boot, arm
+IMU wake-on-motion, wake ripple). Short press while on = user button
+(replay last inference / mode cycle). SW2 stays hard reset. NFC keeps
+working while "off" (RF-field powered). A hard-off latch IC was considered
+and rejected: saves nothing vs battery self-discharge, costs parts + reroute.
