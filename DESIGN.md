@@ -74,3 +74,11 @@ pads (bare copper). Flash once with a USB-serial adapter, then it runs on the co
 > GPIO35/36/37 (p28–30) reserved for octal PSRAM (N16R8) — left unconnected.
 
 ---
+
+## 4. BOM
+> See [`BOM.md`](./BOM.md) (with JLC/LCSC confirm links) and [`BOM_JLCPCB.csv`](./BOM_JLCPCB.csv).
+> JLC-exact footprints in `JLC.pretty`; symbols in `JLC.kicad_sym` (via `easyeda2kicad`).
+> 56 placements. ⚠ LSM6DS3TR-C = JLC Standard-PCBA-only + fixture; blue LEDs are dim on coin
+> (swap to red for brightness — same footprint).
+
+---
