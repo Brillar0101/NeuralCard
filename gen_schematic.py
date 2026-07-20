@@ -280,3 +280,9 @@ def pwr_flag_at(x, y):
         prop("Description", "", x, y, 0, hide=True),
     ])
 
+
+def tap_gnd(x, y, dx=0.0, dy=2.54):
+    ex, ey = x + dx, y + dy
+    wire(x, y, ex, ey)
+    pwr("GND", ex, ey)
+
