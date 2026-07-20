@@ -145,3 +145,18 @@ def extract_block(path, name):
         j += 1
     return s[i:j + 1]
 
+
+def build_lib_symbols():
+    blocks = []
+    for lib_id, (path, name) in LIBSYMS.items():
+        blk = extract_block(path, name)
+        blk = blk.replace(f'(symbol "{name}"', f'(symbol "{lib_id}"', 1)
+        blocks.append('\t\t' + blk)
+    return '\n'.join(blocks)
+
+
+items = []
+
+
+GRID = 1.27
+
