@@ -429,3 +429,6 @@ def sw_btn(ref, x, y, signal):
     tap_dir(("gnd",), b[0], b[1], 'R')
     tap_dir(("gnd",), d[0], d[1], 'R')
 
+
+# ================================================================ SECTION 3
+# IMU — LSM6DS3TR-C 6-axis (air-writing) on I2C
