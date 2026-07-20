@@ -34,3 +34,21 @@ lines = []                # (x1,y1,x2,y2,layer,width)
 def seg(a, b, layer="B.Cu", w=TRACK):
     lines.append((a[0], a[1], b[0], b[1], layer, w))
 
+
+def spiral():
+    """Inward rectangular spiral entered from the TOP edge."""
+    pts = [(ENTRY_X, YT0)]
+    for k in range(TURNS):
+        xl, xr = XL0 + k * PITCH, XR0 - k * PITCH
+        yb = YB0 - k * PITCH
+        yt_next = YT0 + (k + 1) * PITCH
+        cur = pts[-1]
+        pts += [(xl, cur[1]), (xl, yb), (xr, yb), (xr, yt_next)]
+        if k < TURNS - 1:
+            pts.append((XL0 + (k + 1) * PITCH, yt_next))
+    return pts
+
+
+pts = spiral()
+for a, b in zip(pts, pts[1:]):
+    seg(a, b)
