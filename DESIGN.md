@@ -32,3 +32,11 @@ caps), made the card flatter/cheaper, and **eliminated the routing congestion �
 0 DRC violations.** Power is now **coin → +3V3 directly** (also feedable from the prog-pad 3V3
 during flashing). LEDs are **red** (bright on a 3 V coin). **47 assembled SMD parts** + the prog
 pads (bare copper). Flash once with a USB-serial adapter, then it runs on the coin cell.
+
+## 2. Architecture
+
+- **Compute:** ESP32-S3-WROOM-1-N16R8 (vector/DSP for TinyML; native USB; radio OFF for coin life).
+- **Input:** LSM6DS3TR-C 6-axis IMU (air-writing). 6 axes map 1:1 to the 6 input neurons.
+- **Display:** 24 LEDs at neuron nodes, charlieplexed from 6 GPIO (software PWM = activation glow).
+- **Power:** CR2032 coin + USB-C/LDO with **P-FET automatic source selection** (see §3).
+- **Program:** USB-C native (ESP32-S3 built-in USB) + BOOT/RESET tact buttons + USBLC6 ESD.
