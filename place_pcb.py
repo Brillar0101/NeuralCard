@@ -47,3 +47,7 @@ def parse_netlist(path):
 def mm(v):
     return pcbnew.VECTOR2I(pcbnew.FromMM(v[0]), pcbnew.FromMM(v[1]))
 
+
+def linspace(a, b, n):
+    return [round(a + (b - a) * i / (n - 1), 3) for i in range(n)]
+
