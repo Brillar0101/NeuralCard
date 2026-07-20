@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "JLC")(type "KiCad")(uri "${KIPRJMOD}/JLC.pretty")(options "")(descr "JLCPCB/LCSC exact footprints (easyeda2kicad)"))
+  (lib (name "NeuralCard")(type "KiCad")(uri "${KIPRJMOD}/NeuralCard.pretty")(options "")(descr "NeuralCard project footprints (custom)"))
+  (lib (name "ST25DV")(type "KiCad")(uri "${KIPRJMOD}/ST25DV.pretty")(options "")(descr "ST25DV04KC NFC tag footprints"))
+)
