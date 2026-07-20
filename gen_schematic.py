@@ -415,3 +415,17 @@ def section_mcu():
         px, py = ep(jx, jy, hdr, pn)
         tap_dir(spec, px, py, 'L')
 
+
+def sw_btn(ref, x, y, signal):
+    """TS-1187A tact: pins A(1),C(3) -> signal (left); B(2),D(4) -> GND (right)."""
+    sw = "JLC:TS-1187A-B-A-B"
+    part(sw, ref, "SW_PUSH", x, y, ["1", "2", "3", "4"])
+    a = ep(x, y, sw, "1")
+    b = ep(x, y, sw, "2")
+    c = ep(x, y, sw, "3")
+    d = ep(x, y, sw, "4")
+    tap_dir(("lbl", signal), a[0], a[1], 'L')
+    tap_dir(("lbl", signal), c[0], c[1], 'L')
+    tap_dir(("gnd",), b[0], b[1], 'R')
+    tap_dir(("gnd",), d[0], d[1], 'R')
+
