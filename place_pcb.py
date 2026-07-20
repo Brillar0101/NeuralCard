@@ -43,3 +43,7 @@ def parse_netlist(path):
             nets[name] = nodes
     return comps, nets
 
+
+def mm(v):
+    return pcbnew.VECTOR2I(pcbnew.FromMM(v[0]), pcbnew.FromMM(v[1]))
+
