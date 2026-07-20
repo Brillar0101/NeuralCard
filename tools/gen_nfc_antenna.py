@@ -70,3 +70,8 @@ def fp_line(x1, y1, x2, y2, layer, w):
     return (f'  (fp_line (start {x1:.3f} {y1:.3f}) (end {x2:.3f} {y2:.3f})'
             f' (stroke (width {w}) (type solid)) (layer "{layer}"))')
 
+
+def smd_pad(num, x, y):
+    return (f'  (pad "{num}" smd rect (at {x:.3f} {y:.3f}) (size 1.2 1.0)'
+            f' (layers "B.Cu"))')
+
