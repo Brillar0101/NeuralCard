@@ -4126,3 +4126,95 @@
 		)
 		(uuid "16163404-55da-4f30-9fe5-fbd0ee7005ee")
 	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 58.42 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ed3aa84-97e9-4990-bf9a-7eaf4c8f56d8")
+		(property "Reference" "#FLG02"
+			(at 58.42 41.910000000000004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 58.42 41.910000000000004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 58.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 58.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "f4bc64ed-efaf-4428-88f4-160b7f0a4e91")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 26 112)
+		(end 232 250)
+		(stroke
+			(width 0.1524)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "34be056b-281b-426a-b730-868d4e57d949")
+	)
+	(text "MCU CORE  (ESP32-S3-WROOM-1 + UART programming header)"
+		(exclude_from_sim no)
+		(at 28 110 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+				(thickness 0.4)
+				(bold yes)
+				(color 30 90 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce231b1d-1b7e-41df-aa97-d8ec6960a03c")
+	)
