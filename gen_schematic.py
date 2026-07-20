@@ -127,3 +127,21 @@ for _n in range(1, 25):
 def u():
     return str(uuid.uuid4())
 
+
+def extract_block(path, name):
+    s = open(path).read()
+    i = s.find(f'(symbol "{name}"')
+    if i < 0:
+        raise SystemExit(f"symbol {name} not found in {path}")
+    depth, j = 0, i
+    while j < len(s):
+        c = s[j]
+        if c == '(':
+            depth += 1
+        elif c == ')':
+            depth -= 1
+            if depth == 0:
+                break
+        j += 1
+    return s[i:j + 1]
+
