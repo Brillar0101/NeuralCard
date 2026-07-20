@@ -169,3 +169,10 @@ def ep(px, py, lib_id, pin):
     lx, ly = PIN_XY[lib_id][pin]
     return (round(snap(px) + lx, 4), round(snap(py) - ly, 4))
 
+
+def wire(x1, y1, x2, y2):
+    items.append(
+        f'\t(wire\n\t\t(pts\n\t\t\t(xy {x1} {y1}) (xy {x2} {y2})\n\t\t)\n'
+        f'\t\t(stroke\n\t\t\t(width 0)\n\t\t\t(type default)\n\t\t)\n'
+        f'\t\t(uuid "{u()}")\n\t)')
+
