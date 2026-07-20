@@ -7343,3 +7343,118 @@
 		)
 		(uuid "a813743b-f1e0-4a98-af83-99df4724897d")
 	)
+	(symbol
+		(lib_id "JLC:LSM6DS3TR-C")
+		(at 312.42 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abaeaeaf-7125-4cec-b3d7-6d9ccf994f81")
+		(property "Reference" "U2"
+			(at 314.54 148.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LSM6DS3TR-C"
+			(at 314.54 151.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:LGA-14_L3.0-W2.5-P0.50-TL"
+			(at 312.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 312.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 312.0 150.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "cc765a79-a662-4fcb-bb5b-804ab3f1f386")
+		)
+		(pin "2"
+			(uuid "3e010e70-e99e-4312-ab9a-359d1e1b2379")
+		)
+		(pin "3"
+			(uuid "e525d6cf-e014-4a64-88f5-ab847fe6e8c2")
+		)
+		(pin "4"
+			(uuid "e03639f8-9ac6-44f8-8235-be635e63db3d")
+		)
+		(pin "5"
+			(uuid "3a97ed9b-9135-400d-9d03-70e752e41c6d")
+		)
+		(pin "6"
+			(uuid "6724fd92-c18d-4d16-852e-d5b438be7f67")
+		)
+		(pin "7"
+			(uuid "c1e32a2a-2d44-4c5f-83b8-3c66ecd13db6")
+		)
+		(pin "8"
+			(uuid "f13298df-e860-4f47-8447-e700cac92419")
+		)
+		(pin "9"
+			(uuid "1808b2f8-7ece-496b-8642-010377c4b608")
+		)
+		(pin "10"
+			(uuid "87394633-be94-46de-aa93-f3fe1f2e3f39")
+		)
+		(pin "11"
+			(uuid "ee5d69e9-b7bc-4653-82bf-41f2d916a985")
+		)
+		(pin "12"
+			(uuid "f6a9cbf2-9b97-4479-9edc-1b74f2d119e7")
+		)
+		(pin "13"
+			(uuid "d11ddece-ddde-4cde-8955-4a067f51caa8")
+		)
+		(pin "14"
+			(uuid "19e3ab53-fa19-46cf-a500-cf9b352224b1")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 298.45 142.24) (xy 295.91 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "793b50b2-a9a3-4543-9076-ab33be5e24db")
+	)
