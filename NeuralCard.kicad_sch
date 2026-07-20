@@ -8087,3 +8087,98 @@
 		)
 		(uuid "fe530c1d-f601-4baa-a03c-c59566743e32")
 	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 279.4 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d27f5f3-c0e3-46b0-8e83-475b33c16f57")
+		(property "Reference" "#PWR036"
+			(at 279.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "+3V3"
+			(at 279.4 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 279.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 279.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "84283c93-f65a-401b-8b2b-5075a493307b")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 279.4 132.08) (xy 279.4 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "738995a2-917a-42fb-a3e7-538124f73f63")
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 279.4 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb70cda9-c4f5-4054-9a2b-d9fbcf762b01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.4 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
