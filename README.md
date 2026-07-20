@@ -58,3 +58,14 @@ faces my website uses. KiCad renders them as outline fonts and they plot
 into the gerbers as polygons, so the fab doesn't need the fonts installed.
 You do, if you rerun the pipeline: they're in
 [RedHatOfficial/RedHatFont](https://github.com/RedHatOfficial/RedHatFont).
+
+## Ordering
+
+The `fab/` folder has the current gerber zip, BOM, and pick and place file.
+Order settings that matter: 2 layers, 0.8 mm, matte black mask, ENIG
+(the hairline under the name is a mask opening over the ground pour, so it
+comes out gold), Standard PCBA. One BOM line, the 62 pF antenna tuning cap,
+is marked select-at-order: pick any 0603 NP0 in the 56 to 68 pF range from
+their catalog. Check the antenna resonance on the first board with a VNA
+before ordering a big batch. The math says 13.6 MHz but copper nearby pulls
+it down, and the cap value is the knob.
