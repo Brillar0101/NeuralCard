@@ -123,3 +123,7 @@ for _n in range(1, 7):
 for _n in range(1, 25):
     FP[f"D{_n}"] = "JLC:LED-SMD_L1.6-W0.8-R-RD"   # red 0603 (KT-0603R / C2286)
 
+
+def u():
+    return str(uuid.uuid4())
+
