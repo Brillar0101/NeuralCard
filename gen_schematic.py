@@ -462,3 +462,6 @@ def section_imu():
     # VDD decoupling
     rc_net("Device:C", "C5", "100nF", 350.0, 150.0, ("pwr", "+3V3"), ("gnd",))
 
+
+# ================================================================ SECTION 4
+# NEURON LEDs — 24x charlieplexed on 6 GPIO (the neural-net art)
