@@ -61,3 +61,21 @@ for k, y in enumerate(linspace(7, 47, 8)):      # hidden layer = D7..D14
     layout[f"D{k+7}"] = (HID_X, y, 0, False)
 for k, y in enumerate(linspace(5, 49, 10)):     # output layer = D15..D24
     layout[f"D{k+15}"] = (OUT_X, y, 0, False)
+
+# ---- Back side: major parts (x, y, deg) ----
+back_major = {
+    "U1": (32.0, 27.0, 0),     # ESP32-S3 module (center-left back)
+    "U2": (21.5, 9.5, 0),      # IMU (rigid-body sensor: position-agnostic;
+                               # parked above the ESP32, out of the NFC corner)
+    "BT1": (62.0, 28.0, 0),    # coin holder
+    "J1": (66.0, 50.0, 0),     # UART programming pads (bottom edge)
+    "SW1": (12.0, 47.3, 0),    # BOOT (clear of the ESP32 module edge, y>44.5)
+    "SW2": (24.0, 47.3, 0),    # RESET
+    "U4": (6.2, 9.6, 0),       # ST25DV04KC NFC tag, top-left beside the IMU
+    "C12": (10.9, 13.4, 0),    # antenna tuning cap, next to the coil feed
+    "C11": (10.8, 8.0, 90),    # NFC VCC decoupling
+    "R14": (62.0, 52.3, 0),    # NFC GPO pull-up
+}
+layout["ANT1"] = (0.0, 0.0, 0, False)   # coil footprint bakes absolute coords
+for ref, (x, y, d) in back_major.items():
+    layout[ref] = (x, y, d, True)
