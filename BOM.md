@@ -24,3 +24,22 @@
 | D1–D24 | Blue LED 0603 | Neuron LEDs (24×) | 0603 | 24 | **C72041** | [LCSC](https://www.lcsc.com/product-detail/C72041.html) · [JLC](https://jlcpcb.com/partdetail/C72041) | [LCSC](https://www.lcsc.com/product-detail/C72041.html) |
 | BT1 | CR2032-BS-6-1 (Q&J) | Coin cell holder | SMD holder | 1 | **C70377** | [LCSC](https://www.lcsc.com/product-detail/C70377.html) · [JLC](https://jlcpcb.com/partdetail/C70377) | [LCSC](https://www.lcsc.com/product-detail/C70377.html) |
 | SW1, SW2 | TS-1187A-B-A-B | Tact switch (BOOT, RESET) | SMD | 2 | **C318884** | [LCSC](https://www.lcsc.com/product-detail/C318884.html) · [JLC](https://jlcpcb.com/partdetail/C318884) | [LCSC](https://www.lcsc.com/product-detail/C318884.html) |
+
+## 2. Passives — JLC **Basic** parts (verify value/voltage at link)
+
+| Ref | Value | Pkg | Qty | LCSC (verify) | Confirm link | Role |
+|---|---|---|---|---|---|---|
+| R1–R6 | 220 Ω 1% | 0603 | 6 | C22962 | [LCSC](https://www.lcsc.com/product-detail/C22962.html) | LED charlieplex current limit |
+| R7, R8 | 5.1 kΩ 1% | 0603 | 2 | C23186 | [LCSC](https://www.lcsc.com/product-detail/C23186.html) | USB-C CC1/CC2 sink |
+| R9, R10 | 10 kΩ 1% | 0603 | 2 | C25804 | [LCSC](https://www.lcsc.com/product-detail/C25804.html) | EN + IO0 pull-ups |
+| R11, R12 | 4.7 kΩ 1% | 0603 | 2 | C23162 | [LCSC](https://www.lcsc.com/product-detail/C23162.html) | I²C SDA/SCL pull-ups |
+| R13 | 100 kΩ 1% | 0603 | 1 | C25803 | [LCSC](https://www.lcsc.com/product-detail/C25803.html) | P-FET gate bleeder (VBUS→GND) |
+| C1–C5 | 100 nF X7R 50V | 0603 | 5 | C14663 | [LCSC](https://www.lcsc.com/product-detail/C14663.html) | Decoupling (ESP32 ×3, IMU, LDO) |
+| C6, C7 | 1 µF X7R 25V | 0603 | 2 | C15849 | [LCSC](https://www.lcsc.com/product-detail/C15849.html) | LDO in/out |
+| C8 | 10 µF 25V | 0805 | 1 | C5674 | [LCSC](https://www.lcsc.com/product-detail/C5674.html) | ESP32 bulk |
+| C9 | 22 µF 16V | 0805 | 1 | C45783 | [LCSC](https://www.lcsc.com/product-detail/C45783.html) | Rail bulk |
+| C10 | 100 µF 6.3V | 0805 | 1 | C15850 | [LCSC](https://www.lcsc.com/product-detail/C15850.html) | Ride-out cap (coin peaks) |
+
+**Total placements: 56** (10 active/EM lines + 13 R + 10 C + 24 LEDs).
+
+---
