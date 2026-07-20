@@ -268,3 +268,15 @@ def pwr(net, x, y):
 
 FLG_N = [0]
 
+
+def pwr_flag_at(x, y):
+    FLG_N[0] += 1
+    ref = f"#FLG0{FLG_N[0]}"
+    place("power:PWR_FLAG", ref, "PWR_FLAG", x, y, 0, ["1"], [
+        prop("Reference", ref, x, y - 2.54, 0, hide=True),
+        prop("Value", "PWR_FLAG", x, y - 2.54, 0),
+        prop("Footprint", "", x, y, 0, hide=True),
+        prop("Datasheet", "", x, y, 0, hide=True),
+        prop("Description", "", x, y, 0, hide=True),
+    ])
+
