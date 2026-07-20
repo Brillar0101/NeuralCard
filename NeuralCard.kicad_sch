@@ -12499,3 +12499,164 @@
 		)
 		(uuid "0e5c6ab8-0973-4217-bd32-ce2370012be5")
 	)
+	(symbol
+		(lib_id "ST25DV:ST25DV04KC-IE6S3")
+		(at 469.9 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b36a4a5c-bec4-4d40-b99a-3c628a79c284")
+		(property "Reference" "U4"
+			(at 472.54 158.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ST25DV04KC-IE6S3"
+			(at 472.54 161.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ST25DV:SO-8_L4.9-W3.9-P1.27-LS5.9-BL"
+			(at 470.0 160.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 470.0 160.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 470.0 160.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "31a00d6c-4315-4f90-a111-203caf6e3d2f")
+		)
+		(pin "2"
+			(uuid "2622adb6-b042-474e-b2e9-37844c6e5787")
+		)
+		(pin "3"
+			(uuid "d8cd59dc-a833-4677-b3bf-b21258a15d8c")
+		)
+		(pin "4"
+			(uuid "5ce3ef8f-28df-4af2-9050-91f1f8b3faa6")
+		)
+		(pin "5"
+			(uuid "d8ffe312-a58a-4820-971c-81c31f9e5287")
+		)
+		(pin "6"
+			(uuid "84fc4861-a6a3-46be-9f91-64d95ac2f5ec")
+		)
+		(pin "7"
+			(uuid "1cc8a681-758c-484b-8569-72c58b486057")
+		)
+		(pin "8"
+			(uuid "c2d1867b-3a2a-4189-ba01-b74e6c2331ba")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 459.74 156.21)
+		(uuid "f6c33f60-8131-4604-90e5-4fa68f2f6c65")
+	)
+	(wire
+		(pts
+			(xy 459.74 158.75) (xy 457.2 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2b7606-87b0-4312-ba2c-c6c7d5379206")
+	)
+	(global_label "NFC_ANT_A"
+		(shape bidirectional)
+		(at 457.2 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff58245f-3e45-41a7-b059-32f8b0b6c26c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 457.2 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 459.74 161.29) (xy 457.2 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7012de0d-d00f-4a5f-921f-c122b5a2487b")
+	)
+	(global_label "NFC_ANT_B"
+		(shape bidirectional)
+		(at 457.2 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c19c24e-dd11-4b64-8990-16ca6f9ffaf2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 457.2 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 459.74 163.83) (xy 457.2 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b02a2d-2808-47d0-8f35-a05744fc55df")
+	)
