@@ -25,3 +25,21 @@ NFC_ZONE = (1.9, 15.4, 15.05, 41.1)     # x1, y1, x2, y2 incl. margin; right
 NET = f"{H}/NeuralCard.net"
 BRD = f"{H}/NeuralCard.kicad_pcb"
 
+
+def parse_netlist(path):
+    s = open(path).read()
+    comps = {}            # ref -> footprint id
+    for m in re.finditer(r'\(comp\s*\(ref "([^"]+)"\).*?\(footprint "([^"]+)"\)', s, re.S):
+        comps[m.group(1)] = m.group(2)
+    nets = {}             # netname -> list of (ref, pad)
+    starts = [m.start() for m in re.finditer(r'\(net\s+\(code', s)]
+    starts.append(len(s))
+    for a, b in zip(starts, starts[1:]):
+        chunk = s[a:b]
+        nm = re.search(r'\(name "([^"]*)"', chunk)
+        name = nm.group(1) if nm else ""
+        nodes = re.findall(r'\(node\s*\(ref "([^"]+)"\)\s*\(pin "([^"]+)"', chunk)
+        if name and nodes:
+            nets[name] = nodes
+    return comps, nets
+
