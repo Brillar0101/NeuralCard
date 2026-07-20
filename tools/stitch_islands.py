@@ -19,3 +19,18 @@ MM = pcbnew.FromMM
 MIN_ISLAND_MM2 = 3.0
 MARGIN = 0.7          # via clearance to island edge, mm
 
+
+def fragments(board, gnd_code):
+    """[(layer, sps, outline_idx)] for every filled GND fragment."""
+    out = []
+    for z in board.Zones():
+        if z.GetIsRuleArea() or z.GetNetCode() != gnd_code:
+            continue
+        for layer in (pcbnew.F_Cu, pcbnew.B_Cu):
+            if not z.IsOnLayer(layer):
+                continue
+            sps = z.GetFilledPolysList(layer)
+            for i in range(sps.OutlineCount()):
+                out.append((layer, sps, i))
+    return out
+
