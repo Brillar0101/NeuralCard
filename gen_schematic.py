@@ -432,3 +432,33 @@ def sw_btn(ref, x, y, signal):
 
 # ================================================================ SECTION 3
 # IMU — LSM6DS3TR-C 6-axis (air-writing) on I2C
+def section_imu():
+    section_box(240, 112, 392, 210, "IMU  (LSM6DS3TR-C 6-axis, I2C addr 0x6B)", 242, 110)
+
+    ix, iy = 312.0, 150.0
+    imu = "JLC:LSM6DS3TR-C"
+    part(imu, "U2", "LSM6DS3TR-C", ix, iy, [str(i) for i in range(1, 15)])
+    ispec = {
+        "1": ("pwr", "+3V3"),        # SDO/SA0 -> +3V3 (I2C addr 0x6B; routed
+                                     # net, unlike pour-dependent GND)
+        "2": ("nc",), "3": ("nc",),  # SDx/SCx aux unused
+        "4": ("lbl", "IMU_INT"),     # INT1
+        "5": ("pwr", "+3V3"),        # VDDIO
+        "6": ("gnd",), "7": ("gnd",),
+        "8": ("pwr", "+3V3"),        # VDD
+        "9": ("nc",), "10": ("nc",), "11": ("nc",),
+        "12": ("pwr", "+3V3"),       # CS -> high = I2C mode
+        "13": ("lbl", "SCL"), "14": ("lbl", "SDA"),
+    }
+    for n in range(1, 15):
+        pn = str(n)
+        px, py = ep(ix, iy, imu, pn)
+        lx, _ = PIN_XY[imu][pn]
+        tap_dir(ispec[pn], px, py, 'L' if lx < 0 else 'R')
+
+    # I2C pull-ups to +3V3
+    rc_net("Device:R", "R11", "4.7k", 280.0, 128.0, ("pwr", "+3V3"), ("lbl", "SDA"))
+    rc_net("Device:R", "R12", "4.7k", 290.0, 128.0, ("pwr", "+3V3"), ("lbl", "SCL"))
+    # VDD decoupling
+    rc_net("Device:C", "C5", "100nF", 350.0, 150.0, ("pwr", "+3V3"), ("gnd",))
+
