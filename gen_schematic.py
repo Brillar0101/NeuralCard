@@ -160,3 +160,7 @@ items = []
 
 GRID = 1.27
 
+
+def snap(v):
+    return round(round(v / GRID) * GRID, 4)
+
