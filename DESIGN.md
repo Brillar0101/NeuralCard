@@ -24,3 +24,11 @@ like `easyeda2kicad` doesn't trip macOS file-access protection).
 Board outline is on `Edge.Cuts` in `NeuralCard.kicad_pcb` (render-verified).
 
 ---
+
+## 0. DESIGN REVISION (v2 — USB-C removed)
+USB-C was dropped in favor of **6 UART programming pads** (3V3, GND, TX, RX, EN, IO0). This
+removed 9 parts (USB-C, USBLC6 ESD, ME6211 LDO, AO3401A P-FET, 2× CC res, gate bleeder, 2× LDO
+caps), made the card flatter/cheaper, and **eliminated the routing congestion → 100% auto-routed,
+0 DRC violations.** Power is now **coin → +3V3 directly** (also feedable from the prog-pad 3V3
+during flashing). LEDs are **red** (bright on a 3 V coin). **47 assembled SMD parts** + the prog
+pads (bare copper). Flash once with a USB-serial adapter, then it runs on the coin cell.
