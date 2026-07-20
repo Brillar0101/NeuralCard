@@ -337,3 +337,83 @@ def add_pours(board):
         z.SetIsFilled(False)
         board.Add(z)
 
+
+def add_silk(board):
+    """Front face. Order the board in MATTE BLACK soldermask + ENIG so the
+    white silk reads crisp and the hairline rule comes out gold."""
+    F = pcbnew.F_SilkS
+    inx, hidx, outx = 17.0, 42.8, 68.6
+    iny = linspace(11, 43, 6)
+    hidy = linspace(7, 47, 8)
+    outy = linspace(5, 49, 10)
+
+    # synapse fan, weight-coded: three stroke weights laid out deterministically,
+    # the way a trained net's weights differ. (Firmware v3 could bake real ones.)
+    weights = [0.1, 0.16, 0.26]
+
+    def w(i, j):
+        return weights[(i * 7 + j * 13) % 3]
+
+    for i, yi in enumerate(iny):
+        for j, yh in enumerate(hidy):
+            seg(board, inx, yi, hidx, yh, F, w(i, j))
+    for i, yh in enumerate(hidy):
+        for j, yo in enumerate(outy):
+            seg(board, hidx, yh, outx, yo, F, w(i + 6, j))
+
+    # input axis labels (what each input neuron hears)
+    for lab, yi in zip(["ax", "ay", "az", "gx", "gy", "gz"], iny):
+        text(board, lab, 10.5, yi, 1.1, F, 0.17)
+    # output digit labels: the answer row, set a step bolder
+    for d, yo in zip("0123456789", outy):
+        text(board, d, 71.6, yo, 1.5, F, 0.26)   # left of the top-right QR
+
+    # one instruction, top strip, active voice (clear of the top-right QR)
+    text(board, "AIR-WRITE A DIGIT · THE BRIGHTEST NEURON ANSWERS",
+         42.0, 2.4, 1.15, F, 0.17)
+
+    # identity strip: gold hairline (mask opening over the GND pour), then
+    # name left / title right on a shared baseline
+    rule = pcbnew.PCB_SHAPE(board)
+    rule.SetShape(pcbnew.SHAPE_T_SEGMENT)
+    rule.SetStart(mm((4.0, 50.3)))
+    rule.SetEnd(mm((82.0, 50.3)))
+    rule.SetLayer(pcbnew.F_Mask)
+    rule.SetWidth(pcbnew.FromMM(0.35))
+    board.Add(rule)
+    text(board, "BARAKAELI LAWUO", 4.0, 52.1, 2.3, F, 0.46, justify="left")
+    text(board, "AI & COMPUTER ENGINEER", 82.0, 51.5, 1.0, F, 0.16, justify="right")
+    text(board, "VIRGINIA TECH ENGINEERING · CLASS OF 2027", 82.0, 52.9, 0.9, F,
+         0.15, justify="right")
+
+    # version microtext on the right edge, below the QR
+    text(board, "NEURALCARD v2.1 · 2026", 84.2, 33.0, 0.9, F, 0.15, angle=90)
+
+    # real QR (top-right), silk fills light modules: on black mask the dark
+    # modules are the mask itself -- high contrast, scannable
+    draw_qr(board)
+
+    # back: battery, identity, and flash instructions — all in the clear band
+    # right of the ESP32 (x>49) / below the coin holder, clear of refs and pads
+    B = pcbnew.B_SilkS
+    text(board, "CR2032 · + side out", 63.0, 39.3, 1.1, B, 0.17, mirror=True)
+    text(board, "NeuralCard v2.1 · princetekki.com", 63.0, 41.7, 1.1, B, 0.17,
+         mirror=True)
+    text(board, "FLASH: hold BOOT · tap RST · release BOOT", 63.0, 44.4, 1.0, B,
+         0.16, mirror=True)
+    text(board, "OSHW · github.com/Brillar0101", 64.0, 47.0, 1.0, B, 0.16,
+         mirror=True)
+    # writable serial patch: filled silk rectangle takes a marker
+    sn = pcbnew.PCB_SHAPE(board)
+    sn.SetShape(pcbnew.SHAPE_T_RECT)
+    sn.SetStart(mm((32.0, 45.8)))
+    sn.SetEnd(mm((45.0, 49.0)))
+    sn.SetLayer(B)
+    sn.SetFilled(True)
+    sn.SetWidth(0)
+    board.Add(sn)
+    text(board, "S/N", 30.0, 47.4, 0.9, B, 0.15, mirror=True)
+    # button roles beat reference designators (SW refs hidden at placement)
+    text(board, "BOOT", 12.0, 51.0, 0.9, B, 0.15, mirror=True)
+    text(board, "RST", 24.0, 51.0, 0.9, B, 0.15, mirror=True)
+
