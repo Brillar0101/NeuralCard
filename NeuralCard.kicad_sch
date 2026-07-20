@@ -4218,3 +4218,199 @@
 		)
 		(uuid "ce231b1d-1b7e-41df-aa97-d8ec6960a03c")
 	)
+	(symbol
+		(lib_id "JLC:ESP32-S3-WROOM-1")
+		(at 129.54 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4a5b994-8012-474e-9bf3-76a2a38efcf2")
+		(property "Reference" "U1"
+			(at 132.54 173.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESP32-S3-WROOM-1"
+			(at 132.54 176.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:WIRELM-SMD_ESP32-S3-WROOM-1"
+			(at 130.0 175.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 130.0 175.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 130.0 175.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "c54df8bc-0dcc-466f-8824-711244a06081")
+		)
+		(pin "2"
+			(uuid "5d38c3c5-8fb9-4b1a-8591-c209d3f2b8f0")
+		)
+		(pin "3"
+			(uuid "46e412da-4ee8-4c43-a43e-6334835dea7c")
+		)
+		(pin "4"
+			(uuid "a2bd69e8-88ca-4833-80b5-8e1dba660717")
+		)
+		(pin "5"
+			(uuid "2966100c-0504-4fc9-913d-eb19824c5084")
+		)
+		(pin "6"
+			(uuid "f3238add-159a-401e-9963-0ded86537171")
+		)
+		(pin "7"
+			(uuid "bd29e7f9-cc2d-4101-ac23-d50a7373a4f5")
+		)
+		(pin "8"
+			(uuid "caff85f8-78c6-4632-8ab8-ad2616540d03")
+		)
+		(pin "9"
+			(uuid "73e11e77-da7f-4a8e-9ab6-ad61c08a7d84")
+		)
+		(pin "10"
+			(uuid "608354c0-933e-4bb5-8f36-bea62f38d598")
+		)
+		(pin "11"
+			(uuid "de3368e6-0ff8-44a1-a0f3-bffa1f6c701c")
+		)
+		(pin "12"
+			(uuid "8d755c53-5acb-4fc6-a232-f852b7a0d352")
+		)
+		(pin "13"
+			(uuid "ddf07814-5782-4f8c-92c6-5f9e09a4f278")
+		)
+		(pin "14"
+			(uuid "0b7a8d45-0532-4869-b436-e88f314fa44d")
+		)
+		(pin "15"
+			(uuid "5cd55268-4b0b-4f09-ba69-16c0e20d2b0e")
+		)
+		(pin "16"
+			(uuid "d6b9060f-9dc7-456d-8cb8-16b44bc4154e")
+		)
+		(pin "17"
+			(uuid "f317b2d5-b5e7-4ff7-8ac4-3c880afb6a16")
+		)
+		(pin "18"
+			(uuid "32de9d7d-98f0-4fe8-bc95-ed406af4742c")
+		)
+		(pin "19"
+			(uuid "a62be7ac-4e87-406d-b4b1-dbfd9cf2c4dd")
+		)
+		(pin "20"
+			(uuid "1661b9f7-2d45-4021-b2ce-e26b4d5d5ba7")
+		)
+		(pin "21"
+			(uuid "2be2f5e0-2e1b-415a-8483-421106590e16")
+		)
+		(pin "22"
+			(uuid "4106bee9-65ba-49f3-9e46-e4aeffe1a8cf")
+		)
+		(pin "23"
+			(uuid "c4fa3f10-2d48-4119-b141-f65aa7aff496")
+		)
+		(pin "24"
+			(uuid "c325dc88-1faa-4b68-910d-64d15cbb9e12")
+		)
+		(pin "25"
+			(uuid "4aabcc54-5fcf-4ac7-8736-40364b8a33b2")
+		)
+		(pin "26"
+			(uuid "92bc20c3-d505-4c02-9477-176c56a208e9")
+		)
+		(pin "27"
+			(uuid "49f5b03b-844d-4707-8b5f-22bbf6981446")
+		)
+		(pin "28"
+			(uuid "620697db-9932-4228-bb63-096023b3d6b1")
+		)
+		(pin "29"
+			(uuid "96725127-5969-4da8-b1d0-e6bc5eb017b3")
+		)
+		(pin "30"
+			(uuid "3d861f64-12df-48f9-96fd-3547277f718f")
+		)
+		(pin "31"
+			(uuid "2faeb6ee-ae4c-4de4-bcac-9d2a6d45b2f1")
+		)
+		(pin "32"
+			(uuid "205cb429-9e39-4107-8c13-e3c310f2311c")
+		)
+		(pin "33"
+			(uuid "ced248db-a7e5-4c1c-8495-774d99a2705d")
+		)
+		(pin "34"
+			(uuid "708c52f7-3bb5-44ab-b6f8-86b19e42a84a")
+		)
+		(pin "35"
+			(uuid "22506503-321e-4e57-8ed2-56095177eb82")
+		)
+		(pin "36"
+			(uuid "a30fbbbf-458c-47d3-b2b8-859450c5b5cb")
+		)
+		(pin "37"
+			(uuid "066b705c-99fc-4a11-b3cf-3bb0ab9960ce")
+		)
+		(pin "38"
+			(uuid "775d971f-0b57-4195-94f4-c4256cfc0e28")
+		)
+		(pin "39"
+			(uuid "c7717e24-c7bf-4912-a081-c22bbd886f68")
+		)
+		(pin "40"
+			(uuid "f974928a-e2e9-48b5-9b2f-19c953e8d2d3")
+		)
+		(pin "41"
+			(uuid "349789d3-4300-40ba-97c1-b19c4ebabf85")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 107.95 165.1) (xy 105.41 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a49e506-34fe-45d7-bdfd-443dad2ccb6d")
+	)
