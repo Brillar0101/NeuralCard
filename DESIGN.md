@@ -120,3 +120,39 @@ Boot → radio OFF → init IMU FIFO → idle, wake on IMU INT → on "write" ge
 ripple input→hidden→output. Model trained off-device, int8-quantized, stored in flash.
 
 ---
+
+## 8. NFC tap-to-share (v2.1)
+
+**ST25DV04KC-IE6S3** (U4, SO-8, LCSC C3304276) on the shared I2C bus
+(addr 0x53 user / 0x57 system — no clash with IMU 0x6A). GPO (open-drain
+field-detect, R14 100k pull-up) -> **GPIO21** (module pin 23): phone tap can
+wake the ESP32 for an LED ripple. C11 100nF decoupling. V_EH unused.
+
+**Antenna:** 9-turn rectangular spiral on B.Cu, outer 12x24.5mm at
+x[2.5,14.5] y[16,40.5] (left-middle, under the input-LED column area),
+0.3mm track / 0.3mm gap. Generated as net-tie footprint
+`NeuralCard:NFC_Antenna_13x24` by `tools/gen_nfc_antenna.py` — pads bridge
+NFC_ANT_A/NFC_ANT_B legally; inner terminal escapes on F.Cu between two
+0.3mm-drill TH pads. Front silk marks the tap zone ("NFC / tap phone here").
+
+**Tuning:** coil ~1.5uH (Mohan approx) + 28.5pF chip-internal + ~3pF
+parasitics -> **C12 62pF NP0** across AC0/AC1 => ~13.6 MHz pre-fab.
+Verify on the fab'd board with a VNA; trim C12 within 56–68pF.
+
+**Rule areas** (both layers) over the coil: no pour, no tracks, no vias —
+pads and footprint copper exempt, so the coil itself is legal and the
+autorouter/GND pour stay out of the field.
+
+**Pipeline additions:** `tools/gen_nfc_antenna.py` (run before place),
+`tools/stitch_islands.py` (run after SES import: ties orphan GND pour
+fragments with vias, purges <3mm2 slivers, refills). GND pour local
+clearance raised 0.2 -> 0.3mm (>= 0.25 hole-to-copper rule).
+
+**Layout shifts vs v2:** stitching vias at (2.6,27), (2.6,42), (5,51)
+removed (coil/NFC pocket); U4/C11 top-left beside IMU; C12 at the coil
+feed; NFC content plan: NDEF URI -> portfolio /card page (vCard download);
+QR on front silk should encode the same URL.
+
+**Status:** re-routed 100% (freerouting, 0 unrouted), **DRC 0 violations**;
+5 cosmetic same-net GND-pour fragment notices remain (every GND pad is
+track-routed; fragments are redundant copper). Fab outputs regenerated.
