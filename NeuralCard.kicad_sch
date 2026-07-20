@@ -3986,3 +3986,68 @@
 		)
 		(uuid "9fdaf146-29f2-4e23-8f73-953ff96b6a97")
 	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 40.64 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "037ca386-7c47-4c83-9cac-6f18d3ef9b38")
+		(property "Reference" "#FLG01"
+			(at 40.64 41.910000000000004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 40.64 41.910000000000004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 40.64 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 40.64 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "46fa6c8f-4ec8-406d-ab86-f9baef17d2f2")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
