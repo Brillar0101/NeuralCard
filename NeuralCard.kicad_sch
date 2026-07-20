@@ -8510,3 +8510,95 @@
 		)
 		(uuid "52fb21a7-11a4-4325-a8c9-88ab5c070059")
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 350.52 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c7cc82c-4ebb-47c2-b2e8-1306270c825d")
+		(property "Reference" "#PWR039"
+			(at 350.52 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "GND"
+			(at 350.52 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 350.52 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 350.52 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "36fa4300-1647-4bf1-bfd6-3cc21a8345cf")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 26 258)
+		(end 360 374)
+		(stroke
+			(width 0.1524)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "494b9d17-0438-4b67-b164-b1780e3b567b")
+	)
+	(text "NEURON LEDs  (24x charlieplex on 6 GPIO)   input(6) > hidden(8) > output(10)"
+		(exclude_from_sim no)
+		(at 28 256 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+				(thickness 0.4)
+				(bold yes)
+				(color 30 90 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "35c15f9c-55d0-438f-81ee-8ef8376a0ecc")
+	)
