@@ -11053,3 +11053,132 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 111.76 337.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3844ffc6-097a-4b1b-93a5-997e0bb759c5")
+		(property "Reference" "D14"
+			(at 111.76 335.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "blue"
+			(at 111.76 340.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:LED-SMD_L1.6-W0.8-R-RD"
+			(at 111.76 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 111.76 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 111.76 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "4fbdcb26-f146-4c78-a0c1-7f9b2dacf310")
+		)
+		(pin "2"
+			(uuid "48574c84-bac2-4982-a5f0-f3d7268a02e3")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 107.95 337.82) (xy 105.41 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52db4754-eb64-4885-a1e6-784f6a603952")
+	)
+	(global_label "CP5"
+		(shape bidirectional)
+		(at 105.41 337.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "938e5758-d7b3-4f1f-a96f-20707f0e00fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 115.57 337.82) (xy 118.11 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "407eaf5e-a972-4d32-92d2-f3c32c8a5201")
+	)
+	(global_label "CP3"
+		(shape bidirectional)
+		(at 118.11 337.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ddc35c4-4c7f-494f-97eb-35cd0fd00382")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
