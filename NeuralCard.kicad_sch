@@ -12343,3 +12343,159 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 314.96 356.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09de1e2d-4013-4152-80ad-3fb87b6cf7f6")
+		(property "Reference" "D24"
+			(at 314.96 354.076 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "blue"
+			(at 314.96 359.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:LED-SMD_L1.6-W0.8-R-RD"
+			(at 314.96 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 314.96 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 314.96 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "551eafe8-b1c6-4683-9479-2d329854a154")
+		)
+		(pin "2"
+			(uuid "1de9a7ed-2ed9-4c83-9396-e663baba664d")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 311.15 356.87) (xy 308.61 356.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f5f15b8-cc1f-4a76-bf80-c9ef26236b1c")
+	)
+	(global_label "CP4"
+		(shape bidirectional)
+		(at 308.61 356.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12756fd2-8de9-4c72-9985-d28359edc6a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.61 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 318.77 356.87) (xy 321.31 356.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17681880-67c1-460c-8adc-04a8e6ec7727")
+	)
+	(global_label "CP5"
+		(shape bidirectional)
+		(at 321.31 356.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c1a0740-790b-4f82-a91e-4f6caef91080")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 321.31 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(rectangle
+		(start 400 112)
+		(end 560 210)
+		(stroke
+			(width 0.1524)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b5dec291-9d48-47f0-84a7-08a9077832f3")
+	)
+	(text "NFC  (ST25DV04KC, I2C addr 0x53/0x57, PCB coil on AC0/AC1)"
+		(exclude_from_sim no)
+		(at 402 110 0)
+		(effects
+			(font
+				(size 2.0 2.0)
+				(thickness 0.4)
+				(bold yes)
+				(color 30 90 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e5c6ab8-0973-4217-bd32-ce2370012be5")
+	)
