@@ -36,3 +36,5 @@ for lab in ("ax", "ay", "az", "gx", "gy", "gz"):
 
 s = open(BRD).read()
 s = s.replace("NeuralCard v2.1 · barakaeli.dev", "NeuralCard v2.1 · princetekki.com")
+
+count = 0
