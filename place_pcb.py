@@ -146,3 +146,5 @@ def main():
     print(f"placed {len(placed)} footprints, {made} nets assigned, "
           f"{board.Zones().GetCount() if hasattr(board.Zones(),'GetCount') else len(list(board.Zones()))} zones")
 
+
+# ---------------------------------------------------------------- silkscreen art
