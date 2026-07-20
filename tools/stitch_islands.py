@@ -34,3 +34,26 @@ def fragments(board, gnd_code):
                 out.append((layer, sps, i))
     return out
 
+
+def components(frags, vias):
+    parent = list(range(len(frags)))
+
+    def find(a):
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+
+    def union(a, b):
+        parent[find(a)] = find(b)
+
+    for v in vias:
+        touched = [k for k, (lay, sps, i) in enumerate(frags)
+                   if sps.Contains(v.GetPosition(), i)]
+        for a, b in zip(touched, touched[1:]):
+            union(a, b)
+    groups = {}
+    for k in range(len(frags)):
+        groups.setdefault(find(k), []).append(k)
+    return list(groups.values())
+
