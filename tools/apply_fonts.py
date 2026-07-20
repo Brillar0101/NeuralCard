@@ -29,3 +29,5 @@ FONTS = {
     "OSHW · github.com/Brillar0101": ("Red Hat Mono SemiBold", False),
     "S/N": ("Red Hat Mono SemiBold", False),
 }
+for ch in "0123456789":
+    FONTS[ch] = ("Red Hat Mono SemiBold", False)
