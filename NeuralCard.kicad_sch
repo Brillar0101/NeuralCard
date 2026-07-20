@@ -3035,3 +3035,82 @@
 		)
 		(uuid "f095809e-1b88-4fda-807e-b2c6c2b0b20a")
 	)
+	(symbol
+		(lib_id "JLC:CR2032-BS-6-1")
+		(at 55.88 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90b04ad4-9ef7-4e91-9b68-ae04ab9365a3")
+		(property "Reference" "BT1"
+			(at 58.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CR2032"
+			(at 58.42 74.92999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "JLC:BAT-TH_CR2032-BS-6-1"
+			(at 55.88 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 55.88 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 55.88 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "deb8d703-9e08-4eaf-9bfd-d46196325772")
+		)
+		(pin "2"
+			(uuid "476b616e-d96f-4e4b-ba7b-a316ebea0252")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8 73.66) (xy 50.8 71.11999999999999)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d87fbe05-deb8-45b8-a7ef-9708106ac356")
+	)
