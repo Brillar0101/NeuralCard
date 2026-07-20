@@ -498,3 +498,42 @@ def section_leds():
 
 # ================================================================ SECTION 5
 # NFC — ST25DV04KC dynamic tag (tap-to-share) on I2C + PCB loop antenna
+def section_nfc():
+    section_box(400, 112, 560, 210, "NFC  (ST25DV04KC, I2C addr 0x53/0x57, PCB coil on AC0/AC1)", 402, 110)
+
+    nx, ny = 470.0, 160.0
+    nfc = "ST25DV:ST25DV04KC-IE6S3"
+    part(nfc, "U4", "ST25DV04KC-IE6S3", nx, ny, [str(i) for i in range(1, 9)])
+    nspec = {
+        "1": ("nc",),                    # V_EH energy harvesting unused
+        "2": ("lbl", "NFC_ANT_A"),       # AC0 -> coil outer terminal
+        "3": ("lbl", "NFC_ANT_B"),       # AC1 -> coil inner terminal
+        "4": ("gnd",),
+        "5": ("lbl", "SDA"),             # shared bus with IMU (addrs differ)
+        "6": ("lbl", "SCL"),
+        "7": ("lbl", "NFC_GPO"),         # open-drain field-detect -> GPIO21
+        "8": ("pwr", "+3V3"),
+    }
+    for n in range(1, 9):
+        pn = str(n)
+        px, py = ep(nx, ny, nfc, pn)
+        lx, _ = PIN_XY[nfc][pn]
+        tap_dir(nspec[pn], px, py, 'L' if lx < 0 else 'R')
+
+    # GPO is open-drain: pull-up to +3V3
+    rc_net("Device:R", "R14", "100k", 430.0, 128.0, ("pwr", "+3V3"), ("lbl", "NFC_GPO"))
+    # VCC decoupling
+    rc_net("Device:C", "C11", "100nF", 530.0, 128.0, ("pwr", "+3V3"), ("gnd",))
+    # antenna tuning cap across the coil (value trimmed after VNA measurement:
+    # coil ~1.5uH (9 turns) + chip 28.5pF internal -> ~62pF external,
+    # ~13.6 MHz pre-fab)
+    rc_net("Device:C", "C12", "62pF", 430.0, 180.0, ("lbl", "NFC_ANT_A"), ("lbl", "NFC_ANT_B"))
+
+    # the PCB coil itself (net-tie footprint: 13x24.5mm 10-turn spiral, B.Cu)
+    ax, ay = 480.0, 190.0
+    ant = "Connector_Generic:Conn_01x02"
+    part(ant, "ANT1", "NFC_COIL", ax, ay, ["1", "2"])
+    for pn, net in (("1", "NFC_ANT_A"), ("2", "NFC_ANT_B")):
+        px, py = ep(ax, ay, ant, pn)
+        tap_dir(("lbl", net), px, py, 'L')
+
