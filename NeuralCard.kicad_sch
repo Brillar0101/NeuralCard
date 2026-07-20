@@ -3846,3 +3846,68 @@
 		)
 		(uuid "14ef60bf-5801-422b-9fac-19fee18bd569")
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127.0 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e631412d-982a-48f0-847c-afa8aaa3ae95")
+		(property "Reference" "#PWR008"
+			(at 127.0 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "GND"
+			(at 127.0 83.31200000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127.0 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 127.0 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 127.0 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "5c4ea1af-1046-4281-b5f8-245382fffc31")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
