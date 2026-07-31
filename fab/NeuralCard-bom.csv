@@ -50,3 +50,4 @@ Comment,Designator,Footprint,LCSC Part #
 "100nF 0603",C11,C0603,C14663
 "62pF NP0 0603 (tune after VNA; 56-68pF window)",C12,C0603,select-at-order
 "100k 0603",R14,R0603,C25803
+"SPDT slide switch MSK12C02 (8x2.8mm, right-angle, 4 shield tabs + 2x0.85mm NPTH) - POWER on/off, in series with coin cell + terminal",SW3,SW_SPDT_Shouhan_MSK12C02,C431540
