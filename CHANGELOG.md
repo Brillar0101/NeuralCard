@@ -6,6 +6,29 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+### Fixed — LED part number contradicted the board (2026-08-02)
+
+Found by running [kicad-happy](https://github.com/aklofas/kicad-happy)'s BOM and LCSC skills
+against the project.
+
+`BOM.md` listed D1–D24 as **blue** `C72041` while `BOM_JLCPCB.csv`, the PCB footprint
+(`LED-SMD_L1.6-W0.8-R-RD`) and `DESIGN.md` §0 all specify **red** `C2286`. Ordering from the
+human-facing BOM would have bought the wrong colour for 24 of 52 placements — and the LCSC
+check found `C72041` down to **14 units in stock**, so the order would have failed outright.
+
+- `BOM.md` D1–D24 row corrected to `C2286` / KT-0603R.
+- Ordering note 2 rewritten: red is the settled v2 decision, not a future suggestion.
+- U1 corrected from `N16R8` to **`N8R2`**, the part `C2913204` actually resolves to. This was
+  already noted in `DESIGN.md` §8 but never fixed in the BOM table.
+- New `BOM.md` §3b records all 14 codes with resolved MPN, stock and unit price
+  (parts ≈ **$6.91/board**).
+
+`C431540` independently confirmed as MSK12C02 with ~99k in stock — the SW3 fix holds.
+
+Still outstanding: the schematic's `Value` field for D1–D24 reads `blue`
+(`gen_schematic.py:489`) while the footprint and fab outputs are red. Cosmetic — it does not
+reach the netlist or the fab package — but it should be corrected in the generator.
+
 ### Fixed — SW3 now exists in the schematic (2026-08-02)
 
 SW3 had been added directly to the layout and had no schematic symbol, so
