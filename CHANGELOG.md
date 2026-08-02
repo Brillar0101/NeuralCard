@@ -6,6 +6,49 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+### Added — automated design review in CI (2026-08-02)
+
+`.github/workflows/design-review.yml` runs [kicad-happy](https://github.com/aklofas/kicad-happy)
+against the schematic and PCB. On a PR it posts a diff-only comment (just what that PR
+changed); on `main` it refreshes the README summary and commits the full report to
+`docs/design-review.md`. SPICE is disabled — no ngspice on the runner and nothing analog here.
+
+`tools/inject_review.py` renders the analyzer JSON into the README block. It groups findings
+by `rule_id`, so a detector that fires 24 times is one row rather than 24, and applies a
+suppression list with a stated reason per rule instead of silently dropping anything.
+
+`README.md` gains four badges and a **How it's wired** section with two mermaid diagrams —
+the power path through SW3, and the 6→8→10 inference path. Coloured from the PatternFly
+palette, matching the Red Hat faces already plotted on the silkscreen (§Typography).
+
+**Baseline: 81 findings — 3 errors, 5 warnings, 49 info after suppression.**
+
+One suppression matters. `LR-001` fires once per LED claiming no current-limiting resistor,
+which is wrong: the matrix is charlieplexed, so R1–R6 limit current on the six shared GPIO
+drive lines. Left in, it would be 89% of the error count. Note that `LA-AUD` tags the same
+LEDs `[resistor_limited]`, so the toolchain contradicts itself here.
+
+Findings worth acting on, recorded but not yet fixed: `SS-001` (0% MPN coverage — the root
+cause of the SW3 drift), `DFM-001`/`DFM-002` (0.1 mm annular ring, below IPC Class 2's
+0.125 mm), and `FD-001` (no fiducials, with 0.28 mm minimum pad on the LGA-14 IMU).
+`PM-002`'s "ANT1 is 0.0 mm from board edge" is almost certainly the net-tie footprint origin
+rather than copper — the coil sits at x[2.5, 14.5] per §8.
+
+### Fixed — LED value and VBAT source flag (2026-08-02)
+
+Two findings from the first CI-equivalent run, both fixed in `gen_schematic.py`:
+
+- **`RS-001` — `VBAT` has no declared source.** Fallout from the SW3 symbol: a plain label
+  carries no pin type, so strict checkers read the net as undriven. Added a `PWR_FLAG`.
+  KiCad's own ERC passed without it; this satisfies the stricter check.
+- **LED `Value` said `blue`** while the footprint and fab BOM have always been red. Corrected
+  to `red`. Safe to change: `tools/export_fab.py` documents the fab BOM as hand-maintained
+  and not generated from the schematic, so no fab output moves.
+
+Verified: netlist unchanged on every real pin, **174 schematic pads vs 173 PCB pads, 0
+mismatches**, ERC still **0 errors / 41 warnings**. The analyzer now reads
+`LED D1 (red) [resistor_limited]` and `RS-001` is gone.
+
 ### Fixed — LED part number contradicted the board (2026-08-02)
 
 Found by running [kicad-happy](https://github.com/aklofas/kicad-happy)'s BOM and LCSC skills
