@@ -95,16 +95,16 @@ All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 
 ### Automated design review
 
-`kicad-happy` analysis of the schematic and PCB — **81 findings** raw, **56** after removing rules that do not apply to this board. Regenerated on every push.
+`kicad-happy` analysis of the schematic and PCB — **86 findings** raw, **61** after removing rules that do not apply to this board. Regenerated on every push.
 
 <table><tr><td>
 
 | Severity | Count |
 |---|---|
 | Error | 27 |
-| Warning | 5 |
-| Info | 49 |
-| **Total** | **81** |
+| Warning | 7 |
+| Info | 52 |
+| **Total** | **86** |
 
 </td><td>
 
@@ -113,9 +113,9 @@ All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 | Severity | Count |
 |---|---|
 | Error | 3 |
-| Warning | 4 |
-| Info | 49 |
-| **Total** | **56** |
+| Warning | 6 |
+| Info | 52 |
+| **Total** | **61** |
 
 </td></tr></table>
 
@@ -126,11 +126,12 @@ All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 | `FD-001` | Error | 2 | pcb | No fiducials on B.Cu (30 SMD components) (finest pad dim 0.28mm — BGA/fine-pitch QFN present) |
 | `PM-002` | Error | 2 | pcb | ANT1 is 0.0mm from board edge |
 | `SS-001` | Error | 1 | sch | Sourcing blocker: BOM has <50% MPN coverage (0/18 unique parts). Board is not pre-fab ready. |
+| `RS-001` | Warning | 2 | sch | +3V3 has no declared source |
 | `PU-001` | Warning | 1 | sch | U2 pin INT2 (__unnamed_26) missing pull-up resistor |
 | `DFM-001` | Warning | 1 | pcb | Annular ring 0.1mm requires advanced process (standard: 0.125mm) |
 | `DFM-002` | Warning | 1 | pcb | Via annular ring 0.1mm below IPC Class 2 minimum 0.125mm |
 | `LA-AUD` | Info | 24 | sch | LED D1 (red) [resistor_limited] |
-| `CP-002` | Info | 8 | pcb | No opposite-layer copper under D1 |
+| `CP-002` | Info | 12 | pcb | No opposite-layer copper under D1 |
 | `DO-DET` | Info | 3 | sch | Decoupling coverage on +3V3 |
 | `CC-DET` | Info | 3 | pcb | Power net +3V3: 0.2mm min trace |
 | `EP-AUD` | Info | 2 | sch | ESD audit ANT1 (header): none coverage |
@@ -140,7 +141,6 @@ All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 | `RC-DET` | Info | 1 | sch | RC filter R9/C4 at 159.15Hz |
 | `SI-DET` | Info | 1 | sch | Sensor U2 (LSM6DS3TR-C) [motion/spi] |
 | `WL-001` | Info | 1 | sch | wifi/ble module U1 (ESP32-S3-WROOM-1) |
-| `LC-007` | Info | 1 | sch | Lifecycle audit not run — --lifecycle flag not passed |
 | `TS-DET` | Info | 1 | pcb | Zone stitching: GND 35 vias |
 
 <details><summary><b>Not applicable to this design</b> (25 findings)</summary>
