@@ -56,6 +56,13 @@ datasheets/
 fab.old-*/
 fab.bak*/
 
+# ------------------------------------------------------------------- generation
+# The scripts that generate the schematic, placement, silk art and fab bundle are
+# kept locally and not distributed. The committed .kicad_sch / .kicad_pcb are the
+# published design.
+/*.py
+/tools/*.py
+
 # ------------------------------------------------------------------------- Python
 __pycache__/
 *.py[cod]
