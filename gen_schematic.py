@@ -26,6 +26,7 @@ LIBSYMS = {
     "Device:LED": (DEVICE_LIB, "LED"),
     "Connector_Generic:Conn_01x06": (f"{KSYM}/Connector_Generic.kicad_sym", "Conn_01x06"),
     "Connector_Generic:Conn_01x02": (f"{KSYM}/Connector_Generic.kicad_sym", "Conn_01x02"),
+    "Switch:SW_SPDT": (f"{KSYM}/Switch.kicad_sym", "SW_SPDT"),
     "power:GND": (POWER_LIB, "GND"),
     "power:+3V3": (POWER_LIB, "+3V3"),
     "power:VBUS": (POWER_LIB, "VBUS"),
@@ -52,6 +53,9 @@ PIN_XY = {
     "JLC:ME6211C33M5G-N": {"1": (-12.70, 2.54), "2": (-12.70, 0.0),
                             "3": (-12.70, -2.54), "4": (12.70, -2.54), "5": (12.70, 2.54)},
     "JLC:CR2032-BS-6-1": {"1": (-5.08, 0.0), "2": (5.08, 0.0)},
+    # MSK12C02 pinout matches KiCad's generic SPDT: pin 2 is the common pole,
+    # pins 1 and 3 are the throws. Do not renumber -- pad 2 carries VBAT on the board.
+    "Switch:SW_SPDT": {"1": (5.08, 2.54), "2": (-5.08, 0.0), "3": (5.08, -2.54)},
     "JLC:AO3401A": {"1": (-5.08, 0.0), "2": (2.54, -5.08), "3": (2.54, 5.08)},
     "JLC:TS-1187A-B-A-B": {"1": (-5.08, 2.54), "2": (5.08, 2.54), "3": (-5.08, -5.08), "4": (5.08, -5.08)},
     "JLC:USBLC6-2SC6": {"1": (-16.51, 7.62), "2": (-16.51, 0.0), "3": (-16.51, -7.62),
@@ -99,6 +103,7 @@ FP = {
     "D0": "JLC:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL",
     "SW1": "JLC:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
     "SW2": "JLC:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5",
+    "SW3": "Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02",
     "R7": "Resistor_SMD:R_0603_1608Metric",
     "R8": "Resistor_SMD:R_0603_1608Metric",
     "R9": "Resistor_SMD:R_0603_1608Metric",
@@ -304,15 +309,29 @@ def tap_label(net, x, y, dx=0.0, dy=0.0, just="left"):
 # ================================================================ SECTION 1
 # POWER — Coin (CR2032) + USB-C/LDO with P-FET auto source-selection
 def section_power():
-    section_box(26, 30, 150, 100, "POWER  (CR2032 coin -> 3V3 rail; also fed by prog-pad 3V3)", 28, 28)
+    section_box(26, 30, 150, 100, "POWER  (CR2032 coin -> SW3 -> 3V3 rail; also fed by prog-pad 3V3)", 28, 28)
 
-    # --- Coin cell BT1: pin1(+) -> +3V3, pin2(-) -> GND ---
+    # --- Coin cell BT1: pin1(+) -> VBAT, pin2(-) -> GND ---
     bx, by = 55.88, 73.66
     part("JLC:CR2032-BS-6-1", "BT1", "CR2032", bx, by, ["1", "2"])
     p1 = ep(bx, by, "JLC:CR2032-BS-6-1", "1")   # + (left)
     p2 = ep(bx, by, "JLC:CR2032-BS-6-1", "2")   # - (right)
-    tap_pwr("+3V3", p1[0], p1[1], dy=-2.54)      # + -> +3V3
+    tap_label("VBAT", p1[0], p1[1], dy=-2.54)    # + -> VBAT (switched)
     tap_gnd(p2[0], p2[1])                         # - -> GND
+
+    # --- SW3 power switch: MSK12C02 SPDT, VBAT -> +3V3 ---
+    # Pin 2 is the common pole (board pad 2, VBAT); pin 3 is the closed throw
+    # (+3V3); pin 1 is the open throw and is deliberately left unconnected, so
+    # sliding to "off" parks the coin on a floating contact. This mirrors the
+    # net assignment already on NeuralCard.kicad_pcb -- do not swap the pins.
+    sx, sy = 76.2, 60.96
+    part("Switch:SW_SPDT", "SW3", "MSK12C02", sx, sy, ["1", "2", "3"])
+    s1 = ep(sx, sy, "Switch:SW_SPDT", "1")       # open throw
+    s2 = ep(sx, sy, "Switch:SW_SPDT", "2")       # common pole
+    s3 = ep(sx, sy, "Switch:SW_SPDT", "3")       # closed throw
+    tap_label("VBAT", s2[0], s2[1], dx=-2.54, just="right")
+    tap_pwr("+3V3", s3[0], s3[1], dx=5.08, dy=0.0)
+    no_connect(s1[0], s1[1])
 
     # --- Bulk / ride-out caps on +3V3: C8 10uF, C9 22uF, C10 100uF ---
     for ref, val, cx in [("C8", "10uF", 96.52), ("C9", "22uF", 111.76), ("C10", "100uF", 127.0)]:

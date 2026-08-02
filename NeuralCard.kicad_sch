@@ -939,6 +939,196 @@
 		)
 		(embedded_fonts no)
 	)
+		(symbol "Switch:SW_SPDT"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SW_SPDT_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SW_SPDT_1_1"
+			(rectangle
+				(start -3.175 3.81)
+				(end 3.175 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "power:GND"
 		(power global)
 		(pin_numbers
@@ -3019,9 +3209,9 @@
 		(fill
 			(type none)
 		)
-		(uuid "4551c8e6-a1f7-4623-8966-ddb0d51ceae0")
+		(uuid "f597e2f9-30d7-4f87-93fb-b5e6dcdbc1ec")
 	)
-	(text "POWER  (CR2032 coin -> 3V3 rail; also fed by prog-pad 3V3)"
+	(text "POWER  (CR2032 coin -> SW3 -> 3V3 rail; also fed by prog-pad 3V3)"
 		(exclude_from_sim no)
 		(at 28 28 0)
 		(effects
@@ -3033,7 +3223,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f095809e-1b88-4fda-807e-b2c6c2b0b20a")
+		(uuid "6117c1cd-abc6-4455-85f1-2612659f17d8")
 	)
 	(symbol
 		(lib_id "JLC:CR2032-BS-6-1")
@@ -3043,7 +3233,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "90b04ad4-9ef7-4e91-9b68-ae04ab9365a3")
+		(uuid "65e7ec90-aa76-47d8-a2dc-e9469212430b")
 		(property "Reference" "BT1"
 			(at 58.42 72.39 0)
 			(effects
@@ -3090,10 +3280,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "deb8d703-9e08-4eaf-9bfd-d46196325772")
+			(uuid "81072268-2204-4047-a6ae-1ceac7daddde")
 		)
 		(pin "2"
-			(uuid "476b616e-d96f-4e4b-ba7b-a316ebea0252")
+			(uuid "bd569f94-3e94-4d6e-a0aa-626312a652d9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3112,70 +3302,25 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d87fbe05-deb8-45b8-a7ef-9708106ac356")
+		(uuid "813f8403-7397-462d-833e-01bbbb485626")
 	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 50.8 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0b22289a-13a5-4280-9c52-1e2920b92899")
-		(property "Reference" "#PWR001"
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 50.8 71.11999999999999 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcb01a3e-ad2f-401c-a0a8-c2af7eb162fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 71.11999999999999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-			(hide yes)
-		)
-		(property "Value" "+3V3"
-			(at 50.8 67.81799999999998 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 71.11999999999999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Datasheet" ""
-			(at 50.8 71.11999999999999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Description" ""
-			(at 50.8 71.11999999999999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(pin "1"
-			(uuid "d0ae7885-821e-47cc-b809-ef18c1de23ae")
-		)
-		(instances
-			(project "NeuralCard"
-				(path "/a1b2c3d4-0001-4000-8000-000000000001"
-					(reference "#PWR001")
-					(unit 1)
-				)
+				(hide yes)
 			)
 		)
 	)
@@ -3187,7 +3332,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fe1fa87d-5103-4f96-86c5-31cd99b1372d")
+		(uuid "5f272022-9ed3-4385-92ee-94b619528b65")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3197,8 +3342,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1b5ed209-ce7e-4e8e-8f39-95b544f10dce")
-		(property "Reference" "#PWR002"
+		(uuid "9b1cc5f0-1f1a-46d9-ac57-37604092a1dc")
+		(property "Reference" "#PWR001"
 			(at 60.96 76.2 0)
 			(effects
 				(font
@@ -3243,7 +3388,184 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "f695e04e-aef4-4d1e-9974-82868c83e1a1")
+			(uuid "5660f7cf-b8d3-4d07-a8b8-1e08fead58b2")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 76.2 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "beb8af66-2881-4259-816d-f24642645738")
+		(property "Reference" "SW3"
+			(at 78.74000000000001 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSK12C02"
+			(at 78.74000000000001 62.230000000000004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02"
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "052d6d25-4454-4c6e-9197-e95233277944")
+		)
+		(pin "2"
+			(uuid "ccfe96ec-aae9-4fef-93d7-38ef03d46084")
+		)
+		(pin "3"
+			(uuid "9e0ab596-422b-41cb-b9f2-fcedcc610b39")
+		)
+		(instances
+			(project "NeuralCard"
+				(path "/a1b2c3d4-0001-4000-8000-000000000001"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.12 60.96) (xy 68.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05c64c7-9ce8-4b80-a34a-0946a05a05fb")
+	)
+	(global_label "VBAT"
+		(shape bidirectional)
+		(at 68.58 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da94c79e-6df9-49f3-908d-8017edcac7ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 81.28 63.5) (xy 86.36 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b7ca8e5-49dd-4b46-9cbc-d233e115768e")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 86.36 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0720c0b-1e5e-4d88-8a97-960afb4df5f3")
+		(property "Reference" "#PWR002"
+			(at 86.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Value" "+3V3"
+			(at 86.36 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Datasheet" ""
+			(at 86.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(property "Description" ""
+			(at 86.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(hide yes)
+		)
+		(pin "1"
+			(uuid "9098191a-316a-4089-96f9-51122438dd89")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3254,6 +3576,10 @@
 			)
 		)
 	)
+	(no_connect
+		(at 81.28 58.42)
+		(uuid "a48af574-0b9c-46db-888e-3521fb268b56")
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 96.52 73.66 0)
@@ -3262,7 +3588,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "871a12cd-dccc-40b9-a18e-8c85a196036e")
+		(uuid "69bf3c9a-91bd-4489-8b3e-d9c52b46c193")
 		(property "Reference" "C8"
 			(at 98.298 72.64399999999999 0)
 			(effects
@@ -3309,10 +3635,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "5a98ee0c-75f0-4874-8b2b-fef01f009d61")
+			(uuid "f46c3770-5016-4a19-bf5b-2e464d9874af")
 		)
 		(pin "2"
-			(uuid "da55ac74-06f3-4360-b337-ad6c1dcf6acc")
+			(uuid "d9b4fea8-dd40-45f4-9d07-98c2c649c88a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3331,7 +3657,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "739949fd-d10b-4429-976a-1325473d3928")
+		(uuid "df5dfa93-6175-4ddf-87f1-f9930a8b0a60")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -3341,7 +3667,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "18ee446d-3838-4f84-a08f-2b7de95f4a2a")
+		(uuid "d41adb35-da35-4781-a793-005733a4715e")
 		(property "Reference" "#PWR003"
 			(at 96.52 67.30999999999999 0)
 			(effects
@@ -3387,7 +3713,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "a3654a1a-0564-4280-a263-a1ad3591dd2b")
+			(uuid "da398cb0-6292-4a56-acee-1db96c085541")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3406,7 +3732,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b54501be-0939-4f62-9936-b7adc55f83bb")
+		(uuid "8bd3aa47-9602-44ef-bb4c-1a2b6956dbe4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3416,7 +3742,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "97780a37-5741-41ee-a856-85acc37da8af")
+		(uuid "542574cf-6f91-4037-9e86-ae2884fa2dda")
 		(property "Reference" "#PWR004"
 			(at 96.52 80.01 0)
 			(effects
@@ -3462,7 +3788,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "2665ccae-4a1e-4e62-92f7-0c0bdd6c6068")
+			(uuid "03815627-b92f-488a-a59f-5b9418f12275")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3481,7 +3807,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a491e365-50ec-4c62-ac48-66a4283ea724")
+		(uuid "dac994fb-caea-4b1a-8d44-86a8f5f8c008")
 		(property "Reference" "C9"
 			(at 113.53800000000001 72.64399999999999 0)
 			(effects
@@ -3528,10 +3854,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "5d4ab720-9f40-4d10-8827-a2964d7c0d20")
+			(uuid "4ec28b90-be0e-430d-b73c-08879b1a0d4c")
 		)
 		(pin "2"
-			(uuid "3f922f34-247c-45e8-89dc-d70921ae6a00")
+			(uuid "acea5d07-3e58-48f9-a7a1-12264caad3c3")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3550,7 +3876,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0d8dbeb7-3318-41b1-b2b0-4c14c1852024")
+		(uuid "06554b7a-fa05-4ef5-9a2f-a87fc4ba1f5e")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -3560,7 +3886,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b3120fb5-ae72-43ba-b304-9fafdf940a3c")
+		(uuid "b5bfbd9b-75ca-4995-827f-52eb765fe6bb")
 		(property "Reference" "#PWR005"
 			(at 111.76 67.30999999999999 0)
 			(effects
@@ -3606,7 +3932,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "c6d5506d-bbbd-4830-9f3b-d7a7e44d2a3e")
+			(uuid "402c51e7-cd19-4dcd-9516-1de350cb0990")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3625,7 +3951,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b7ae318f-2f04-402a-a8b4-04710a8f50a4")
+		(uuid "ae6e7b5c-00c2-4e50-a20f-35edf95e11b0")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3635,7 +3961,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39d2b423-ea16-4c3c-8689-04ef7b20c202")
+		(uuid "5719c97b-7865-41dc-9a46-913fe3a0f878")
 		(property "Reference" "#PWR006"
 			(at 111.76 80.01 0)
 			(effects
@@ -3681,7 +4007,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "43fd7a91-22e0-406b-b792-26e7457e28d6")
+			(uuid "8753a903-b1e3-47c6-8481-eea995e00038")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3700,7 +4026,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1f78dff5-d7ab-46b2-898c-723b2e3a4542")
+		(uuid "3d9bf9b8-19b6-4168-8eb1-db2b0de12e70")
 		(property "Reference" "C10"
 			(at 128.778 72.64399999999999 0)
 			(effects
@@ -3747,10 +4073,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "a77c8ac8-9284-4a7a-a95a-19ff86484241")
+			(uuid "4b362ca4-6eab-48ea-886c-1811fd896478")
 		)
 		(pin "2"
-			(uuid "f55f4984-d3d4-4745-81ac-36089c4db961")
+			(uuid "7f6b6073-58f2-4d62-9327-71b90a75bf5e")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3769,7 +4095,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "59e821c1-77bf-40a9-ac9f-bee96bd8b387")
+		(uuid "be95895a-ae38-4c01-8c7f-a0e2b454bc05")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -3779,7 +4105,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "126284fd-df27-42cd-8bdd-4e8d0c0abf4e")
+		(uuid "696e13a7-ae7c-465c-b811-d0ea276df2da")
 		(property "Reference" "#PWR007"
 			(at 127.0 67.30999999999999 0)
 			(effects
@@ -3825,7 +4151,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "66a36144-caeb-4ef3-8ac3-a28dd5f68d8b")
+			(uuid "7a79221b-90bc-4784-8e2b-7b6c5efc3321")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3844,7 +4170,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "14ef60bf-5801-422b-9fac-19fee18bd569")
+		(uuid "4ebe2c36-4214-4cb2-a707-2f1586888223")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3854,7 +4180,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e631412d-982a-48f0-847c-afa8aaa3ae95")
+		(uuid "f4edd47f-0564-4a0e-a6c5-d5fd6c0fe1a4")
 		(property "Reference" "#PWR008"
 			(at 127.0 80.01 0)
 			(effects
@@ -3900,7 +4226,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "5c4ea1af-1046-4281-b5f8-245382fffc31")
+			(uuid "e57c35b8-ecb4-42fe-9a87-2e5cc868ca6c")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3919,7 +4245,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8d51e99c-1beb-4bf1-949b-b9b8bf61d2a3")
+		(uuid "db42e2b0-114b-4438-a1fc-18f1ceb5216c")
 		(property "Reference" "#PWR009"
 			(at 40.64 46.99 0)
 			(effects
@@ -3965,7 +4291,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "2a0562e8-c61d-4a71-989c-d054d0309655")
+			(uuid "fb922417-f1cd-4473-bfc7-99c105071c4f")
 		)
 		(instances
 			(project "NeuralCard"
@@ -3984,7 +4310,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9fdaf146-29f2-4e23-8f73-953ff96b6a97")
+		(uuid "54576382-8065-4fa9-8256-7adefb96f795")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -3994,7 +4320,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "037ca386-7c47-4c83-9cac-6f18d3ef9b38")
+		(uuid "368b03d6-7849-4bec-8255-a284177efb04")
 		(property "Reference" "#FLG01"
 			(at 40.64 41.910000000000004 0)
 			(effects
@@ -4040,7 +4366,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "46fa6c8f-4ec8-406d-ab86-f9baef17d2f2")
+			(uuid "7e404627-4255-4e4d-9fd6-d2bf2e00d4a9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4059,7 +4385,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2794b6b8-6ec4-43f5-b5fa-71e977258e22")
+		(uuid "28a04c07-525e-4321-b14c-22ca7d9ddf5f")
 		(property "Reference" "#PWR010"
 			(at 58.42 41.910000000000004 0)
 			(effects
@@ -4105,7 +4431,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "253b0836-2c26-45de-bd4a-eaf6e2c80eb3")
+			(uuid "3eea33c8-59db-40ec-9658-fb8981787998")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4124,7 +4450,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "16163404-55da-4f30-9fe5-fbd0ee7005ee")
+		(uuid "5890941f-0b43-40d4-ac4f-73dd8be96157")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -4134,7 +4460,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8ed3aa84-97e9-4990-bf9a-7eaf4c8f56d8")
+		(uuid "786e3fa8-4961-412f-ab55-2471cc4d741e")
 		(property "Reference" "#FLG02"
 			(at 58.42 41.910000000000004 0)
 			(effects
@@ -4180,7 +4506,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "f4bc64ed-efaf-4428-88f4-160b7f0a4e91")
+			(uuid "35e07332-2654-46c0-8cce-cc98de5ef5ad")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4202,7 +4528,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "34be056b-281b-426a-b730-868d4e57d949")
+		(uuid "cf5ae3f8-17c0-4a4a-acad-5fbf40052948")
 	)
 	(text "MCU CORE  (ESP32-S3-WROOM-1 + UART programming header)"
 		(exclude_from_sim no)
@@ -4216,7 +4542,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ce231b1d-1b7e-41df-aa97-d8ec6960a03c")
+		(uuid "7f88bfb8-ffa7-413a-93fe-2d75da3caf5b")
 	)
 	(symbol
 		(lib_id "JLC:ESP32-S3-WROOM-1")
@@ -4226,7 +4552,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d4a5b994-8012-474e-9bf3-76a2a38efcf2")
+		(uuid "69770989-2de5-4670-ac62-63b21afa6469")
 		(property "Reference" "U1"
 			(at 132.54 173.73 0)
 			(effects
@@ -4273,127 +4599,127 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "c54df8bc-0dcc-466f-8824-711244a06081")
+			(uuid "15745724-c710-49dd-a3fa-f03ceb446d99")
 		)
 		(pin "2"
-			(uuid "5d38c3c5-8fb9-4b1a-8591-c209d3f2b8f0")
+			(uuid "a2b69591-767e-4fd4-b7c3-ec769ded5a71")
 		)
 		(pin "3"
-			(uuid "46e412da-4ee8-4c43-a43e-6334835dea7c")
+			(uuid "49e4a0a1-1248-4816-b6fb-2920868b284a")
 		)
 		(pin "4"
-			(uuid "a2bd69e8-88ca-4833-80b5-8e1dba660717")
+			(uuid "bf835e57-2b01-4963-b185-3ba9228a4cda")
 		)
 		(pin "5"
-			(uuid "2966100c-0504-4fc9-913d-eb19824c5084")
+			(uuid "6e6923bc-176d-4f90-85f6-0bd5ed659800")
 		)
 		(pin "6"
-			(uuid "f3238add-159a-401e-9963-0ded86537171")
+			(uuid "0bbe6a1b-b397-46e3-9688-94430f55c3aa")
 		)
 		(pin "7"
-			(uuid "bd29e7f9-cc2d-4101-ac23-d50a7373a4f5")
+			(uuid "1a0de3af-3fd2-4360-9731-58c93ac68d6f")
 		)
 		(pin "8"
-			(uuid "caff85f8-78c6-4632-8ab8-ad2616540d03")
+			(uuid "200cdae3-7e1d-45a2-bfd3-2b9187cb5f30")
 		)
 		(pin "9"
-			(uuid "73e11e77-da7f-4a8e-9ab6-ad61c08a7d84")
+			(uuid "a9f67bc2-0129-4629-be88-8220d96caf8e")
 		)
 		(pin "10"
-			(uuid "608354c0-933e-4bb5-8f36-bea62f38d598")
+			(uuid "5d32d9ba-e6cc-4368-8800-b543de10c5b8")
 		)
 		(pin "11"
-			(uuid "de3368e6-0ff8-44a1-a0f3-bffa1f6c701c")
+			(uuid "0ecd2519-bc10-4f0b-89e0-6af3846f3da9")
 		)
 		(pin "12"
-			(uuid "8d755c53-5acb-4fc6-a232-f852b7a0d352")
+			(uuid "6e2ddd9f-0575-4845-b8e4-c5ebd9803566")
 		)
 		(pin "13"
-			(uuid "ddf07814-5782-4f8c-92c6-5f9e09a4f278")
+			(uuid "fd7f95ed-35cc-4913-9d01-62fa332b9ad3")
 		)
 		(pin "14"
-			(uuid "0b7a8d45-0532-4869-b436-e88f314fa44d")
+			(uuid "c4578f89-3b28-4f14-95a9-769605954f4a")
 		)
 		(pin "15"
-			(uuid "5cd55268-4b0b-4f09-ba69-16c0e20d2b0e")
+			(uuid "6d50bd62-b3aa-4004-85f1-04cb04a783e0")
 		)
 		(pin "16"
-			(uuid "d6b9060f-9dc7-456d-8cb8-16b44bc4154e")
+			(uuid "c6cd63fa-d41b-45b9-947f-f6b4450f146f")
 		)
 		(pin "17"
-			(uuid "f317b2d5-b5e7-4ff7-8ac4-3c880afb6a16")
+			(uuid "3233c6ab-4c32-48be-af28-85a4e1ea8d72")
 		)
 		(pin "18"
-			(uuid "32de9d7d-98f0-4fe8-bc95-ed406af4742c")
+			(uuid "6f84770d-ba74-4b70-91ae-d4d39fd527e1")
 		)
 		(pin "19"
-			(uuid "a62be7ac-4e87-406d-b4b1-dbfd9cf2c4dd")
+			(uuid "47b7e3cd-43b8-4f25-b5e0-46a0fa1a0d3b")
 		)
 		(pin "20"
-			(uuid "1661b9f7-2d45-4021-b2ce-e26b4d5d5ba7")
+			(uuid "9a3e62cd-e682-4f35-98cd-a8fc4972746e")
 		)
 		(pin "21"
-			(uuid "2be2f5e0-2e1b-415a-8483-421106590e16")
+			(uuid "ce8781ba-fcec-40a4-9aab-4761d2859068")
 		)
 		(pin "22"
-			(uuid "4106bee9-65ba-49f3-9e46-e4aeffe1a8cf")
+			(uuid "5fa2c857-7045-4b00-8214-c383e2c92277")
 		)
 		(pin "23"
-			(uuid "c4fa3f10-2d48-4119-b141-f65aa7aff496")
+			(uuid "cef03e87-a98c-42c7-85e1-9e389f4152bc")
 		)
 		(pin "24"
-			(uuid "c325dc88-1faa-4b68-910d-64d15cbb9e12")
+			(uuid "13a7bc09-b6fa-4d35-a778-a679e3569d53")
 		)
 		(pin "25"
-			(uuid "4aabcc54-5fcf-4ac7-8736-40364b8a33b2")
+			(uuid "0b576b8e-5709-49d3-bc40-8d46bfb5aa7a")
 		)
 		(pin "26"
-			(uuid "92bc20c3-d505-4c02-9477-176c56a208e9")
+			(uuid "5358da4b-1570-4fb9-a9fe-ed7364558ccb")
 		)
 		(pin "27"
-			(uuid "49f5b03b-844d-4707-8b5f-22bbf6981446")
+			(uuid "84024dda-6537-4989-bcf3-25194902bb55")
 		)
 		(pin "28"
-			(uuid "620697db-9932-4228-bb63-096023b3d6b1")
+			(uuid "ff91945b-6c49-46c0-a93d-0898fdc012d9")
 		)
 		(pin "29"
-			(uuid "96725127-5969-4da8-b1d0-e6bc5eb017b3")
+			(uuid "88a1d2e3-e783-4b32-aca6-b48bd128fb9a")
 		)
 		(pin "30"
-			(uuid "3d861f64-12df-48f9-96fd-3547277f718f")
+			(uuid "f71c484e-2f6c-43df-bcf4-1d826755d933")
 		)
 		(pin "31"
-			(uuid "2faeb6ee-ae4c-4de4-bcac-9d2a6d45b2f1")
+			(uuid "6ab70e4d-4ced-4857-a1e7-e21fb531b6c5")
 		)
 		(pin "32"
-			(uuid "205cb429-9e39-4107-8c13-e3c310f2311c")
+			(uuid "d14e1c27-8892-4861-b439-f2abbe697150")
 		)
 		(pin "33"
-			(uuid "ced248db-a7e5-4c1c-8495-774d99a2705d")
+			(uuid "4eaae86b-af3e-4c05-8fe6-530de18c12ee")
 		)
 		(pin "34"
-			(uuid "708c52f7-3bb5-44ab-b6f8-86b19e42a84a")
+			(uuid "ac43c9b4-98a9-4dfd-99a6-4821dbe524a3")
 		)
 		(pin "35"
-			(uuid "22506503-321e-4e57-8ed2-56095177eb82")
+			(uuid "4cf8b1e2-f6b4-4581-a767-ebe6b9963992")
 		)
 		(pin "36"
-			(uuid "a30fbbbf-458c-47d3-b2b8-859450c5b5cb")
+			(uuid "00311d71-06bf-428c-8506-d04e6c3c24d3")
 		)
 		(pin "37"
-			(uuid "066b705c-99fc-4a11-b3cf-3bb0ab9960ce")
+			(uuid "14d9312a-59bc-41c0-abca-89380c276e5e")
 		)
 		(pin "38"
-			(uuid "775d971f-0b57-4195-94f4-c4256cfc0e28")
+			(uuid "f57de979-73c4-4c3e-a5e3-735245118232")
 		)
 		(pin "39"
-			(uuid "c7717e24-c7bf-4912-a081-c22bbd886f68")
+			(uuid "1e67dc59-086f-4a7d-81aa-e0a7c6c9ef52")
 		)
 		(pin "40"
-			(uuid "f974928a-e2e9-48b5-9b2f-19c953e8d2d3")
+			(uuid "e383499b-4f22-422d-a6a1-3e4c39986ad2")
 		)
 		(pin "41"
-			(uuid "349789d3-4300-40ba-97c1-b19c4ebabf85")
+			(uuid "639ede39-d33a-4ea5-a1dc-744e5ac804e9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4412,7 +4738,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2a49e506-34fe-45d7-bdfd-443dad2ccb6d")
+		(uuid "022c71fc-e445-4a07-8fba-3ed9c3fdf997")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4422,7 +4748,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "26bbefc0-191f-4c78-9e21-603230cd6b61")
+		(uuid "c280ee87-4194-429d-964b-734e13f802b0")
 		(property "Reference" "#PWR011"
 			(at 105.41 165.1 0)
 			(effects
@@ -4468,7 +4794,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "8cacd2ab-a89b-4093-be6e-efadfce698ff")
+			(uuid "1b2c9a51-882f-4b68-99dd-b84766b94667")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4487,7 +4813,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "33515819-6ad4-4b9f-b62b-91931c2fe0ee")
+		(uuid "74d326bb-fdb7-4bf6-ab62-71b31a15fb30")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -4497,7 +4823,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "283c33e1-e51a-4aff-81fb-1b1ad2e4b105")
+		(uuid "d93d8bd9-404f-4c4d-b7ab-dd9d3955f5cc")
 		(property "Reference" "#PWR012"
 			(at 105.41 167.64 0)
 			(effects
@@ -4543,7 +4869,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "68bd0602-105e-41c2-87e8-51e0ff784776")
+			(uuid "92d89b3f-6133-4953-9b8e-5b3c5cf2e3d2")
 		)
 		(instances
 			(project "NeuralCard"
@@ -4562,7 +4888,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "44bb20d7-4562-4f28-85eb-9154b5d54ce7")
+		(uuid "b311eb9f-4a2a-4e7e-8493-5dcc3559db0d")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -4573,7 +4899,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cbba6a9c-e371-43c8-9926-822bc2c74033")
+		(uuid "77e658a4-cd98-49d0-95bc-a15c932a5fa3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 170.18 0)
 			(effects
@@ -4592,7 +4918,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fa5ca7a6-393c-4965-990b-ac53f70b0026")
+		(uuid "f6f4e0dc-7cc0-4058-8d23-016d9494c0ff")
 	)
 	(global_label "CHX1"
 		(shape bidirectional)
@@ -4603,7 +4929,7 @@
 			)
 			(justify right)
 		)
-		(uuid "42637bfe-f1d1-499f-ab9c-698342e42222")
+		(uuid "8579560e-bd58-48eb-a673-fc70f902084d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 172.72 0)
 			(effects
@@ -4622,7 +4948,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1f8f0f62-2a5e-4453-a046-15647ee7d894")
+		(uuid "c065c67c-30e0-4c8a-bd07-61092e52b110")
 	)
 	(global_label "CHX2"
 		(shape bidirectional)
@@ -4633,7 +4959,7 @@
 			)
 			(justify right)
 		)
-		(uuid "c0f0a2ef-c758-490a-bc36-4153a3a74924")
+		(uuid "72b704a8-c101-4bd2-b564-1b9f2decadb6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 175.26 0)
 			(effects
@@ -4652,7 +4978,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cf2e2f7a-1e27-43b8-a37a-ec5eb600eca4")
+		(uuid "38fd205a-af42-4142-bb12-9daf5a02fc54")
 	)
 	(global_label "CHX3"
 		(shape bidirectional)
@@ -4663,7 +4989,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ada7ea39-c0c1-429b-a004-afeaf8f5dc52")
+		(uuid "b55f9ab6-1ece-419f-a4ec-53d1f7883a85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 177.8 0)
 			(effects
@@ -4682,7 +5008,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ff6c82f1-6158-4653-8788-2ddc6d835568")
+		(uuid "e75ee316-c75a-4690-a971-0a1a98992b77")
 	)
 	(global_label "CHX4"
 		(shape bidirectional)
@@ -4693,7 +5019,7 @@
 			)
 			(justify right)
 		)
-		(uuid "7a21eec6-b915-4eab-8b08-d03db7dbe41a")
+		(uuid "425d532f-fd0f-4ec4-92d1-3d94ab336caa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 180.34 0)
 			(effects
@@ -4712,7 +5038,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "55097b3b-f003-400b-ab6e-8fac55ee978c")
+		(uuid "77d2192e-4f06-4e01-b63f-36657be47ade")
 	)
 	(global_label "CHX5"
 		(shape bidirectional)
@@ -4723,7 +5049,7 @@
 			)
 			(justify right)
 		)
-		(uuid "1217cd25-93a9-449f-a84a-99b14dc238eb")
+		(uuid "ccda7e2c-2d31-4227-9163-7d097cdd12e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 182.88 0)
 			(effects
@@ -4742,7 +5068,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "67a2c0df-edca-4ba6-b1b8-8afa2a8a06d9")
+		(uuid "12da3794-1eb3-4085-b8bb-3522b87936de")
 	)
 	(global_label "CHX6"
 		(shape bidirectional)
@@ -4753,7 +5079,7 @@
 			)
 			(justify right)
 		)
-		(uuid "686a6b89-775a-472d-b00f-c4d9969a961c")
+		(uuid "b81a0f56-043d-4bb4-b6fa-08de89e0284f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 185.42 0)
 			(effects
@@ -4772,7 +5098,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3d79df22-1561-4477-b573-2ae0e4b80c26")
+		(uuid "b2715109-5d81-46e3-9828-e1c7ec10f1e2")
 	)
 	(global_label "SCL"
 		(shape bidirectional)
@@ -4783,7 +5109,7 @@
 			)
 			(justify right)
 		)
-		(uuid "524bb068-a4a2-41e5-aacc-825ab918dfab")
+		(uuid "c02932ae-ca99-41d2-970b-e0013d40dccc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 187.96 0)
 			(effects
@@ -4802,7 +5128,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5188e82a-54fe-463b-bbfb-0ce7f81073a4")
+		(uuid "3885b99c-7286-45a8-8a2a-5d65e9b9a018")
 	)
 	(global_label "IMU_INT"
 		(shape bidirectional)
@@ -4813,7 +5139,7 @@
 			)
 			(justify right)
 		)
-		(uuid "f2602c35-3e59-41d1-bab8-33e8605f4645")
+		(uuid "cd181a22-423f-40ce-8ece-badffda5c770")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 190.5 0)
 			(effects
@@ -4832,7 +5158,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e0631690-ec61-4853-aabc-aac5126ca735")
+		(uuid "87db734e-9685-469e-ab43-bd4d41612dce")
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -4843,7 +5169,7 @@
 			)
 			(justify right)
 		)
-		(uuid "be9c5165-7f50-4679-a0e9-02f28969dfb0")
+		(uuid "dfd5f1cb-0eda-4508-bb66-e9f81d109f87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 193.04 0)
 			(effects
@@ -4856,43 +5182,43 @@
 	)
 	(no_connect
 		(at 107.95 195.58)
-		(uuid "2625fa7b-2d17-4790-8704-5c1a75ea7203")
+		(uuid "f2dec8fe-6ff4-4bfc-932f-8bb834923d97")
 	)
 	(no_connect
 		(at 107.95 198.12)
-		(uuid "31fcce96-3c22-45ac-90ee-e387b20bc2b7")
+		(uuid "eba399ba-0857-4c46-8bbe-f7f49065e1a7")
 	)
 	(no_connect
 		(at 115.57 210.82)
-		(uuid "9e4d8c3a-7507-4f25-b722-a88248ccae73")
+		(uuid "f70a652c-534d-43e0-be32-a4e1215a0522")
 	)
 	(no_connect
 		(at 118.11 210.82)
-		(uuid "b04e183c-6a3b-469f-9a48-0694d379d93c")
+		(uuid "5d2e39a1-2e9a-409f-afc8-03578ca4e7e3")
 	)
 	(no_connect
 		(at 120.65 210.82)
-		(uuid "f117ba04-70f0-43f4-847f-ea562bc188f2")
+		(uuid "e311b37b-7b0f-45f1-adae-7958bf152d45")
 	)
 	(no_connect
 		(at 123.19 210.82)
-		(uuid "41d184df-9bb0-4a87-b0db-ff6cb3e06df9")
+		(uuid "00d37bc9-bbee-451d-ac3d-962f9c1b5587")
 	)
 	(no_connect
 		(at 125.73 210.82)
-		(uuid "5c61ed98-bc0b-4ed5-a480-992f7fb6bed2")
+		(uuid "b08fbf1d-a9f8-4d0a-ab64-40c810311771")
 	)
 	(no_connect
 		(at 128.27 210.82)
-		(uuid "79cbca0b-35be-4906-a54e-daf54d649efc")
+		(uuid "2c7482e6-02a0-4225-8ecc-26b6747d4287")
 	)
 	(no_connect
 		(at 130.81 210.82)
-		(uuid "d0e85d74-0c17-44a6-bbf3-335644547818")
+		(uuid "5d802906-fbb2-4273-abd7-94d0a72dc5e0")
 	)
 	(no_connect
 		(at 133.35 210.82)
-		(uuid "fa8f43e5-36ae-488e-ab6a-6284c08cd1f2")
+		(uuid "3cb86b70-b1fd-4732-a831-22d7ce5e1dca")
 	)
 	(wire
 		(pts
@@ -4902,7 +5228,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e40e619b-b0cf-4eec-9faf-4791c850b4ba")
+		(uuid "b060e2b2-2482-4c56-9bd7-6be7ec605103")
 	)
 	(global_label "NFC_GPO"
 		(shape bidirectional)
@@ -4913,7 +5239,7 @@
 			)
 			(justify left)
 		)
-		(uuid "ce2a333a-7a3c-4ac1-9638-e24b7c48b388")
+		(uuid "51cbc3a9-3ba1-42be-ad06-fc38468a6711")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.89 213.36 0)
 			(effects
@@ -4926,15 +5252,15 @@
 	)
 	(no_connect
 		(at 138.43 210.82)
-		(uuid "4b62154a-142a-49fd-878e-4b5b487d7881")
+		(uuid "91d1d82e-fcb3-4093-a662-53323b6cca52")
 	)
 	(no_connect
 		(at 140.97 210.82)
-		(uuid "61005708-ccab-41e5-8d51-fb9977dc354f")
+		(uuid "977a34ea-246c-4968-8027-ee3b754ec63e")
 	)
 	(no_connect
 		(at 143.51 210.82)
-		(uuid "34464d37-8299-4373-99f7-722594ff4f3e")
+		(uuid "9b5015eb-3660-4472-aa04-3371f7496d13")
 	)
 	(wire
 		(pts
@@ -4944,7 +5270,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9f3b0c26-bec7-47c7-8c4d-dae145ed3846")
+		(uuid "5dd73efe-e9e3-4242-9341-60c4f4daabab")
 	)
 	(global_label "IO0"
 		(shape bidirectional)
@@ -4955,7 +5281,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0ca5e604-ddb5-4414-b412-5d37ad28a827")
+		(uuid "a1cb7511-93c0-4e84-bd46-1a8647963fe4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.67 198.12 0)
 			(effects
@@ -4968,35 +5294,35 @@
 	)
 	(no_connect
 		(at 151.13 195.58)
-		(uuid "df0210b0-0307-4833-92f6-8c1eefb0d8aa")
+		(uuid "11c6a8aa-2c3d-444b-9b13-0663f77b06f3")
 	)
 	(no_connect
 		(at 151.13 193.04)
-		(uuid "5a899024-f285-47df-a7be-66f8ac02c394")
+		(uuid "b157fc33-288b-445a-bcc3-c84dae96e560")
 	)
 	(no_connect
 		(at 151.13 190.5)
-		(uuid "a61fecfa-dfe2-4347-8c90-bcd983ee44ae")
+		(uuid "dcd746f3-9e7f-456a-8532-f4d84846e51a")
 	)
 	(no_connect
 		(at 151.13 187.96)
-		(uuid "0548640f-0f53-4c94-b961-00fa4f932fdf")
+		(uuid "f1b4ecaf-e9b8-48b5-a07b-e425f01b5abc")
 	)
 	(no_connect
 		(at 151.13 185.42)
-		(uuid "e140e8b1-95fe-4772-a03f-b22138b95307")
+		(uuid "893a23d5-817c-4e90-b888-ab5da2869003")
 	)
 	(no_connect
 		(at 151.13 182.88)
-		(uuid "544dff41-ba7f-4f30-a354-84adc9706774")
+		(uuid "4d265511-da17-4c6c-9167-cce648da4de2")
 	)
 	(no_connect
 		(at 151.13 180.34)
-		(uuid "321b7d6a-f1a3-448f-8d17-6f824346cba8")
+		(uuid "41d9f185-7d46-4ee5-b1b0-00d976d65941")
 	)
 	(no_connect
 		(at 151.13 177.8)
-		(uuid "a3c5d404-b4f4-4d87-b820-9413e007908b")
+		(uuid "9395c1cb-a386-480a-9df8-1b514ca38246")
 	)
 	(wire
 		(pts
@@ -5006,7 +5332,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dc232343-d786-4a5a-8923-794a0b75715d")
+		(uuid "e597bbb3-bfcd-4e6b-a4e7-59fa5d8b8c5b")
 	)
 	(global_label "RXD"
 		(shape bidirectional)
@@ -5017,7 +5343,7 @@
 			)
 			(justify left)
 		)
-		(uuid "45ec8539-fa87-4a84-a066-61ac2ddc4389")
+		(uuid "ccb9c4be-ccbe-4431-9a46-290deb72e295")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.67 175.26 0)
 			(effects
@@ -5036,7 +5362,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ee5f7b58-0e5e-484f-8f75-5755e7ee1b33")
+		(uuid "2f3ddf92-b3e3-4036-b4aa-535fc4fcb421")
 	)
 	(global_label "TXD"
 		(shape bidirectional)
@@ -5047,7 +5373,7 @@
 			)
 			(justify left)
 		)
-		(uuid "919eed00-5f70-4c2e-a1da-4a411f30c089")
+		(uuid "940dd303-867c-4e55-983b-316a6d1db418")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.67 172.72 0)
 			(effects
@@ -5060,11 +5386,11 @@
 	)
 	(no_connect
 		(at 151.13 170.18)
-		(uuid "658b3353-22e9-4f77-9695-a3986c255173")
+		(uuid "b931f860-9200-4f51-978d-8834371a8dd1")
 	)
 	(no_connect
 		(at 151.13 167.64)
-		(uuid "c314c075-5c38-4150-a380-2b0e1b8be477")
+		(uuid "c92f849d-8897-4078-9c11-9e8375c7cf1b")
 	)
 	(wire
 		(pts
@@ -5074,7 +5400,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "82a4b003-5a7a-4bdc-b2be-b3e8391e70ac")
+		(uuid "f4e58885-8bf5-4f55-9d10-d9d5f613448e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5084,7 +5410,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c65024b0-146b-4f4e-bc5e-8dbbddd596c3")
+		(uuid "d3a66ad5-7e06-4b22-beaa-8187e52c38ed")
 		(property "Reference" "#PWR013"
 			(at 153.67 165.1 0)
 			(effects
@@ -5130,7 +5456,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "6f1aad2c-18a4-462d-9114-d35036f9cf1d")
+			(uuid "4936892e-1237-4fa0-9124-126cf0b6c08f")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5149,7 +5475,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "023c56d5-3b48-4c63-b3b2-411cbc7371f9")
+		(uuid "ee07c01a-ce13-4825-bec6-30d9e68d1cfd")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5159,7 +5485,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b6816014-bf4c-4c5e-ac71-3b29972e4f70")
+		(uuid "6169c393-8c84-4c9a-8771-403c478ec720")
 		(property "Reference" "#PWR014"
 			(at 153.67 160.02 0)
 			(effects
@@ -5205,7 +5531,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "f0e5b586-289c-4062-a21d-7dec63aefbfa")
+			(uuid "9fa6083c-5364-4dc4-ba3c-76cd772a8d88")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5224,7 +5550,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1d533e5d-a163-437c-9d4f-27e852d8f938")
+		(uuid "2e4f4b23-e1e3-4057-81d8-098480c8669b")
 		(property "Reference" "C1"
 			(at 179.778 130.984 0)
 			(effects
@@ -5271,10 +5597,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "40c3dcb4-d8e8-4908-97a8-ee9667d740e1")
+			(uuid "f25b07a3-b79c-4d93-b620-33fa6cb80b78")
 		)
 		(pin "2"
-			(uuid "f4fca698-d16a-4276-9677-5c7446b0aee8")
+			(uuid "893a2396-976d-40bd-8d20-3107afe1336d")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5293,7 +5619,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3f23354a-027a-4eeb-a669-f8b80868d0e7")
+		(uuid "ee2122ec-7d16-4aa5-99ea-73d3838e56d3")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5303,7 +5629,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3b5ac561-151b-4cc0-ae3b-8967876d82bd")
+		(uuid "08be269c-f882-4d73-a67c-f96a9c045f80")
 		(property "Reference" "#PWR015"
 			(at 177.8 125.73 0)
 			(effects
@@ -5349,7 +5675,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "b1417443-f4b8-4729-aee2-231b1eae3a57")
+			(uuid "41e89a93-948f-49a4-a67f-fa9ea922488e")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5368,7 +5694,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2c664602-1f10-4481-a9a9-a969cfc4e71a")
+		(uuid "5651551e-bc05-4179-9b4b-5f59fdb11f14")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5378,7 +5704,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f60f0620-1d82-4c04-8958-ccd22ce5bc4b")
+		(uuid "2378aafb-1358-4962-a441-2ca0625b3182")
 		(property "Reference" "#PWR016"
 			(at 177.8 138.43 0)
 			(effects
@@ -5424,7 +5750,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "4eb31e31-1202-4232-b21e-579b844aaa34")
+			(uuid "5bffd7f8-e2a6-405d-b84f-f12a9540c9a1")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5443,7 +5769,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b6a87ec2-b82f-4df2-9798-aa8d9099fac4")
+		(uuid "9f207cf1-e55f-4ec0-a942-67013d989f62")
 		(property "Reference" "C2"
 			(at 189.778 130.984 0)
 			(effects
@@ -5490,10 +5816,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "8cda7930-d51a-4f6d-ba19-03a379375de9")
+			(uuid "9dd014f2-8272-4dac-b90b-b445316401a8")
 		)
 		(pin "2"
-			(uuid "cbf8d4bd-a38d-4bd1-95db-8dba85959e24")
+			(uuid "94891cf6-be7d-4f83-9bbe-161d143bd54d")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5512,7 +5838,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "903293cc-f31a-431f-bf5d-134a486f8014")
+		(uuid "fefd0972-e50c-47d9-91b3-af0306ed4fa2")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5522,7 +5848,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "20e1b92d-5eb7-49e5-ad77-265ded37a171")
+		(uuid "2c9769e0-3463-4814-bcb3-a226e39d8cd4")
 		(property "Reference" "#PWR017"
 			(at 187.96 125.73 0)
 			(effects
@@ -5568,7 +5894,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "214b9df6-3801-445d-ad1f-5203c4bdcbc3")
+			(uuid "6ca4e5aa-7324-43ae-86f7-e31f17dec0a7")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5587,7 +5913,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ed117ec1-b3e2-4fd7-9f66-2e689da86a8c")
+		(uuid "0d790ba7-a2c7-4642-b434-aaf2e9bf4845")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5597,7 +5923,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "657f4437-f665-4580-8c7d-cddc4c93a249")
+		(uuid "9679f5f9-b0c2-4915-9f86-7a1623c7b9a1")
 		(property "Reference" "#PWR018"
 			(at 187.96 138.43 0)
 			(effects
@@ -5643,7 +5969,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "1b112a80-35f3-46ae-b106-c79b4f8f5d0f")
+			(uuid "0cb47e4f-f01b-4418-bc93-88a96804dfcd")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5662,7 +5988,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9d634950-f2e1-459a-a1b9-849ea95657da")
+		(uuid "fb89d627-6cd6-4b50-b4f4-a4561019a40a")
 		(property "Reference" "C3"
 			(at 199.778 130.984 0)
 			(effects
@@ -5709,10 +6035,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "fa4e27ba-095c-4445-9bfe-0a2b55d120d4")
+			(uuid "8cdc8460-11a8-4aa7-b276-2176330339e9")
 		)
 		(pin "2"
-			(uuid "15b54759-d200-4bf4-90f8-336b924ea12c")
+			(uuid "2cb9aefe-14b3-4b73-bcbf-a1f4c42fe7cb")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5731,7 +6057,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1447be59-2d01-4c19-8773-e23763954568")
+		(uuid "15afc29b-d25c-410d-bd98-18b760bb952b")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5741,7 +6067,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "872c1634-5788-4b97-a163-83c54927d380")
+		(uuid "1abed63a-d42a-4257-a1fd-f495ac0f97d1")
 		(property "Reference" "#PWR019"
 			(at 198.12 125.73 0)
 			(effects
@@ -5787,7 +6113,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "c30be071-b5ec-4726-8161-655a5978b31d")
+			(uuid "93422fd0-fc84-47be-9803-26d6a1913574")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5806,7 +6132,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4eb755ef-fa9a-45c7-86a7-78bd2039fd06")
+		(uuid "bc95e745-7a96-410f-a642-6cf4a0e7aff3")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5816,7 +6142,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b1a4da31-98e0-4f0f-8161-bd8bc9c72b77")
+		(uuid "240774f7-e071-45f7-bcc7-ec21892bcccb")
 		(property "Reference" "#PWR020"
 			(at 198.12 138.43 0)
 			(effects
@@ -5862,7 +6188,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "fd3d848e-7a25-4287-ba95-65ff150d460f")
+			(uuid "13499f3e-b9a8-4b4b-a066-b03c5b52668b")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5881,7 +6207,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8a0f679d-dea3-41ea-bd79-2161a1b78e31")
+		(uuid "afb66a79-426b-4309-a1f1-306084673738")
 		(property "Reference" "R9"
 			(at 71.778 130.984 0)
 			(effects
@@ -5928,10 +6254,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "34368ad6-da39-4002-b7f7-7fbd0ad95c8f")
+			(uuid "91280bf6-390b-45c7-b45a-dc68d82503a8")
 		)
 		(pin "2"
-			(uuid "08cfcd39-8ddb-489b-9e7e-c0b08602707a")
+			(uuid "afadd3a6-ad43-407d-bc00-d8fa1b1610dd")
 		)
 		(instances
 			(project "NeuralCard"
@@ -5950,7 +6276,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "55d25d4b-b9ab-4c72-8621-2d5d1ede3507")
+		(uuid "3c7a2433-1fde-4c0e-b715-c66765fe8d22")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5960,7 +6286,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "840d6f9c-c5c8-439c-9acb-9c7182bb9d19")
+		(uuid "1e525fa7-9263-4638-9d37-6e612c697523")
 		(property "Reference" "#PWR021"
 			(at 69.85 125.73 0)
 			(effects
@@ -6006,7 +6332,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7fa55515-c1ac-4a28-a2e7-6e04e3ffc030")
+			(uuid "45310931-be17-4ab3-a064-1813e7b3d13a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6025,7 +6351,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "19cd9b6d-83dd-4c07-a68e-ae728f5f1b85")
+		(uuid "d5812a7a-16e9-45e7-84b7-03ee31669696")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -6036,7 +6362,7 @@
 			)
 			(justify left)
 		)
-		(uuid "4f3de062-dabe-4807-9e93-4fbcff2e26c7")
+		(uuid "debfa948-aced-46fe-aed6-1282295888e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 69.85 138.43 0)
 			(effects
@@ -6055,7 +6381,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "33347679-fbdb-4638-affa-0b3b0c3a772e")
+		(uuid "13dfee2b-5822-4d8e-8fe5-7490c15df620")
 		(property "Reference" "C4"
 			(at 85.778 130.984 0)
 			(effects
@@ -6102,10 +6428,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "ca69cb11-7711-4224-b3aa-12ec72dfe99f")
+			(uuid "a8863265-9619-449d-81be-35f6ca042bb4")
 		)
 		(pin "2"
-			(uuid "a4f8c366-2746-40be-9d6a-5f17f9124d34")
+			(uuid "54a50762-5677-44d5-821b-49484fab77c9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6124,7 +6450,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cada09f7-f0a8-4cbc-8257-8e9517f389dd")
+		(uuid "1297aa25-579c-4a9a-906b-00b2ef5d330c")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -6135,7 +6461,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0180e2bc-07ec-48e6-b93d-e7d072c4a2a8")
+		(uuid "4a9f7fb2-bc6f-4323-a619-4cde79c25899")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.82 125.73 0)
 			(effects
@@ -6154,7 +6480,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9186db0f-0cb5-4492-be28-88aa2d9dd6be")
+		(uuid "a6b169cd-9c93-4605-9ae1-379a4b705365")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6164,7 +6490,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c20a70d-f176-4d2a-b32b-4e285a497dfa")
+		(uuid "c698159b-6b42-43c9-9deb-7c23999f062b")
 		(property "Reference" "#PWR022"
 			(at 83.82 138.43 0)
 			(effects
@@ -6210,7 +6536,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "3f9fa402-cbbc-41c0-8315-b5dd508abcab")
+			(uuid "a6822ab4-c94e-44dc-b188-fa7b1c8e40aa")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6229,7 +6555,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "49f36ea4-ef94-413b-bb77-8f2eee6729f3")
+		(uuid "231c9ebe-2042-4267-b53d-1eda48d6ab04")
 		(property "Reference" "SW2"
 			(at 66.54 148.73 0)
 			(effects
@@ -6276,16 +6602,16 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "4bc1bb38-a390-4365-b403-9e3afd0ca1bd")
+			(uuid "861fbe7f-7ef1-4cd0-88a7-fa0876b77348")
 		)
 		(pin "2"
-			(uuid "876b81f1-dc93-40d4-a0ae-c4da4ca55433")
+			(uuid "e68ee697-673e-4e93-bff4-9b3178e00de8")
 		)
 		(pin "3"
-			(uuid "8d94f2d4-d250-4f40-822a-858397d6dc2a")
+			(uuid "0d77283f-7e10-4872-bff8-e68460e0820c")
 		)
 		(pin "4"
-			(uuid "b06fcf67-73ad-4fdb-9e42-dc3966c2f410")
+			(uuid "1ec0603c-d8a7-46bc-9315-29e4a4635162")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6304,7 +6630,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5cb8f711-ecf0-4a3b-a6db-875a0167efb7")
+		(uuid "57744024-6d21-4210-bc82-4382c285bdcb")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -6315,7 +6641,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8bdc8b80-0608-4fa3-a77b-be55e6229026")
+		(uuid "f447daa3-41aa-49cc-9f6a-920ee958ada0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 55.88 147.32 0)
 			(effects
@@ -6334,7 +6660,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "87efaf2d-5365-47ba-b2f8-5f6e6e1ece0a")
+		(uuid "cdfdc29e-2ce7-4c02-bdc3-3caffadcf2e8")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -6345,7 +6671,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8231797e-b77c-46bf-b99c-8c53d70c57ef")
+		(uuid "b7e96b9b-5e10-4fd0-9e25-aec15375fda2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 55.88 154.94 0)
 			(effects
@@ -6364,7 +6690,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "590936e0-219d-481a-adad-79ae7ea04d8b")
+		(uuid "e2870bb1-bb17-4323-949f-ac442f5dbde1")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6374,7 +6700,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "472f1bc1-e3dc-4c10-81c7-de17601994d0")
+		(uuid "1fb26f7d-275a-4e7d-8256-e7ea5c85556e")
 		(property "Reference" "#PWR023"
 			(at 71.12 147.32 0)
 			(effects
@@ -6420,7 +6746,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "dbbc398d-e6fc-4955-bb9e-dfa0f6b61596")
+			(uuid "70b814bc-8ee5-4b8b-a052-9aed12832e39")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6439,7 +6765,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c3a3cbb6-dd9a-49ac-a177-a84db5475e00")
+		(uuid "edba0ad7-8db0-4d3a-9a33-4a0ca40ddec2")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6449,7 +6775,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "482cce7d-3120-4238-b15f-5aad4a801c8c")
+		(uuid "9de09633-6053-44dc-bbb7-56b87b59d4e6")
 		(property "Reference" "#PWR024"
 			(at 71.12 154.94 0)
 			(effects
@@ -6495,7 +6821,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7440112b-1e85-4916-886d-eedcdbde23db")
+			(uuid "2d5fae5b-bb0a-4092-9441-211b3ba3f049")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6514,7 +6840,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a73dafa7-0339-487a-840f-b63ce143fec7")
+		(uuid "57eef337-cc45-42fd-8829-be2719191064")
 		(property "Reference" "R10"
 			(at 211.778 130.984 0)
 			(effects
@@ -6561,10 +6887,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7423eea0-cbab-464e-92f1-c27d3407ab27")
+			(uuid "9eff3791-70f0-4fb5-9f64-953e7f6708d9")
 		)
 		(pin "2"
-			(uuid "c7bd5b7d-d16b-4872-91d9-2e88be11569b")
+			(uuid "e387e117-1aa6-4bd3-af9e-3102066d992e")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6583,7 +6909,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dae96ecd-db51-413a-a991-398d0f4e7a28")
+		(uuid "2548212e-8d6f-4e7b-a81e-4db593e4b187")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -6593,7 +6919,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "df5fd9cb-6d8c-4490-847a-5fae6f859827")
+		(uuid "69d1bba8-4497-4937-82b3-d949d6a6136a")
 		(property "Reference" "#PWR025"
 			(at 209.55 125.73 0)
 			(effects
@@ -6639,7 +6965,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "27750fc2-fbac-4406-ae52-53edc4bce3ca")
+			(uuid "bc031495-ecf3-40f3-889e-965617cff37e")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6658,7 +6984,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c8204d99-a840-4424-aa70-db0c424ac5f3")
+		(uuid "ba240b10-7039-49f9-945b-212d3482ed1d")
 	)
 	(global_label "IO0"
 		(shape bidirectional)
@@ -6669,7 +6995,7 @@
 			)
 			(justify left)
 		)
-		(uuid "ae951b0c-86e3-4271-8673-22a9224ff975")
+		(uuid "9612da60-ccbc-4f46-bc5b-b0d932c98b0d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 209.55 138.43 0)
 			(effects
@@ -6688,7 +7014,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bcaeaa6d-5101-48c6-a97a-8562397f1299")
+		(uuid "1823940b-fdf5-44b5-841c-8164a6dab860")
 		(property "Reference" "SW1"
 			(at 202.54 148.73 0)
 			(effects
@@ -6735,16 +7061,16 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "44e5a7b8-e647-4957-93f6-a5580e8bc788")
+			(uuid "ee6829c5-de04-49d0-9751-9b406c8b67cd")
 		)
 		(pin "2"
-			(uuid "c89b9113-cc2e-4766-a95c-8713e6e7829f")
+			(uuid "cdb1d9d5-c6c2-44df-bc62-dab931d77cf8")
 		)
 		(pin "3"
-			(uuid "9b69ecc3-f2d4-4781-9e36-0cf8f05042e8")
+			(uuid "91d67bca-65b1-4f79-856f-69be4e24e929")
 		)
 		(pin "4"
-			(uuid "2ef58996-892a-4846-a8bc-65cf7bd0e721")
+			(uuid "d870e2c8-3c69-450d-8095-1509cb3a9bf2")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6763,7 +7089,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4979f244-736d-432c-8c9d-e1579a720a1e")
+		(uuid "073fcdd9-31ab-46af-9f92-569048cb1f72")
 	)
 	(global_label "IO0"
 		(shape bidirectional)
@@ -6774,7 +7100,7 @@
 			)
 			(justify right)
 		)
-		(uuid "d49982b9-4b9d-45c5-9cef-0b31eaa751da")
+		(uuid "e09cfc80-636f-4fc4-a6e5-0f6d01ee35dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 191.77 147.32 0)
 			(effects
@@ -6793,7 +7119,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8037cb5f-5c67-4bae-9adb-f52d1b818b7c")
+		(uuid "1020543a-4018-4159-b805-d33d66fb6560")
 	)
 	(global_label "IO0"
 		(shape bidirectional)
@@ -6804,7 +7130,7 @@
 			)
 			(justify right)
 		)
-		(uuid "c588520a-19dc-4c88-875e-ef809609f9ab")
+		(uuid "4d3eea67-ca22-4678-bba8-a9f529d4145c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 191.77 154.94 0)
 			(effects
@@ -6823,7 +7149,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c5284133-fafe-4447-a52f-dcd053c82b77")
+		(uuid "15b8a940-8ee1-4dd8-b4fa-9c84b58a0829")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6833,7 +7159,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e9b9e4c9-780c-4175-9621-c8a278e24f2b")
+		(uuid "eb8f0c80-7915-499f-bba3-65381e88f74d")
 		(property "Reference" "#PWR026"
 			(at 207.01 147.32 0)
 			(effects
@@ -6879,7 +7205,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "b22b3562-9323-4348-ad9a-3702ff2acc3f")
+			(uuid "e71ef672-8be0-4b40-9e57-7cd970a3c42d")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6898,7 +7224,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "78d5311a-1d52-4ab7-81b2-7a2ea6052936")
+		(uuid "404816ec-7d6f-4858-9a72-6fd00ff6e813")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6908,7 +7234,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6087157e-9031-4719-95fc-1269ac65a6ed")
+		(uuid "baedbf02-4152-4c4e-b54d-bdf0b9863a3c")
 		(property "Reference" "#PWR027"
 			(at 207.01 154.94 0)
 			(effects
@@ -6954,7 +7280,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "456ae9de-0dc3-4a46-9982-e8c9b9653889")
+			(uuid "60baa2cc-5fa2-4454-970c-2be48858b577")
 		)
 		(instances
 			(project "NeuralCard"
@@ -6973,7 +7299,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "50584246-8e9f-4b63-b626-d1220b87c6e8")
+		(uuid "9b22f605-a1da-4874-b023-8378fdc742ea")
 		(property "Reference" "J1"
 			(at 72.54 213.73 0)
 			(effects
@@ -7020,22 +7346,22 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "1a13b72b-5c45-4ee6-bc3b-1dd78c9bc434")
+			(uuid "4e71b697-6bc7-457c-b9fb-060afa3e567f")
 		)
 		(pin "2"
-			(uuid "2723db4c-a6a5-45d8-a032-eebdd2ce1be7")
+			(uuid "862be9f3-35b8-428a-8ec0-b95504294f8f")
 		)
 		(pin "3"
-			(uuid "9d453357-e169-4b16-b063-786bcae3d7af")
+			(uuid "c2c431d7-b8cb-4074-87bd-cb813690003d")
 		)
 		(pin "4"
-			(uuid "97195bfa-9228-41c1-9bd7-9da57140bc87")
+			(uuid "e385c040-8ae5-4b75-810c-607ad7e32b4d")
 		)
 		(pin "5"
-			(uuid "e12ccd5a-8121-44b2-a9c3-12c8dc2044fd")
+			(uuid "4d7bf73b-28f3-4ec9-9e94-076356340a4a")
 		)
 		(pin "6"
-			(uuid "bc6a20e7-6a6f-4af4-9b83-9c261eed0bdf")
+			(uuid "2da3bdcf-92fb-4ba2-bb75-a041754ab80d")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7054,7 +7380,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4d4692a3-2a57-43c2-aa8d-83d0472aa323")
+		(uuid "50c18f21-eb26-493a-964e-3edb3c69bad2")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -7064,7 +7390,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c0bd8c3a-f095-4786-bb0c-b416aeb2eff2")
+		(uuid "2d4bb4e8-f0ad-4905-aca6-fb11d7d91c5a")
 		(property "Reference" "#PWR028"
 			(at 62.23 209.55 0)
 			(effects
@@ -7110,7 +7436,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "9e84a262-fa73-4e93-8e6b-b2f24fff837a")
+			(uuid "149d868f-ce6c-4683-85c0-ad9e5286ebbc")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7129,7 +7455,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6b67ecac-2e3d-4eef-945c-9fff1c7f87ce")
+		(uuid "868d9ab1-360f-4ac3-a22e-0227a38ec77e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7139,7 +7465,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3d69dfb0-4cde-411c-85d4-7c22cc158fa5")
+		(uuid "1131ceaf-d4de-4dcd-ac83-05a3aac76d7f")
 		(property "Reference" "#PWR029"
 			(at 62.23 212.09 0)
 			(effects
@@ -7185,7 +7511,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "166b1522-424d-410a-8d07-693c096ededb")
+			(uuid "b4b66785-1751-4c47-8b5a-e01948de410d")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7204,7 +7530,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "41dd3998-3b43-4f12-aea8-3914059666ee")
+		(uuid "5268d0fc-4eb9-4478-a75e-7731bfe41df7")
 	)
 	(global_label "TXD"
 		(shape bidirectional)
@@ -7215,7 +7541,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8f0dd510-5713-4fa0-a0b6-5faab529a0f2")
+		(uuid "a2f57ace-f806-4dfd-9d67-1e91c9fb67b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.23 214.63 0)
 			(effects
@@ -7234,7 +7560,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dcbfb53b-378e-4c9a-ba09-5d647516954b")
+		(uuid "f60470be-af3a-429d-89cd-d6a4c8320b06")
 	)
 	(global_label "RXD"
 		(shape bidirectional)
@@ -7245,7 +7571,7 @@
 			)
 			(justify right)
 		)
-		(uuid "d22a7227-10f4-4f6a-ba0d-c9149faa29f1")
+		(uuid "6ddbab5d-d652-4c3f-ab59-6166bf928f79")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.23 217.17 0)
 			(effects
@@ -7264,7 +7590,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "acef0c84-0791-4731-a928-ca096df9dd39")
+		(uuid "4305c359-2b63-4342-a181-97672533bd13")
 	)
 	(global_label "EN"
 		(shape bidirectional)
@@ -7275,7 +7601,7 @@
 			)
 			(justify right)
 		)
-		(uuid "31dfc07d-3c72-4f57-a6a3-cbeaf0639b9f")
+		(uuid "c8c5b14d-c106-47f8-87e7-f622aacdf6a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.23 219.71 0)
 			(effects
@@ -7294,7 +7620,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "78477478-b683-4ae1-b078-47da0cca3a00")
+		(uuid "d8fb2b0b-9536-4379-b39f-156a33591ffc")
 	)
 	(global_label "IO0"
 		(shape bidirectional)
@@ -7305,7 +7631,7 @@
 			)
 			(justify right)
 		)
-		(uuid "97ceb1b2-4cb6-401d-8e1d-fe3309626d3b")
+		(uuid "b92b0ae8-ea70-4c49-9185-d92bdc684d8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 62.23 222.25 0)
 			(effects
@@ -7327,7 +7653,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "4c49c1a0-e3de-4c00-b85c-1559dde8dae3")
+		(uuid "9f0a65b7-ea5e-4952-9f49-e8db09fef12c")
 	)
 	(text "IMU  (LSM6DS3TR-C 6-axis, I2C addr 0x6B)"
 		(exclude_from_sim no)
@@ -7341,7 +7667,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a813743b-f1e0-4a98-af83-99df4724897d")
+		(uuid "e62de364-6d36-4992-88df-f4e2451b3e74")
 	)
 	(symbol
 		(lib_id "JLC:LSM6DS3TR-C")
@@ -7351,7 +7677,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "abaeaeaf-7125-4cec-b3d7-6d9ccf994f81")
+		(uuid "d0ee1695-8ab4-472c-be3c-c2b0f5cdba8b")
 		(property "Reference" "U2"
 			(at 314.54 148.73 0)
 			(effects
@@ -7398,46 +7724,46 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "cc765a79-a662-4fcb-bb5b-804ab3f1f386")
+			(uuid "992971c1-24c5-46aa-8236-40c474493152")
 		)
 		(pin "2"
-			(uuid "3e010e70-e99e-4312-ab9a-359d1e1b2379")
+			(uuid "b856933f-0647-4a3c-8011-36b1952cfd94")
 		)
 		(pin "3"
-			(uuid "e525d6cf-e014-4a64-88f5-ab847fe6e8c2")
+			(uuid "56688609-ec62-4ac1-b29c-652b71201b2c")
 		)
 		(pin "4"
-			(uuid "e03639f8-9ac6-44f8-8235-be635e63db3d")
+			(uuid "2eb17b98-78ec-438c-bab2-1aff17525802")
 		)
 		(pin "5"
-			(uuid "3a97ed9b-9135-400d-9d03-70e752e41c6d")
+			(uuid "1ed49919-246f-448f-aa81-3a8b5ea329b0")
 		)
 		(pin "6"
-			(uuid "6724fd92-c18d-4d16-852e-d5b438be7f67")
+			(uuid "0d37ad91-b8a5-43b3-a9ce-19af6e1175bb")
 		)
 		(pin "7"
-			(uuid "c1e32a2a-2d44-4c5f-83b8-3c66ecd13db6")
+			(uuid "b36ad19a-92db-4962-9aae-6975995ba68c")
 		)
 		(pin "8"
-			(uuid "f13298df-e860-4f47-8447-e700cac92419")
+			(uuid "dc0373dc-6e35-49d2-b3a2-726e09673a01")
 		)
 		(pin "9"
-			(uuid "1808b2f8-7ece-496b-8642-010377c4b608")
+			(uuid "e60090c4-9e6a-4a10-8fa1-830cd004c9c8")
 		)
 		(pin "10"
-			(uuid "87394633-be94-46de-aa93-f3fe1f2e3f39")
+			(uuid "64471d2c-bf19-4246-a957-6b627bd616a2")
 		)
 		(pin "11"
-			(uuid "ee5d69e9-b7bc-4653-82bf-41f2d916a985")
+			(uuid "5841a63b-ddc7-44a6-9526-4ca1f5a6a72b")
 		)
 		(pin "12"
-			(uuid "f6a9cbf2-9b97-4479-9edc-1b74f2d119e7")
+			(uuid "16b09765-3020-406d-949e-de358115ebd3")
 		)
 		(pin "13"
-			(uuid "d11ddece-ddde-4cde-8955-4a067f51caa8")
+			(uuid "3e5ea066-84ef-4216-91fd-fe1546258b3f")
 		)
 		(pin "14"
-			(uuid "19e3ab53-fa19-46cf-a500-cf9b352224b1")
+			(uuid "8df826c5-b180-4d17-9021-729603af1caf")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7456,7 +7782,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "793b50b2-a9a3-4543-9076-ab33be5e24db")
+		(uuid "0fd74980-22f9-46d1-852d-92d0087ce07e")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -7466,7 +7792,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3a6640c6-ae9e-43d6-9fc7-4b2f2c7bea73")
+		(uuid "fe39dd5c-a844-4a03-bca3-88435dfe0f30")
 		(property "Reference" "#PWR030"
 			(at 295.91 142.24 0)
 			(effects
@@ -7512,7 +7838,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "36a162b9-2460-4eaa-b102-4a0f257b6320")
+			(uuid "6ecdae5c-8b32-4bfc-8137-9898cbced088")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7525,11 +7851,11 @@
 	)
 	(no_connect
 		(at 298.45 144.78)
-		(uuid "508dc7dc-673d-4939-bdf7-1b685625229e")
+		(uuid "1ad1b701-558c-4c11-9ce5-de02bd4362bb")
 	)
 	(no_connect
 		(at 298.45 147.32)
-		(uuid "4fcf0494-11fa-4498-87a7-6c8251bd2978")
+		(uuid "4877c6f2-b0b2-4fa2-b8ca-c8a2e478c6f6")
 	)
 	(wire
 		(pts
@@ -7539,7 +7865,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "42d87bbc-f51b-409d-9b18-61fedbed64b2")
+		(uuid "23979bef-ec66-4516-8be6-488ff9845e62")
 	)
 	(global_label "IMU_INT"
 		(shape bidirectional)
@@ -7550,7 +7876,7 @@
 			)
 			(justify right)
 		)
-		(uuid "083f2d34-faef-42d4-a420-44443add484a")
+		(uuid "ea97ed7c-8c8d-4430-be60-53b29b4e2a19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 295.91 149.86 0)
 			(effects
@@ -7569,7 +7895,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6370b7b0-3a4a-4a50-bb97-8993302ad62b")
+		(uuid "d8779849-cd00-4a40-a3ec-171f5abe4262")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -7579,7 +7905,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "607efedb-694f-4a08-8463-b820f7980669")
+		(uuid "86bcf232-8d7c-4aab-85f9-c3b3a94858eb")
 		(property "Reference" "#PWR031"
 			(at 295.91 152.4 0)
 			(effects
@@ -7625,7 +7951,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "eb7ebd81-5888-40b1-8611-f4809a1c4199")
+			(uuid "e6db28be-60c7-4101-834d-8085442f2b77")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7644,7 +7970,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5e6d26ed-5ea9-4812-9f5a-4b8469307d47")
+		(uuid "d8a5ffeb-06f8-4492-a041-d2abb176a68f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7654,7 +7980,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "10e107fc-2bf0-41b4-96eb-2cf41fa742a2")
+		(uuid "f36864e3-3df4-44f2-9f0b-fe19ae0aa33a")
 		(property "Reference" "#PWR032"
 			(at 295.91 154.94 0)
 			(effects
@@ -7700,7 +8026,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "324558b4-9b94-4dac-88c3-76efa2ca842d")
+			(uuid "6fd20d23-dd89-4778-8bcf-c96aa6e58925")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7719,7 +8045,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f1197afd-a390-4b6f-bae2-16790b2b213b")
+		(uuid "f6cc65b1-455c-4f6a-8d0d-bf5b388af02b")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7729,7 +8055,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0a78e0a3-d089-4d3d-ba81-9150214c094e")
+		(uuid "35baf18f-66bb-400c-a69d-e118909b8839")
 		(property "Reference" "#PWR033"
 			(at 295.91 157.48 0)
 			(effects
@@ -7775,7 +8101,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "5977cf18-345f-4ec7-9255-56f4cc8075dd")
+			(uuid "a17068eb-e342-437d-b939-151321564519")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7794,7 +8120,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d72adba7-83bd-4534-b6a9-337f301d8ba8")
+		(uuid "7702c334-0d7a-416c-bbac-3bd9bcd7584a")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -7804,7 +8130,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "95eb991e-f783-4ff2-8075-3662fa66dca4")
+		(uuid "8a345eb7-e931-408a-8cf8-3f1d036ac0bc")
 		(property "Reference" "#PWR034"
 			(at 328.93 157.48 0)
 			(effects
@@ -7850,7 +8176,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "f1bb464e-0cf5-43b4-8cc7-792297b98575")
+			(uuid "45bef1ae-ce90-4c17-8098-5927cfae6786")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7863,15 +8189,15 @@
 	)
 	(no_connect
 		(at 326.39 154.94)
-		(uuid "3dfbffb6-b0f5-4db0-8294-4c0643ec424e")
+		(uuid "f90a30d5-3cf1-4175-8401-3b813a68643f")
 	)
 	(no_connect
 		(at 326.39 152.4)
-		(uuid "91de4bae-d8f4-4372-bd87-c34ab85e5f3a")
+		(uuid "3daca419-b173-4f08-8382-ffc18245d88c")
 	)
 	(no_connect
 		(at 326.39 149.86)
-		(uuid "bdef90b0-42e3-4899-a02b-5f98217a9bc9")
+		(uuid "c6066c4c-03b3-4bf9-808b-19fa36975bcc")
 	)
 	(wire
 		(pts
@@ -7881,7 +8207,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "813b8ea6-b488-434c-b0bb-738db6839305")
+		(uuid "c7c8f3a0-7caf-4090-8b43-74ae6ba01d9f")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -7891,7 +8217,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "36684273-0569-453e-9f77-1105c08b5a85")
+		(uuid "80919cdf-4061-428e-ad85-1c16f3f8fa58")
 		(property "Reference" "#PWR035"
 			(at 328.93 147.32 0)
 			(effects
@@ -7937,7 +8263,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "efb8189b-7afe-4892-8c4a-1928df9b431d")
+			(uuid "a300d78f-e105-4660-a725-b1bacac638d3")
 		)
 		(instances
 			(project "NeuralCard"
@@ -7956,7 +8282,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d4c94388-c9c3-4f7d-aa3b-2dd788561816")
+		(uuid "4c33e3c2-3ce2-4bf8-9bf0-12901435f364")
 	)
 	(global_label "SCL"
 		(shape bidirectional)
@@ -7967,7 +8293,7 @@
 			)
 			(justify left)
 		)
-		(uuid "1d521977-b70e-430d-a771-9e6c7f5c9b89")
+		(uuid "4aa88c82-e06d-462f-a08b-d59bebaa3f25")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 328.93 144.78 0)
 			(effects
@@ -7986,7 +8312,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "44a58127-5145-43dc-83bc-1995635ed54c")
+		(uuid "5db24b2b-9862-4ac0-8586-c22e9366153a")
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -7997,7 +8323,7 @@
 			)
 			(justify left)
 		)
-		(uuid "eba15e0b-80fe-4f2c-9632-747b12733243")
+		(uuid "096a011c-fe3d-4e7c-9191-713a1dc5331d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 328.93 142.24 0)
 			(effects
@@ -8016,7 +8342,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "34acdbdb-c1e2-49e0-8356-b7256ff39efa")
+		(uuid "efd8f096-f044-4b48-98a5-86cb8a5654e3")
 		(property "Reference" "R11"
 			(at 281.778 126.984 0)
 			(effects
@@ -8063,10 +8389,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "26cdd5b2-dd63-45c7-ab46-7c0e5c1ab74d")
+			(uuid "c9746be5-5468-4c43-a118-a82c9c04aadb")
 		)
 		(pin "2"
-			(uuid "c7460778-97ef-45af-8cce-602c7306fd3e")
+			(uuid "ebf45a5f-54bf-4cc1-9061-faee3d92c0ef")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8085,7 +8411,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fe530c1d-f601-4baa-a03c-c59566743e32")
+		(uuid "3aba6dc4-961e-4fad-984a-2d1f4a8a5088")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -8095,7 +8421,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d27f5f3-c0e3-46b0-8e83-475b33c16f57")
+		(uuid "687a57df-29f7-4ede-bc67-83c4876b0a36")
 		(property "Reference" "#PWR036"
 			(at 279.4 121.92 0)
 			(effects
@@ -8141,7 +8467,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "84283c93-f65a-401b-8b2b-5075a493307b")
+			(uuid "bc7f2e1c-d3ed-4c1e-b053-8362095ccc99")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8160,7 +8486,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "738995a2-917a-42fb-a3e7-538124f73f63")
+		(uuid "6e1976da-570d-40a0-957c-85167301ed24")
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -8171,7 +8497,7 @@
 			)
 			(justify left)
 		)
-		(uuid "eb70cda9-c4f5-4054-9a2b-d9fbcf762b01")
+		(uuid "356c5f13-5138-4ecd-bf87-d74e78201412")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 279.4 134.62 0)
 			(effects
@@ -8190,7 +8516,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c89792ca-fee0-40fe-90cb-3de881fe2812")
+		(uuid "792c568a-9905-4d2a-9e24-b1e780b452bb")
 		(property "Reference" "R12"
 			(at 291.778 126.984 0)
 			(effects
@@ -8237,10 +8563,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "c6630f15-b8cf-4806-8de2-0918129a21c5")
+			(uuid "6511ed36-e367-4ecd-93e9-d646f2b4659b")
 		)
 		(pin "2"
-			(uuid "84bd13fb-f15a-42fe-8795-61d1a0cc9e8b")
+			(uuid "3ebfd9ef-27be-41d7-afc3-57703082bb66")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8259,7 +8585,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2b92e5ac-d446-49ce-a538-82aa077418b4")
+		(uuid "1c0604d8-2806-4126-b938-4b68c11a6073")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -8269,7 +8595,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e6b9f0fb-8c20-43b4-87f3-e7bb3246e590")
+		(uuid "df9bba42-11f0-43b8-b45b-5b4348512377")
 		(property "Reference" "#PWR037"
 			(at 289.56 121.92 0)
 			(effects
@@ -8315,7 +8641,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "fa75e857-896e-456e-8a47-41304f9a1f91")
+			(uuid "eafe4e4f-9583-4ed6-ae48-8746f89749bf")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8334,7 +8660,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d8ca1224-30b0-4068-b6bf-ab35c0b5ecf8")
+		(uuid "cfa2d320-a405-475e-9f85-ab0ee319b48e")
 	)
 	(global_label "SCL"
 		(shape bidirectional)
@@ -8345,7 +8671,7 @@
 			)
 			(justify left)
 		)
-		(uuid "3cc51431-1968-46d4-bfb5-6532b5afbbbc")
+		(uuid "61f6dac9-4743-4f4a-863c-bddd3e9c0c3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 289.56 134.62 0)
 			(effects
@@ -8364,7 +8690,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6dddfb7b-2a3e-452e-830e-1d136bd8a088")
+		(uuid "174f2f6b-ecb3-4c8d-9ad8-66a61284cef8")
 		(property "Reference" "C5"
 			(at 351.778 148.984 0)
 			(effects
@@ -8411,10 +8737,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "c967be59-3af6-4c2d-a651-3d16971915a8")
+			(uuid "cc37cd86-7848-435d-b57a-28191e8db6ba")
 		)
 		(pin "2"
-			(uuid "fc640033-f8af-449e-873b-448b79ba674f")
+			(uuid "b40d5b16-7886-41a6-9223-c323517cc698")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8433,7 +8759,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6c2d239c-2a04-48fe-85ca-d9a92bcff4af")
+		(uuid "4b1d7d6c-4a26-4fd0-99cb-cff8e3958b5f")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -8443,7 +8769,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "350edd6f-0e52-4423-8765-9c1c67a4c5e5")
+		(uuid "28b35d89-08b9-45c0-aa84-4cb042d703c6")
 		(property "Reference" "#PWR038"
 			(at 350.52 143.51 0)
 			(effects
@@ -8489,7 +8815,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "919d75bc-0007-4f61-9f09-003a77216108")
+			(uuid "aca7b838-ac7a-4076-93ac-46dcf14a8936")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8508,7 +8834,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "52fb21a7-11a4-4325-a8c9-88ab5c070059")
+		(uuid "b873c180-30d2-44b8-8f8c-8cc7797c9968")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8518,7 +8844,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7c7cc82c-4ebb-47c2-b2e8-1306270c825d")
+		(uuid "6569211e-b272-473e-8850-b23015512bb1")
 		(property "Reference" "#PWR039"
 			(at 350.52 156.21 0)
 			(effects
@@ -8564,7 +8890,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "36fa4300-1647-4bf1-bfd6-3cc21a8345cf")
+			(uuid "388e2744-491c-4409-8ede-64c761e47cef")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8586,7 +8912,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "494b9d17-0438-4b67-b164-b1780e3b567b")
+		(uuid "f55fe8bf-8409-45bc-a24e-1037e4bf18e1")
 	)
 	(text "NEURON LEDs  (24x charlieplex on 6 GPIO)   input(6) > hidden(8) > output(10)"
 		(exclude_from_sim no)
@@ -8600,7 +8926,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "35c15f9c-55d0-438f-81ee-8ef8376a0ecc")
+		(uuid "03e59c43-9872-456b-b0a5-416bc9ab9ca4")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -8610,7 +8936,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1efd9955-f170-4b4d-9f18-19c191204359")
+		(uuid "fcbe4e5d-6789-4ab1-8f10-a903cac6cf5b")
 		(property "Reference" "R1"
 			(at 42.418 270.984 0)
 			(effects
@@ -8657,10 +8983,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "bb9eb391-2a4a-4fdc-899b-8303d12193c6")
+			(uuid "20705424-3ad8-4ae9-8bf3-67b0e630cdc9")
 		)
 		(pin "2"
-			(uuid "0ae0c432-dd93-41bf-8b7b-c31328dad8b6")
+			(uuid "2a8c4ff0-ad9f-452e-ba08-a2647f114a8a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8679,7 +9005,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "52cdd3e2-2e68-46bf-a15e-47b10ed80a2d")
+		(uuid "55647304-444e-4c1f-8ecf-faa8b372f1f1")
 	)
 	(global_label "CHX1"
 		(shape bidirectional)
@@ -8690,7 +9016,7 @@
 			)
 			(justify left)
 		)
-		(uuid "5ed01342-151d-4213-8437-b2e2c387a262")
+		(uuid "b9337709-11d9-47f9-ba37-22f0f011bd46")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 40.64 265.43 0)
 			(effects
@@ -8709,7 +9035,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8ffbfb49-b9e1-4760-84e6-488136096a35")
+		(uuid "60dc5730-215c-40ad-867d-ca2fcca856f2")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -8720,7 +9046,7 @@
 			)
 			(justify left)
 		)
-		(uuid "4eeaa20c-abc6-4af1-8e54-bb127efd44d9")
+		(uuid "ca55f64e-8eae-46b4-98ba-d71ac9b1c45f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 40.64 278.13 0)
 			(effects
@@ -8739,7 +9065,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa7fa371-235b-4143-90a1-850395841176")
+		(uuid "aabee79b-84dd-42b6-b508-7b5b3f4f3785")
 		(property "Reference" "R2"
 			(at 61.467999999999996 270.984 0)
 			(effects
@@ -8786,10 +9112,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "3e2bb064-4fdd-4184-bc94-e318c11aeeb5")
+			(uuid "306324d1-657c-43b7-8704-c45c4ea926e8")
 		)
 		(pin "2"
-			(uuid "a5ee3751-19bb-4b3b-9de6-167a73142c2b")
+			(uuid "ae70de19-fd99-47c4-86ae-25bbcb243d36")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8808,7 +9134,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "08e23b93-63e0-4653-a201-c4b5c751cd6c")
+		(uuid "e5b4acd3-857b-4ba1-9fb0-42eada5b8ceb")
 	)
 	(global_label "CHX2"
 		(shape bidirectional)
@@ -8819,7 +9145,7 @@
 			)
 			(justify left)
 		)
-		(uuid "7133af91-b23e-418a-a698-19caf94c5982")
+		(uuid "21a08bdf-07ce-4f06-bfa8-411d88a86912")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 59.69 265.43 0)
 			(effects
@@ -8838,7 +9164,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1733cdb0-a46d-49f4-b9e0-36b35c11e856")
+		(uuid "42975dc3-bb53-4f66-9a2a-1737a309bff2")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -8849,7 +9175,7 @@
 			)
 			(justify left)
 		)
-		(uuid "1923a737-17a8-4b2c-b7a6-07f1a585b580")
+		(uuid "5d7886dc-6bf1-439b-acf2-2201626e86b7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 59.69 278.13 0)
 			(effects
@@ -8868,7 +9194,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c52b8fcc-89d4-4173-8569-0cbf3f29d950")
+		(uuid "9e30acf5-e400-46e6-bf90-0ccea610f7fc")
 		(property "Reference" "R3"
 			(at 80.51800000000001 270.984 0)
 			(effects
@@ -8915,10 +9241,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "28e01f2c-117d-406b-8055-f1fe09e13b79")
+			(uuid "ba354552-23ab-4e3f-9543-cf2441d9ff84")
 		)
 		(pin "2"
-			(uuid "fca1f288-1890-4aa8-8882-d7a5670ce2e6")
+			(uuid "3a09396f-ba10-4242-bda9-282cbc8d0a69")
 		)
 		(instances
 			(project "NeuralCard"
@@ -8937,7 +9263,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e1170faa-67b7-4353-9bbb-9b2566fdae8c")
+		(uuid "ee027407-ae02-4c2c-9142-f4aaa9d4338c")
 	)
 	(global_label "CHX3"
 		(shape bidirectional)
@@ -8948,7 +9274,7 @@
 			)
 			(justify left)
 		)
-		(uuid "62e3ccb7-b019-4f00-9bd2-335c0a644f2a")
+		(uuid "0010980e-6531-42cf-bde7-423b21240e93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 78.74 265.43 0)
 			(effects
@@ -8967,7 +9293,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "92c2bfa2-48bb-4080-8ffe-0765148e8d31")
+		(uuid "7303e50b-92bf-44b3-ba06-353fe72f5245")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -8978,7 +9304,7 @@
 			)
 			(justify left)
 		)
-		(uuid "7ab1440a-641f-4d5b-b46e-e85db07a7e7a")
+		(uuid "37f43cfe-fdde-43f1-a0a7-c4bb9d8980c9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 78.74 278.13 0)
 			(effects
@@ -8997,7 +9323,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7bfe0c17-642c-46ef-96bc-f0e74e8cbc4d")
+		(uuid "ae5f69f4-c767-4b94-bb9c-7275fe33f1f8")
 		(property "Reference" "R4"
 			(at 99.56800000000001 270.984 0)
 			(effects
@@ -9044,10 +9370,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "30573103-72e7-48d5-912e-9a5ce9411d49")
+			(uuid "aacaf14d-61a4-448a-847c-1e700c178768")
 		)
 		(pin "2"
-			(uuid "279aaaf0-4c73-426b-802a-ab735023100f")
+			(uuid "f50987a1-d896-4302-952f-c271b111e9de")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9066,7 +9392,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e15909fc-f4c1-4e1d-900b-ccae9788f4a9")
+		(uuid "e0ef96e8-67a7-47a6-ab57-e0af8d2e1292")
 	)
 	(global_label "CHX4"
 		(shape bidirectional)
@@ -9077,7 +9403,7 @@
 			)
 			(justify left)
 		)
-		(uuid "28d69128-fb89-4456-af7c-41f10d67cc79")
+		(uuid "b1bc288e-eaaf-40f1-abb5-44fffb19a7e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.79 265.43 0)
 			(effects
@@ -9096,7 +9422,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "03063c65-5f32-44c0-a39d-48d25bd2d20a")
+		(uuid "2d24e981-58d1-4c23-ab30-7da09f8b2f94")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -9107,7 +9433,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0ec9bb51-f5e2-48e1-9b40-10ca5470f143")
+		(uuid "bd65c553-b5cd-4bf8-bea3-23294f688726")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.79 278.13 0)
 			(effects
@@ -9126,7 +9452,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c3ef7015-53ed-4814-8e7e-d410d375668d")
+		(uuid "0a7accbd-f8c6-4a4a-aa5e-a900f9e89b9f")
 		(property "Reference" "R5"
 			(at 118.61800000000001 270.984 0)
 			(effects
@@ -9173,10 +9499,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "5bcaafbd-3eb7-4d7e-8689-830a1923ad1e")
+			(uuid "92ce5f87-4300-4b82-9cd3-119872ac43c8")
 		)
 		(pin "2"
-			(uuid "d767db35-ea16-4ce9-b496-2838c45bdcde")
+			(uuid "324e94d2-d574-42bf-b26a-feea1593d4c4")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9195,7 +9521,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "65489938-0bba-42e5-9618-158a6a434b3f")
+		(uuid "68277579-2627-445a-ba53-e73bd84ca693")
 	)
 	(global_label "CHX5"
 		(shape bidirectional)
@@ -9206,7 +9532,7 @@
 			)
 			(justify left)
 		)
-		(uuid "90adf43d-2fdb-4aad-a2c3-3e6cc515f2d4")
+		(uuid "9324feba-1b81-47ac-8c07-dea45c00d48d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 116.84 265.43 0)
 			(effects
@@ -9225,7 +9551,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1163341f-2bf1-46a7-a1bc-dca540e60b96")
+		(uuid "596d5e82-a305-4c53-a152-5d9684e154db")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -9236,7 +9562,7 @@
 			)
 			(justify left)
 		)
-		(uuid "36b043c2-ecb9-41ff-bad7-9f32e2a89c50")
+		(uuid "c96814bd-9ad9-40cb-9405-6db3857359a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 116.84 278.13 0)
 			(effects
@@ -9255,7 +9581,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c2fa22fd-2117-4bb3-b065-38af3f4da43f")
+		(uuid "5e3c7de3-3d77-4d0a-bf20-3f566f0bf142")
 		(property "Reference" "R6"
 			(at 137.66799999999998 270.984 0)
 			(effects
@@ -9302,10 +9628,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "f59b13b0-2e8f-4cd2-9efa-aac66323a09c")
+			(uuid "6b401be1-50e9-499f-a0cd-272c49908e9e")
 		)
 		(pin "2"
-			(uuid "a1f36750-38ce-49fb-b001-948f970dd642")
+			(uuid "05e41f8f-0127-4a47-a09c-ff5bb2b90dc9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9324,7 +9650,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "637a8137-3e78-409b-97fd-3add6742ce51")
+		(uuid "d804e8a4-a3e7-4758-b5b4-fa48de044afa")
 	)
 	(global_label "CHX6"
 		(shape bidirectional)
@@ -9335,7 +9661,7 @@
 			)
 			(justify left)
 		)
-		(uuid "4b013adf-7f57-4ce3-bbd1-37d1cdeb4fec")
+		(uuid "88a1bf40-2a86-416f-b918-a997d073cff7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.89 265.43 0)
 			(effects
@@ -9354,7 +9680,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7ca592fd-a70d-4d2f-be52-1132fa282877")
+		(uuid "9fce0224-717c-4410-a27d-87ba728d6d88")
 	)
 	(global_label "CP6"
 		(shape bidirectional)
@@ -9365,7 +9691,7 @@
 			)
 			(justify left)
 		)
-		(uuid "c9523959-70d2-497f-bdcf-293770ebd28f")
+		(uuid "dba42e87-274c-4912-b8cc-f75c7fcd5aea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.89 278.13 0)
 			(effects
@@ -9384,7 +9710,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "078fda11-783a-4367-aa0f-4a7e95b4444a")
+		(uuid "2e0ded7b-86da-44ed-b9cb-838bdc1f3a35")
 		(property "Reference" "D1"
 			(at 60.96 296.92600000000004 0)
 			(effects
@@ -9431,10 +9757,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "2380f44b-fd72-4b67-aa33-d64e44409c13")
+			(uuid "b40e46f2-3960-400e-a38e-42d30fbbf0c9")
 		)
 		(pin "2"
-			(uuid "d440e3ea-24af-4522-9d5f-6dbd7f333632")
+			(uuid "10556112-0a08-49d8-a822-8db67e068435")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9453,7 +9779,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "31581cb7-eb29-4de6-86d1-1be3ecc14d45")
+		(uuid "484f0c42-59d9-40ac-b497-9c47a0c03eaa")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -9464,7 +9790,7 @@
 			)
 			(justify right)
 		)
-		(uuid "841ec9b1-a215-4fd9-8055-332e59e9b28b")
+		(uuid "55fd375a-835f-4fbe-bc06-89081e4f0283")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 54.61 299.72 0)
 			(effects
@@ -9483,7 +9809,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c0c0de78-db6b-4189-ba80-81efeb260466")
+		(uuid "a5f52269-63a6-453f-b123-4bd1533f5e83")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -9494,7 +9820,7 @@
 			)
 			(justify left)
 		)
-		(uuid "1724d6db-46d5-49f8-bed1-04f9429f4877")
+		(uuid "ab2a8cd4-6014-40d3-a706-42841b11754e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.31 299.72 0)
 			(effects
@@ -9513,7 +9839,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b52f17a9-d281-40fd-ba6e-33d27f3f27e3")
+		(uuid "c09dd244-a6ad-4b18-91ca-56a481590dc9")
 		(property "Reference" "D2"
 			(at 111.76 296.92600000000004 0)
 			(effects
@@ -9560,10 +9886,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7d33cee9-a3e0-4dfd-9551-4353f431fba4")
+			(uuid "2de5534c-bfcf-4f15-9a6e-709e255494d2")
 		)
 		(pin "2"
-			(uuid "0ad2c182-8afc-4b73-843a-be342d1a4608")
+			(uuid "57f36144-00d2-4281-aa4a-2c83efe31542")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9582,7 +9908,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "25073317-d302-4518-9497-f73628cf6c29")
+		(uuid "cf930fe7-c278-42ed-942f-f5fcb8d0142f")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -9593,7 +9919,7 @@
 			)
 			(justify right)
 		)
-		(uuid "c1dfb1ee-fde8-480d-9073-e428f2da96ea")
+		(uuid "70242c48-8d7f-4935-ba99-ac3d9eabe01a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 299.72 0)
 			(effects
@@ -9612,7 +9938,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "14ec7fce-2bc7-4ba0-baa0-430fbea1789b")
+		(uuid "fa5cc91c-0004-4242-9f3a-e2da4a471e6f")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -9623,7 +9949,7 @@
 			)
 			(justify left)
 		)
-		(uuid "74c8af62-f121-4e71-9d07-e7ae5c13d50d")
+		(uuid "3bb64dc7-d173-4af5-9aa4-2713056cf747")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.11 299.72 0)
 			(effects
@@ -9642,7 +9968,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eabdee92-114d-45d5-afcd-9e616a46511d")
+		(uuid "797a51ad-bfe4-412b-a40b-7242b8011b86")
 		(property "Reference" "D3"
 			(at 162.56 296.92600000000004 0)
 			(effects
@@ -9689,10 +10015,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "46f0b2a6-a6ea-4b4a-a309-cd743dd93d4b")
+			(uuid "07f6a737-9fb9-4adc-ab1f-08562a5e98fe")
 		)
 		(pin "2"
-			(uuid "0fba29f1-b098-46d8-a5c0-3be10030fb50")
+			(uuid "b7d61eff-dc8f-4c05-8212-fb5dff15fe6a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9711,7 +10037,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8b7f42c4-946b-4bc8-be1c-c88e095cad3c")
+		(uuid "d9cd26c7-a25d-492c-befc-7fe3c3388b58")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -9722,7 +10048,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cde23b48-ecd5-4f21-813b-de93f01c9ad7")
+		(uuid "6db4c338-a977-494c-a686-b51fb37899b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.21 299.72 0)
 			(effects
@@ -9741,7 +10067,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2aa861aa-ae2f-4e74-9278-3a4a515bedd4")
+		(uuid "2a8d3fcd-93ce-47a3-aac8-2ea8391a77cf")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -9752,7 +10078,7 @@
 			)
 			(justify left)
 		)
-		(uuid "e06ffd2e-d1d2-4d12-89a7-04e96285a4ff")
+		(uuid "e9c243d7-409c-480f-bd92-3c4e1e997b64")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.91 299.72 0)
 			(effects
@@ -9771,7 +10097,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0712d26b-2bea-4917-b1fc-73ea1d6b7faf")
+		(uuid "78150982-9c3c-45e7-8384-8ddfe302acfa")
 		(property "Reference" "D4"
 			(at 213.36 296.92600000000004 0)
 			(effects
@@ -9818,10 +10144,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7af7475d-5a92-457c-ae3a-28e80cf6eb4f")
+			(uuid "6b1cd733-c2b5-43e6-ac13-c57ace20b70c")
 		)
 		(pin "2"
-			(uuid "ce3abebd-dd7c-4c84-be87-c90b9ebe5a46")
+			(uuid "ac18703e-8084-479f-8846-4953f4ff25a7")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9840,7 +10166,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bccbe9ce-b9b5-4b1b-b138-e5318926e42c")
+		(uuid "602bea5d-584f-4838-acf7-950e45dc37b0")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -9851,7 +10177,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8221fe0e-f243-41d7-9f0b-7877427560a0")
+		(uuid "8007069b-e572-45e8-b2dc-6bf962706ba2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 299.72 0)
 			(effects
@@ -9870,7 +10196,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b54ae21e-1f4c-4354-a190-be3ba9b6de96")
+		(uuid "9a4b9c23-4541-4792-97a2-f430f7841cb1")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -9881,7 +10207,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0d93eba7-40cb-43d0-9449-ac4b30075933")
+		(uuid "018a31bb-fe0b-496c-8adb-3c0ea018bfaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 219.71 299.72 0)
 			(effects
@@ -9900,7 +10226,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0a8b3c3d-4dad-494a-9101-e2cc5fee04b7")
+		(uuid "c3a73abc-ee82-408e-8dba-33249780f886")
 		(property "Reference" "D5"
 			(at 264.16 296.92600000000004 0)
 			(effects
@@ -9947,10 +10273,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "d57c980f-11d7-4d88-8a14-022952af568f")
+			(uuid "0f6ae883-b6da-4761-a2d9-1ca37c439ed7")
 		)
 		(pin "2"
-			(uuid "47a3c12b-a3dd-43eb-9f7e-b0fede5114cc")
+			(uuid "4282a1a5-4cb4-43dc-811c-e20918345267")
 		)
 		(instances
 			(project "NeuralCard"
@@ -9969,7 +10295,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c42210ba-c0c3-4e6a-9be6-d489ac63740d")
+		(uuid "3befa0cc-6fa4-417d-b258-2577747a4333")
 	)
 	(global_label "CP6"
 		(shape bidirectional)
@@ -9980,7 +10306,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ef692750-46a5-4051-b44d-40cba0f54934")
+		(uuid "83efa833-e1e8-493a-aaf5-ccaa01787db7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 257.81 299.72 0)
 			(effects
@@ -9999,7 +10325,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e8d311e1-de7e-4fbf-83cb-902ce6a6ef5e")
+		(uuid "6491acb2-960c-419b-b370-435c667cc198")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -10010,7 +10336,7 @@
 			)
 			(justify left)
 		)
-		(uuid "eaccf523-2d01-49d1-8cfc-af8f0f41b012")
+		(uuid "78757d06-98c9-4911-af43-575b10045471")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 270.51 299.72 0)
 			(effects
@@ -10029,7 +10355,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1f55b03d-a454-4431-b01b-a3a713c1b5ef")
+		(uuid "bb211c05-84ad-4862-92fa-916a232021d3")
 		(property "Reference" "D6"
 			(at 314.96 296.92600000000004 0)
 			(effects
@@ -10076,10 +10402,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "2d198c0b-8f68-4c92-9ac1-ab7996367bd0")
+			(uuid "3321b832-0203-4139-a7c2-83c9217dc086")
 		)
 		(pin "2"
-			(uuid "1923a6ab-1cbb-4f3d-ac79-6587007f28f5")
+			(uuid "b54189db-1641-4b64-b031-8d3899618ce1")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10098,7 +10424,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5d616fd4-c24f-438e-a0ab-6b79df025562")
+		(uuid "d3f75093-e92d-433c-b437-2882b4aae4b8")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -10109,7 +10435,7 @@
 			)
 			(justify right)
 		)
-		(uuid "69d47da8-a729-4c9f-bb2d-74d6639e25cc")
+		(uuid "0f7c4916-4b86-492d-8428-6b3d3b6faba1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.61 299.72 0)
 			(effects
@@ -10128,7 +10454,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "684d484e-7fdc-4c1f-97d8-f1ab028200df")
+		(uuid "3d7413a2-fcb4-4079-98fa-3b9852dcb64d")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10139,7 +10465,7 @@
 			)
 			(justify left)
 		)
-		(uuid "34e562ca-d24a-4517-b1cd-bcf6e258b624")
+		(uuid "5efbe9b7-cce4-466e-a9b2-df794f6d3dde")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 321.31 299.72 0)
 			(effects
@@ -10158,7 +10484,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5fce425e-f568-481e-a67e-02216a0a3a12")
+		(uuid "b82256ab-b7e0-4c20-af00-5273069bfa68")
 		(property "Reference" "D7"
 			(at 60.96 315.976 0)
 			(effects
@@ -10205,10 +10531,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "ac4b24bb-ae0f-483d-bde9-2c0e6683c342")
+			(uuid "c75c5289-326b-4fb1-a354-8cf15b7709ae")
 		)
 		(pin "2"
-			(uuid "ae234748-9027-4a8c-8b69-1d1982e4810f")
+			(uuid "fb7caacd-b0e2-4697-90d3-d8d37d5ff9dd")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10227,7 +10553,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "37df3ba2-9a88-4f7b-aad9-bfb343d54185")
+		(uuid "d2d9fdb1-004a-4ad4-8f03-fafcf1d9c79b")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -10238,7 +10564,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ecc640ea-48f7-4feb-a91e-69467837b1bd")
+		(uuid "6ac3ef46-47ce-407b-95e0-e2e85b0c2ccc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 54.61 318.77 0)
 			(effects
@@ -10257,7 +10583,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "646da8f7-2c5e-4d60-a1b8-3b6c979d384a")
+		(uuid "ca45fc47-9a54-41aa-8ce9-a687e1e3ea3e")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10268,7 +10594,7 @@
 			)
 			(justify left)
 		)
-		(uuid "9afa2eee-67fd-4b38-951f-69cf8ffcda95")
+		(uuid "ad05c314-dcd5-4f6a-a222-7b6e672dcdd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.31 318.77 0)
 			(effects
@@ -10287,7 +10613,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c1f65808-c25a-48c4-a202-2eb4b1061d16")
+		(uuid "d1d2fbb1-0de9-48b2-ab31-ca64e49eb35a")
 		(property "Reference" "D8"
 			(at 111.76 315.976 0)
 			(effects
@@ -10334,10 +10660,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "ace98bd9-be25-432b-81c5-fdb61535c576")
+			(uuid "eebdd7bb-ad70-4e4b-8135-0905af45b64b")
 		)
 		(pin "2"
-			(uuid "3cf47955-ff20-4b07-b688-d3f298670b75")
+			(uuid "3efcb8d4-dc96-4255-bdc2-931739f8623b")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10356,7 +10682,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "64f4aa1b-3c00-4edb-8c05-8bf8923149cb")
+		(uuid "ebd47e10-c120-452a-ac34-c50c78803a5e")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -10367,7 +10693,7 @@
 			)
 			(justify right)
 		)
-		(uuid "570f1048-cadd-4a1a-b6b3-1b54949bf7a6")
+		(uuid "0539df0d-dc79-424c-9449-5ad7af01db04")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 318.77 0)
 			(effects
@@ -10386,7 +10712,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "afc3bce0-3406-4196-9f00-1950360e53c0")
+		(uuid "dc6042ad-382e-49d1-a0dc-1c2fdf60fabf")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10397,7 +10723,7 @@
 			)
 			(justify left)
 		)
-		(uuid "a09db7bf-a0f8-4a29-bcc3-a05add8d2746")
+		(uuid "7be13079-a921-443a-a819-d5ac4ceb3e9e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.11 318.77 0)
 			(effects
@@ -10416,7 +10742,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0da89d07-9ce9-4cc5-a907-afd84ab45af4")
+		(uuid "88bcafb5-f790-4b2b-a4de-036753a42ce3")
 		(property "Reference" "D9"
 			(at 162.56 315.976 0)
 			(effects
@@ -10463,10 +10789,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "002c1175-c959-4385-b01c-206fc7bd68a5")
+			(uuid "2cd33170-e74a-4868-bea2-f6bd00f176c8")
 		)
 		(pin "2"
-			(uuid "8339bee3-1cf9-496b-ac19-6f187a9bed45")
+			(uuid "4fa5df00-7aa4-4384-9185-24c6ea1fb9f0")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10485,7 +10811,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6b29fe15-f36d-460e-91f9-e55dcb9dc32a")
+		(uuid "66960529-a1ad-4dc5-b55f-3391491365bf")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -10496,7 +10822,7 @@
 			)
 			(justify right)
 		)
-		(uuid "1f87a4b3-ab23-4cc9-a029-4c42b54128c5")
+		(uuid "52e24847-68d7-4b96-b156-08f4e6053849")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.21 318.77 0)
 			(effects
@@ -10515,7 +10841,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c712c214-7b27-46fe-964a-072b1ce1002a")
+		(uuid "7cbcc9fc-5370-49e5-9f58-cd57c3e71a5c")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10526,7 +10852,7 @@
 			)
 			(justify left)
 		)
-		(uuid "342d9dc6-f493-4164-8783-945c0581b260")
+		(uuid "32988288-9a97-42e1-8a2f-7e6fdc29cefa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.91 318.77 0)
 			(effects
@@ -10545,7 +10871,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7f232447-d2eb-4b42-9b83-ea15a8d4e601")
+		(uuid "3dd4e91e-b1b2-47d1-a7d5-212824a2821e")
 		(property "Reference" "D10"
 			(at 213.36 315.976 0)
 			(effects
@@ -10592,10 +10918,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "a9946541-9ead-4ccc-acd5-961adaa996e7")
+			(uuid "73c8cef7-ee0f-4d9f-be3e-0ad21de31361")
 		)
 		(pin "2"
-			(uuid "e3bd66ae-30d3-40d1-ae46-e15354bbeb6c")
+			(uuid "ef7472c1-1cd5-4478-904c-cd41671a8100")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10614,7 +10940,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "de34cb4d-39ef-468e-8a70-4fde6023ee62")
+		(uuid "84550c62-2d66-462b-9208-7190a837bcd2")
 	)
 	(global_label "CP6"
 		(shape bidirectional)
@@ -10625,7 +10951,7 @@
 			)
 			(justify right)
 		)
-		(uuid "69648223-670a-4a3e-a981-295395c8c5f8")
+		(uuid "457fe4de-8b55-4228-9890-473159670c8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 318.77 0)
 			(effects
@@ -10644,7 +10970,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d82e0f21-9e2e-402d-a2de-b53072c1d7d5")
+		(uuid "e39f93fd-1bc1-48d0-92da-d924e29065ac")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10655,7 +10981,7 @@
 			)
 			(justify left)
 		)
-		(uuid "860b4b92-650b-4a35-8bf6-bcdb01fc13a7")
+		(uuid "8a8b235c-a740-4ff9-9519-18e5b79e34e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 219.71 318.77 0)
 			(effects
@@ -10674,7 +11000,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "acb22c11-f83d-4c5a-ac0d-ff5cf6553220")
+		(uuid "15cc58bc-55f4-41ea-8bd6-8e12a1107f2f")
 		(property "Reference" "D11"
 			(at 264.16 315.976 0)
 			(effects
@@ -10721,10 +11047,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "7dfc4953-5742-47f2-92a4-f3628294dc19")
+			(uuid "c4b6faf6-43ac-41fc-b061-6910f012a4d3")
 		)
 		(pin "2"
-			(uuid "9dbefddb-ba3e-4985-b2ac-082f4cb48194")
+			(uuid "bac771d0-3d9f-4c23-ad92-837cab382f8b")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10743,7 +11069,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "21761d75-74c0-4af4-8740-8c1bc8769e49")
+		(uuid "c8f30623-99ef-4e20-9a1a-4e79eb600fcc")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -10754,7 +11080,7 @@
 			)
 			(justify right)
 		)
-		(uuid "75999181-4dcd-45ef-9f80-7237cd3506e1")
+		(uuid "c3133ba2-2b2f-49e3-b3fc-f7df843c071f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 257.81 318.77 0)
 			(effects
@@ -10773,7 +11099,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c084c830-a439-4b99-8187-fc23051e17ef")
+		(uuid "e2a6bbaa-01d7-4ba8-8d1c-652aaa0d36ba")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -10784,7 +11110,7 @@
 			)
 			(justify left)
 		)
-		(uuid "7fceab0b-c685-4fe3-8859-b1eb6be772a4")
+		(uuid "8d464b5a-3d7d-40ac-a709-fb32ba8769a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 270.51 318.77 0)
 			(effects
@@ -10803,7 +11129,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae0ac415-d618-4177-8969-00aebcec74ca")
+		(uuid "a5b38b65-bb43-4ba6-81a2-f64b18e8a767")
 		(property "Reference" "D12"
 			(at 314.96 315.976 0)
 			(effects
@@ -10850,10 +11176,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "1fea74ea-22b4-4825-843b-1c06f224f096")
+			(uuid "2ba33414-ec20-4638-bf53-9a442017d37c")
 		)
 		(pin "2"
-			(uuid "c5705d4b-1445-4d13-be72-a95f49a16316")
+			(uuid "013532fe-867b-42f7-8df3-e1f6839a7a90")
 		)
 		(instances
 			(project "NeuralCard"
@@ -10872,7 +11198,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7478ab25-5e5c-4721-8a4d-d36ac5f1c034")
+		(uuid "d20e7321-b8b2-4683-88ee-326aa86828d3")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -10883,7 +11209,7 @@
 			)
 			(justify right)
 		)
-		(uuid "d692659b-d022-43a8-a3be-217bac7b1ece")
+		(uuid "ad0b3deb-0044-4ee3-a15d-bff524e0f8a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.61 318.77 0)
 			(effects
@@ -10902,7 +11228,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bb3bc13c-0f88-489a-8187-2ae414e6f260")
+		(uuid "ad6fe122-f54b-45c9-9476-b4868f394d66")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -10913,7 +11239,7 @@
 			)
 			(justify left)
 		)
-		(uuid "e5617b39-5f62-4151-bb02-41189edf3749")
+		(uuid "04ebad67-f0d1-4b58-aa76-0fbdc141d608")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 321.31 318.77 0)
 			(effects
@@ -10932,7 +11258,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a3e86b81-8abc-4f0e-bf22-0ef46e3eea49")
+		(uuid "c1f00e59-0829-4b82-a25d-4959447a1ebe")
 		(property "Reference" "D13"
 			(at 60.96 335.026 0)
 			(effects
@@ -10979,10 +11305,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "347a47b0-dd1a-4661-a683-90733a3e56c7")
+			(uuid "173f07df-9131-4b22-9d58-a6858c29572b")
 		)
 		(pin "2"
-			(uuid "50029a09-d5ab-434f-8f30-20c86e38578c")
+			(uuid "f7f91c66-f132-4803-9008-a8d5d8f5f0bf")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11001,7 +11327,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "513d47f2-a3b5-4ac0-83a2-4bef2db53fe0")
+		(uuid "35a845f9-5900-473a-98c4-9fc6af2ba967")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11012,7 +11338,7 @@
 			)
 			(justify right)
 		)
-		(uuid "6aeb0df6-cb82-4e46-9464-4bd598e6e741")
+		(uuid "abe6fab0-02db-48ef-b1ad-a17131cd3f18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 54.61 337.82 0)
 			(effects
@@ -11031,7 +11357,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3797f6e2-f779-49fa-b71a-db8d19bb2d96")
+		(uuid "576354b7-6a1d-4666-b0a8-b800df344a66")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -11042,7 +11368,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0573d063-58fe-4a7a-a091-0797ccc9f561")
+		(uuid "82ce8623-0dad-4770-8a57-5883f93d5877")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.31 337.82 0)
 			(effects
@@ -11061,7 +11387,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3844ffc6-097a-4b1b-93a5-997e0bb759c5")
+		(uuid "97c44cb5-9d06-42df-862b-b4ae4930bbc9")
 		(property "Reference" "D14"
 			(at 111.76 335.026 0)
 			(effects
@@ -11108,10 +11434,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "4fbdcb26-f146-4c78-a0c1-7f9b2dacf310")
+			(uuid "c0a95a2b-f57a-4a6f-91cd-a866801beba2")
 		)
 		(pin "2"
-			(uuid "48574c84-bac2-4982-a5f0-f3d7268a02e3")
+			(uuid "d5e53d83-0bb1-4c46-9d31-8a9a5359a930")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11130,7 +11456,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "52db4754-eb64-4885-a1e6-784f6a603952")
+		(uuid "9e60bdbc-f664-40f5-af52-aada3ba6dee7")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -11141,7 +11467,7 @@
 			)
 			(justify right)
 		)
-		(uuid "938e5758-d7b3-4f1f-a96f-20707f0e00fb")
+		(uuid "f9d485ec-7722-44e5-ab1c-2d22d01ef62e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 337.82 0)
 			(effects
@@ -11160,7 +11486,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "407eaf5e-a972-4d32-92d2-f3c32c8a5201")
+		(uuid "5b633396-a118-4f5e-82cb-1925766e3cce")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -11171,7 +11497,7 @@
 			)
 			(justify left)
 		)
-		(uuid "1ddc35c4-4c7f-494f-97eb-35cd0fd00382")
+		(uuid "d1668e93-79f5-46eb-9842-6bdfad37b473")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.11 337.82 0)
 			(effects
@@ -11190,7 +11516,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d5cac523-17c7-4139-9027-8cf8a2dd610a")
+		(uuid "5e9cbf70-a193-4c58-ad1b-5e434fcee7ff")
 		(property "Reference" "D15"
 			(at 162.56 335.026 0)
 			(effects
@@ -11237,10 +11563,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "36a96546-fa63-4b6a-ba3b-e96d1374b6ed")
+			(uuid "e4fb01ce-3864-4b23-97f3-f91e49fb5134")
 		)
 		(pin "2"
-			(uuid "64f46361-c7ab-4b6e-aa17-aef1b340d10a")
+			(uuid "654df3f0-63f2-4b42-a099-b2751f35917c")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11259,7 +11585,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8d91be60-74eb-4fb9-a6c0-7c3a422900a8")
+		(uuid "7de5dfdf-a599-4ea2-bfb8-f063763f9423")
 	)
 	(global_label "CP6"
 		(shape bidirectional)
@@ -11270,7 +11596,7 @@
 			)
 			(justify right)
 		)
-		(uuid "6a0e4316-0c1e-47b4-aa47-a462eb2488b1")
+		(uuid "25e760d6-63ac-4dc6-8f7b-dc427171f641")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.21 337.82 0)
 			(effects
@@ -11289,7 +11615,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4d528ce1-44b0-465e-a839-5b50e63ded92")
+		(uuid "d2270bd3-374f-40fc-a674-b88d19ee2b0c")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -11300,7 +11626,7 @@
 			)
 			(justify left)
 		)
-		(uuid "d4b6ac44-fb9b-40e2-a340-1997d416ee27")
+		(uuid "a9bfe2a9-6c84-4a37-bce2-ad27d550d1d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.91 337.82 0)
 			(effects
@@ -11319,7 +11645,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "98217a1c-0791-4cae-a31a-42fe84d8a4c4")
+		(uuid "52967cb3-f7a4-40ba-8381-dc382b16a724")
 		(property "Reference" "D16"
 			(at 213.36 335.026 0)
 			(effects
@@ -11366,10 +11692,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "3269a4a9-a46c-43af-b170-93b86180b8a0")
+			(uuid "1c7d85ed-8b24-452b-9d36-70a9e7d5c460")
 		)
 		(pin "2"
-			(uuid "8fb846ca-d5bc-46b9-ac2b-881afd12de69")
+			(uuid "2cba07e5-b7a9-4e6a-99d2-f41a74237767")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11388,7 +11714,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "20aeedb6-2431-445a-b63e-83060163991b")
+		(uuid "be619228-1895-43d3-9d4b-3f095311d157")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -11399,7 +11725,7 @@
 			)
 			(justify right)
 		)
-		(uuid "e2b5a4ec-0eef-40bf-b5f8-a62e5bf43829")
+		(uuid "55976178-5804-46db-bacc-9ac6e3a1be28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 337.82 0)
 			(effects
@@ -11418,7 +11744,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4277fcc0-f713-4c91-9ad7-d0795a2e63c7")
+		(uuid "4222365f-bb8c-4c5d-b2cb-98577ea533d0")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11429,7 +11755,7 @@
 			)
 			(justify left)
 		)
-		(uuid "b4b859e4-3688-472d-b1da-c4510db2d879")
+		(uuid "fc47d3b2-5ad0-4906-83fc-fbe66b9e1d2a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 219.71 337.82 0)
 			(effects
@@ -11448,7 +11774,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a39a8673-d7dd-4109-8584-15015223f18f")
+		(uuid "872912fc-caf5-4714-97c2-134d061ef6e3")
 		(property "Reference" "D17"
 			(at 264.16 335.026 0)
 			(effects
@@ -11495,10 +11821,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "d66a77ba-8a14-4836-881c-0b4acfd2e576")
+			(uuid "23cf37d4-7f91-445e-bdac-3a657c4e5a7e")
 		)
 		(pin "2"
-			(uuid "7dd7b53e-069f-4b9c-91c8-43710f378665")
+			(uuid "2b1d98c3-cd21-465d-8cdb-6b7d39cae56a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11517,7 +11843,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2fc0d50f-7a1e-4050-a559-89cc282fbf8a")
+		(uuid "8d5d1021-ca37-4d5c-a0a2-7c9cb63ca882")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -11528,7 +11854,7 @@
 			)
 			(justify right)
 		)
-		(uuid "10e09e69-53e6-47bb-aa69-73b74fbc7c71")
+		(uuid "f3ceca67-29d9-46fc-b416-4e333eeae2c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 257.81 337.82 0)
 			(effects
@@ -11547,7 +11873,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e693b1cf-94f0-492a-a1db-065716792a3e")
+		(uuid "39659b72-6f29-4b90-a2c8-8085c5d4210f")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11558,7 +11884,7 @@
 			)
 			(justify left)
 		)
-		(uuid "50470e05-e60a-400e-905f-f62f688b3421")
+		(uuid "b4d80c1e-cf15-4a72-822d-ea9b1a6e4eda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 270.51 337.82 0)
 			(effects
@@ -11577,7 +11903,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c44e3d32-2d73-4819-89bc-98a894139761")
+		(uuid "b00c301b-b3f0-491c-8e73-1219808a2c1e")
 		(property "Reference" "D18"
 			(at 314.96 335.026 0)
 			(effects
@@ -11624,10 +11950,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "9d7273ac-6ad8-441f-9fa0-cf02a727537e")
+			(uuid "664bc0a7-51b2-4916-a84c-3d70a194dcce")
 		)
 		(pin "2"
-			(uuid "d4637b14-381b-4d3a-adee-de0e2554f1fd")
+			(uuid "af38997e-ffb5-44c1-b0c1-440244895ae8")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11646,7 +11972,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7bf897bf-00a5-452c-827b-6aa365e0499a")
+		(uuid "b96b3fd3-757b-4882-88fd-b98e98c8c748")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -11657,7 +11983,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cc856112-ae4e-454a-a8a2-ff70946231fc")
+		(uuid "27e6bccf-7e02-4217-934c-3ccf2938431a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.61 337.82 0)
 			(effects
@@ -11676,7 +12002,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5cec4a28-9d23-43d4-99a1-70d081224e42")
+		(uuid "4e7c369a-4dc4-4a80-ac82-a586c1e57ea1")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11687,7 +12013,7 @@
 			)
 			(justify left)
 		)
-		(uuid "5dc4290f-6fec-4b8c-9a49-322a9ffc7a31")
+		(uuid "1be3685d-9fa8-414f-8892-6559bee8e1b8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 321.31 337.82 0)
 			(effects
@@ -11706,7 +12032,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "683db2b0-6189-4a2d-b0b4-2038260aadfc")
+		(uuid "d8400fd8-b896-47f4-ac30-161117593b80")
 		(property "Reference" "D19"
 			(at 60.96 354.076 0)
 			(effects
@@ -11753,10 +12079,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "767d5636-0de9-43bd-b94f-d5f3cb6d45de")
+			(uuid "2b7f852d-d3b9-452d-b68c-b535e70af4c4")
 		)
 		(pin "2"
-			(uuid "0b90100d-7467-43b4-b060-dfdd8cff9a62")
+			(uuid "af32f184-429d-43ae-a525-dbc3a8ce9ef3")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11775,7 +12101,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4011314a-e4c4-430b-bf0e-e73fc02f2cec")
+		(uuid "c9217c50-e53e-45a8-aca9-5e6cbaeca7b0")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -11786,7 +12112,7 @@
 			)
 			(justify right)
 		)
-		(uuid "3d8c1bcd-b667-4fe6-8dcf-d3192bf910fe")
+		(uuid "81ae0700-5833-4613-9838-a3dd470385f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 54.61 356.87 0)
 			(effects
@@ -11805,7 +12131,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c34005bb-4f08-4598-8cc2-24a8ac4bccff")
+		(uuid "27d02ffa-7e67-413c-8405-9cb7c5f4f02a")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11816,7 +12142,7 @@
 			)
 			(justify left)
 		)
-		(uuid "31bb62c5-3f42-42fb-9173-046eadef703b")
+		(uuid "37e9e4e5-b1b9-4e76-bb06-2a9b3d632e28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 67.31 356.87 0)
 			(effects
@@ -11835,7 +12161,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b4cd4c13-32d1-4cb2-adfd-4fa92db8c34d")
+		(uuid "f999680c-d395-465a-8fdf-185ee427d5cd")
 		(property "Reference" "D20"
 			(at 111.76 354.076 0)
 			(effects
@@ -11882,10 +12208,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "dacb7057-9b1c-47ac-972f-5e32d0513f96")
+			(uuid "d1a97687-5719-45fa-a910-0c4f17c961b0")
 		)
 		(pin "2"
-			(uuid "b6966220-777e-4636-9f56-616b6be073bc")
+			(uuid "23205c11-889b-4d2c-983c-d41641a333a9")
 		)
 		(instances
 			(project "NeuralCard"
@@ -11904,7 +12230,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d5571755-3e87-4459-9ce5-9ab7378da4c5")
+		(uuid "0aca55f9-aa7d-45ad-a224-359e2e919557")
 	)
 	(global_label "CP6"
 		(shape bidirectional)
@@ -11915,7 +12241,7 @@
 			)
 			(justify right)
 		)
-		(uuid "61d87c67-5ba6-4e13-861b-a28b3f830fe5")
+		(uuid "062f9f7c-0408-4cc6-aab4-f37cd466c302")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 356.87 0)
 			(effects
@@ -11934,7 +12260,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "47728819-552a-4f06-b48a-f9a05c76bcf7")
+		(uuid "29787d6d-10eb-4151-9c61-30ac246e7693")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -11945,7 +12271,7 @@
 			)
 			(justify left)
 		)
-		(uuid "8c156314-f963-41f3-aac3-b04dfba9ed03")
+		(uuid "cb6100a2-c4b1-408d-a146-fc5eef441364")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.11 356.87 0)
 			(effects
@@ -11964,7 +12290,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e6528723-1ef9-47ae-a3a1-3302fbd27264")
+		(uuid "40616a3d-8fec-4efd-bbab-b0db0b0dcddc")
 		(property "Reference" "D21"
 			(at 162.56 354.076 0)
 			(effects
@@ -12011,10 +12337,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "639491f0-0622-43b2-b8b1-3cad086b522b")
+			(uuid "af0a04ad-8fc4-4312-b877-dc0ee180161d")
 		)
 		(pin "2"
-			(uuid "62fd6deb-c43b-4bfa-8fba-67d3d680a7cd")
+			(uuid "e6c29cae-13f7-44a1-b983-ca76dc89493f")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12033,7 +12359,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0bd65dc0-1938-40e7-b3b9-71a4121a9b7d")
+		(uuid "c6cec1a4-d87c-407e-b7a3-774cdefa68b5")
 	)
 	(global_label "CP1"
 		(shape bidirectional)
@@ -12044,7 +12370,7 @@
 			)
 			(justify right)
 		)
-		(uuid "8da8e45c-8e4a-4a3e-8484-fc051f99acfb")
+		(uuid "b9deeb83-9105-4713-a877-6de5a2497da0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 156.21 356.87 0)
 			(effects
@@ -12063,7 +12389,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "97e73e49-f065-495a-a72c-88f33bb32f40")
+		(uuid "1dd2e270-325b-4f75-a6df-50f932df348c")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -12074,7 +12400,7 @@
 			)
 			(justify left)
 		)
-		(uuid "e9a52c2c-c4e0-4ccf-a310-1a771c7d81a6")
+		(uuid "b4ecf7b9-8426-485f-81e8-8a1f84651f4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.91 356.87 0)
 			(effects
@@ -12093,7 +12419,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "da7d934b-615f-455c-9233-e518b0fd46c1")
+		(uuid "a7b3cfd8-94bc-4542-b331-ad5173c6bc83")
 		(property "Reference" "D22"
 			(at 213.36 354.076 0)
 			(effects
@@ -12140,10 +12466,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "fd73b1a9-ee41-4748-bd2f-0fcedcb8062e")
+			(uuid "8fee5581-52d7-44f1-9c93-cd004f246d4f")
 		)
 		(pin "2"
-			(uuid "64a61fd3-d200-4f0a-868c-02de01e34b47")
+			(uuid "f22e6d95-d827-430b-81f7-caaa3186c60b")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12162,7 +12488,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2cfada36-b2fe-4eab-b58e-cd062c5a262a")
+		(uuid "a1124f8c-245b-4645-be94-7d8510d40a5d")
 	)
 	(global_label "CP2"
 		(shape bidirectional)
@@ -12173,7 +12499,7 @@
 			)
 			(justify right)
 		)
-		(uuid "58ef553c-cf78-44c9-ac99-66abd539c9ea")
+		(uuid "d6fe2e3b-9746-49e8-84d5-01b3ef71ec32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 356.87 0)
 			(effects
@@ -12192,7 +12518,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5c43ff64-3402-4842-b5f0-5756e8463d8c")
+		(uuid "d3a0ab56-8f2d-4747-904e-0cc0f7658ba4")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -12203,7 +12529,7 @@
 			)
 			(justify left)
 		)
-		(uuid "2630bcc0-dbf9-4b74-a8ed-b034779d3d6b")
+		(uuid "0d9f5220-1538-451f-8457-44edde261a77")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 219.71 356.87 0)
 			(effects
@@ -12222,7 +12548,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "839ca863-b9d1-4f11-b560-0fad66eaeb7d")
+		(uuid "f6dfbb3c-e4ab-47ea-b099-471e4db456dc")
 		(property "Reference" "D23"
 			(at 264.16 354.076 0)
 			(effects
@@ -12269,10 +12595,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "9f529d06-15be-4eb4-807a-372c3dbe5fd7")
+			(uuid "776f397a-4fb4-40be-8ec3-ce2ae80e3632")
 		)
 		(pin "2"
-			(uuid "200b0835-c9aa-49b6-b7cd-c1a84a354534")
+			(uuid "ef76b8bb-e19f-4488-bc84-953120019171")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12291,7 +12617,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "96a94a1c-35ea-444c-a0f4-669648c020e4")
+		(uuid "9a752f9a-7144-41db-8de6-7aa7e1ce1b8b")
 	)
 	(global_label "CP3"
 		(shape bidirectional)
@@ -12302,7 +12628,7 @@
 			)
 			(justify right)
 		)
-		(uuid "77a734e1-fda7-41d6-9989-f34abcad5a8a")
+		(uuid "b6d2edbf-0474-4f42-8ef5-04fed9249534")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 257.81 356.87 0)
 			(effects
@@ -12321,7 +12647,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "38d32f5f-90ce-46dc-9adc-531d0bbeb70a")
+		(uuid "1748a369-f807-41d5-ab49-c3e76cb6d69b")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -12332,7 +12658,7 @@
 			)
 			(justify left)
 		)
-		(uuid "7c668f39-ba61-4b8a-89b4-33813c570c9c")
+		(uuid "1f0ae07e-aa10-4ebe-a1a5-3ce0f1406fb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 270.51 356.87 0)
 			(effects
@@ -12351,7 +12677,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "09de1e2d-4013-4152-80ad-3fb87b6cf7f6")
+		(uuid "8d932605-e934-423e-9d01-fb61e81b195c")
 		(property "Reference" "D24"
 			(at 314.96 354.076 0)
 			(effects
@@ -12398,10 +12724,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "551eafe8-b1c6-4683-9479-2d329854a154")
+			(uuid "ad55b1e4-5f2d-4898-8892-d285bb419503")
 		)
 		(pin "2"
-			(uuid "1de9a7ed-2ed9-4c83-9396-e663baba664d")
+			(uuid "ae892652-e776-431b-8f49-d66a0251e320")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12420,7 +12746,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4f5f15b8-cc1f-4a76-bf80-c9ef26236b1c")
+		(uuid "07ef25c2-3e44-444a-9368-578f46cfa4ca")
 	)
 	(global_label "CP4"
 		(shape bidirectional)
@@ -12431,7 +12757,7 @@
 			)
 			(justify right)
 		)
-		(uuid "12756fd2-8de9-4c72-9985-d28359edc6a7")
+		(uuid "445ea487-52fb-4f4f-821c-699bca5958a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.61 356.87 0)
 			(effects
@@ -12450,7 +12776,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "17681880-67c1-460c-8adc-04a8e6ec7727")
+		(uuid "951dbfde-2838-423b-afab-01007a6c9179")
 	)
 	(global_label "CP5"
 		(shape bidirectional)
@@ -12461,7 +12787,7 @@
 			)
 			(justify left)
 		)
-		(uuid "2c1a0740-790b-4f82-a91e-4f6caef91080")
+		(uuid "ee44b29f-5bde-4d8a-a71b-c3267d170746")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 321.31 356.87 0)
 			(effects
@@ -12483,7 +12809,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "b5dec291-9d48-47f0-84a7-08a9077832f3")
+		(uuid "3b145cf5-ede1-4715-90ce-5c24551d43fa")
 	)
 	(text "NFC  (ST25DV04KC, I2C addr 0x53/0x57, PCB coil on AC0/AC1)"
 		(exclude_from_sim no)
@@ -12497,7 +12823,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0e5c6ab8-0973-4217-bd32-ce2370012be5")
+		(uuid "6bf325c9-35d8-4fc7-bc20-76284b97cba9")
 	)
 	(symbol
 		(lib_id "ST25DV:ST25DV04KC-IE6S3")
@@ -12507,7 +12833,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b36a4a5c-bec4-4d40-b99a-3c628a79c284")
+		(uuid "1a7b773f-2327-44c9-8bc9-58b4667e47fa")
 		(property "Reference" "U4"
 			(at 472.54 158.73 0)
 			(effects
@@ -12554,28 +12880,28 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "31a00d6c-4315-4f90-a111-203caf6e3d2f")
+			(uuid "d74771fd-4e22-4e5d-8fc3-7727e2b2712e")
 		)
 		(pin "2"
-			(uuid "2622adb6-b042-474e-b2e9-37844c6e5787")
+			(uuid "f4984d4f-d631-46bd-8db9-b0b874712671")
 		)
 		(pin "3"
-			(uuid "d8cd59dc-a833-4677-b3bf-b21258a15d8c")
+			(uuid "d43591f0-e1fd-4de7-b9a0-6b56f692081a")
 		)
 		(pin "4"
-			(uuid "5ce3ef8f-28df-4af2-9050-91f1f8b3faa6")
+			(uuid "2c534345-f44e-41b3-8c6c-259e1370945b")
 		)
 		(pin "5"
-			(uuid "d8ffe312-a58a-4820-971c-81c31f9e5287")
+			(uuid "ec8f1aa6-65db-4204-adc6-b7eadbcc1248")
 		)
 		(pin "6"
-			(uuid "84fc4861-a6a3-46be-9f91-64d95ac2f5ec")
+			(uuid "8b2692bb-37ca-4c9f-9638-f88d52976eab")
 		)
 		(pin "7"
-			(uuid "1cc8a681-758c-484b-8569-72c58b486057")
+			(uuid "36c74424-2ed9-4a41-b780-d96aeff84be1")
 		)
 		(pin "8"
-			(uuid "c2d1867b-3a2a-4189-ba01-b74e6c2331ba")
+			(uuid "000919be-38eb-4890-9dcd-e471ca078b89")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12588,7 +12914,7 @@
 	)
 	(no_connect
 		(at 459.74 156.21)
-		(uuid "f6c33f60-8131-4604-90e5-4fa68f2f6c65")
+		(uuid "d262e4c2-d306-49af-b210-89404885b5a4")
 	)
 	(wire
 		(pts
@@ -12598,7 +12924,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ab2b7606-87b0-4312-ba2c-c6c7d5379206")
+		(uuid "75635022-0151-4d15-a626-4432ce8deca3")
 	)
 	(global_label "NFC_ANT_A"
 		(shape bidirectional)
@@ -12609,7 +12935,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ff58245f-3e45-41a7-b059-32f8b0b6c26c")
+		(uuid "c1deb80b-f982-4bdb-8ab7-9515bb2edcb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 457.2 158.75 0)
 			(effects
@@ -12628,7 +12954,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7012de0d-d00f-4a5f-921f-c122b5a2487b")
+		(uuid "a2ff6fa1-bb3f-4e1d-be18-f0a23ca89354")
 	)
 	(global_label "NFC_ANT_B"
 		(shape bidirectional)
@@ -12639,7 +12965,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5c19c24e-dd11-4b64-8990-16ca6f9ffaf2")
+		(uuid "155dad90-64fb-4046-bd72-e0b2d71b5989")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 457.2 161.29 0)
 			(effects
@@ -12658,7 +12984,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "48b02a2d-2808-47d0-8f35-a05744fc55df")
+		(uuid "7e9183c8-d881-4bc2-b62f-e555410931a1")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -12668,7 +12994,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "561e374c-74f5-41c7-8267-49996958fc26")
+		(uuid "4217dcaf-9a9b-4fcd-89c3-18c3a7e240f4")
 		(property "Reference" "#PWR040"
 			(at 457.2 163.83 0)
 			(effects
@@ -12714,7 +13040,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "9a46a199-f02e-44fe-90e3-965edfce0d3e")
+			(uuid "f4e72529-536e-45d6-aa4f-366129f7687a")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12733,7 +13059,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8b21dc9f-fec6-41ff-a524-8109e48c232e")
+		(uuid "682d6d70-70df-4591-86df-282fc027ea0c")
 	)
 	(global_label "SDA"
 		(shape bidirectional)
@@ -12744,7 +13070,7 @@
 			)
 			(justify left)
 		)
-		(uuid "49c3af67-9527-40dd-858c-87849ab71ad1")
+		(uuid "9ed85a6c-e8d5-4d13-8689-86fe25caf6d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 482.6 163.83 0)
 			(effects
@@ -12763,7 +13089,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f9a793ee-2316-418f-afd5-1d0e6cc80c48")
+		(uuid "51830f57-795d-4506-a192-26633b3d60e9")
 	)
 	(global_label "SCL"
 		(shape bidirectional)
@@ -12774,7 +13100,7 @@
 			)
 			(justify left)
 		)
-		(uuid "b1049bde-fc55-4879-b0e3-d3ccf93861f6")
+		(uuid "ec55680a-ac3f-44da-a0eb-aa344abc692f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 482.6 161.29 0)
 			(effects
@@ -12793,7 +13119,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "82768dd0-0331-4d3a-b576-74751a8c6304")
+		(uuid "841a38bf-d6df-45a4-9f63-93c07c5b890a")
 	)
 	(global_label "NFC_GPO"
 		(shape bidirectional)
@@ -12804,7 +13130,7 @@
 			)
 			(justify left)
 		)
-		(uuid "6e49fd66-4aef-4ee5-bd80-1a90b446ecb6")
+		(uuid "e59836f4-1151-494e-8e34-751538f52855")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 482.6 158.75 0)
 			(effects
@@ -12823,7 +13149,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ebfed0bd-7089-4705-a44f-02b1a2b1f269")
+		(uuid "d65ea94c-53d1-4ba9-b3b1-1dfa2f640e55")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -12833,7 +13159,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cc6da748-a972-4c45-b773-bd3a2c0cefe8")
+		(uuid "58b5a7e0-732d-4817-8af0-f9afb4952c48")
 		(property "Reference" "#PWR041"
 			(at 482.6 156.21 0)
 			(effects
@@ -12879,7 +13205,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "26238b1e-c35c-4f06-a0ef-f126640834b7")
+			(uuid "844de48b-a2f1-4e02-9338-9fd8e1ea00b4")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12898,7 +13224,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "75fa22b6-6226-473c-869e-5e5b9d998b8c")
+		(uuid "690cb810-c466-460a-879d-87fddbb8ad38")
 		(property "Reference" "R14"
 			(at 431.778 126.984 0)
 			(effects
@@ -12945,10 +13271,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "dcf4e629-90d0-4d31-b6c7-d165b4260c3d")
+			(uuid "410a6a93-39ec-4421-9ca1-b7d4b94073cd")
 		)
 		(pin "2"
-			(uuid "74080bfe-60d9-44bd-bdf2-f6d8fca2ad5f")
+			(uuid "148c589b-5c23-41ae-ada8-4b7523087838")
 		)
 		(instances
 			(project "NeuralCard"
@@ -12967,7 +13293,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6622d1d4-e10d-4d2b-a047-6f6569644605")
+		(uuid "621ed2b6-9558-4969-b348-b60e7e353cbc")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -12977,7 +13303,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c6eee2b0-1411-4a28-b7cf-5367636148cd")
+		(uuid "e83122ec-27b4-4d2b-8afd-19bb000c8640")
 		(property "Reference" "#PWR042"
 			(at 430.53 121.92 0)
 			(effects
@@ -13023,7 +13349,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "0e285b6a-9a42-49a3-9c56-7205db61a69c")
+			(uuid "154a66d1-1abb-411c-acd4-634e631aa716")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13042,7 +13368,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9d6060c7-3161-4536-9843-a65a019d5db7")
+		(uuid "4b35aa1f-7099-49ea-b233-8b7b551dd9b4")
 	)
 	(global_label "NFC_GPO"
 		(shape bidirectional)
@@ -13053,7 +13379,7 @@
 			)
 			(justify left)
 		)
-		(uuid "816c6fcc-56ec-49d3-98a0-bea02276d647")
+		(uuid "cdfe333b-44d8-4dbc-aa03-78580fb1f55c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 430.53 134.62 0)
 			(effects
@@ -13072,7 +13398,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1ee254c6-03e2-41fc-b4fc-5285b4d7cd41")
+		(uuid "d4493042-cebf-4130-8f69-350ab6a4731b")
 		(property "Reference" "C11"
 			(at 531.778 126.984 0)
 			(effects
@@ -13119,10 +13445,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "959cf58e-8851-4256-b508-b276e1b6c811")
+			(uuid "fa36d979-2af3-450b-b1d8-0e2778e464e7")
 		)
 		(pin "2"
-			(uuid "19e90182-f09f-44f5-94e2-ba445ce26e82")
+			(uuid "8bfa0099-d0e4-4a8b-85e9-f3b34117879e")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13141,7 +13467,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c5a8e7c7-e72d-41b4-b041-7132b6816782")
+		(uuid "e813976c-10c6-4b4c-8090-2f006a84f326")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -13151,7 +13477,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1325377d-7e61-4127-bb1e-2b551dd6a1c4")
+		(uuid "6c001ef2-d6a9-41fd-9034-b1e374ccc310")
 		(property "Reference" "#PWR043"
 			(at 529.59 121.92 0)
 			(effects
@@ -13197,7 +13523,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "90b42e04-5a65-40fc-b57a-9fc60cbacfd1")
+			(uuid "306f5224-815b-473f-bb76-f1fda928eabf")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13216,7 +13542,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "842efcf3-33f2-4c39-a173-ed261acc7c88")
+		(uuid "03de73f8-2369-4fdc-8334-efa79f978bf0")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -13226,7 +13552,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "916411ba-d3cd-4837-9ba6-cc9cc9f9a86e")
+		(uuid "ccdf10f2-1401-4799-b14c-c6686778c4df")
 		(property "Reference" "#PWR044"
 			(at 529.59 134.62 0)
 			(effects
@@ -13272,7 +13598,7 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "68b13538-b12f-49b9-b427-d65017e1c2d6")
+			(uuid "c8b26a56-703e-497b-bdb9-7ee974091b64")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13291,7 +13617,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "91c12dd3-e772-41a8-983a-3251d3f94ede")
+		(uuid "71570996-0eb7-4ade-975b-123cb368f1d1")
 		(property "Reference" "C12"
 			(at 431.778 178.984 0)
 			(effects
@@ -13338,10 +13664,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "6f49ab4a-2a08-49f0-b430-6ec9f3557591")
+			(uuid "620171ec-cff7-4fe6-b892-78d4f35af7cc")
 		)
 		(pin "2"
-			(uuid "d993dbd4-ccfb-484c-974c-a8d6641dacc2")
+			(uuid "770e96aa-8d24-4ef2-bad5-606e0630d66f")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13360,7 +13686,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e13fc799-e6ee-4fd1-b6db-ba8ddba073e6")
+		(uuid "b2b15580-9ebc-4584-8497-5518e05482b8")
 	)
 	(global_label "NFC_ANT_A"
 		(shape bidirectional)
@@ -13371,7 +13697,7 @@
 			)
 			(justify left)
 		)
-		(uuid "16a58b2a-cb24-4fd3-a187-8bc03152e7bd")
+		(uuid "8f6cc808-291a-4d08-be7f-edcfed6929ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 430.53 173.99 0)
 			(effects
@@ -13390,7 +13716,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "43c080b7-9917-4244-bc1f-be5f0fff4e29")
+		(uuid "71361a83-aded-4370-998b-20aed3ac304f")
 	)
 	(global_label "NFC_ANT_B"
 		(shape bidirectional)
@@ -13401,7 +13727,7 @@
 			)
 			(justify left)
 		)
-		(uuid "97c9e6d4-af65-4715-9861-8ba3ad5dfdfb")
+		(uuid "5c0aaafe-00a9-46ad-990b-b22bde105f00")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 430.53 186.69 0)
 			(effects
@@ -13420,7 +13746,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "edb03ebd-7f77-4541-aafd-13937c26e109")
+		(uuid "6bbacf0b-2181-4a6c-8d05-10c89f1e10f9")
 		(property "Reference" "ANT1"
 			(at 482.54 188.73 0)
 			(effects
@@ -13467,10 +13793,10 @@
 			(hide yes)
 		)
 		(pin "1"
-			(uuid "e7d329e0-d4f6-4af9-8cd4-62eec84fc2c8")
+			(uuid "e0ea0492-bd13-44fc-96e8-1418f7df9dba")
 		)
 		(pin "2"
-			(uuid "5d902a8c-a3ce-48e4-b090-4c1d15ec4352")
+			(uuid "ae090ab7-eaf9-46d8-967d-7655cb6d3d09")
 		)
 		(instances
 			(project "NeuralCard"
@@ -13489,7 +13815,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4ae990ed-c89f-4612-b535-37c8dae79542")
+		(uuid "f8956207-c0b2-49a8-94d7-f77a8df1e254")
 	)
 	(global_label "NFC_ANT_A"
 		(shape bidirectional)
@@ -13500,7 +13826,7 @@
 			)
 			(justify right)
 		)
-		(uuid "e16429ba-8154-43dc-99d8-68674e1f9371")
+		(uuid "2a0f6f77-a4cb-4395-af6b-6bc111df9a3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 472.44 190.5 0)
 			(effects
@@ -13519,7 +13845,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6db1c881-eb99-42eb-bcbd-775f8c0b8296")
+		(uuid "cc3a8b87-9bba-4fb1-acc5-963852d30c96")
 	)
 	(global_label "NFC_ANT_B"
 		(shape bidirectional)
@@ -13530,7 +13856,7 @@
 			)
 			(justify right)
 		)
-		(uuid "689c5ed6-2882-44bc-8d83-185ac5a11387")
+		(uuid "0fbd9b4f-9904-4816-81c4-918c2b1aa24e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 472.44 193.04 0)
 			(effects

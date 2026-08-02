@@ -24,6 +24,7 @@
 | D1–D24 | Blue LED 0603 | Neuron LEDs (24×) | 0603 | 24 | **C72041** | [LCSC](https://www.lcsc.com/product-detail/C72041.html) · [JLC](https://jlcpcb.com/partdetail/C72041) | [LCSC](https://www.lcsc.com/product-detail/C72041.html) |
 | BT1 | CR2032-BS-6-1 (Q&J) | Coin cell holder | SMD holder | 1 | **C70377** | [LCSC](https://www.lcsc.com/product-detail/C70377.html) · [JLC](https://jlcpcb.com/partdetail/C70377) | [LCSC](https://www.lcsc.com/product-detail/C70377.html) |
 | SW1, SW2 | TS-1187A-B-A-B | Tact switch (BOOT, RESET) | SMD | 2 | **C318884** | [LCSC](https://www.lcsc.com/product-detail/C318884.html) · [JLC](https://jlcpcb.com/partdetail/C318884) | [LCSC](https://www.lcsc.com/product-detail/C318884.html) |
+| SW3 | SHOU HAN MSK12C02 | SPDT slide switch — **power on/off**, in series with coin + terminal | SMD 8×2.8 mm, right-angle | 1 | **C431540** | [LCSC](https://www.lcsc.com/product-detail/C431540.html) · [JLC](https://jlcpcb.com/partdetail/C431540) | [LCSC PDF](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_SHOU-HAN-MSK12C02_C431540.pdf) |
 
 ## 2. Passives — JLC **Basic** parts (verify value/voltage at link)
 
@@ -40,7 +41,12 @@
 | C9 | 22 µF 16V | 0805 | 1 | C45783 | [LCSC](https://www.lcsc.com/product-detail/C45783.html) | Rail bulk |
 | C10 | 100 µF 6.3V | 0805 | 1 | C15850 | [LCSC](https://www.lcsc.com/product-detail/C15850.html) | Ride-out cap (coin peaks) |
 
-**Total placements: 56** (10 active/EM lines + 13 R + 10 C + 24 LEDs).
+**Total placements: 52** per the current `fab/NeuralCard-cpl.csv` — 24 LEDs + 11 R + 10 C +
+3 switches (SW1/SW2/SW3) + 3 ICs/module (U1/U2/U4) + BT1.
+
+> ⚠️ **Sections 1–2 above are stale.** They still list the v2-removed USB-C power path
+> (J1, D0, U3, Q1, R7, R8, R13, C6, C7) — those nine parts are **not** in the current CPL.
+> See `DESIGN.md` §0 for the removal and [`CHANGELOG.md`](./CHANGELOG.md) "Known issues".
 
 ---
 
@@ -56,7 +62,11 @@
 3. **Power source selection (Q1 P-FET):** USB→LDO powers the rail and auto-disconnects the coin
    (no back-charge of the non-rechargeable CR2032, no diode drop). 100 % SMD.
 4. **CR2032 holder height** adds ~3.5 mm on one side — normal for coin-cell cards.
-5. Passive LCSC codes are common JLC Basic parts — **verify each value/voltage** at its link.
+5. **SW3 must be ordered as C431540 specifically.** It was previously "select-at-order" against
+   an improvised land, which JLCPCB rejected at DFM on order SMT026072863054. The board now
+   carries the datasheet-exact MSK12C02 footprint including 4 shield tabs and 2× 0.85 mm NPTH
+   locating holes — a different slide switch will not seat. See [`CHANGELOG.md`](./CHANGELOG.md).
+6. Passive LCSC codes are common JLC Basic parts — **verify each value/voltage** at its link.
 
 ---
 
