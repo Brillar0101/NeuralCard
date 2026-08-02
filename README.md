@@ -28,6 +28,8 @@ since the tag is powered by the phone's field.
   tuned with a single external cap against the chip's internal 28.5 pF
 - CR2032 coin cell. No USB connector: you flash once through six UART
   pads with a serial adapter, then it runs on the coin.
+- MSK12C02 slide switch (SW3) on the coin's positive terminal, so the card
+  has a real off position rather than only a firmware deep sleep.
 
 Runs on a 2-layer board. Everything is assembled by JLCPCB except the coin
 cell.

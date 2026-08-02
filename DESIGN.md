@@ -176,6 +176,40 @@ IMU wake-on-motion, wake ripple). Short press while on = user button
 working while "off" (RF-field powered). A hard-off latch IC was considered
 and rejected: saves nothing vs battery self-discharge, costs parts + reroute.
 
+## 9. Hardware power switch — SW3 (v2.2)
+
+**SHOU HAN MSK12C02** (SW3, LCSC C431540), an SPDT slide switch in series between the coin
+cell and the `+3V3` rail. Physical on/off, independent of the SW1/GPIO0 firmware deep-sleep
+behavior in §8 — that spec still stands; SW3 supplements it with a true hard cutoff.
+
+```
+ BT1 CR2032 (+) ──► VBAT ──► SW3 pad 2 (common pole)
+                              ├── pad 3 ──► +3V3 rail    (slid ON)
+                              └── pad 1 ──► open throw   (slid OFF)
+```
+
+| Property | Value |
+|---|---|
+| Footprint | `Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02` |
+| Body | 8 × 2.8 mm, right-angle actuator |
+| Pads | 3 signal + 4 `SH` shield tabs + 2× 0.85 mm NPTH locating holes |
+| Placement | 142.1112, -64.4434, Bottom, rotated -90 |
+| Orientation | Pins inboard toward BT1; actuator faces the right card edge (thumb-reachable) |
+| Edge clearance | 1.0 mm courtyard-to-edge (moved 0.546 mm inboard for assembly) |
+
+The four `SH` tabs are **intentionally netless**. They are the retention frame, and the
+datasheet does not state that the frame is isolated from the contacts — tying them to GND
+risks shorting the coin cell. They still solder down for mechanical retention.
+
+> ⚠️ **Known deviation: SW3 has no schematic symbol.** `NeuralCard.kicad_sch` contains only
+> SW1 and SW2, and no `VBAT` net exists in the schematic at all — SW3's nets were assigned
+> directly in the layout. **Running Tools → Update PCB from Schematic will flag SW3 as an
+> extra footprint and can delete it**, reverting the DFM fix. ERC cannot verify the power
+> path through the switch, and `gen_schematic.py` will not regenerate it. See
+> [`CHANGELOG.md`](./CHANGELOG.md) for the full history and remediation.
+
+---
+
 ### NFC/QR destinations (final)
 - QR (copper-permanent): **https://www.princetekki.com** (v3, EC-Q, regenerated
   2026-07 — old matrix encoded a stale URL and was replaced).
