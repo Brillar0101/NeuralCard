@@ -349,6 +349,10 @@ def section_power():
     pwr("+3V3", 58.42, fy - 2.54)
     wire(58.42, fy - 2.54, 58.42, fy)
     pwr_flag_at(58.42, fy)
+    # VBAT is driven by the coin through BT1, but a plain label carries no pin type,
+    # so strict checkers report the net as undriven. Flag it explicitly.
+    pwr_flag_at(49.53, fy)
+    tap_label("VBAT", 49.53, fy, dy=2.54)
 
 
 def tap_dir(spec, x, y, side, length=2.54):
@@ -486,9 +490,12 @@ def section_imu():
 # NEURON LEDs — 24x charlieplexed on 6 GPIO (the neural-net art)
 def led_cp(ref, x, y, i, j):
     """Horizontal LED: K(left)->CPj, A(right)->CPi."""
-    place("Device:LED", ref, "blue", x, y, 0, ["1", "2"], [
+    # "red" per the v2 decision (KT-0603R / C2286) -- blue cannot be driven from a
+    # 3.0V coin with margin. The footprint and fab BOM have always been red; only
+    # this Value string lagged behind.
+    place("Device:LED", ref, "red", x, y, 0, ["1", "2"], [
         prop("Reference", ref, x, y - 2.794, 0, "left"),
-        prop("Value", "blue", x, y + 2.794, 0, "left"),
+        prop("Value", "red", x, y + 2.794, 0, "left"),
         prop("Footprint", FP.get(ref, ""), x, y, 0, hide=True),
         prop("Datasheet", "", x, y, 0, hide=True),
         prop("Description", "", x, y, 0, hide=True),
