@@ -1,0 +1,80 @@
+name: Design Review
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - 'tools/inject_review.py'
+      - '.github/workflows/design-review.yml'
+  pull_request:
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+  workflow_dispatch:
+
+concurrency:
+  group: design-review-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  review:
+    name: kicad-happy analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Analyze schematic and PCB
+        id: analysis
+        uses: aklofas/kicad-happy@v1
+        with:
+          schematic: NeuralCard.kicad_sch
+          pcb: NeuralCard.kicad_pcb
+          severity: all
+          # No ngspice on the runner and nothing analog worth simulating here.
+          spice: 'false'
+          # Show only what a PR actually changed, not the whole standing backlog.
+          diff-base: ${{ github.event_name == 'pull_request' }}
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          file-path: ${{ steps.analysis.outputs.report-path }}
+          comment-tag: kicad-happy-review
+          mode: upsert
+
+      - name: Refresh README summary and full report
+        if: github.event_name != 'pull_request'
+        run: |
+          python3 tools/inject_review.py \
+            --sch-json "${{ steps.analysis.outputs.schematic-json }}" \
+            --pcb-json "${{ steps.analysis.outputs.pcb-json }}" \
+            --readme README.md \
+            --report docs/design-review.md
+
+      - name: Commit refreshed review
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- README.md docs/design-review.md; then
+            echo "design review unchanged — nothing to commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md docs/design-review.md
+          git commit -m "chore: refresh design review"
+          git push
+
+      - name: Summary
+        run: |
+          echo "### kicad-happy" >> "$GITHUB_STEP_SUMMARY"
+          echo "Findings: ${{ steps.analysis.outputs.findings-count }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Critical: ${{ steps.analysis.outputs.has-critical }}" >> "$GITHUB_STEP_SUMMARY"
