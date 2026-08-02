@@ -6,6 +6,44 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+### Fixed — SW3 now exists in the schematic (2026-08-02)
+
+SW3 had been added directly to the layout and had no schematic symbol, so
+**Tools → Update PCB from Schematic** would have flagged it as an extra footprint and
+deleted it, silently reverting the DFM fix. The board also carried a `VBAT` net with no
+schematic counterpart.
+
+Fixed in `gen_schematic.py` rather than by hand-editing `NeuralCard.kicad_sch`, so the
+switch survives the next regeneration:
+
+- `LIBSYMS` gains `Switch:SW_SPDT`, `PIN_XY` its pin geometry, `FP` maps SW3 to
+  `Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02`.
+- `section_power()` now routes the coin through the switch: BT1 pin 1 (+) drives `VBAT`,
+  SW3 pin 2 (common pole) takes `VBAT`, pin 3 (closed throw) drives `+3V3`, and pin 1
+  (open throw) carries an explicit no-connect.
+
+KiCad's generic `Switch:SW_SPDT` numbers its common pole **pin 2**, which matches the
+MSK12C02 pinout and the pad nets already on the board — so no custom symbol was needed and
+no pin renumbering was involved.
+
+Net changes, and nothing else moved:
+
+| Net | Before | After |
+|---|---|---|
+| `+3V3` | `BT1.1` … | `SW3.3` … (coin no longer feeds the rail directly) |
+| `VBAT` | did not exist in schematic | `BT1.1`, `SW3.2` |
+| `SW3.1` | — | unconnected (open throw, no-connect flagged) |
+
+**Verification.** Schematic netlist checked pad-by-pad against `NeuralCard.kicad_pcb`:
+**174 schematic pads, 173 PCB pads, 0 net mismatches** — the one difference is SW3 pad 1,
+unconnected on both sides. Update PCB from Schematic is now a connectivity no-op. ERC: **0
+errors, 41 warnings**, identical to the count before this change (all 41 are the benign
+`pin_to_pin` notices inherent to easyeda2kicad-imported symbols).
+
+The generator was also confirmed to reproduce the previously committed schematic exactly —
+53 nets and 53 components, zero differences — before the switch was added, so regenerating
+loses nothing.
+
 ### Fixed — SW3 power switch footprint (`a316055`, 2026-07-31)
 
 JLCPCB rejected SW3 at DFM review on PCBA order **SMT026072863054**: the part they had
@@ -70,40 +108,18 @@ Issues.
 
 ## Known issues
 
-These are open as of 2026-08-02 and are **not** fixed by the commits above.
+Open as of 2026-08-02.
 
-### 1. SW3 exists on the PCB but not in the schematic
+### Resolved on this branch
 
-`NeuralCard.kicad_sch` contains only SW1 (BOOT) and SW2 (RESET). There is no SW3 symbol in
-either the committed or the working-tree schematic, and no `VBAT` net anywhere in the
-schematic — the PCB's `VBAT` net has no schematic counterpart. SW3's pad nets were assigned
-directly in the layout.
+- **SW3 missing from the schematic** — fixed above; schematic and PCB now agree on every pad.
+- **KiCad 10 re-save drift** — `NeuralCard.kicad_sch` and `JLC.kicad_sym` had ~15,000 lines
+  of uncommitted working-tree changes from a KiCad 10 re-save (format `20250114`→`20260306`,
+  eeschema 9.0→10.0, paper A2→A3). Discarded on 2026-08-02; the schematic is back to the
+  generator's canonical KiCad 9 / A2 output. **Open the project in KiCad 9, or decline the
+  format-upgrade prompt in KiCad 10**, or the drift returns the moment the file is saved.
 
-Consequences:
-
-- Running **Tools → Update PCB from Schematic** in KiCad will flag SW3 as an extra footprint
-  and can delete it, silently reverting the DFM fix.
-- ERC cannot verify the power path through the switch.
-- `gen_schematic.py` regenerates the schematic from source and will not produce SW3.
-
-Fix requires adding an SPDT symbol to the schematic with pad 2 on `VBAT`, pad 3 on `+3V3`,
-pad 1 open, then re-annotating so the PCB and schematic agree.
-
-### 2. Uncommitted schematic drift in the working tree
-
-`NeuralCard.kicad_sch` and `JLC.kicad_sym` carry large uncommitted changes — a KiCad 10
-re-save of an older file. Roughly 15,000 lines changed across the two.
-
-| | Committed (HEAD) | Working tree |
-|---|---|---|
-| File format | `20250114` | `20260306` |
-| Generator | eeschema 9.0 | eeschema 10.0 |
-| Paper size | A2 | A3 |
-
-This is the version KiCad opens today. Decide whether to keep or discard it before editing
-the schematic, since it changes what any schematic fix would be applied to.
-
-### 3. Documentation drift predating this branch
+### 1. Documentation drift predating this branch
 
 `BOM.md` sections 1–2 and `DESIGN.md` §3 still describe the v2-removed USB-C power path
 (J1, D0, U3 LDO, Q1 P-FET, R7/R8 CC resistors, R13 bleeder, C6/C7). Those nine parts are
