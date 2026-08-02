@@ -90,33 +90,6 @@ flowchart LR
 All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 6 current-limiting resistors rather than 24.
 
-## The board is generated, not drawn
-
-I didn't lay this out by hand. The whole design is produced by scripts, so
-the board can be rebuilt from scratch with:
-
-```
-python3 gen_schematic.py                 # writes NeuralCard.kicad_sch
-kicad-cli sch export netlist -o NeuralCard.net NeuralCard.kicad_sch
-python3 tools/gen_nfc_antenna.py         # writes the coil footprint
-<kicad python> place_pcb.py              # places parts, silk art, keepouts
-<kicad python> -c "ExportSpecctraDSN"    # then route with freerouting.jar
-<kicad python> tools/stitch_islands.py   # ties orphan ground islands
-python3 tools/apply_fonts.py             # Red Hat faces on the silk
-kicad-cli pcb export gerbers/drill/pos   # fab outputs
-```
-
-`<kicad python>` is the interpreter bundled with KiCad, which has `pcbnew`.
-Freerouting isn't checked in (it's a 20 MB jar); grab it from
-[freerouting/freerouting](https://github.com/freerouting/freerouting) and
-drop it in `tools/`.
-
-The silkscreen typography is Red Hat Display, Text, and Mono, the same
-faces my website uses. KiCad renders them as outline fonts and they plot
-into the gerbers as polygons, so the fab doesn't need the fonts installed.
-You do, if you rerun the pipeline: they're in
-[RedHatOfficial/RedHatFont](https://github.com/RedHatOfficial/RedHatFont).
-
 ## Ordering
 
 The `fab/` folder has the current gerber zip, BOM, and pick and place file.

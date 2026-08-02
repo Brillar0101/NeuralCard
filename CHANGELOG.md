@@ -6,6 +6,26 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+### Removed — generation scripts untracked (2026-08-02)
+
+The ten scripts that generated the schematic, placement, silk art, NFC coil and fab bundle
+(~2,040 lines) are no longer distributed: `gen_schematic.py`, `place_pcb.py`,
+`add_qr_to_board.py`, `blender_explode.py`, `finalize_cc2.py`, and `tools/apply_fonts.py`,
+`export_fab.py`, `fix_sw3_footprint.py`, `gen_nfc_antenna.py`, `stitch_islands.py`.
+
+Removed with `git rm --cached`, so they remain on the author's disk and in git history — only
+future distribution stops. `/*.py` and `/tools/*.py` added to `.gitignore`.
+
+The README's "The board is generated, not drawn" section was deleted with them. It documented
+a pipeline the repo no longer ships, and leaving it would have promised files that aren't
+there. The published design is now the committed `NeuralCard.kicad_sch` and
+`NeuralCard.kicad_pcb`.
+
+Consequence worth stating plainly: the board can no longer be rebuilt from source by a
+third party, and regenerating it requires scripts that live outside this repository. Editing
+the schematic now means editing `NeuralCard.kicad_sch` directly in KiCad — the generator will
+not be there to reproduce it.
+
 ### Removed — automated design review CI (2026-08-02)
 
 Dropped `.github/workflows/design-review.yml`, `tools/inject_review.py` and
