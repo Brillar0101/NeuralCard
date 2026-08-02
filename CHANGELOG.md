@@ -6,7 +6,42 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
-### Added — automated design review in CI (2026-08-02)
+### Removed — automated design review CI (2026-08-02)
+
+Dropped `.github/workflows/design-review.yml`, `tools/inject_review.py` and
+`docs/design-review.md`. The workflow worked — it ran clean on both a PR and a push, and
+committed its own refresh — but it added a bot commit loop and a generated section to a repo
+whose value is the board, not its CI.
+
+**The mermaid diagrams stay.** They are hand-authored, not tool output, and they are the part
+that helps someone landing on the repo. The three descriptive badges stay; the workflow-status
+badge went with the workflow.
+
+The two real fixes the review surfaced (`RS-001`, LED `Value`) are already merged and remain.
+Findings recorded for later: `SS-001` (0% MPN coverage), `DFM-001`/`DFM-002` (0.1 mm annular
+ring, below IPC Class 2), `FD-001` (no fiducials).
+
+### Changed — board renders regenerated (2026-08-02)
+
+`render/NeuralCard_front_v21.png` and `_back_v21.png` were last updated in `b2ccb56`
+(22 Jul), one PCB commit **before** the SW3 footprint swap in `a316055` (31 Jul) — so the
+published images still showed the old improvised switch land. Regenerated from the current
+board with `kicad-cli pcb render` at 1568×1040, transparent background, matching the previous
+framing. SW3 now appears with its correct MSK12C02 body.
+
+### Changed — .gitignore expanded (2026-08-02)
+
+Rebased on [github/gitignore's KiCad.gitignore](https://github.com/github/gitignore/blob/main/KiCad.gitignore).
+Adds KiCad backup/autosave patterns (`*.bak`, `*.kicad_sch-bak`, `_autosave-*`, `*-save.*`),
+ERC and cache-library output, Python artifacts (`__pycache__/`, `*.py[cod]`, `.venv/`),
+3D exports (`*.step`), superseded fab snapshots (`fab.old-*/`), and editor/OS noise. This
+takes `JLC.bak` and `fab.old-jul22/` out of the working tree's untracked list.
+
+Deliberately still tracked: `BOM_JLCPCB.csv` and `fab/*.csv` are release deliverables uploaded
+to JLCPCB, not incidental KiCad exports, and the generator scripts are the design source —
+see README, "The board is generated, not drawn."
+
+### Added — automated design review in CI (2026-08-02, removed same day)
 
 `.github/workflows/design-review.yml` runs [kicad-happy](https://github.com/aklofas/kicad-happy)
 against the schematic and PCB. On a PR it posts a diff-only comment (just what that PR

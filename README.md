@@ -1,6 +1,5 @@
 # NeuralCard
 
-[![Design Review](https://github.com/Brillar0101/NeuralCard/actions/workflows/design-review.yml/badge.svg)](https://github.com/Brillar0101/NeuralCard/actions/workflows/design-review.yml)
 [![KiCad 9](https://img.shields.io/badge/KiCad-9.0-0066CC)](https://www.kicad.org/)
 [![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](DESIGN.md)
 [![Parts](https://img.shields.io/badge/BOM-52%20placements%20%C2%B7%20~%246.91-3E8635)](BOM.md)
@@ -90,74 +89,6 @@ flowchart LR
 
 All 24 LEDs are driven from 6 GPIO by charlieplexing, which is why there are
 6 current-limiting resistors rather than 24.
-
-<!-- kicad-happy:start -->
-
-### Automated design review
-
-`kicad-happy` analysis of the schematic and PCB — **86 findings** raw, **61** after removing rules that do not apply to this board. Regenerated on every push.
-
-<table><tr><td>
-
-| Severity | Count |
-|---|---|
-| Error | 27 |
-| Warning | 7 |
-| Info | 52 |
-| **Total** | **86** |
-
-</td><td>
-
-**After suppression**
-
-| Severity | Count |
-|---|---|
-| Error | 3 |
-| Warning | 6 |
-| Info | 52 |
-| **Total** | **61** |
-
-</td></tr></table>
-
-**Open findings**
-
-| Rule | Sev | N | Where | Finding |
-|---|---|---|---|---|
-| `FD-001` | Error | 2 | pcb | No fiducials on B.Cu (30 SMD components) (finest pad dim 0.28mm — BGA/fine-pitch QFN present) |
-| `PM-002` | Error | 2 | pcb | ANT1 is 0.0mm from board edge |
-| `SS-001` | Error | 1 | sch | Sourcing blocker: BOM has <50% MPN coverage (0/18 unique parts). Board is not pre-fab ready. |
-| `RS-001` | Warning | 2 | sch | +3V3 has no declared source |
-| `PU-001` | Warning | 1 | sch | U2 pin INT2 (__unnamed_26) missing pull-up resistor |
-| `DFM-001` | Warning | 1 | pcb | Annular ring 0.1mm requires advanced process (standard: 0.125mm) |
-| `DFM-002` | Warning | 1 | pcb | Via annular ring 0.1mm below IPC Class 2 minimum 0.125mm |
-| `LA-AUD` | Info | 24 | sch | LED D1 (red) [resistor_limited] |
-| `CP-002` | Info | 12 | pcb | No opposite-layer copper under D1 |
-| `DO-DET` | Info | 3 | sch | Decoupling coverage on +3V3 |
-| `CC-DET` | Info | 3 | pcb | Power net +3V3: 0.2mm min trace |
-| `EP-AUD` | Info | 2 | sch | ESD audit ANT1 (header): none coverage |
-| `CERT-001` | Info | 1 | sch | Wireless module detected: U1 |
-| `DC-DET` | Info | 1 | sch | Decoupling on +3V3 |
-| `DS-003` | Info | 1 | sch | Datasheets present (1 files) but 54/54 BOM parts lack an MPN — those parts can't be cross-referenced. |
-| `RC-DET` | Info | 1 | sch | RC filter R9/C4 at 159.15Hz |
-| `SI-DET` | Info | 1 | sch | Sensor U2 (LSM6DS3TR-C) [motion/spi] |
-| `WL-001` | Info | 1 | sch | wifi/ble module U1 (ESP32-S3-WROOM-1) |
-| `TS-DET` | Info | 1 | pcb | Zone stitching: GND 35 vias |
-
-<details><summary><b>Not applicable to this design</b> (25 findings)</summary>
-
-| Rule | Sev | N | Where | Finding |
-|---|---|---|---|---|
-| `LR-001` | Error | 24 | sch | LED D1: no current-limiting resistor found |
-| `TE-001` | Warning | 1 | pcb | Test point coverage: 0/52 nets (0%) |
-
-- `LR-001` — Charlieplexed matrix: R1-R6 limit current on the six shared GPIO drive lines, so no per-LED series resistor exists by design.
-- `TE-001` — Business-card form factor; no test points by design.
-
-</details>
-
-Full report: [`docs/design-review.md`](docs/design-review.md)
-
-<!-- kicad-happy:end -->
 
 ## The board is generated, not drawn
 
