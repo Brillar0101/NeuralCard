@@ -196,7 +196,7 @@ behavior in §8 — that spec still stands; SW3 supplements it with a true hard 
 | Footprint | `Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02` |
 | Body | 8 × 2.8 mm, right-angle actuator |
 | Pads | 3 signal + 4 `SH` shield tabs + 2× 0.85 mm NPTH locating holes |
-| Placement | 142.1112, -64.4434, Bottom, rotated -90 |
+| Placement | 81.4550, -28.0000, Bottom, rotated -90 (v2.2 re-place; was 142.1112, -64.4434) |
 | Orientation | Pins inboard toward BT1; actuator faces the right card edge (thumb-reachable) |
 | Edge clearance | 1.0 mm courtyard-to-edge (moved 0.546 mm inboard for assembly) |
 
@@ -213,6 +213,68 @@ and the pad nets on the board, so the stock symbol is used unmodified.
 > coin cell across the throws. Verified pad-by-pad against `NeuralCard.kicad_pcb`:
 > 174 schematic pads vs 173 PCB pads, **0 net mismatches** — Update PCB from Schematic is a
 > connectivity no-op. See [`CHANGELOG.md`](./CHANGELOG.md).
+
+---
+
+## 10. Decoupling re-place (v2.2)
+
+The v2.1 board had its decoupling capacitors in the wrong place — not miswired, just
+physically distant from the ICs they serve. `place_pcb.py` dealt every passive into two
+cosmetic edge rows by list order, with no reference to which IC a cap belonged to:
+
+```python
+passives = [R1..R6, R9..R12] + [C1..C5, C8..C10]
+for ref, (x, y) in zip(passives, slots):   # positional, not electrical
+```
+
+Measured on the v2.1 board, centroid to centroid:
+
+| IC | v2.1 nearest cap | v2.2 |
+|---|---|---|
+| U1 ESP32-S3 | **24.8 mm** | 11.4 mm (C3 sits ~2 mm off the module edge) |
+| U2 IMU | 10.8 mm (its own C5 was **42 mm** away) | **4.0 mm** |
+| U4 NFC | 4.9 mm | 4.9 mm (unchanged) |
+
+At ~0.3–0.8 nH of loop inductance per mm, a 100 nF cap 25 mm from the pin it feeds does
+essentially nothing at the frequencies that matter. Neither ERC nor DRC can see this — the
+connectivity was always correct.
+
+**v2.2 placement.** C1/C2 on the module's left flank, C3/C4/C8 in the corridor between the
+module's pad edge (x≈41.1) and BT1's courtyard (x≈47). That corridor is only ~6 mm wide, so
+those caps are rotated 90°: a 0603 on its side is 0.8 mm across instead of 1.6 mm. C5 sits
+4 mm from the IMU. C9/C10 (22 µF ride-out, not HF decoupling) stay in the top edge row —
+keeping them out of the corridor is what let the output-column charlieplex lines route.
+
+**U1 still reads 11.4 mm** to its nearest cap and the detector still flags it. That is an
+artefact of centroid-to-centroid measurement against an 18 × 25.5 mm module: any cap beside
+the module edge is ≥9 mm from its centre. C3 is ~2 mm from the module edge and close to the
+3V3 pin, which is what actually matters.
+
+### Also in v2.2
+
+- **SW3 entered `place_pcb.py`.** It was added by hand in `b2ccb56` and never existed in the
+  placement table, so any re-place would have dropped it to the default centre slot.
+- **Part numbers moved into the schematic** — `MPN`, `Manufacturer`, `LCSC` on every
+  purchasable component (15/18 lines; ANT1, J1 and C12 are correctly part-less).
+- **Hardcoded paths fixed.** Six scripts pointed at `~/kicad-projects/NeuralCard`, which is
+  not where the project lives. All now derive their root from the script location.
+
+### Verification (v2.2)
+
+| | v2.1 | v2.2 |
+|---|---|---|
+| Routing | 100% | **100%** (freerouting score 995.36, 0 unrouted) |
+| Unconnected pads | 0 | **0** (the 7 reported are netless by design: ANT1 escape, SW3's 2 NPTH + 4 shield tabs) |
+| Tracks / vias | 465 / 57 | 631 / 79 |
+| ERC | 0 errors | 0 errors, 41 warnings |
+| DRC clearance/crossing | 0 | 0 |
+| GND pour fragments | 5 | **28** — see below |
+
+**Known regression: isolated GND pour islands went from 5 to 28.** These are redundant copper
+fragments the stitcher could not reach with a via; every GND pad is track-routed, so this is
+cosmetic rather than functional. It is a side effect of the new placement changing the pour
+topology, and `tools/stitch_islands.py` converges there (a second pass adds 0 vias). Worth
+revisiting before a large production run, since isolated copper is not ideal for EMC.
 
 ---
 

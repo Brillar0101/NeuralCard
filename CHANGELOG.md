@@ -6,6 +6,60 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+## [v2.2] — 2026-08-02
+
+Board revision driven by the kicad-happy analysis. **The headline is decoupling.**
+
+### Fixed — decoupling capacitors were 25 mm from the ICs they serve
+
+`place_pcb.py` dealt every passive into two cosmetic edge rows by list order, ignoring which
+IC each cap belonged to. The caps were correctly wired and completely ineffective:
+
+| IC | v2.1 | v2.2 |
+|---|---|---|
+| U1 ESP32-S3 | **24.8 mm** | 11.4 mm |
+| U2 IMU | 10.8 mm (its own C5 was **42 mm** away) | **4.0 mm** |
+
+Neither ERC nor DRC can see this — connectivity was always correct. C1/C2 now flank the
+module, C3/C4/C8 sit in the 6 mm corridor beside it (rotated 90° to fit), C5 is 4 mm from the
+IMU. C9/C10 (22 µF ride-out, not HF) stay in the edge row; keeping them out of the corridor
+is what let the output-column charlieplex lines route.
+
+### Fixed — SW3 was missing from the placement table
+
+Added by hand in `b2ccb56`, it never entered `place_pcb.py`, so this re-place would have
+dropped it to the default centre slot and silently undone the DFM fix. Now pinned at
+81.455, 28.0, rotated -90.
+
+### Fixed — six scripts pointed at a directory that isn't the project
+
+`gen_schematic.py` aside, every script hardcoded `H = ~/kicad-projects/NeuralCard`. The
+project lives in `~/Open Source Hardware/NeuralCard`. They now derive the root from their own
+location. `stitch_islands.py` failed outright on the first run because of this.
+
+### Changed — v2.1 → v2.2 on the silkscreen, fab package and renders regenerated
+
+### Verification
+
+- **100% routed** — freerouting score 995.36, zero unrouted connections
+- **0 unconnected pads.** The 7 reported are netless by design: ANT1's escape, SW3's two NPTH
+  holes and four shield tabs
+- 631 tracks, 79 vias (v2.1: 465 / 57)
+- ERC 0 errors / 41 warnings; DRC 0 clearance and 0 crossing violations
+- CPL still 52 placements; SW3 at 81.4550, -28.0000, Bottom, -90
+
+**Known regression:** isolated GND pour islands went from 5 to 28. Redundant copper the
+stitcher can't reach with a via; every GND pad is track-routed, so it is cosmetic rather than
+functional. `stitch_islands.py` converges there. Worth revisiting before a production run.
+
+**Not fixed in v2.2:** `FD-001` (no fiducials), `DFM-001`/`DFM-002` (0.1 mm annular ring below
+IPC Class 2), `PU-001` (INT2 pull-up — the pin is unused). Thermal analysis still SKIPPED: it
+needs datasheet PDFs in an extraction cache, and LCSC serves no datasheet URLs for these parts.
+
+**This supersedes the v2.1 fab package.** Order SMT026072863054 was placed against v2.1.
+
+---
+
 ### Removed — generation scripts untracked (2026-08-02)
 
 The ten scripts that generated the schematic, placement, silk art, NFC coil and fab bundle
