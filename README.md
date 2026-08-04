@@ -1,8 +1,8 @@
 # NeuralCard
 
 [![KiCad 9](https://img.shields.io/badge/KiCad-9.0-0066CC)](https://www.kicad.org/)
-[![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](DESIGN.md)
-[![Parts](https://img.shields.io/badge/BOM-52%20placements%20%C2%B7%20~%246.91-3E8635)](BOM.md)
+[![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](docs/DESIGN.md)
+[![Parts](https://img.shields.io/badge/BOM-52%20placements%20%C2%B7%20~%246.91-3E8635)](docs/BOM.md)
 
 A business card that runs a neural network.
 

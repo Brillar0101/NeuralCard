@@ -41,7 +41,7 @@ NeuralCard.ses
 # release deliverables uploaded to JLCPCB, not incidental KiCad exports.
 
 # --------------------------------------------------------------- heavy / derivable
-tools/freerouting.jar
+hardware/tools/freerouting.jar
 *.blend
 *.blend1
 *.glb
@@ -60,8 +60,8 @@ fab.bak*/
 # The scripts that generate the schematic, placement, silk art and fab bundle are
 # kept locally and not distributed. The committed .kicad_sch / .kicad_pcb are the
 # published design.
-/*.py
-/tools/*.py
+/hardware/*.py
+/hardware/tools/*.py
 
 # ------------------------------------------------------------------------- Python
 __pycache__/
