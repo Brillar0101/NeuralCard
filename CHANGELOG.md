@@ -6,6 +6,44 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+## [v2.2.1] — 2026-08-03
+
+Two findings from the first full analyzer run against the *v2.2* board. Both were real; one
+was a genuine footprint defect the earlier "probably an artifact" call had half-right.
+
+### Fixed — the NFC coil footprint had no courtyard (`PM-002`)
+
+`gen_nfc_antenna.py` emitted the coil with `allow_missing_courtyard`, so placement checkers
+had nothing to measure and fell back to the footprint origin at (0, 0) — the board corner —
+reporting **"ANT1 is 0.0 mm from board edge"**. The coil copper actually sits 2.65 mm inboard.
+
+The reading was wrong but the cause was a real defect: a footprint without a courtyard can't
+be collision-checked. Now emits a `B.CrtYd` box around the drawn extent plus the standard
+0.25 mm margin. C12 moved 13.4 → 12.9 mm, since the new courtyard clipped its by 0.1 mm.
+
+### Fixed — no fiducials (`FD-001`)
+
+Three `Fiducial_1mm_Mask2mm` targets on B.Cu at (3.5, 3.0), (3.5, 50.5) and (81.0, 50.5) —
+an L pattern, asymmetric so the placement machine cannot mistake board orientation. Excluded
+from BOM and CPL, so the placement count stays 52. Justified by the 0.28 mm minimum pad on
+the LGA-14 IMU.
+
+### Verification
+
+- **100% routed** — freerouting score 995.36, zero unrouted
+- **PCB analyzer errors: 0** (was 2). Findings 13 → 11; both remaining are warnings
+- 586 tracks; DRC 0 clearance, 0 crossing, 0 courtyard-overlap violations
+- Isolated GND pour islands **28 → 27** — still the open regression from v2.2
+- CPL 52 placements, fiducials correctly excluded
+
+### Still open
+
+`PM-002` R14 at 0.95 mm from the board edge (0.05 mm under the 1.0 mm recommendation) and
+`TE-001` test-point coverage, which does not apply to a business card. `LR-001` still fires
+24 times on the charlieplex matrix it misreads.
+
+---
+
 ## [v2.2] — 2026-08-02
 
 Board revision driven by the kicad-happy analysis. **The headline is decoupling.**
