@@ -1,7 +1,7 @@
 (footprint "NFC_Antenna_13x24"
   (version 20240108) (generator "gen_nfc_antenna")
   (layer "B.Cu")
-  (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+  (attr exclude_from_pos_files exclude_from_bom)
   (net_tie_pad_groups "1,2,3")
   (fp_text reference "ANT1" (at 9 14.8) (layer "B.SilkS") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
   (fp_text value "NFC_COIL" (at 9 15.4) (layer "B.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
@@ -57,4 +57,8 @@
   (pad "1" smd rect (at 3.200 14.200) (size 1.2 1.0) (layers "B.Cu"))
   (pad "2" thru_hole circle (at 8.000 14.200) (size 1.2 1.2) (drill 0.3) (layers "*.Cu"))
   (pad "3" thru_hole circle (at 8.500 22.800) (size 1.2 1.2) (drill 0.3) (layers "*.Cu"))
+  (fp_line (start 2.400 13.950) (end 14.600 13.950) (stroke (width 0.05) (type solid)) (layer "B.CrtYd"))
+  (fp_line (start 14.600 13.950) (end 14.600 40.600) (stroke (width 0.05) (type solid)) (layer "B.CrtYd"))
+  (fp_line (start 14.600 40.600) (end 2.400 40.600) (stroke (width 0.05) (type solid)) (layer "B.CrtYd"))
+  (fp_line (start 2.400 40.600) (end 2.400 13.950) (stroke (width 0.05) (type solid)) (layer "B.CrtYd"))
 )
