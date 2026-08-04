@@ -46,7 +46,7 @@
 
 > ⚠️ **Sections 1–2 above are stale.** They still list the v2-removed USB-C power path
 > (J1, D0, U3, Q1, R7, R8, R13, C6, C7) — those nine parts are **not** in the current CPL.
-> See `DESIGN.md` §0 for the removal and [`CHANGELOG.md`](./CHANGELOG.md) "Known issues".
+> See `DESIGN.md` §0 for the removal and [`CHANGELOG.md`](../CHANGELOG.md) "Known issues".
 
 ---
 
@@ -66,7 +66,7 @@
 5. **SW3 must be ordered as C431540 specifically.** It was previously "select-at-order" against
    an improvised land, which JLCPCB rejected at DFM on order SMT026072863054. The board now
    carries the datasheet-exact MSK12C02 footprint including 4 shield tabs and 2× 0.85 mm NPTH
-   locating holes — a different slide switch will not seat. See [`CHANGELOG.md`](./CHANGELOG.md).
+   locating holes — a different slide switch will not seat. See [`CHANGELOG.md`](../CHANGELOG.md).
 6. Passive LCSC codes are common JLC Basic parts — **verify each value/voltage** at its link.
 
 ---

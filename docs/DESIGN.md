@@ -76,7 +76,7 @@ pads (bare copper). Flash once with a USB-serial adapter, then it runs on the co
 ---
 
 ## 4. BOM
-> See [`BOM.md`](./BOM.md) (with JLC/LCSC confirm links) and [`BOM_JLCPCB.csv`](./BOM_JLCPCB.csv).
+> See [`BOM.md`](./BOM.md) (with JLC/LCSC confirm links) and [`BOM_JLCPCB.csv`](../fab/BOM_JLCPCB.csv).
 > JLC-exact footprints in `JLC.pretty`; symbols in `JLC.kicad_sym` (via `easyeda2kicad`).
 > 56 placements. ⚠ LSM6DS3TR-C = JLC Standard-PCBA-only + fixture; blue LEDs are dim on coin
 > (swap to red for brightness — same footprint).
@@ -212,7 +212,7 @@ and the pad nets on the board, so the stock symbol is used unmodified.
 > throw on `+3V3`, pin 1 the open throw (explicit no-connect). Swapping them would short the
 > coin cell across the throws. Verified pad-by-pad against `NeuralCard.kicad_pcb`:
 > 174 schematic pads vs 173 PCB pads, **0 net mismatches** — Update PCB from Schematic is a
-> connectivity no-op. See [`CHANGELOG.md`](./CHANGELOG.md).
+> connectivity no-op. See [`CHANGELOG.md`](../CHANGELOG.md).
 
 ---
 

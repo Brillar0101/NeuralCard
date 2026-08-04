@@ -6,6 +6,26 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+### Changed — repository reorganized into folders (2026-08-03)
+
+Root shrank from 18 loose files to `README.md`, `CHANGELOG.md`, `LICENSE` and four
+directories:
+
+| Directory | Contents |
+|---|---|
+| `hardware/` | KiCad project (`.kicad_pro/sch/pcb`), symbol libs, `.pretty` footprints, lib tables, `board_outline`, `qr_matrix.json` |
+| `fab/` | Release deliverables, now including `BOM_JLCPCB.csv` |
+| `docs/` | `DESIGN.md`, `BOM.md`, schematic PDF |
+| `render/` | Board renders |
+
+The KiCad project moved as a unit, so every `${KIPRJMOD}` library reference is untouched.
+All moves are git renames — history follows each file. Doc links, `.gitignore` anchors and
+`export_fab.py`'s fab path updated to match. Verified from the new layout: ERC 0 errors /
+41 warnings, DRC 0 violations — identical to before the move.
+
+The untracked generation scripts moved to `hardware/` + `hardware/tools/` beside the files
+they operate on (they derive paths from their own location, so they keep working).
+
 ## [v2.2.2] — 2026-08-03
 
 Closes out the two items left open at v2.2.1 and syncs the silkscreen with the release tag.
