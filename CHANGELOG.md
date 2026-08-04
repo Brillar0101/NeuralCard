@@ -6,6 +6,41 @@ Hardware revisions and fab-affecting fixes. Newest first.
 
 ## [Unreleased] — branch `fix/sw3-msk12c02-footprint`
 
+## [v2.2.2] — 2026-08-03
+
+Closes out the two items left open at v2.2.1 and syncs the silkscreen with the release tag.
+
+### Fixed — isolated GND pour islands: 27 → 0 (`isolated_copper`)
+
+The v2.2 regression, resolved at its root. `stitch_islands.py` relaxed the pours to
+AREA-mode island removal so candidate islands survive long enough to receive a stitching
+via — but never restored the strict mode, so every island it couldn't reach stayed isolated
+copper forever. It now restores `ISLAND_REMOVAL_MODE_ALWAYS` after the loop converges and
+refills: via-stitched islands are connected and survive; unreachable orphans are purged.
+
+**DRC: 0 violations.** The 5 remaining unconnected notices are same-net GND zone fragments —
+identical in kind and count to the v2.1 baseline.
+
+### Fixed — R14 edge clearance (`PM-002`)
+
+Moved 52.3 → 51.9 mm, putting its courtyard past the 1.0 mm handling/depaneling
+recommendation. Also cleared the silk-edge-clearance warning that its reference designator
+caused. Zero PM-002 findings remain.
+
+### Fixed — silkscreen version now matches the release
+
+v2.2.1 shipped with `v2.2` on the silk. The board now reads **v2.2.2**, matching the tag.
+
+### Verification
+
+- **100% routed** — freerouting score 995.19, zero unrouted
+- **DRC: 0 violations** (v2.1: 9 · v2.2: 29 · v2.2.1: 28 · **v2.2.2: 0**)
+- PCB analyzer: **0 errors, 1 warning** — `TE-001` test points, N/A for a business card
+- 642 tracks, 83 vias; CPL 52 placements, fiducials excluded
+- Netless-by-design pads: 10 (ANT1 escape, SW3 2×NPTH + 4×SH, 3 fiducials)
+
+---
+
 ## [v2.2.1] — 2026-08-03
 
 Two findings from the first full analyzer run against the *v2.2* board. Both were real; one
