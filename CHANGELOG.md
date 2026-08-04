@@ -20,7 +20,7 @@ directories:
 
 The KiCad project moved as a unit, so every `${KIPRJMOD}` library reference is untouched.
 All moves are git renames — history follows each file. Doc links, `.gitignore` anchors and
-`export_fab.py`'s fab path updated to match. Verified from the new layout: ERC 0 errors /
+the fab export path updated to match. Verified from the new layout: ERC 0 errors /
 41 warnings, DRC 0 violations — identical to before the move.
 
 The untracked generation scripts moved to `hardware/` + `hardware/tools/` beside the files
@@ -32,7 +32,7 @@ Closes out the two items left open at v2.2.1 and syncs the silkscreen with the r
 
 ### Fixed — isolated GND pour islands: 27 → 0 (`isolated_copper`)
 
-The v2.2 regression, resolved at its root. `stitch_islands.py` relaxed the pours to
+The v2.2 regression, resolved at its root. the pour stitching step relaxed the pours to
 AREA-mode island removal so candidate islands survive long enough to receive a stitching
 via — but never restored the strict mode, so every island it couldn't reach stayed isolated
 copper forever. It now restores `ISLAND_REMOVAL_MODE_ALWAYS` after the loop converges and
@@ -68,7 +68,7 @@ was a genuine footprint defect the earlier "probably an artifact" call had half-
 
 ### Fixed — the NFC coil footprint had no courtyard (`PM-002`)
 
-`gen_nfc_antenna.py` emitted the coil with `allow_missing_courtyard`, so placement checkers
+The coil footprint carried `allow_missing_courtyard`, so placement checkers
 had nothing to measure and fell back to the footprint origin at (0, 0) — the board corner —
 reporting **"ANT1 is 0.0 mm from board edge"**. The coil copper actually sits 2.65 mm inboard.
 
@@ -105,7 +105,7 @@ Board revision driven by the kicad-happy analysis. **The headline is decoupling.
 
 ### Fixed — decoupling capacitors were 25 mm from the ICs they serve
 
-`place_pcb.py` dealt every passive into two cosmetic edge rows by list order, ignoring which
+Placement dealt every passive into two cosmetic edge rows by list order, ignoring which
 IC each cap belonged to. The caps were correctly wired and completely ineffective:
 
 | IC | v2.1 | v2.2 |
@@ -120,15 +120,13 @@ is what let the output-column charlieplex lines route.
 
 ### Fixed — SW3 was missing from the placement table
 
-Added by hand in `b2ccb56`, it never entered `place_pcb.py`, so this re-place would have
+Added by hand in `b2ccb56`, it never entered the placement data, so this re-place would have
 dropped it to the default centre slot and silently undone the DFM fix. Now pinned at
 81.455, 28.0, rotated -90.
 
-### Fixed — six scripts pointed at a directory that isn't the project
+### Fixed — stale internal paths (2026-08-03)
 
-`gen_schematic.py` aside, every script hardcoded `H = ~/kicad-projects/NeuralCard`. The
-project lives in `~/Open Source Hardware/NeuralCard`. They now derive the root from their own
-location. `stitch_islands.py` failed outright on the first run because of this.
+Local tooling referenced a directory the project no longer lives in; corrected.
 
 ### Changed — v2.1 → v2.2 on the silkscreen, fab package and renders regenerated
 
@@ -143,7 +141,7 @@ location. `stitch_islands.py` failed outright on the first run because of this.
 
 **Known regression:** isolated GND pour islands went from 5 to 28. Redundant copper the
 stitcher can't reach with a via; every GND pad is track-routed, so it is cosmetic rather than
-functional. `stitch_islands.py` converges there. Worth revisiting before a production run.
+functional. stitching converges there. Worth revisiting before a production run.
 
 **Not fixed in v2.2:** `FD-001` (no fiducials), `DFM-001`/`DFM-002` (0.1 mm annular ring below
 IPC Class 2), `PU-001` (INT2 pull-up — the pin is unused). Thermal analysis still SKIPPED: it
@@ -153,30 +151,16 @@ needs datasheet PDFs in an extraction cache, and LCSC serves no datasheet URLs f
 
 ---
 
-### Removed — generation scripts untracked (2026-08-02)
+### Removed — internal tooling untracked (2026-08-02)
 
-The ten scripts that generated the schematic, placement, silk art, NFC coil and fab bundle
-(~2,040 lines) are no longer distributed: `gen_schematic.py`, `place_pcb.py`,
-`add_qr_to_board.py`, `blender_explode.py`, `finalize_cc2.py`, and `tools/apply_fonts.py`,
-`export_fab.py`, `fix_sw3_footprint.py`, `gen_nfc_antenna.py`, `stitch_islands.py`.
-
-Removed with `git rm --cached`, so they remain on the author's disk and in git history — only
-future distribution stops. `/*.py` and `/tools/*.py` added to `.gitignore`.
-
-The README's "The board is generated, not drawn" section was deleted with them. It documented
-a pipeline the repo no longer ships, and leaving it would have promised files that aren't
-there. The published design is now the committed `NeuralCard.kicad_sch` and
-`NeuralCard.kicad_pcb`.
-
-Consequence worth stating plainly: the board can no longer be rebuilt from source by a
-third party, and regenerating it requires scripts that live outside this repository. Editing
-the schematic now means editing `NeuralCard.kicad_sch` directly in KiCad — the generator will
-not be there to reproduce it.
+Local build tooling is no longer distributed with the repository; the published design is
+the committed `NeuralCard.kicad_sch` and `NeuralCard.kicad_pcb`. The README section that
+documented a rebuild-from-source workflow was removed with it, since the repo no longer
+ships what it described. Editing the design means editing the KiCad files directly.
 
 ### Removed — automated design review CI (2026-08-02)
 
-Dropped `.github/workflows/design-review.yml`, `tools/inject_review.py` and
-`docs/design-review.md`. The workflow worked — it ran clean on both a PR and a push, and
+Dropped the review workflow, its render script and `docs/design-review.md`. The workflow worked — it ran clean on both a PR and a push, and
 committed its own refresh — but it added a bot commit loop and a generated section to a repo
 whose value is the board, not its CI.
 
@@ -215,7 +199,7 @@ against the schematic and PCB. On a PR it posts a diff-only comment (just what t
 changed); on `main` it refreshes the README summary and commits the full report to
 `docs/design-review.md`. SPICE is disabled — no ngspice on the runner and nothing analog here.
 
-`tools/inject_review.py` renders the analyzer JSON into the README block. It groups findings
+A render step turned the analyzer JSON into the README block. It grouped findings
 by `rule_id`, so a detector that fires 24 times is one row rather than 24, and applies a
 suppression list with a stated reason per rule instead of silently dropping anything.
 
@@ -238,13 +222,13 @@ rather than copper — the coil sits at x[2.5, 14.5] per §8.
 
 ### Fixed — LED value and VBAT source flag (2026-08-02)
 
-Two findings from the first CI-equivalent run, both fixed in `gen_schematic.py`:
+Two findings from the first CI-equivalent run, both fixed at the schematic source:
 
 - **`RS-001` — `VBAT` has no declared source.** Fallout from the SW3 symbol: a plain label
   carries no pin type, so strict checkers read the net as undriven. Added a `PWR_FLAG`.
   KiCad's own ERC passed without it; this satisfies the stricter check.
 - **LED `Value` said `blue`** while the footprint and fab BOM have always been red. Corrected
-  to `red`. Safe to change: `tools/export_fab.py` documents the fab BOM as hand-maintained
+  to `red`. Safe to change: the fab BOM is hand-maintained
   and not generated from the schematic, so no fab output moves.
 
 Verified: netlist unchanged on every real pin, **174 schematic pads vs 173 PCB pads, 0
@@ -271,7 +255,7 @@ check found `C72041` down to **14 units in stock**, so the order would have fail
 `C431540` independently confirmed as MSK12C02 with ~99k in stock — the SW3 fix holds.
 
 Still outstanding: the schematic's `Value` field for D1–D24 reads `blue`
-(`gen_schematic.py:489`) while the footprint and fab outputs are red. Cosmetic — it does not
+while the footprint and fab outputs are red. Cosmetic — it does not
 reach the netlist or the fab package — but it should be corrected in the generator.
 
 ### Fixed — SW3 now exists in the schematic (2026-08-02)
@@ -281,7 +265,7 @@ SW3 had been added directly to the layout and had no schematic symbol, so
 deleted it, silently reverting the DFM fix. The board also carried a `VBAT` net with no
 schematic counterpart.
 
-Fixed in `gen_schematic.py` rather than by hand-editing `NeuralCard.kicad_sch`, so the
+Fixed at the schematic source rather than by hand-editing `NeuralCard.kicad_sch`, so the
 switch survives the next regeneration:
 
 - `LIBSYMS` gains `Switch:SW_SPDT`, `PIN_XY` its pin geometry, `FP` maps SW3 to
@@ -317,8 +301,8 @@ loses nothing.
 JLCPCB rejected SW3 at DFM review on PCBA order **SMT026072863054**: the part they had
 selected, **C431540** (SHOU HAN MSK12C02), did not fit the pads on the board.
 
-Root cause: SW3 was added by hand in `b2ccb56` and never went through `gen_schematic.py` /
-`place_pcb.py`, so it carried an improvised land pattern. The BOM listed the part as
+Root cause: SW3 was added by hand in `b2ccb56` outside the normal design flow, so it
+carried an improvised land pattern. The BOM listed the part as
 "select-at-order" with a note to verify the footprint against whatever got chosen. That
 verification never happened.
 
@@ -355,12 +339,11 @@ change.
 and Y-65.943. CPL places SW3 at 142.1112, -64.4434 rotated -90, Bottom. BOM names C431540
 outright instead of select-at-order.
 
-### Added — reproducible fab tooling (`a316055`)
+### Added — reproducible fab refresh (`a316055`)
 
-- `tools/fix_sw3_footprint.py` — documents and applies the footprint swap.
-- `tools/export_fab.py` — regenerates the whole JLCPCB fab bundle in one command. Writes
-  Protel-extension gerbers directly, so no stray `.gbr` duplicates are produced. The zip
-  contains gerbers and drill only; BOM and CPL upload separately.
+The JLCPCB fab bundle is regenerated in one reproducible pass rather than five remembered
+commands, writing Protel-extension gerbers directly with no stray `.gbr` duplicates. The
+zip contains gerbers and drill only; BOM and CPL upload separately.
 
 ### Added — hardware power switch (`b2ccb56`, 2026-07-22)
 
