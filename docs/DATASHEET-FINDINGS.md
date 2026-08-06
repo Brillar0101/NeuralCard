@@ -9,7 +9,6 @@ Nothing in this document is engineering opinion. Where a change is a judgement c
 than a datasheet requirement, it is marked **[judgement]** and the reasoning is given.
 
 **Status: 14 of 14 parts documented.** SW3 is verified against a drawing that exists only as a screenshot — see its provenance warning.
-is in the repo. The rest are listed at the bottom as blocked.
 
 ---
 
@@ -123,9 +122,9 @@ discrepancy with a parenthetical. Resolve which is intended before any order.
 
 ---
 
-## Blocked — no datasheet, no rows can be written
+## Remaining work — datasheets now held, changes not yet made
 
-| Part | Manufacturer | LCSC | Refs | Known defects awaiting the datasheet |
+| Part | Manufacturer | LCSC | Refs | Outstanding |
 |---|---|---|---|---|
 | **LSM6DS3TR-C** | STMicroelectronics | C967633 | U2 | LGA-14, 0.5 mm pitch — the tightest land on the board. Courtyard 0.098 mm inside the pads on all four sides. No `F.Fab`. Dead 3D model path. |
 | **CR2032-BS-6-1** | Q&J | C70377 | BT1 | Courtyard **2.240 mm** inside the pads. `(attr through_hole)` on an SMD holder. Footprint named "TH" while its own 3D model is named "SMD". Keep-out needed under the cell (74 % copper there today). |
