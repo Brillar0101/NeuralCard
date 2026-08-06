@@ -1,0 +1,69 @@
+** Drc report for NeuralCard.kicad_pcb **
+** Created on 2026-08-06T11:46:24 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 5 DRC violations **
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1978 mm)
+    Local override; error
+    @(8.1050 mm, 12.2500 mm): Pad 5 [SDA] of U4 on B.Cu
+    @(8.7028 mm, 10.6915 mm): Track [NFC_ANT_B] on B.Cu, length 2.8057 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1902 mm)
+    Local override; error
+    @(4.9748 mm, 13.2873 mm): Track [SCL] on B.Cu, length 1.9660 mm
+    @(5.5650 mm, 12.2500 mm): Pad 7 [NFC_GPO] of U4 on B.Cu
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+    @(21.0000 mm, 21.5000 mm): Footprint C2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(65.1394 mm, 36.7501 mm): Via [GND] on F.Cu - B.Cu
+
+** Found 7 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+    - Text height out of range
+    - Text thickness out of range
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
