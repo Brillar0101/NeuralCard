@@ -35,3 +35,39 @@ is. This is the same defect as B2 (isolated GND islands), now measured more hone
 Still outstanding and unaffected by any of the above: six constraints at 0.0 in
 NeuralCard.kicad_pro, so `clearance` and `track_width` remain unenforceable; and the 29
 suppressed severity classes hiding 414 violations.
+
+## After real fab constraints and a selective severity policy
+
+`after-real-constraints.rpt` — **40 violations, 7 unconnected.** This is the first honest
+number this board has produced.
+
+Constraints set from JLCPCB's published 2-layer 1oz process (jlcpcb.com/capabilities):
+min_clearance 0.0 -> 0.10, min_track_width 0.0 -> 0.10, min_connection 0.0 -> 0.10,
+min_hole_to_hole 0.2 -> 0.45 (was looser than the fab allows), min_text_thickness
+0.08 -> 0.15 (their minimum printable line width).
+
+Setting constraints alone changed nothing, because the severities were suppressed too.
+Both layers had to be lifted. Severities restored: missing_courtyard, footprint_type_mismatch,
+extra_footprint, missing_footprint to error; text_thickness, text_height to warning.
+
+Deliberately left at ignore, with reason: silk_over_copper and silk_overlap. These are 398
+of the 438 violations and they are the front-face neural-network artwork - a design decision
+by someone who looked, not negligence. Suppressing them at class level is defensible here
+because per-object suppression across 398 items is impractical. Recorded so the choice is
+visible rather than silent.
+
+footprint_type_mismatch now reports 0: both footprints carrying attr through_hole on all-SMD
+parts were corrected.
+
+| Class | Count | Nature |
+|---|---|---|
+| text_thickness | 28 | board's own labels - RST, S/N, ax/ay/az/gx/gy/gz, OSHW mark - thinner than 0.15mm |
+| unconnected_items | 7 | isolated GND islands |
+| text_height | 6 | J1 pad labels at 0.7mm |
+| courtyards_overlap | 2 | C2 against U1 |
+| clearance | 2 | U4 pads vs SDA/SCL at 0.190-0.198mm |
+| via_dangling | 1 | GND via under the coin cell, inside the new keep-out |
+| missing_courtyard | 1 | ProgPads_1x6 (J1) |
+
+JLCPCB also publishes a 1.0mm minimum silkscreen text height; min_text_height is left at 0.8
+pending a decision, since raising it would flag most of the board's labelling.
