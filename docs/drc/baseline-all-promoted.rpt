@@ -1,0 +1,1674 @@
+** Drc report for NeuralCard.kicad_pcb **
+** Created on 2026-08-06T11:03:23 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 414 DRC violations **
+[missing_courtyard]: Footprint has no courtyard defined
+    Local override; error
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_type_mismatch]: Footprint component type doesn't match footprint pads (expected 'SMD'; actual 'Through hole')
+    Local override; error
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_type_mismatch]: Footprint component type doesn't match footprint pads (expected 'SMD'; actual 'Through hole')
+    Local override; error
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(78.5900 mm, 13.1400 mm): PCB text 'princetekki.com' on F.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(84.2000 mm, 33.0000 mm): PCB text 'NEURALCARD v2.2.2 · 2026' on F.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(63.0000 mm, 44.4000 mm): PCB text 'FLASH: hold BOOT · tap RST · release BOOT' on B.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(64.0000 mm, 47.0000 mm): PCB text 'OSHW · github.com/Brillar0101' on B.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(63.0000 mm, 39.3000 mm): PCB text 'CR2032 · + side out' on B.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(63.0000 mm, 41.7000 mm): PCB text 'NeuralCard v2.2.2 · princetekki.com' on B.Silkscreen
+[text_thickness]: Text thickness out of range (TrueType font characters with insufficient stroke weight)
+    Rule: board setup constraints silk text thickness; error
+    @(7.0000 mm, 28.5000 mm): Footprint text of ANT1 (tap phone here)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(66.0000 mm, 48.1000 mm): Footprint text of J1 (3V3)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(68.5400 mm, 48.1000 mm): Footprint text of J1 (GND)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(71.0800 mm, 48.1000 mm): Footprint text of J1 (TX)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(73.6200 mm, 48.1000 mm): Footprint text of J1 (RX)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(76.1600 mm, 48.1000 mm): Footprint text of J1 (EN)
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; error
+    @(78.7000 mm, 48.1000 mm): Footprint text of J1 (IO0)
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(9.4600 mm, 11.3000 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(9.8000 mm, 11.3000 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(10.1400 mm, 11.3000 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(10.4800 mm, 11.3000 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(10.1400 mm, 10.6200 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(10.4800 mm, 10.6200 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(10.8200 mm, 10.6200 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(11.1600 mm, 11.3000 mm): Rectangle on F.Silkscreen
+    @(10.5000 mm, 11.0000 mm): PCB text 'ax' on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 10.3000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 7.4000 mm): Segment of D7 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.2000 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.8000 mm, 17.0000 mm): Circle of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(41.1000 mm, 7.4000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 7.7000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.4000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 10.3000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 10.3000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 10.3000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 11.0000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 10.6000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 11.7000 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 11.7000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 11.7000 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 11.7000 mm): Segment of D1 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 11.7000 mm): Segment of D1 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.0000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(41.1000 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 13.1140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 17.4000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 13.1140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 13.4140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 13.4140 mm): Segment of D8 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 13.4140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 13.4140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 35.5710 mm): Segment of D12 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 35.1710 mm): Segment of D12 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.5000 mm, 34.8710 mm): Segment of D12 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 41.2860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 40.8860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 40.5860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 29.8000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 30.2000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 29.5000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.8000 mm, 29.8000 mm): Circle of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 36.6000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 36.2000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 35.9000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 7.7000 mm): Segment of D7 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 36.6000 mm): Segment of D5 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 36.2000 mm): Segment of D5 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.2000 mm, 35.9000 mm): Segment of D5 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 42.6000 mm): Segment of D6 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 43.0000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 42.3000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 7.7000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 47.0000 mm): Segment of D14 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 46.6000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.5000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 47.0000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 46.6000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.4000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 18.1000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 47.0000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 46.6000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 29.8000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 30.2000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 30.9000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 47.0000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 46.6000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 46.3000 mm): Segment of D14 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 36.6000 mm): Segment of D5 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 36.2000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 35.9000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 37.3000 mm): Segment of D5 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 42.6000 mm): Segment of D6 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 43.0000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 42.3000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 16.7000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 17.7290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 19.1290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 19.1290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 19.1290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 41.2860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 40.8860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 40.5860 mm): Segment of D13 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.4000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 18.1000 mm): Segment of D2 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 18.4290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 42.6000 mm): Segment of D6 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 43.0000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 42.3000 mm): Segment of D6 on F.Silkscreen
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 18.8290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 18.8290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 23.7430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 23.7430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(41.1000 mm, 23.7430 mm): Segment of D10 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 23.4430 mm): Segment of D10 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 23.4430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.5000 mm, 23.4430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 24.1430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 23.7430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 29.8570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 29.4570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.5000 mm, 29.1570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 29.8570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 29.4570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(41.1000 mm, 29.4570 mm): Segment of D11 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.4000 mm, 29.1570 mm): Segment of D11 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 23.4000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 23.8000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 23.1000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 29.8000 mm): Segment of D4 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 30.2000 mm): Segment of D4 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.2000 mm, 29.5000 mm): Segment of D4 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 7.7000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 24.1430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(41.1000 mm, 24.5430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 23.7430 mm): Segment of D10 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 29.8000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 30.2000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 29.5000 mm): Segment of D4 on F.Silkscreen
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 18.4290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 18.4290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 17.4000 mm): Segment of D2 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(41.1000 mm, 7.4000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(41.4000 mm, 7.7000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 7.0000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.8900 mm, 6.6000 mm): Segment of D7 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 23.4000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.0900 mm, 23.8000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.2000 mm, 23.1000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(18.4700 mm, 23.1000 mm): Segment of D3 on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.8000 mm, 23.4000 mm): Circle of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.7140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 12.3140 mm): Segment of D8 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 23.4000 mm): Segment of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.0900 mm, 23.8000 mm): Segment of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.2000 mm, 23.1000 mm): Segment of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(18.4700 mm, 23.1000 mm): Segment of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(17.8000 mm, 23.4000 mm): Circle of D3 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 18.4290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen clearance
+    Rule: board setup constraints silk; error
+    @(42.8900 mm, 18.0290 mm): Segment of D9 on F.Silkscreen
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.8000 mm, 17.0000 mm): Circle of D2 on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.8000 mm, 10.6000 mm): Circle of D1 on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 35.5710 mm): Pad 2 [CP3] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 11.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 11.0000 mm): Pad 1 [CP2] of D1 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 35.5710 mm): Pad 2 [CP3] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 18.4290 mm): Pad 2 [CP2] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 35.5710 mm): Pad 2 [CP3] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 7.0000 mm): Pad 1 [CP3] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 7.0000 mm): Pad 1 [CP3] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 17.4000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 12.7140 mm): Pad 1 [CP4] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 18.4290 mm): Pad 1 [CP5] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 24.5560 mm): Pad 2 [CP4] of D19 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 14.7780 mm): Pad 2 [CP4] of D17 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 19.6670 mm): Pad 2 [CP4] of D18 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 7.0000 mm): Pad 1 [CP3] of D7 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 7.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 5.0000 mm): Pad 2 [CP3] of D15 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 24.5560 mm): Pad 2 [CP4] of D19 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 12.7140 mm): Pad 1 [CP4] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 29.4440 mm): Pad 2 [CP4] of D20 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 12.7140 mm): Pad 1 [CP4] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 18.4290 mm): Pad 1 [CP5] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 19.6670 mm): Pad 2 [CP4] of D18 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(43.6000 mm, 40.8860 mm): Circle of D13 on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 29.4440 mm): Pad 2 [CP4] of D20 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(43.6000 mm, 35.1710 mm): Circle of D12 on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 29.8570 mm): Pad 1 [CP1] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 29.8570 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 35.5710 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 18.4290 mm): Pad 1 [CP5] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 18.4290 mm): Pad 1 [CP5] of D9 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 18.4290 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 24.5560 mm): Pad 2 [CP4] of D19 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 19.6670 mm): Pad 2 [CP4] of D18 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 12.7140 mm): Pad 1 [CP4] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 12.7140 mm): Pad 1 [CP4] of D8 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 12.7140 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 14.7780 mm): Pad 2 [CP4] of D17 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 14.7780 mm): Pad 2 [CP4] of D17 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 24.1430 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 29.4440 mm): Pad 2 [CP4] of D20 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 24.5560 mm): Pad 2 [CP4] of D19 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 29.4440 mm): Pad 2 [CP4] of D20 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 41.2860 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 49.0000 mm): Pad 2 [CP5] of D24 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(67.8500 mm, 44.1110 mm): Pad 2 [CP5] of D23 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(42.8000 mm, 47.0000 mm): Segment on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(43.6000 mm, 46.6000 mm): Circle of D14 on F.Silkscreen
+    @(43.5500 mm, 47.0000 mm): Pad 1 [CP5] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 35.5710 mm): Pad 2 [CP3] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 23.8000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 30.2000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 35.5710 mm): Pad 2 [CP3] of D12 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 47.0000 mm): Pad 2 [CP3] of D14 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 36.6000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(17.7500 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; error
+    @(17.0000 mm, 43.0000 mm): Segment on F.Silkscreen
+    @(42.0500 mm, 24.1430 mm): Pad 2 [CP2] of D10 on F.Cu
+
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - None
+
+** End of Report **
