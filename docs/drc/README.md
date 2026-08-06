@@ -71,3 +71,35 @@ parts were corrected.
 
 JLCPCB also publishes a 1.0mm minimum silkscreen text height; min_text_height is left at 0.8
 pending a decision, since raising it would flag most of the board's labelling.
+
+## After GND stitching
+
+`after-gnd-stitching.rpt` — **40 violations, 3 unconnected.** Four stitching vias added,
+0.6/0.3 mm to match the Default net class. No new violations: the count is unchanged and
+only `unconnected_items` moved, 7 -> 3.
+
+GND groups went 8 -> 4; the main plane grew 4,170 -> 5,245 mm2.
+
+Connected to the main plane:
+- **U1.41, the ESP32's own ground/thermal pad (9 sub-pads)** - via at (39.025, 37.369)
+- BT1.2, C8.2, C4.2 - via at (47.298, 10.005)
+
+Merged into the top-edge cluster but still not reaching main:
+- U4.4 (NFC ground) - via at (7.758, 6.026)
+- C11.2 - via at (10.806, 5.734)
+
+### What a via cannot fix, and why
+
+Three groups remain, stranding U2.6/U2.7 (the IMU's only grounds), C1.2, C5.2, C2.2 and the
+NFC ground now chained to them. **None has a via site**: there is no point where the island's
+copper on one layer sits over main-plane copper on the other. A via joins layers at a point;
+it cannot bridge a gap that exists on both layers at once.
+
+All of them lie in the top-edge strip, y 4.2-22, which is the region fragmented by the ~60 mm
+copper-free band at y 3.4-5.0 running x 15-80 on both layers - the slot cut by the signal
+bundle feeding the LED resistor row. That band is also why 94% of IMU_INT, 88% of SDA and 82%
+of SCL run with no reference copper beneath them.
+
+So the remaining three are one defect, not three: the plane is severed across the top of the
+board. Fixing it is a routing change - move the LED resistor bundle so the pour can close -
+not a stitching job. Recorded rather than forced.
