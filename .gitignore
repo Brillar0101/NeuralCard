@@ -44,10 +44,12 @@ NeuralCard.ses
 *.blend
 *.blend1
 *.glb
-*.step
 *.stp
-JLC.3dshapes/
-ST25DV.3dshapes/
+# Exported/scratch STEP stays out; the footprint 3D libraries are part of the
+# design and must clone with it - every ${KIPRJMOD} model path depends on them.
+*.step
+!**/*.3dshapes/*.step
+!**/*.3dshapes/*.wrl
 datasheets/
 
 # ------------------------------------------------------------- superseded fab runs
