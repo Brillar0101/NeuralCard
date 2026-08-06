@@ -8,7 +8,7 @@ because the two rarely agree.
 Nothing in this document is engineering opinion. Where a change is a judgement call rather
 than a datasheet requirement, it is marked **[judgement]** and the reasoning is given.
 
-**Status: 2 of 14 parts have datasheets.** Rows can only be written for parts whose datasheet
+**Status: 14 of 14 parts documented.** SW3 is verified against a drawing that exists only as a screenshot — see its provenance warning.
 is in the repo. The rest are listed at the bottom as blocked.
 
 ---
@@ -65,17 +65,61 @@ three together if the footprint is redrawn.
 
 ---
 
-## SW3 — MSK12C02 (SHOU HAN) — no datasheet held, but verified another way
+## SW3 — MSK12C02 (SHOU HAN) — VERIFIED against the manufacturer drawing
 
-The footprint is pad-for-pad identical to KiCad's shipped
-`Button_Switch_SMD.pretty/SW_SPDT_Shouhan_MSK12C02.kicad_mod` — every `at`, `size` and `drill`
-diffed, only the −90° placement rotation and B.Cu mirror differ. NPTH locators correct, LCSC
-`C431540` matches the LCSC URL in that footprint's own `descr`, 3D model resolves through
-`${KICAD10_3DMODEL_DIR}`.
+`hardware/datasheets/MSK12C02.pdf` (7-page specification) and
+`hardware/datasheets/MSK12C02-outline-drawing.png` (mechanical drawing, from the LCSC
+product page — **not** in the PDF).
 
-**No change required.** Obtain the datasheet anyway — this is the one part where a fab rejection
-has already been paid for, and verification against the source beats verification against
-another library.
+**No change required.** Every checkable dimension of KiCad's shipped
+`Button_Switch_SMD.pretty/SW_SPDT_Shouhan_MSK12C02.kicad_mod` matches the drawing:
+
+| Feature | Drawing | Footprint |
+|---|---|---|
+| Mounting holes | 2 × Ø0.85, 3.0 mm apart | 2 × Ø0.85 NPTH at (±1.5, 0) |
+| Post diameter on the part | Ø0.75 ±0.1 | 0.10 mm clearance in the hole |
+| Signal pads | 0.6 × 1.3, spacing **1.5 and 3.0** | −2.25 / 0.75 / 2.25 |
+| Shield pads | 1.05 × 0.7, outer 8.4 / inner 6.3 | ±3.675, ±1.1 |
+
+### Two traps recorded, because both cost time
+
+**The non-uniform pin spacing is correct.** 1.5 mm on one side and 3.0 mm on the other looks
+like a library error and is not — the drawing dimensions it that way. Do not "fix" it.
+
+**The specification text contradicts the drawing.** §2.4 states "1 pole, 1 throw" and §2.3
+says "tactile feedback", and the cover calls the part 轻触开关 (*tactile switch*). The
+drawing's 电路图 shows ①②③ plus ④ as shield — unambiguously SPDT. The text sections of that
+PDF are a vendor template with the wrong product's content; **the drawing is the authority.**
+
+**Three prongs vs two holes:** the part has **two** Ø0.75 mounting posts, which is what the
+two holes are for. The three items that read as vertical prongs in the 3D render are the
+signal terminals ①②③ — flat 0.15 mm tabs that solder to the surface, per the end view and
+the mounting diagram. If the STEP model renders them as vertical pins it misrepresents the
+part; cosmetic only, no fabrication consequence.
+
+### Provenance warning
+
+The mechanical drawing exists in this repo **only as a screenshot** of the LCSC product page.
+The linked PDF (`lcsc_datasheet_2304140030_SHOU-HAN-MSK12C02_C431540.pdf`) is byte-identical
+to `MSK12C02.pdf` and contains no drawing — verified by MD5. Its §8.1 refers the reader to an
+"outside drawing page" that is not distributed with it. A screenshot is a fragile primary
+source for the one part that has already been rejected once by a fab. Replace it when a
+proper copy can be obtained.
+
+---
+
+## Passives — land patterns not changed
+
+| Part | Datasheet | Package data | Action |
+|---|---|---|---|
+| CC0603KRX7R9BB104 (C1–C6) | `CC0603KRX7R9BB104-YAGEO-CC-series.pdf` | 0603: 1.6 ±0.15 × 0.8 ±0.15 × 0.8 ±0.15 | none — uses KiCad's IPC-7351 land |
+| CL21A106KAYNNNE (C8) | `CL21A106KAYNNNE-Samsung-CL21A-series.pdf` | CL21A = 0805 (2012) | none — as above |
+| CL21A226MAQNNNE (C9, C10) | same Samsung series document | CL21A = 0805 (2012) | none for the footprint — **see below** |
+| 0603WAF series (R1–R14) | `UNI-ROYAL-0603WAF-series.pdf` | 0603 thick film | none — as above |
+
+**C10 is a live defect, not a footprint issue.** Its schematic `Value` reads `100uF` while its
+MPN `CL21A226MAQNNNE` is a **22 µF** part, and the hand-maintained BOM papers over the
+discrepancy with a parenthetical. Resolve which is intended before any order.
 
 ---
 
