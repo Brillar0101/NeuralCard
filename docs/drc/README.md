@@ -141,3 +141,16 @@ REMAINING: U5 -> U1 (pins 13/14), ~48mm. The y16-18 corridor is the charlieplex 
 (CP1-6, CHX*, NFC_GPO, EN, +3V3 all live there - a first attempt drew 80+ violations
 and was dropped on evidence). Needs its own corridor study; candidates: F.Cu lane, or
 B.Cu along y12-13 north of the highway.
+
+### U5 -> U1 corridor study, attempt 2 (F.Cu lanes): failed on evidence
+
+Straight F.Cu lanes at y16.05/17.95 drew 77 USB-involved violations. The assumption
+that F.Cu is empty is false: CP2 and CP4 route on F.Cu (the charlieplex uses both
+layers), a CP4 via sits at (21.60, 20.44) - touching the only clean B.Cu entry to
+U1 pin 13 - and the VBUS F.Cu riser at x71.6 blocks via placement at the U5 end.
+
+Conclusion: no free corridor exists on either layer. The route requires either
+(a) threading between individual charlieplex tracks with a full obstacle map of
+the y12-22 band on both layers, or (b) first rerouting 2-3 CP tracks to open a
+lane - option (b) is likely cheaper. Both need a dedicated session. The board is
+committed clean at f393dd8 with the PHY section done and these two nets open.
