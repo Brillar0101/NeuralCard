@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A3")
+	(title_block
+		(title "NeuralCard")
+		(date "2026-08-07")
+		(rev "v2.3")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -32022,7 +32027,7 @@
 			)
 		)
 	)
-	(gr_text "NEURALCARD v2.2.2 · 2026"
+	(gr_text "NEURALCARD v2.3 · 2026"
 		(at 84.2 33 90)
 		(layer "F.SilkS")
 		(uuid "5615f820-f96a-4f1a-91ea-a0af1e0db767")
@@ -33788,7 +33793,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "NeuralCard v2.2.2 · princetekki.com"
+	(gr_text "NeuralCard v2.3 · princetekki.com"
 		(at 63 41.7 0)
 		(layer "B.SilkS")
 		(uuid "ead8148f-7a8f-4e3c-80db-8fd8605331cc")

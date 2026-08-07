@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.3"
     },
-    "CreationDate": "2026-08-07T09:54:05-04:00"
+    "CreationDate": "2026-08-07T10:09:20-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "NeuralCard",
       "GUID": "4e657572-616c-4436-9172-642e6b696361",
-      "Revision": "rev?"
+      "Revision": "v2.3"
     },
     "Size": {
       "X": 85.7,
