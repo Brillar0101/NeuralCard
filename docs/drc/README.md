@@ -227,3 +227,50 @@ All three need the same cure the corridor study prescribed: shift the LED resist
 (and for U2, the IMU fanout) so the pour can close. That is a layout change with RF and
 matrix implications, out of scope for the USB-C branch. Unconnected 4 = these 3 island
 edges + the orphaned +3V3 fragment behind J2.
+
+## Zero
+
+`zero-violations.rpt` - **0 violations, 0 unconnected. ERC: 0 errors, 0 warnings.**
+Every net on the board is a single connected cluster, including GND (42 pads, one plane).
+
+What it took, beyond the USB work above:
+
+**Silk text (34).** Three separate root causes. The J1 pad labels were under the 0.8mm
+height minimum - raised. The stroke-font texts were under 0.15mm - thickened. The
+TrueType texts (Red Hat Display/Mono/Text at SemiBold) genuinely render strokes thinner
+than JLCPCB's 0.15mm printable minimum at small sizes; DRC measures the cached glyph
+polygons, so no pen-width setting can fix them. Weights raised to Bold/Black board-wide,
+the six IMU-axis labels and headline texts rescaled, and twelve small functional labels
+(instructions, URLs) converted to the KiCad stroke font, which is guaranteed printable.
+Fontconfig trap recorded: the face string must be the fontconfig family name -
+"Red Hat Mono" plus the bold flag, not "Red Hat Mono Bold", which silently substitutes
+Andale Mono.
+
+**Clearance shaves (2).** NFC_ANT_B and SCL sat 2-10 microns inside the 0.2mm class
+clearance at U4's pads. Both nudged with 45-degree joins preserved.
+
+**Courtyards (3).** C1-C6 carried 0.65mm courtyard margins - two and a half times the
+IPC norm for an 0603 - which is what actually collided with U1's module courtyard;
+trimmed to 0.30/0.25mm. J1 had no courtyard at all; drawn from its pad extents plus
+0.25mm.
+
+**J2 type mismatch (1).** Excluded per-item in the project file with the reason inline:
+hybrid SMD connector with PTH shell anchors, attr stays smd so the CPL keeps it.
+
+**The +3V3 fragment.** Unroutable for two sessions - because the router's grid ended at
+x=80 and the board ends at x=85.65. With the full board in the grid it routed in one
+pass: 12.4mm, zero vias, around J2's east side.
+
+**The three GND islands.** The top-edge seal was three tracks: SDA and NFC_GPO on F.Cu
+plus the +3V3 north rail on B.Cu, jointly closing y3.1-4.7 across the whole board while
+the top 2.5mm of the card sat empty. Both +3V3 horizontals moved into that empty strip,
+which opened a B.Cu crossing; the NFC ground chain (67mm), the C1/C5 group (58mm) and
+the IMU grounds (18mm) then routed through it to the main plane. The IMU pocket
+additionally needed one redundant +3V3 branch deleted - U2 was fed from both sides, and
+the west diagonal was the wall; its cap chain re-fed locally (6.4mm).
+
+**ERC.** The one warning was U2's SDO/SA0 strapped to 3V3 - the deliberate I2C address
+select. pin_to_pin set to ignore with this note as the reason; it was the only instance.
+
+Fab package regenerated to match: gerbers, drill, and a 61-component CPL including the
+USB-C section.
