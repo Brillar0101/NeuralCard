@@ -6504,7 +6504,7 @@
 			(uuid "a8c6cb31-b874-48e0-b1a0-b6c65eec7a06")
 		)
 		(embedded_fonts no)
-		(model "/Users/barakaeli/kicad-projects/NeuralCard/JLC.3dshapes/SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95.wrl"
+		(model "${KIPRJMOD}/JLC.3dshapes/SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8442,7 +8442,7 @@
 			(uuid "3169ec00-c4d9-447c-a480-75e4d405531b")
 		)
 		(embedded_fonts no)
-		(model "/Users/barakaeli/kicad-projects/NeuralCard/JLC.3dshapes/SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.wrl"
+		(model "${KIPRJMOD}/JLC.3dshapes/SOT-23-3P_L2.9-W1.3-H1.0-LS2.4-P0.95.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14103,7 +14103,7 @@
 			(uuid "332d9e3d-6265-4851-9c71-d3c3304729d6")
 		)
 		(embedded_fonts no)
-		(model "/Users/barakaeli/kicad-projects/NeuralCard/JLC.3dshapes/USB-C_SMD-TYPE-C-31-M-12_1.wrl"
+		(model "${KIPRJMOD}/JLC.3dshapes/USB-C_SMD-TYPE-C-31-M-12_1.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15747,7 +15747,7 @@
 			(uuid "38bf1800-ece1-45b2-857c-bc178d380c91")
 		)
 		(embedded_fonts no)
-		(model "/Users/barakaeli/kicad-projects/NeuralCard/JLC.3dshapes/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.wrl"
+		(model "${KIPRJMOD}/JLC.3dshapes/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.step"
 			(offset
 				(xyz 0 0 0)
 			)

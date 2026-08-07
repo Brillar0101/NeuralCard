@@ -72,7 +72,7 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "footprint_type_mismatch|81700000|14500000|b8385d70-e2c3-4d0e-ae59-721c0a39bd9b|00000000-0000-0000-0000-000000000000|Hybrid USB-C: SMD signal pads with PTH shell anchors; attr stays smd so the CPL keeps it",
+          "footprint_type_mismatch|81700000|14500000|b8385d70-e2c3-4d0e-ae59-721c0a39bd9b|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
