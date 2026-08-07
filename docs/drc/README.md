@@ -103,3 +103,25 @@ of SCL run with no reference copper beneath them.
 So the remaining three are one defect, not three: the plane is severed across the top of the
 board. Fixing it is a routing change - move the LED resistor bundle so the pour can close -
 not a stitching job. Recorded rather than forced.
+
+## After USB power routing (inline, direct)
+
+after-usb-power-routing.rpt - 41 violations, 13 unconnected.
+
+Power nets routed directly via the pcbnew API, geometry-queried per segment, DRC-iterated
+on a copy through six revisions: VBUS (J2 both pads -> F.Cu trunk over the phase-1 +3V3
+wall -> LDO, C6, U5, Q1 gate, R13), +3V3 (U3.5 -> C9/C10 rail tie -> C7), VBAT_SW
+(SW3.3 -> F.Cu hop over the VBAT feed -> Q1 source). R8 rotated 90 so CC2 can enter
+axially. J2 given a 0.09mm local clearance - its 0.5mm-pitch pads violate the 0.2 class
+rule among themselves; physical gap stays at JLCPCB's published 0.1 minimum.
+
+Delta vs 40-violation baseline: +1 footprint_type_mismatch on J2, accepted with reason:
+hybrid SMD connector with PTH shell anchors; attr stays smd so the CPL keeps it.
+Unconnected 13 = 3 pre-existing islands + 10 ratsnest gaps of the unrouted USB_DP/USB_DM
+pair. U1 pads 13/14 now carry USB_DM/USB_DP (were unconnected- placeholders).
+
+REMAINING: the DP/DM differential pair. USB-C interleaves the A/B pins (B7 DM, A6 DP,
+A7 DM, B6 DP at 0.5mm pitch) so pairing them to U5 requires F.Cu via crossings, and the
+45mm run to U1 pins 13/14 needs the lane plan: DP y16.05 / DM staggered, turn columns
+west of U1's left pad column, entries from west/north. Corridor analysis is in the git
+history of this file's session notes.
