@@ -154,3 +154,36 @@ Conclusion: no free corridor exists on either layer. The route requires either
 the y12-22 band on both layers, or (b) first rerouting 2-3 CP tracks to open a
 lane - option (b) is likely cheaper. Both need a dedicated session. The board is
 committed clean at f393dd8 with the PHY section done and these two nets open.
+
+## After DP/DM completion — USB fully routed
+
+`after-usb-dpdm-complete.rpt` - **41 violations, 7 unconnected. Exact parity with the
+pre-USB baseline: the entire USB-C addition costs zero new DRC items.**
+
+Option (b) from the corridor conclusion, executed. Three charlieplex edits opened the lane:
+
+- **CHX6** dipped south of the U1 pad row: its F.Cu horizontal at y17.97 crossed the only
+  legal via window; redrawn through y16.5/16.85 with a short B.Cu bridge, clear of the
+  17.36-18.86 pad band.
+- **CHX4** moved off pad 14: its F.Cu approach camped directly over the pad, blocking the
+  DM entry; shifted 0.6mm north to y18.75.
+- **CP3** via nudged 0.2mm west at (66.27, 7.34) to widen the northern highway.
+
+Then the pair, A* grid-routed at 0.1mm resolution against a clearance-inflated obstacle
+map of every foreign net, waypoint-constrained where the free solver would trade legality
+for length:
+
+- **USB_DM**: U5 -> U1 pin 13, 75.9mm, 8 vias. Funnel out of the connector pocket, north
+  highway at y8.3 on F.Cu (parts are on the back, so F crosses the pad rows freely), west
+  descent at x40, under-row approach into the pad from the south.
+- **USB_DP**: U5 -> U1 pin 14, 100.1mm, 10 vias. Free-solved; threads the razor passages
+  between the four parallel charlieplex diagonals.
+- **VBUS**: U3 pad 1 -> pad 3 repair, 3.3mm, closing the last power gap.
+
+Skew DM 75.9 vs DP 100.1mm is irrelevant at USB full-speed (12 Mbps): 24mm is ~130ps
+against a 52ns bit half-period. Impedance is likewise uncontrolled and fine at FS.
+
+Unconnected 7 = the 3 pre-existing GND islands (6 zone pairings) + the orphaned +3V3
+fragment at (81.35, 19.4). The fragment predates this work and sits between J2's shell
+anchors and the VBUS runs, where no legal lane exists on either layer at current
+constraints; left recorded, not forced.
