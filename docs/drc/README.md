@@ -125,3 +125,19 @@ A7 DM, B6 DP at 0.5mm pitch) so pairing them to U5 requires F.Cu via crossings, 
 45mm run to U1 pins 13/14 needs the lane plan: DP y16.05 / DM staggered, turn columns
 west of U1's left pad column, entries from west/north. Corridor analysis is in the git
 history of this file's session notes.
+
+## After USB data PHY routing
+
+after-usb-phy-routing.rpt - 41 violations (baseline + accepted J2 attr), 7 unconnected.
+
+DP/DM routed from the connector through the ESD array. The USB-C interleave (B7-DM,
+A6-DP, A7-DM, B6-DP at 0.5mm pitch) is topologically unroutable on one layer; resolved
+with a compact DM dogbone east of the pad column (the NPTHs at y11.6/17.4 are 2mm away,
+so the space behind the pads is usable) and an F.Cu via hop for A6 into B6's lane on
+the west. DM crosses the DP U5 bridge on F.Cu. VBUS's U5 feed moved to F.Cu via-in-pad
+to clear the west corridor.
+
+REMAINING: U5 -> U1 (pins 13/14), ~48mm. The y16-18 corridor is the charlieplex highway
+(CP1-6, CHX*, NFC_GPO, EN, +3V3 all live there - a first attempt drew 80+ violations
+and was dropped on evidence). Needs its own corridor study; candidates: F.Cu lane, or
+B.Cu along y12-13 north of the highway.
