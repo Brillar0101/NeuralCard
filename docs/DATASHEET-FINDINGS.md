@@ -116,9 +116,11 @@ proper copy can be obtained.
 | CL21A226MAQNNNE (C9, C10) | same Samsung series document | CL21A = 0805 (2012) | none for the footprint — **see below** |
 | 0603WAF series (R1–R14) | `UNI-ROYAL-0603WAF-series.pdf` | 0603 thick film | none — as above |
 
-**C10 is a live defect, not a footprint issue.** Its schematic `Value` reads `100uF` while its
-MPN `CL21A226MAQNNNE` is a **22 µF** part, and the hand-maintained BOM papers over the
-discrepancy with a parenthetical. Resolve which is intended before any order.
+**C10 — resolved 2026-08-07.** Schematic `Value` corrected from `100uF` to `22uF` to match
+the MPN `CL21A226MAQNNNE` actually on the BOM. The rail carries C9 + C10 = 44 µF of bulk,
+and the ME6211C33 LDO requires only 1 µF at its output, so 22 µF is electrically sound.
+The BOM keeps its note to consider a 1206-size 100 µF next revision for extra WiFi-burst
+headroom on coin-cell power.
 
 ---
 
@@ -132,7 +134,7 @@ discrepancy with a parenthetical. Resolve which is intended before any order.
 | **KT-0603R** | Hubei KENTO | C2286 | D1–D24 | ×24 placements. **Zero** courtyard clearance in y. Ø0.20 mm silk dot centred on pad 1's corner — ink on the land, on every one. Dead 3D model path. |
 | CC0603KRX7R9BB104 | YAGEO | C14663 | C1–C6 | Uses KiCad's IPC-7351 land — low priority. Confirm dielectric/voltage. |
 | CL21A106KAYNNNE | Samsung | C15850 | C8 | As above. |
-| CL21A226MAQNNNE | Samsung | C45783 | C9, C10 | As above — **and C10's schematic Value says `100uF` while this MPN is 22 µF.** Resolve. |
+| CL21A226MAQNNNE | Samsung | C45783 | C9, C10 | Resolved: schematic Value corrected to 22 µF, matching the MPN. |
 | 0603WAF-series | UNI-ROYAL | C22962/25804/23162/25803 | R1–R14 | As above. |
 | **C12** | — | *none* | C12 | No part chosen. 62 pF NP0, 56–68 pF window, tuned against the coil after VNA. The ST25DV datasheet sets the target; the part decision comes after that. |
 
