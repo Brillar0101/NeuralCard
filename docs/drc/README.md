@@ -187,3 +187,43 @@ Unconnected 7 = the 3 pre-existing GND islands (6 zone pairings) + the orphaned 
 fragment at (81.35, 19.4). The fragment predates this work and sits between J2's shell
 anchors and the VBUS runs, where no legal lane exists on either layer at current
 constraints; left recorded, not forced.
+
+## After GND island bridges
+
+`after-gnd-island-bridges.rpt` - **40 violations, 4 unconnected. One below the pre-USB
+baseline: the dangling stitching via under the coin cell is gone.**
+
+The island bookkeeping turned out optimistic. Walking the connectivity database pad by pad
+showed **six** disconnected GND groups, not three: the earlier count treated
+{BT1.2, C3.2, C4.2, C8.2} as main-plane when it was its own cluster, and C7.2 and C2.2
+had each been stranded by the USB power routing slicing the pour around U3 and J2.
+
+Three bridges routed, same A* grid method as the USB pair:
+
+- **C7.2 -> C9.2**, 5.5mm, 2 vias - reconnects the LDO output cap ground.
+- **C8.2 -> U1.41**, 44.3mm, 4 vias - ties the battery cluster (BT1, C3, C4, C8) into the
+  ESP32 thermal pad, detouring around the charlieplex matrix.
+- **C2.2 -> U1.1**, 18.1mm, 4 vias - down the alley west of U1's pad column.
+
+Main plane: 22 -> 28 pads. Also fixed en route: J2's footprint carried a 0.09mm local
+clearance override, below JLCPCB's 0.10 board minimum. It never fired because the pour
+behind J2 used to be discarded as an isolated island; the C7 bridge revived that copper
+and DRC caught it. Override raised to 0.10 - the connector's own pad-to-pad gaps measure
+0.1000/0.1002, exactly at the fab's limit, so 0.10 is the only value that passes both ways.
+
+### Three islands remain, each provably unroutable without moving signals
+
+Exhaustive both-layer flood-fill from each island (via hops included) confirms no legal
+0.2mm lane exists at current clearances:
+
+- **{U2.6, U2.7}** - the IMU's only grounds sit in a sealed pocket: the LGA fanout walls
+  it north and east, SDA/SCL wall it south, the NFC region west.
+- **{C11.2, U4.4}** - the NFC ground chain is enclosed by the antenna coil and the LED
+  resistor bundle on both layers.
+- **{C1.2, C5.2}** - hemmed in by CP2/CP4's horizontals, the charlieplex diagonals and
+  the new USB entries; the 5mm hop to C2.2 has no lane on either layer.
+
+All three need the same cure the corridor study prescribed: shift the LED resistor bundle
+(and for U2, the IMU fanout) so the pour can close. That is a layout change with RF and
+matrix implications, out of scope for the USB-C branch. Unconnected 4 = these 3 island
+edges + the orphaned +3V3 fragment behind J2.
