@@ -95,12 +95,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D15"
-			(at 0 -4 0)
+			(at 0.4 -2 0)
 			(layer "F.SilkS")
 			(uuid "c01797ae-aed2-4115-b429-e58e52c3a144")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -347,12 +347,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D12"
-			(at 0 -4 0)
+			(at 0.2 -3.071 0)
 			(layer "F.SilkS")
 			(uuid "401dd242-b6a6-4e4c-aaa0-dbec0e8f4236")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -599,12 +599,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D14"
-			(at 0 -4 0)
+			(at 0 -3 0)
 			(layer "F.SilkS")
 			(uuid "af343996-a1d5-4894-a0bf-0a64d49f7475")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -851,12 +851,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D20"
-			(at 0 -4 0)
+			(at 0.4 -2.444 0)
 			(layer "F.SilkS")
 			(uuid "1d7c7802-23ab-4875-8401-cf9a1c03e1b5")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -1103,12 +1103,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D22"
-			(at 0 -4 0)
+			(at 0.4 -2.722 0)
 			(layer "F.SilkS")
 			(uuid "9ccc6f9b-25ed-4226-974d-f51ec33f437c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -1355,12 +1355,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D16"
-			(at 0 -4 0)
+			(at 0.4 -2.389 0)
 			(layer "F.SilkS")
 			(uuid "2cab1a5a-2e53-4b7e-ba2f-cebc8594a92e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -1607,12 +1607,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D5"
-			(at 0 -4 0)
+			(at 0 -3.1 0)
 			(layer "F.SilkS")
 			(uuid "e2003f5e-fdbb-4f39-8c36-92b4d2dcfb27")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -1859,12 +1859,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D17"
-			(at 0 -4 0)
+			(at 0.4 -1.778 0)
 			(layer "F.SilkS")
 			(uuid "835d99a4-b772-42ec-96bc-16924c7cb048")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -2111,12 +2111,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D1"
-			(at 0 -4 0)
+			(at 0 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "27febb68-d0eb-4d4a-b5ae-63337a96aecf")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -2363,12 +2363,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D2"
-			(at 0 -4 0)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
 			(uuid "18bd687a-a5a3-4ed4-8d67-77f8c8dd8d61")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -2615,12 +2615,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D13"
-			(at 0 -4 0)
+			(at 0 -3.286 0)
 			(layer "F.SilkS")
 			(uuid "1e83f509-f69c-4471-a159-39a19ec4daec")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -2867,12 +2867,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D8"
-			(at 0 -4 0)
+			(at 0 -2.714 0)
 			(layer "F.SilkS")
 			(uuid "81abd435-cf58-4b28-9178-3dffa2ae2541")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -3119,12 +3119,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D21"
-			(at 0 -4 0)
+			(at 0.4 -2.333 0)
 			(layer "F.SilkS")
 			(uuid "5e19fc1c-6fea-4d20-bd31-d70a680936a8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -3371,12 +3371,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D24"
-			(at 0 -4 0)
+			(at 0.4 -3 0)
 			(layer "F.SilkS")
 			(uuid "08779bec-53f9-4b3f-8bf0-db004914f9de")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -3623,12 +3623,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D4"
-			(at 0 -4 0)
+			(at 0 -3.2 0)
 			(layer "F.SilkS")
 			(uuid "ed043682-5a23-4ecf-95f8-88ec1d0f93a5")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -3875,12 +3875,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D10"
-			(at 0 -4 0)
+			(at 0 -3.143 0)
 			(layer "F.SilkS")
 			(uuid "bcba2a5c-282e-440a-8d7f-14db6b17fc24")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -4127,12 +4127,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D9"
-			(at 0 -4 0)
+			(at -0.3 -2.929 0)
 			(layer "F.SilkS")
 			(uuid "ccb2ad4c-b745-4065-99af-83c480f1cd52")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -4379,12 +4379,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D6"
-			(at 0 -4 0)
+			(at 0 -3.5 0)
 			(layer "F.SilkS")
 			(uuid "c6047031-7a6d-45a4-a907-8a648990355e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -4631,12 +4631,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D18"
-			(at 0 -4 0)
+			(at 0.4 -2.667 0)
 			(layer "F.SilkS")
 			(uuid "4d8ba561-e35e-493b-977e-24fde17a4e02")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -4883,12 +4883,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D23"
-			(at 0 -4 0)
+			(at 0.4 -2.611 0)
 			(layer "F.SilkS")
 			(uuid "96afb851-ece6-4235-b5f3-04217f0b4f61")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -5135,12 +5135,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D7"
-			(at 0 -4 0)
+			(at 0.2 -3 0)
 			(layer "F.SilkS")
 			(uuid "87a49658-7fe6-4c7f-aad2-9a27fc1fa934")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -5387,12 +5387,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D11"
-			(at 0 -4 0)
+			(at 0.2 -2.857 0)
 			(layer "F.SilkS")
 			(uuid "fb0916fa-e0ba-4ef2-b57a-c789c08e62ea")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -5639,12 +5639,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D19"
-			(at 0 -4 0)
+			(at 0.4 -2.056 0)
 			(layer "F.SilkS")
 			(uuid "3fa3280e-475a-4437-94a1-ba3f6a832597")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -5891,12 +5891,12 @@
 		(descr "0603 red LED, KENTO KT-0603R rev A.0. Body 1.60x0.80x0.60 mm. Land pattern per datasheet section 2 (0.70x0.70 pads, 0.70 gap, span 2.10). Pin 1 = anode (+), pin 2 = cathode (silk bracket).")
 		(tags "LED 0603 KT-0603R")
 		(property "Reference" "D3"
-			(at 0 -4 0)
+			(at 0 -3.3 0)
 			(layer "F.SilkS")
 			(uuid "a73a9426-56a1-4abb-bdcf-ea996060c9d6")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -6148,7 +6148,7 @@
 			(uuid "677013eb-336a-422e-984f-f0bdc63c11e1")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -6299,7 +6299,7 @@
 			(uuid "87887801-ee33-44de-bdc9-df4523c079b6")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -6528,7 +6528,7 @@
 			(uuid "3f4917a5-5f5f-464c-b816-49d8803e638e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -6680,7 +6680,7 @@
 			(uuid "92c43e21-cd67-4e26-8823-8fc6e5a8130c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -6832,7 +6832,7 @@
 			(uuid "c11a1361-99c8-44df-8683-5a38e8f26957")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -6984,7 +6984,7 @@
 			(uuid "5ea78c97-f3f1-4724-90ae-595c104e9523")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -7136,7 +7136,7 @@
 			(uuid "19eb45ea-9f2f-429b-bbcb-936bfa2f08f2")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -7284,10 +7284,10 @@
 			(at 9 14.8 0)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "68a91f17-3ae5-455f-b233-690e0c0aa0a3")
+			(uuid "ba493f67-dce5-4ad8-9347-bca1ef58ea07")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 			)
@@ -7296,7 +7296,7 @@
 			(at 9 15.4 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8c5f3d74-d727-448c-8fae-e598a0cf314c")
+			(uuid "fffa6c28-9082-40a1-b880-658c38f72ee6")
 			(effects
 				(font
 					(size 1 1)
@@ -7308,7 +7308,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b2550d47-7a6a-44ba-ac69-075ae649c69c")
+			(uuid "5b982bf7-749c-4bc6-8a69-328bb8bab919")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7319,7 +7319,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "18585887-268f-458e-88e5-b1908491541b")
+			(uuid "d635510a-bb54-4f70-bc4f-c76203f4b8ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7840,7 +7840,7 @@
 			(uuid "dae6ff07-ff20-42ba-b31d-8a7c17e9dea5")
 		)
 		(fp_text user "NFC"
-			(at 4.8 28.5 90)
+			(at 7.5 26 0)
 			(layer "F.SilkS")
 			(uuid "17e109dd-a7e9-4cd8-ad10-546c9645ebc1")
 			(effects
@@ -7851,44 +7851,44 @@
 					(bold yes)
 				)
 			)
-			(render_cache "NFC" 90
+			(render_cache "NFC" 0
 				(polygon
 					(pts
-						(xy 5.464 30.700041) (xy 3.897133 30.700041) (xy 3.897133 30.337389) (xy 4.805912 29.625568) (xy 3.897133 29.625568)
-						(xy 3.897133 29.263014) (xy 5.464 29.263014) (xy 5.464 29.603195) (xy 4.519366 30.337389) (xy 5.464 30.337389)
+						(xy 5.299958 26.664) (xy 5.299958 25.097133) (xy 5.66261 25.097133) (xy 6.374431 26.005912) (xy 6.374431 25.097133)
+						(xy 6.736985 25.097133) (xy 6.736985 26.664) (xy 6.396804 26.664) (xy 5.66261 25.719366) (xy 5.66261 26.664)
 					)
 				)
 				(polygon
 					(pts
-						(xy 5.464 29.002456) (xy 3.897133 29.002456) (xy 3.897133 27.757892) (xy 4.230573 27.757892) (xy 4.230573 28.617431)
-						(xy 4.52386 28.617431) (xy 4.52386 28.044437) (xy 4.846163 28.044437) (xy 4.846163 28.617431)
-						(xy 5.464 28.617431)
+						(xy 6.997543 26.664) (xy 6.997543 25.097133) (xy 8.242107 25.097133) (xy 8.242107 25.430573) (xy 7.382568 25.430573)
+						(xy 7.382568 25.72386) (xy 7.955562 25.72386) (xy 7.955562 26.046163) (xy 7.382568 26.046163)
+						(xy 7.382568 26.664)
 					)
 				)
 				(polygon
 					(pts
-						(xy 5.486372 26.858394) (xy 5.479335 26.976558) (xy 5.458695 27.087012) (xy 5.424823 27.190857)
-						(xy 5.378025 27.289472) (xy 5.321047 27.378343) (xy 5.253658 27.458352) (xy 5.176433 27.528819)
-						(xy 5.091231 27.587974) (xy 4.9973 27.636259) (xy 4.897808 27.67146) (xy 4.792602 27.692802) (xy 4.680566 27.700055)
-						(xy 4.567035 27.692771) (xy 4.461101 27.671398) (xy 4.361585 27.636259) (xy 4.267733 27.587884)
-						(xy 4.182564 27.528352) (xy 4.105325 27.45718) (xy 4.03783 27.376505) (xy 3.980824 27.287262)
-						(xy 3.934062 27.18861) (xy 3.900133 27.084786) (xy 3.879521 26.97506) (xy 3.872513 26.858394)
-						(xy 3.882018 26.729815) (xy 3.910615 26.603209) (xy 3.956421 26.482124) (xy 4.016909 26.371569)
-						(xy 4.092231 26.273153) (xy 4.179184 26.193565) (xy 4.434272 26.453244) (xy 4.356998 26.524275)
-						(xy 4.299253 26.599365) (xy 4.258804 26.679205) (xy 4.234466 26.765001) (xy 4.226177 26.858394)
-						(xy 4.232933 26.940339) (xy 4.252733 27.015653) (xy 4.285479 27.085638) (xy 4.329957 27.148771)
-						(xy 4.38377 27.201851) (xy 4.447754 27.245666) (xy 4.518418 27.277623) (xy 4.595557 27.297104)
-						(xy 4.680566 27.303795) (xy 4.763952 27.296886) (xy 4.839981 27.276701) (xy 4.910057 27.243419)
-						(xy 4.973233 27.198234) (xy 5.026694 27.143675) (xy 5.071159 27.078897) (xy 5.103824 27.00742)
-						(xy 5.123667 26.929911) (xy 5.130461 26.84501) (xy 5.122682 26.755789) (xy 5.099847 26.673775)
-						(xy 5.061935 26.59744) (xy 5.007902 26.525651) (xy 4.935751 26.457738) (xy 5.184195 26.2048) (xy 5.269341 26.284009)
-						(xy 5.344223 26.381632) (xy 5.40452 26.490989) (xy 5.449443 26.60995) (xy 5.477195 26.733984)
+						(xy 9.141605 26.686372) (xy 9.023441 26.679335) (xy 8.912987 26.658695) (xy 8.809142 26.624823)
+						(xy 8.710527 26.578025) (xy 8.621656 26.521047) (xy 8.541647 26.453658) (xy 8.47118 26.376433)
+						(xy 8.412025 26.291231) (xy 8.36374 26.1973) (xy 8.328539 26.097808) (xy 8.307197 25.992602) (xy 8.299944 25.880566)
+						(xy 8.307228 25.767035) (xy 8.328601 25.661101) (xy 8.36374 25.561585) (xy 8.412115 25.467733)
+						(xy 8.471647 25.382564) (xy 8.542819 25.305325) (xy 8.623494 25.23783) (xy 8.712737 25.180824)
+						(xy 8.811389 25.134062) (xy 8.915213 25.100133) (xy 9.024939 25.079521) (xy 9.141605 25.072513)
+						(xy 9.270184 25.082018) (xy 9.39679 25.110615) (xy 9.517875 25.156421) (xy 9.62843 25.216909)
+						(xy 9.726846 25.292231) (xy 9.806434 25.379184) (xy 9.546755 25.634272) (xy 9.475724 25.556998)
+						(xy 9.400634 25.499253) (xy 9.320794 25.458804) (xy 9.234998 25.434466) (xy 9.141605 25.426177)
+						(xy 9.05966 25.432933) (xy 8.984346 25.452733) (xy 8.914361 25.485479) (xy 8.851228 25.529957)
+						(xy 8.798148 25.58377) (xy 8.754333 25.647754) (xy 8.722376 25.718418) (xy 8.702895 25.795557)
+						(xy 8.696204 25.880566) (xy 8.703113 25.963952) (xy 8.723298 26.039981) (xy 8.75658 26.110057)
+						(xy 8.801765 26.173233) (xy 8.856324 26.226694) (xy 8.921102 26.271159) (xy 8.992579 26.303824)
+						(xy 9.070088 26.323667) (xy 9.154989 26.330461) (xy 9.24421 26.322682) (xy 9.326224 26.299847)
+						(xy 9.402559 26.261935) (xy 9.474348 26.207902) (xy 9.542261 26.135751) (xy 9.795199 26.384195)
+						(xy 9.71599 26.469341) (xy 9.618367 26.544223) (xy 9.50901 26.60452) (xy 9.390049 26.649443) (xy 9.266015 26.677195)
 					)
 				)
 			)
 		)
 		(fp_text user "tap phone here"
-			(at 7 28.5 90)
+			(at 7.5 28 180)
 			(layer "F.SilkS")
 			(uuid "0ad410eb-21aa-4b9e-87e0-710a06d23a81")
 			(effects
@@ -7936,7 +7936,7 @@
 			(uuid "fc499909-06e2-4e99-a2bb-ac3152b31cb3")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -8088,7 +8088,7 @@
 			(uuid "d0f47c88-b154-4c6c-ac5c-824473a0424c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -8239,7 +8239,7 @@
 			(uuid "61aa41d8-ce91-46bc-a3ed-8909870b2f04")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -8466,7 +8466,7 @@
 			(uuid "c38cea16-4436-4cc8-822b-069c2107efe8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -8618,7 +8618,7 @@
 			(uuid "509acad5-6bf0-4c3c-a400-6f16933becb1")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -8768,7 +8768,7 @@
 			(uuid "ab605518-ef0c-4c41-bafe-3897dc8cf3e6")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -9566,13 +9566,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/JLC.3dshapes/WIRELM-SMD_ESP32-S3-WROOM-1.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 3.6 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -9588,7 +9588,7 @@
 			(uuid "98af7e06-a732-4924-8b6a-d887f89c5732")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -9924,7 +9924,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -9940,7 +9940,7 @@
 			(uuid "4503a16a-a6d6-48a0-a630-1e935b755cba")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10092,7 +10092,7 @@
 			(uuid "6ca14df2-ddf1-4f24-b9dc-1b958b1f85f7")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10244,7 +10244,7 @@
 			(uuid "7dfa1c71-006d-4901-8af3-4eaab47f58c8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10396,7 +10396,7 @@
 			(uuid "ce127e03-a0c8-4227-afb5-01f978ec457b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10548,7 +10548,7 @@
 			(uuid "00faeaed-6e29-4779-ba23-570d9694c270")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10701,7 +10701,7 @@
 			(uuid "96316764-9cdd-46d9-8fff-3d47b680245b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10814,7 +10814,7 @@
 			(uuid "23004fb1-52f6-4047-a221-628ecc9b0efc")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -10966,7 +10966,7 @@
 			(uuid "52a542cb-8b2e-47a7-8448-65dbdb4c03de")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -11118,7 +11118,7 @@
 			(uuid "57e42c81-1044-488a-84b5-7ca0646e2510")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -11270,7 +11270,7 @@
 			(uuid "5cad6429-769f-41e0-8228-5d78731c2490")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -12110,7 +12110,7 @@
 			(uuid "ff698703-1850-4012-b32e-307db67c41c8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -12255,12 +12255,12 @@
 		(uuid "922f86d0-0645-46e5-a284-b8006758fb2f")
 		(at 12 47.3)
 		(property "Reference" "SW1"
-			(at 0 5.85 180)
+			(at 0 5.7 180)
 			(layer "B.SilkS")
 			(uuid "676f231f-e7e7-4e51-a26c-4c2e69abf3ca")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -12643,7 +12643,7 @@
 			(uuid "73122811-d95f-4c7d-bad3-2528df0d54bf")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -12796,7 +12796,7 @@
 			(uuid "7cb878e7-1631-4e99-8df6-951cef6903e2")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -12909,7 +12909,7 @@
 			(uuid "9f7008b9-fdd4-44fb-ad36-9a3c84a7f20a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -13061,7 +13061,7 @@
 			(uuid "1c906444-bc38-4a16-b22b-e493dac2b949")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -13206,12 +13206,12 @@
 		(uuid "9d1ce305-8141-457e-83bf-8dda85cac4b0")
 		(at 24 47.3)
 		(property "Reference" "SW2"
-			(at 0 5.85 180)
+			(at 0 5.7 180)
 			(layer "B.SilkS")
 			(uuid "1adb80a1-455a-41ed-bdb7-0721f2148466")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -13594,7 +13594,7 @@
 			(uuid "8ee9e6a6-cdae-4964-b3a3-9466a759be52")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -13744,7 +13744,7 @@
 			(uuid "2005e2e0-590f-45b9-90d4-8f63fec26628")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14128,7 +14128,7 @@
 			(uuid "1542609d-3e2e-4e10-985d-13ceeb4c653c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14241,7 +14241,7 @@
 			(uuid "db6aee6a-64b0-4968-9931-46d0fb47767d")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14393,7 +14393,7 @@
 			(uuid "9ccbf54d-7ba3-4deb-babc-644352b09f05")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14545,7 +14545,7 @@
 			(uuid "f32d1e4f-36a9-40f1-8b0b-dadc7a2be64f")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14697,7 +14697,7 @@
 			(uuid "bcc765e5-35f9-4bed-b67c-00ab81993666")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -14976,7 +14976,7 @@
 			(uuid "01baedcd-fe8e-4199-9f98-f98d621bd72c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -15157,7 +15157,7 @@
 			(uuid "09034208-3702-4501-9c98-e9096d969ec7")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -15540,7 +15540,7 @@
 			(uuid "5a3433be-21b9-439b-bd80-8f6d4bb08e12")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 					(thickness 0.153)
 				)
 				(justify mirror)
@@ -24581,7 +24581,7 @@
 		(uuid "b5ddd588-0c25-4257-9980-e90fe3693de6")
 	)
 	(gr_text "princetekki.com"
-		(at 78.59 13.14 0)
+		(at 7.5 15.45 0)
 		(layer "F.SilkS")
 		(uuid "84c1e0be-6ef1-46d7-b437-0e1633438f60")
 		(effects
@@ -24603,7 +24603,7 @@
 		)
 	)
 	(gr_text "ax"
-		(at 10.5 11 0)
+		(at 14.5 11 0)
 		(layer "F.SilkS")
 		(uuid "e25b7a4c-c745-4d28-b59b-4f6806891740")
 		(effects
@@ -24614,7 +24614,7 @@
 		)
 	)
 	(gr_text "ay"
-		(at 10.5 17.4 0)
+		(at 14.5 17.4 0)
 		(layer "F.SilkS")
 		(uuid "557d5f0d-4d1c-4bc5-b76b-f2c475e00e7b")
 		(effects
@@ -24625,7 +24625,7 @@
 		)
 	)
 	(gr_text "az"
-		(at 10.5 23.8 0)
+		(at 14.5 23.8 0)
 		(layer "F.SilkS")
 		(uuid "abf91b85-61f2-4c72-b7fb-2c5bf86f12fc")
 		(effects
@@ -24635,21 +24635,57 @@
 			)
 		)
 	)
-	(gr_text "6"
-		(at 71.6 34.333 0)
-		(layer "F.SilkS")
-		(uuid "684abfa4-b065-45b7-bf88-87819afb0b41")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.1875)
-			)
-		)
-	)
 	(gr_text "9"
 		(at 71.6 49 0)
 		(layer "F.SilkS")
 		(uuid "530e73b2-dc53-430c-8b42-413419703855")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.16)
+			)
+		)
+	)
+	(gr_text "gx"
+		(at 14 30 0)
+		(layer "F.SilkS")
+		(uuid "021466c6-ec38-4cad-82eb-333ab1c1b7fb")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.17)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "gy"
+		(at 14 36.5 0)
+		(layer "F.SilkS")
+		(uuid "4daafc27-5f19-4cb2-ac97-15d1c36f0ff3")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.17)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "gz"
+		(at 14 43 0)
+		(layer "F.SilkS")
+		(uuid "23f4ae83-bd94-4cdf-9840-82a20408df60")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.17)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "6"
+		(at 71.6 34.333 0)
+		(layer "F.SilkS")
+		(uuid "684abfa4-b065-45b7-bf88-87819afb0b41")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -24811,141 +24847,6 @@
 					(xy 33.856483 51.473009) (xy 33.92583 51.337913) (xy 34.010861 51.214905) (xy 34.112224 51.10295)
 					(xy 34.227289 51.00498) (xy 34.354548 50.922542) (xy 34.495203 50.855215) (xy 34.643358 50.806484)
 					(xy 34.800509 50.776834) (xy 34.968203 50.766738)
-				)
-			)
-		)
-	)
-	(gr_text "gx"
-		(at 10.5 30.2 0)
-		(layer "F.SilkS")
-		(uuid "021466c6-ec38-4cad-82eb-333ab1c1b7fb")
-		(effects
-			(font
-				(face "Red Hat Mono")
-				(size 1.5 1.5)
-				(thickness 0.17)
-				(bold yes)
-			)
-		)
-		(render_cache "gx" 0
-			(polygon
-				(pts
-					(xy 9.858518 29.740769) (xy 9.926274 29.762791) (xy 9.988276 29.798285) (xy 10.042778 29.846688)
-					(xy 10.042778 29.739618) (xy 10.376444 29.739618) (xy 10.376444 30.828819) (xy 10.366934 30.936293)
-					(xy 10.340119 31.025959) (xy 10.29729 31.101254) (xy 10.237958 31.164592) (xy 10.166363 31.213155)
-					(xy 10.078135 31.249815) (xy 9.96981 31.273533) (xy 9.837156 31.282103) (xy 9.712414 31.275759)
-					(xy 9.596666 31.257246) (xy 9.488866 31.227107) (xy 9.388085 31.185566) (xy 9.492956 30.940011)
-					(xy 9.612752 30.988173) (xy 9.7227 31.015342) (xy 9.824608 31.024) (xy 9.906821 31.014766) (xy 9.964531 30.990231)
-					(xy 10.004337 30.952318) (xy 10.029387 30.898957) (xy 10.038656 30.824606) (xy 10.038656 30.709201)
-					(xy 9.981553 30.757967) (xy 9.913726 30.796304) (xy 9.839566 30.820679) (xy 9.761593 30.828819)
-					(xy 9.680001 30.820528) (xy 9.603929 30.795922) (xy 9.531791 30.754356) (xy 9.468002 30.699758)
-					(xy 9.413192 30.63374) (xy 9.367019 30.554962) (xy 9.333551 30.469824) (xy 9.313171 30.378257)
-					(xy 9.30635 30.281105) (xy 9.639868 30.281105) (xy 9.647229 30.358724) (xy 9.668108 30.423999)
-					(xy 9.701784 30.479399) (xy 9.747762 30.523214) (xy 9.801791 30.549114) (xy 9.866556 30.558076)
-					(xy 9.917175 30.553204) (xy 9.960987 30.539208) (xy 10.001076 30.516858) (xy 10.038656 30.486727)
-					(xy 10.038656 30.07127) (xy 9.985102 30.032278) (xy 9.928275 30.009559) (xy 9.866556 30.001935)
-					(xy 9.800441 30.010991) (xy 9.746116 30.036992) (xy 9.700685 30.080703) (xy 9.667724 30.136062)
-					(xy 9.647156 30.201991) (xy 9.639868 30.281105) (xy 9.30635 30.281105) (xy 9.306202 30.278998)
-					(xy 9.313695 30.178486) (xy 9.33551 30.087006) (xy 9.371232 30.003034) (xy 9.420125 29.925898)
-					(xy 9.478029 29.860884) (xy 9.545438 29.806846) (xy 9.620968 29.765957) (xy 9.7009 29.741616) (xy 9.78678 29.73339)
-				)
-			)
-			(polygon
-				(pts
-					(xy 10.529401 30.8225) (xy 10.93231 30.274785) (xy 10.535721 29.739618) (xy 10.928097 29.739618)
-					(xy 11.135825 30.041869) (xy 11.345752 29.739618) (xy 11.723474 29.739618) (xy 11.322671 30.281105)
-					(xy 11.729702 30.8225) (xy 11.335219 30.8225) (xy 11.121171 30.511914) (xy 10.905016 30.8225)
-				)
-			)
-		)
-	)
-	(gr_text "gy"
-		(at 10.5 36.6 0)
-		(layer "F.SilkS")
-		(uuid "4daafc27-5f19-4cb2-ac97-15d1c36f0ff3")
-		(effects
-			(font
-				(face "Red Hat Mono")
-				(size 1.5 1.5)
-				(thickness 0.17)
-				(bold yes)
-			)
-		)
-		(render_cache "gy" 0
-			(polygon
-				(pts
-					(xy 9.858518 36.140769) (xy 9.926274 36.162791) (xy 9.988276 36.198285) (xy 10.042778 36.246688)
-					(xy 10.042778 36.139618) (xy 10.376444 36.139618) (xy 10.376444 37.228819) (xy 10.366934 37.336293)
-					(xy 10.340119 37.425959) (xy 10.29729 37.501254) (xy 10.237958 37.564592) (xy 10.166363 37.613155)
-					(xy 10.078135 37.649815) (xy 9.96981 37.673533) (xy 9.837156 37.682103) (xy 9.712414 37.675759)
-					(xy 9.596666 37.657246) (xy 9.488866 37.627107) (xy 9.388085 37.585566) (xy 9.492956 37.340011)
-					(xy 9.612752 37.388173) (xy 9.7227 37.415342) (xy 9.824608 37.424) (xy 9.906821 37.414766) (xy 9.964531 37.390231)
-					(xy 10.004337 37.352318) (xy 10.029387 37.298957) (xy 10.038656 37.224606) (xy 10.038656 37.109201)
-					(xy 9.981553 37.157967) (xy 9.913726 37.196304) (xy 9.839566 37.220679) (xy 9.761593 37.228819)
-					(xy 9.680001 37.220528) (xy 9.603929 37.195922) (xy 9.531791 37.154356) (xy 9.468002 37.099758)
-					(xy 9.413192 37.03374) (xy 9.367019 36.954962) (xy 9.333551 36.869824) (xy 9.313171 36.778257)
-					(xy 9.30635 36.681105) (xy 9.639868 36.681105) (xy 9.647229 36.758724) (xy 9.668108 36.823999)
-					(xy 9.701784 36.879399) (xy 9.747762 36.923214) (xy 9.801791 36.949114) (xy 9.866556 36.958076)
-					(xy 9.917175 36.953204) (xy 9.960987 36.939208) (xy 10.001076 36.916858) (xy 10.038656 36.886727)
-					(xy 10.038656 36.47127) (xy 9.985102 36.432278) (xy 9.928275 36.409559) (xy 9.866556 36.401935)
-					(xy 9.800441 36.410991) (xy 9.746116 36.436992) (xy 9.700685 36.480703) (xy 9.667724 36.536062)
-					(xy 9.647156 36.601991) (xy 9.639868 36.681105) (xy 9.30635 36.681105) (xy 9.306202 36.678998)
-					(xy 9.313695 36.578486) (xy 9.33551 36.487006) (xy 9.371232 36.403034) (xy 9.420125 36.325898)
-					(xy 9.478029 36.260884) (xy 9.545438 36.206846) (xy 9.620968 36.165957) (xy 9.7009 36.141616) (xy 9.78678 36.13339)
-				)
-			)
-			(polygon
-				(pts
-					(xy 10.77285 37.682103) (xy 10.674115 37.675784) (xy 10.569243 37.659023) (xy 10.569243 37.373625)
-					(xy 10.64792 37.385074) (xy 10.732916 37.388279) (xy 10.801663 37.381049) (xy 10.851922 37.361601)
-					(xy 10.888325 37.331479) (xy 10.913442 37.289636) (xy 10.928097 37.2519) (xy 10.525188 36.139618)
-					(xy 10.896589 36.139618) (xy 11.121171 36.851098) (xy 11.370848 36.139618) (xy 11.733915 36.139618)
-					(xy 11.247108 37.344224) (xy 11.191458 37.459903) (xy 11.134818 37.542519) (xy 11.090314 37.587868)
-					(xy 11.040846 37.623291) (xy 10.985799 37.649497) (xy 10.893196 37.673296)
-				)
-			)
-		)
-	)
-	(gr_text "gz"
-		(at 10.5 43 0)
-		(layer "F.SilkS")
-		(uuid "23f4ae83-bd94-4cdf-9840-82a20408df60")
-		(effects
-			(font
-				(face "Red Hat Mono")
-				(size 1.5 1.5)
-				(thickness 0.17)
-				(bold yes)
-			)
-		)
-		(render_cache "gz" 0
-			(polygon
-				(pts
-					(xy 9.858518 42.540769) (xy 9.926274 42.562791) (xy 9.988276 42.598285) (xy 10.042778 42.646688)
-					(xy 10.042778 42.539618) (xy 10.376444 42.539618) (xy 10.376444 43.628819) (xy 10.366934 43.736293)
-					(xy 10.340119 43.825959) (xy 10.29729 43.901254) (xy 10.237958 43.964592) (xy 10.166363 44.013155)
-					(xy 10.078135 44.049815) (xy 9.96981 44.073533) (xy 9.837156 44.082103) (xy 9.712414 44.075759)
-					(xy 9.596666 44.057246) (xy 9.488866 44.027107) (xy 9.388085 43.985566) (xy 9.492956 43.740011)
-					(xy 9.612752 43.788173) (xy 9.7227 43.815342) (xy 9.824608 43.824) (xy 9.906821 43.814766) (xy 9.964531 43.790231)
-					(xy 10.004337 43.752318) (xy 10.029387 43.698957) (xy 10.038656 43.624606) (xy 10.038656 43.509201)
-					(xy 9.981553 43.557967) (xy 9.913726 43.596304) (xy 9.839566 43.620679) (xy 9.761593 43.628819)
-					(xy 9.680001 43.620528) (xy 9.603929 43.595922) (xy 9.531791 43.554356) (xy 9.468002 43.499758)
-					(xy 9.413192 43.43374) (xy 9.367019 43.354962) (xy 9.333551 43.269824) (xy 9.313171 43.178257)
-					(xy 9.30635 43.081105) (xy 9.639868 43.081105) (xy 9.647229 43.158724) (xy 9.668108 43.223999)
-					(xy 9.701784 43.279399) (xy 9.747762 43.323214) (xy 9.801791 43.349114) (xy 9.866556 43.358076)
-					(xy 9.917175 43.353204) (xy 9.960987 43.339208) (xy 10.001076 43.316858) (xy 10.038656 43.286727)
-					(xy 10.038656 42.87127) (xy 9.985102 42.832278) (xy 9.928275 42.809559) (xy 9.866556 42.801935)
-					(xy 9.800441 42.810991) (xy 9.746116 42.836992) (xy 9.700685 42.880703) (xy 9.667724 42.936062)
-					(xy 9.647156 43.001991) (xy 9.639868 43.081105) (xy 9.30635 43.081105) (xy 9.306202 43.078998)
-					(xy 9.313695 42.978486) (xy 9.33551 42.887006) (xy 9.371232 42.803034) (xy 9.420125 42.725898)
-					(xy 9.478029 42.660884) (xy 9.545438 42.606846) (xy 9.620968 42.565957) (xy 9.7009 42.541616) (xy 9.78678 42.53339)
-				)
-			)
-			(polygon
-				(pts
-					(xy 10.60707 43.6225) (xy 10.60707 43.38537) (xy 11.1862 42.820894) (xy 10.611192 42.825016) (xy 10.611192 42.539618)
-					(xy 11.635271 42.539618) (xy 11.635271 42.776748) (xy 11.054035 43.343422) (xy 11.652124 43.339208)
-					(xy 11.652124 43.6225)
 				)
 			)
 		)
@@ -26334,7 +26235,7 @@
 		)
 	)
 	(gr_text "OSHW · github.com/Brillar0101"
-		(at 64 47 0)
+		(at 68 46 0)
 		(layer "B.SilkS")
 		(uuid "121f1f2d-b3bc-4daf-b98d-37f7a90d97ff")
 		(effects
@@ -26358,7 +26259,7 @@
 		)
 	)
 	(gr_text "NeuralCard v2.3 · princetekki.com"
-		(at 63 41.7 0)
+		(at 65.5 42.5 0)
 		(layer "B.SilkS")
 		(uuid "ead8148f-7a8f-4e3c-80db-8fd8605331cc")
 		(effects
@@ -26367,67 +26268,6 @@
 				(thickness 0.16)
 			)
 			(justify mirror)
-		)
-	)
-	(gr_text "RST"
-		(at 24 51 0)
-		(layer "B.SilkS")
-		(uuid "8b10c8d8-47b7-4fc0-a8fe-a19df636ff22")
-		(effects
-			(font
-				(face "Red Hat Mono")
-				(size 0.9 0.9)
-				(thickness 0.153)
-				(bold yes)
-			)
-			(justify mirror)
-		)
-		(render_cache "RST" 0
-			(polygon
-				(pts
-					(xy 25.061173 51.3735) (xy 24.844597 51.3735) (xy 24.844597 51.051191) (xy 24.770298 51.051191)
-					(xy 24.611644 51.3735) (xy 24.383747 51.3735) (xy 24.570098 51.017174) (xy 24.526002 50.990987)
-					(xy 24.488882 50.958595) (xy 24.458046 50.919574) (xy 24.435231 50.875553) (xy 24.421307 50.826623)
-					(xy 24.416831 50.775428) (xy 24.635604 50.775428) (xy 24.639189 50.80516) (xy 24.64945 50.829967)
-					(xy 24.666434 50.850991) (xy 24.688541 50.866728) (xy 24.715196 50.876452) (xy 24.747657 50.879897)
-					(xy 24.844597 50.879897) (xy 24.844597 50.670904) (xy 24.747657 50.670904) (xy 24.715156 50.674292)
-					(xy 24.688501 50.683844) (xy 24.666434 50.699261) (xy 24.649538 50.719912) (xy 24.639237 50.744872)
-					(xy 24.635604 50.775428) (xy 24.416831 50.775428) (xy 24.4165 50.771636) (xy 24.421098 50.717401)
-					(xy 24.434408 50.669094) (xy 24.456177 50.625622) (xy 24.48583 50.586961) (xy 24.522296 50.554345)
-					(xy 24.566361 50.527418) (xy 24.614518 50.508149) (xy 24.667911 50.496256) (xy 24.727488 50.492137)
-					(xy 25.061173 50.492137)
-				)
-			)
-			(polygon
-				(pts
-					(xy 23.999889 51.387348) (xy 24.066524 51.383905) (xy 24.129551 51.373773) (xy 24.189427 51.357123)
-					(xy 24.27635 51.320501) (xy 24.363798 51.268976) (xy 24.258011 51.106585) (xy 24.175557 51.156516)
-					(xy 24.11326 51.186544) (xy 24.052575 51.205104) (xy 23.994888 51.211054) (xy 23.953525 51.207857)
-					(xy 23.921439 51.199168) (xy 23.896684 51.185884) (xy 23.876657 51.167021) (xy 23.865245 51.14594)
-					(xy 23.861403 51.121697) (xy 23.864525 51.097799) (xy 23.873326 51.078893) (xy 23.887836 51.063775)
-					(xy 23.917066 51.046275) (xy 23.957079 51.031682) (xy 24.051546 51.010249) (xy 24.154806 50.986344)
-					(xy 24.204572 50.968697) (xy 24.249218 50.945403) (xy 24.287801 50.914545) (xy 24.318461 50.874292)
-					(xy 24.332516 50.843353) (xy 24.341603 50.805069) (xy 24.344894 50.757788) (xy 24.338899 50.694496)
-					(xy 24.32178 50.640417) (xy 24.293997 50.593723) (xy 24.254878 50.553192) (xy 24.208326 50.521917)
-					(xy 24.152437 50.498567) (xy 24.08539 50.483633) (xy 24.004945 50.478288) (xy 23.940781 50.481538)
-					(xy 23.878576 50.4912) (xy 23.817989 50.50725) (xy 23.759507 50.529662) (xy 23.708348 50.556565)
-					(xy 23.663731 50.587813) (xy 23.773256 50.745203) (xy 23.833749 50.704889) (xy 23.892288 50.677224)
-					(xy 23.95315 50.660207) (xy 24.016265 50.654528) (xy 24.055114 50.657575) (xy 24.085136 50.665846)
-					(xy 24.108204 50.678488) (xy 24.126794 50.696334) (xy 24.137393 50.716177) (xy 24.140957 50.738883)
-					(xy 24.137906 50.760177) (xy 24.129194 50.77725) (xy 24.114524 50.791145) (xy 24.085244 50.806992)
-					(xy 24.043962 50.820766) (xy 23.947682 50.841539) (xy 23.843158 50.866708) (xy 23.792633 50.885407)
-					(xy 23.746823 50.909517) (xy 23.707311 50.941329) (xy 23.676316 50.983212) (xy 23.662198 51.015305)
-					(xy 23.653139 51.054257) (xy 23.649883 51.101529) (xy 23.6548 51.156467) (xy 23.66911 51.205833)
-					(xy 23.692692 51.250731) (xy 23.724676 51.290195) (xy 23.764804 51.323693) (xy 23.814197 51.351463)
-					(xy 23.867805 51.37085) (xy 23.929259 51.383055)
-				)
-			)
-			(polygon
-				(pts
-					(xy 23.352908 51.3735) (xy 23.352908 50.673432) (xy 23.60471 50.673432) (xy 23.60471 50.492137)
-					(xy 22.884529 50.492137) (xy 22.884529 50.673432) (xy 23.136331 50.673432) (xy 23.136331 51.3735)
-				)
-			)
 		)
 	)
 	(gr_text "S/N"
@@ -26562,6 +26402,67 @@
 				(pts
 					(xy 10.292101 51.6225) (xy 10.292101 50.455721) (xy 10.711771 50.455721) (xy 10.711771 50.153562)
 					(xy 9.51147 50.153562) (xy 9.51147 50.455721) (xy 9.93114 50.455721) (xy 9.93114 51.6225)
+				)
+			)
+		)
+	)
+	(gr_text "RST"
+		(at 24 51 0)
+		(layer "B.SilkS")
+		(uuid "8b10c8d8-47b7-4fc0-a8fe-a19df636ff22")
+		(effects
+			(font
+				(face "Red Hat Mono")
+				(size 1.5 1.5)
+				(thickness 0.153)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+		(render_cache "RST" 0
+			(polygon
+				(pts
+					(xy 25.768623 51.6225) (xy 25.407662 51.6225) (xy 25.407662 51.085318) (xy 25.283831 51.085318)
+					(xy 25.019408 51.6225) (xy 24.639579 51.6225) (xy 24.950165 51.028623) (xy 24.876671 50.984979)
+					(xy 24.814804 50.930991) (xy 24.763411 50.865957) (xy 24.725386 50.792589) (xy 24.70218 50.711039)
+					(xy 24.694721 50.625714) (xy 25.059341 50.625714) (xy 25.065316 50.675266) (xy 25.082418 50.716612)
+					(xy 25.110724 50.751652) (xy 25.14757 50.77788) (xy 25.191995 50.794088) (xy 25.246096 50.799829)
+					(xy 25.407662 50.799829) (xy 25.407662 50.451508) (xy 25.246096 50.451508) (xy 25.191929 50.457154)
+					(xy 25.147503 50.473074) (xy 25.110724 50.498769) (xy 25.082565 50.533187) (xy 25.065396 50.574787)
+					(xy 25.059341 50.625714) (xy 24.694721 50.625714) (xy 24.694168 50.619394) (xy 24.701831 50.529001)
+					(xy 24.724015 50.44849) (xy 24.760297 50.376037) (xy 24.809718 50.311602) (xy 24.870494 50.257242)
+					(xy 24.943937 50.212363) (xy 25.024198 50.180249) (xy 25.113186 50.160427) (xy 25.212482 50.153562)
+					(xy 25.768623 50.153562)
+				)
+			)
+			(polygon
+				(pts
+					(xy 23.999816 51.64558) (xy 24.110875 51.639842) (xy 24.215919 51.622955) (xy 24.315713 51.595205)
+					(xy 24.460585 51.534169) (xy 24.606332 51.448293) (xy 24.430019 51.177642) (xy 24.292597 51.26086)
+					(xy 24.188768 51.310907) (xy 24.087627 51.341841) (xy 23.991481 51.351756) (xy 23.922544 51.346429)
+					(xy 23.869066 51.331948) (xy 23.827808 51.309808) (xy 23.794429 51.278368) (xy 23.775409 51.243234)
+					(xy 23.769006 51.202829) (xy 23.77421 51.162999) (xy 23.788878 51.131489) (xy 23.813062 51.106292)
+					(xy 23.861778 51.077125) (xy 23.928466 51.052803) (xy 24.085911 51.017083) (xy 24.258011 50.97724)
+					(xy 24.340955 50.947829) (xy 24.415365 50.909005) (xy 24.479669 50.857575) (xy 24.530769 50.790486)
+					(xy 24.554194 50.738922) (xy 24.56934 50.675116) (xy 24.574825 50.596313) (xy 24.564833 50.490827)
+					(xy 24.536301 50.400695) (xy 24.489997 50.322873) (xy 24.424798 50.25532) (xy 24.347211 50.203195)
+					(xy 24.254063 50.164279) (xy 24.142318 50.139388) (xy 24.008242 50.130481) (xy 23.901304 50.135896)
+					(xy 23.797629 50.152001) (xy 23.696649 50.17875) (xy 23.599179 50.216104) (xy 23.513915 50.260941)
+					(xy 23.439553 50.313022) (xy 23.622094 50.575339) (xy 23.722916 50.508149) (xy 23.820481 50.462041)
+					(xy 23.921918 50.433679) (xy 24.02711 50.424214) (xy 24.091858 50.429291) (xy 24.141894 50.443077)
+					(xy 24.180342 50.464147) (xy 24.211325 50.493891) (xy 24.228989 50.526961) (xy 24.23493 50.564806)
+					(xy 24.229845 50.600295) (xy 24.215325 50.62875) (xy 24.190875 50.651909) (xy 24.142074 50.67832)
+					(xy 24.073272 50.701277) (xy 23.912804 50.735898) (xy 23.738598 50.777847) (xy 23.654389 50.809012)
+					(xy 23.578039 50.849196) (xy 23.512186 50.902215) (xy 23.460528 50.97202) (xy 23.436997 51.025508)
+					(xy 23.421899 51.090429) (xy 23.416472 51.169215) (xy 23.424668 51.260778) (xy 23.448518 51.343055)
+					(xy 23.487822 51.417885) (xy 23.541128 51.483658) (xy 23.608008 51.539489) (xy 23.69033 51.585771)
+					(xy 23.779676 51.618084) (xy 23.8821 51.638425)
+				)
+			)
+			(polygon
+				(pts
+					(xy 22.921514 51.6225) (xy 22.921514 50.455721) (xy 23.341184 50.455721) (xy 23.341184 50.153562)
+					(xy 22.140884 50.153562) (xy 22.140884 50.455721) (xy 22.560554 50.455721) (xy 22.560554 51.6225)
 				)
 			)
 		)
