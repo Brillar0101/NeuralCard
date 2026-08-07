@@ -1,0 +1,8 @@
+(version 1)
+
+# The TYPE-C-31-M-12 footprint has 0.1 mm internal pad gaps (fine-pitch USB-C).
+# JLCPCB capability is 0.1/0.1 (set in board constraints); relax the 0.2 mm
+# Default netclass only for clearances internal to J2.
+(rule usb_c_internal
+	(condition "A.Reference == 'J2' && B.Reference == 'J2'")
+	(constraint clearance (min 0.1mm)))
