@@ -1,0 +1,537 @@
+** Drc report for NeuralCard.kicad_pcb **
+** Created on 2026-08-06T11:03:10 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on B.Cu, priority 0
+    @(0.6000 mm, 0.6000 mm): Zone [GND] on F.Cu, priority 0
+
+** Found 165 Footprint errors **
+[footprint_symbol_mismatch]: NFC_Antenna_13x24 doesn't match footprint given by symbol (NeuralCard:NFC_Antenna_13x24)
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_mismatch]: Value (BT1) doesn't match symbol value (BAT-TH_CR2032-BS-6-1)
+    Local override; warning
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[footprint_symbol_mismatch]: BAT-TH_CR2032-BS-6-1 doesn't match footprint given by symbol (JLC:BAT-TH_CR2032-BS-6-1)
+    Local override; warning
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[footprint_symbol_mismatch]: Value (C1) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_mismatch]: Value (C2) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 21.5000 mm): Footprint C2
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 21.5000 mm): Footprint C2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.0000 mm, 21.5000 mm): Footprint C2
+[footprint_symbol_mismatch]: Value (C3) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_mismatch]: Value (C4) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_mismatch]: Value (C5) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_mismatch]: Value (C8) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_mismatch]: Value (C9) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_mismatch]: Value (C10) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(80.0000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(80.0000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(80.0000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_mismatch]: Value (C11) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_mismatch]: Value (C12) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_mismatch]: Value (D1) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_mismatch]: Value (D2) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_mismatch]: Value (D3) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_mismatch]: Value (D4) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_mismatch]: Value (D5) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_mismatch]: Value (D6) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_mismatch]: Value (D7) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_mismatch]: Value (D8) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_mismatch]: Value (D9) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_mismatch]: Value (D10) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_mismatch]: Value (D11) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_mismatch]: Value (D12) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_mismatch]: Value (D13) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_mismatch]: Value (D14) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_mismatch]: Value (D15) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_mismatch]: Value (D16) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_mismatch]: Value (D17) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_mismatch]: Value (D18) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_mismatch]: Value (D19) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_mismatch]: Value (D20) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_mismatch]: Value (D21) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_mismatch]: Value (D22) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_mismatch]: Value (D23) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_mismatch]: Value (D24) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (JLC:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_mismatch]: ProgPads_1x6 doesn't match footprint given by symbol (NeuralCard:ProgPads_1x6)
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_mismatch]: Value (R1) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_mismatch]: Value (R2) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_mismatch]: Value (R3) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_mismatch]: Value (R4) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_mismatch]: Value (R5) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_mismatch]: Value (R6) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_mismatch]: Value (R9) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_mismatch]: Value (R10) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_mismatch]: Value (R11) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_mismatch]: Value (R12) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_mismatch]: Value (R14) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(62.0000 mm, 51.9000 mm): Footprint R14
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(62.0000 mm, 51.9000 mm): Footprint R14
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(62.0000 mm, 51.9000 mm): Footprint R14
+[footprint_symbol_mismatch]: Value (SW1) doesn't match symbol value (SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_mismatch]: SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 doesn't match footprint given by symbol (JLC:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_mismatch]: Value (SW2) doesn't match symbol value (SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_mismatch]: SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 doesn't match footprint given by symbol (JLC:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_mismatch]: Value (SW3) doesn't match symbol value (SW_SPDT_Shouhan_MSK12C02)
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_mismatch]: SW_SPDT_Shouhan_MSK12C02 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02)
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_mismatch]: Value (U1) doesn't match symbol value (WIRELM-SMD_ESP32-S3-WROOM-1)
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_mismatch]: WIRELM-SMD_ESP32-S3-WROOM-1 doesn't match footprint given by symbol (JLC:WIRELM-SMD_ESP32-S3-WROOM-1)
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_mismatch]: Value (U2) doesn't match symbol value (LGA-14_L3.0-W2.5-P0.50-TL)
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: LGA-14_L3.0-W2.5-P0.50-TL doesn't match footprint given by symbol (JLC:LGA-14_L3.0-W2.5-P0.50-TL)
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: Value (U4) doesn't match symbol value (SO-8_L4.9-W3.9-P1.27-LS5.9-BL)
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_symbol_mismatch]: SO-8_L4.9-W3.9-P1.27-LS5.9-BL doesn't match footprint given by symbol (ST25DV:SO-8_L4.9-W3.9-P1.27-LS5.9-BL)
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(81.0000 mm, 50.5000 mm): Footprint FID3
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(3.5000 mm, 3.0000 mm): Footprint FID1
+[extra_footprint]: Extra footprint
+    Local override; warning
+    @(3.5000 mm, 50.5000 mm): Footprint FID2
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+    - Text height out of range
+    - Text thickness out of range
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

@@ -51,3 +51,12 @@ Comment,Designator,Footprint,LCSC Part #
 "62pF NP0 0603 (tune after VNA; 56-68pF window)",C12,C0603,select-at-order
 "100k 0603",R14,R0603,C25803
 "SPDT slide switch MSK12C02 (8x2.8mm, right-angle, 4 shield tabs + 2x0.85mm NPTH) - POWER on/off, in series with coin cell + terminal",SW3,SW_SPDT_Shouhan_MSK12C02,C431540
+"USB-C receptacle TYPE-C-31-M-12 16P (power + USB2 data)",J2,USB-C_SMD-TYPE-C-31-M-12_1,C165948
+"USBLC6-2SC6 ESD array on USB_DP/USB_DM",U5,SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL,C7519
+"ME6211C33M5G-N 3.3V 500mA LDO (VBUS -> +3V3)",U3,SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL,C82942
+"AO3401A P-FET (isolates coin cell while VBUS present)",Q1,SOT-23_L2.9-W1.3-P1.90-LS2.4-BR,C15127
+"5.1k 0603 (USB-C CC1 pulldown, Rd)",R7,R0603,C23186
+"5.1k 0603 (USB-C CC2 pulldown, Rd)",R8,R0603,C23186
+"100k 0603 (Q1 gate pulldown)",R13,R0603,C25803
+"1uF 0603 (LDO VIN)",C6,C0603,C15849
+"1uF 0603 (LDO VOUT)",C7,C0603,C15849
