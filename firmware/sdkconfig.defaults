@@ -1,0 +1,7 @@
+CONFIG_IDF_TARGET="esp32s3"
+# Console over the native USB-C port (no UART adapter needed)
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+# Coin-cell friendliness: 80 MHz is plenty for scanning + streaming.
+# Raise to 240 for inference benchmarks while on USB power.
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_80=y
+CONFIG_FREERTOS_HZ=1000
