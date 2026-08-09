@@ -74,3 +74,8 @@ Thumbs.db
 .vscode/
 .idea/
 *~
+
+# ------------------------------------------------------------------ firmware
+firmware/build/
+firmware/sdkconfig
+firmware/sdkconfig.old
