@@ -17,7 +17,7 @@ like `easyeda2kicad` doesn't trip macOS file-access protection).
 |---|---|
 | Outline | **85.60 mm × 53.98 mm** rounded rectangle |
 | Corner radius | **3.18 mm** |
-| PCB thickness | **0.8 mm** (card-like) |
+| PCB thickness | **1.6 mm** standard for prototypes; 0.8 mm is the card-like option |
 | Layers | 2-layer |
 | Assembly | **100% SMD/SMT. Only non-soldered item = the CR2032 coin.** Fab: **JLCPCB**. |
 

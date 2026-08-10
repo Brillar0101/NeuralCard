@@ -153,10 +153,14 @@ Everything a fab needs is in `fab/`: `NeuralCard_JLCPCB.zip` (gerbers +
 drill), `BOM_JLCPCB.csv` (LCSC part numbers), `NeuralCard-cpl.csv`
 (placements).
 
-**Design intent:** 2 layers, **0.8 mm** thickness (card-like — the default
-1.6 mm feels like a circuit board, not a card), matte black soldermask with
-ENIG. The hairline under the name is a mask opening over the ground pour, so
-it comes out gold on ENIG.
+**Build spec:** 2 layers, **1.6 mm** standard thickness, green soldermask,
+HASL — the cheap prototype configuration, currently about $2 for five boards.
+
+Two finishes worth knowing about if you make a batch to actually hand out:
+**0.8 mm** feels like a card rather than a circuit board, and **ENIG** turns
+the hairline under the name gold (it is a mask opening over the ground pour,
+so on HASL it comes out tin-coloured). Both cost more; neither changes the
+gerbers, they are order-time options.
 
 **Two build routes:**
 
