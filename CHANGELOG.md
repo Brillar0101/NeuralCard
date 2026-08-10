@@ -1,5 +1,23 @@
 # NeuralCard — Changelog
 
+## v2.3.1
+
+Audit against the "6 common PCB design mistakes" checklist, two findings fixed.
+
+- **Sharp corners eliminated.** Four acute trace vertices (three 45-degree, one
+  83-degree) chamfered; a fifth "0-degree corner" turned out to be a duplicate
+  track left by the power-repair routing and was deleted. Zero corners below
+  90 degrees remain.
+- **U1 decoupling fixed.** C2 relocated from 11.1 mm to 2.8 mm from the
+  ESP32's power pin, sitting directly beside pins 1 and 2. C2 was a leaf
+  component - a dead-end +3V3 stub plus a 16 mm ground bridge - so the move
+  cost nothing and let 6 track segments and 4 vias be deleted outright.
+  No schematic change: same 100 nF between the same two nets.
+- Verified after: DRC 0 violations, 0 unconnected, every net a single
+  connected cluster. Fab files, CPL and renders regenerated.
+
+Full findings and remaining backlog in `docs/PCB-AUDIT.md`.
+
 Hardware revisions and fab-affecting fixes. Newest first.
 
 ---

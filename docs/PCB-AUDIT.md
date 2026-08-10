@@ -1,11 +1,14 @@
-# v2.4 plan — audit against "6 Horribly Common PCB Design Mistakes"
+# PCB audit — "6 Horribly Common PCB Design Mistakes"
 
 Source: YouTube video `Z9nycymUd-I`, transcript pulled and checked point by
-point against the v2.3 board. Every finding below is measured from
+point against the board. Every finding below is measured from
 `hardware/NeuralCard.kicad_pcb`, not assumed.
 
-Verdict up front: v2.3 is clean on three of the six, has real work to do on
-two, and one does not apply.
+Verdict: clean on three of the six, real work on two, one does not apply.
+**Two findings were fixed immediately and shipped as v2.3.1** (sharp corners,
+U1 decoupling). The rest are backlog for whatever revision follows the first
+prototype — each needs either a new component or disturbs verified copper,
+so they are best decided once a physical board exists.
 
 ---
 
@@ -80,7 +83,7 @@ C2 is still the same 100 nF between +3V3 and GND, only its placement moved.
 Verified after: DRC 0 violations, 0 unconnected, every net still a single
 connected cluster (GND 42 pads, +3V3 23 pads).
 
-**Still open for v2.4** (each needs a new part or disturbs verified copper):
+**Still open** (each needs a new part or disturbs verified copper):
 
 - 10 uF bulk companion beside C2 at U1 — needs a new component in the schematic
 - 1 uF companion beside C5 so the IMU has a true bulk+HF pair — new component
@@ -118,7 +121,7 @@ advice, and it needs deciding rather than defending:
   the field and lowers Q** — most ST25DV reference layouts specify a clear
   keepout under and around the antenna.
 
-v2.4 should either widen the coil and add a proper keepout beneath it, or
+A future revision should either widen the coil and add a proper keepout beneath it, or
 accept reduced read range as a documented trade. Measure the v2.3 prototype's
 actual read range first — if a tap works reliably at 1-2 cm, this may be an
 optimisation rather than a defect. Note C12's value (currently 68 pF
@@ -151,23 +154,24 @@ stays at $2/board. Consequences, honestly stated:
 - With a quiet LDO, no switcher, no mains, and slow signals, this is
   acceptable. It would not be acceptable on a board with fast edges.
 
-**v2.4 option, not obligation:** going 4-layer would fix the reference-plane
+**Option, not obligation:** going 4-layer would fix the reference-plane
 gaps outright and cost roughly 3-4x per board. Worth it only if the
 prototype shows I2C or USB reliability problems. Cheaper intermediate step:
 add ground stitching vias flanking the USB pair and the I2C lines.
 
 ---
 
-## Priority list for v2.4
+## Backlog for the next revision
 
-1. Local decoupling at U1 pin 2 (100 nF + 10 uF) — highest value per effort
-2. Fix the five sub-90-degree corners, starting with the 0-degree hairpin
-3. IMU bulk companion cap; pull C11 in to U4; resolve C2/C3
+1. ~~Local decoupling at U1 pin 2~~ — **done in v2.3.1**, C2 relocated to
+   2.8 mm. A 10 uF bulk companion still wants adding (new component).
+2. ~~Fix the five sub-90-degree corners~~ — **done in v2.3.1**, zero remain.
+3. IMU bulk companion cap; pull C11 in to U4; resolve C3
 4. NFC coil: widen traces + keepout under the coil, retune C12 — pending
    read-range measurement on the v2.3 prototype
 5. Optional: ground stitching along USB and I2C, or a 4-layer stack if the
    prototype misbehaves
 6. Already carried over from earlier reviews: consider 1206/100 uF for C10
 
-Nothing here blocks building v2.3. Every item is an improvement to make once
-the physical board has told us which of them actually matter.
+Nothing here blocks building v2.3.1. Every remaining item is an improvement
+to make once the physical board has told us which of them actually matter.
