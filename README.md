@@ -8,18 +8,18 @@
 
 A business card that runs a neural network.
 
-A credit-card-sized PCB (85.6 x 54 mm) carrying an ESP32-S3, a 6-axis IMU,
-and 24 LEDs arranged as the network it actually runs: 6 input neurons,
-8 hidden, 10 output. You hold the card, draw a digit in the air, and the
-LEDs light with the real activations as inference runs. The brightest
-output neuron is the guess.
+It is a credit-card-sized PCB, 85.6 by 54 mm, carrying an ESP32-S3, a 6-axis
+IMU, and 24 LEDs laid out as the network it actually runs: 6 input neurons,
+8 hidden, 10 output. You hold the card, draw a digit in the air, and the LEDs
+light with the real activations as inference runs. Brightest output neuron
+wins.
 
-The front artwork *is* the network diagram — synapse lines drawn at three
-stroke weights, the way a trained model's weights differ. The card also
-carries an NFC tag with a PCB coil antenna, so tapping a phone opens
+The front artwork is the network diagram. The synapse lines are drawn at three
+stroke weights, the way a trained model's weights differ. There is also an NFC
+tag with a coil antenna etched into the copper, so tapping a phone opens
 [princetekki.com/card](https://www.princetekki.com/card) and offers a vCard.
-That works with a dead battery or no battery at all: the tag is powered by
-the phone's own RF field.
+That works with a dead battery, or no battery at all, because the phone's own
+field powers the tag.
 
 ![front](render/NeuralCard_front_v21.png)
 ![back](render/NeuralCard_back_v21.png)
@@ -28,37 +28,42 @@ the phone's own RF field.
 
 | Path | What's in it |
 |---|---|
-| `hardware/` | KiCad 10 project — schematic, board, custom symbol/footprint libraries, 3D models |
+| `hardware/` | KiCad 10 project: schematic, board, custom symbol and footprint libraries, 3D models |
 | `fab/` | Manufacturing outputs: gerber zip, drill files, BOM with LCSC part numbers, pick-and-place |
-| `firmware/` | ESP-IDF project — charlieplex driver, IMU driver, gesture recorder (builds today) |
+| `firmware/` | ESP-IDF project. Charlieplex driver, IMU driver, gesture recorder. Builds today. |
 | `docs/` | Design rationale, datasheet findings, DRC history, audits, FAQ |
-| `render/` | Board renders used above |
+| `render/` | The board renders used above |
 | `CHANGELOG.md` | Revision history, newest first |
 
-Start with [`docs/DESIGN.md`](docs/DESIGN.md) for why the board is the way it
-is, [`docs/FAQ.md`](docs/FAQ.md) for the questions people actually ask, and
-[`docs/drc/README.md`](docs/drc/README.md) for the verification trail.
+Start with [`docs/DESIGN.md`](docs/DESIGN.md) for why the board is shaped the
+way it is, [`docs/FAQ.md`](docs/FAQ.md) for the questions people actually ask,
+and [`docs/drc/README.md`](docs/drc/README.md) for the verification trail.
 
 ## Hardware
 
-- **ESP32-S3-WROOM-1-N8R2** — the brain, and the thing running inference
-- **LSM6DS3TR-C** accelerometer + gyro on I2C; its six axes map one-to-one
-  onto the six input neurons
-- **24 red LEDs** charlieplexed on 6 GPIO, software PWM for the glow
-- **ST25DV04K** dynamic NFC tag, 9-turn coil etched in the copper, tuned
-  with a single external cap (C12) against the chip's internal capacitance
-- **USB-C** (v2.3) — native USB on the S3, so a plain cable flashes the board
-  and gives a serial console with no adapter. ESD-protected by a USBLC6-2SC6.
-- **Dual power** — a CR2032 coin cell through a real slide switch (SW3), or
-  USB 5 V through an ME6211 LDO. A P-FET (Q1) isolates the cell whenever USB
-  is present, so the board can never try to charge a non-rechargeable cell.
+An ESP32-S3-WROOM-1-N8R2 does the thinking and runs the inference. An
+LSM6DS3TR-C accelerometer and gyro sits on I2C, and its six axes map one to one
+onto the six input neurons. The 24 red LEDs are charlieplexed across 6 GPIO
+with software PWM for the glow.
 
-Two-layer board, ground poured on both sides and stitched; every net is a
-single connected cluster.
+For the business-card half there is an ST25DV04K dynamic NFC tag with a 9-turn
+coil in the copper, tuned by a single external cap (C12) against the chip's
+internal capacitance.
+
+USB-C arrived in v2.3. The S3 has native USB, so a plain cable flashes the
+board and gives a serial console without an adapter. A USBLC6-2SC6 protects the
+data pair.
+
+Power comes from either a CR2032 through a real slide switch (SW3) or USB 5 V
+through an ME6211 LDO. A P-FET (Q1) disconnects the cell whenever USB is
+present, so the board can never try to charge a cell that is not rechargeable.
+
+Two layers, ground poured on both sides and stitched. Every net is one
+connected cluster.
 
 ## How it's wired
 
-**Power.** Two sources that can never fight each other.
+Power first. Two sources that can never fight each other.
 
 ```mermaid
 flowchart LR
@@ -86,7 +91,7 @@ flowchart LR
     class NC off
 ```
 
-**Data.** USB-C is both power and a programming port; NFC is independent of
+Then data. USB-C carries both power and programming. NFC is independent of
 both and needs no power of its own.
 
 ```mermaid
@@ -108,8 +113,8 @@ flowchart LR
     class LEDS out
 ```
 
-**Inference.** The six IMU axes feed the six input neurons; LEDs at each node
-light with the real activations as the network runs.
+And inference. The six IMU axes feed the six input neurons, and the LEDs at
+each node light with the real activations as the network runs.
 
 ```mermaid
 flowchart LR
@@ -128,16 +133,17 @@ flowchart LR
     class GUESS result
 ```
 
-All 24 LEDs run from 6 GPIO by charlieplexing — which is why there are 6
-current-limiting resistors rather than 24, and why the display is viable on
-a coin cell: only one LED is ever actually lit at a time.
+All 24 LEDs run from 6 GPIO by charlieplexing. That is why there are 6
+current-limiting resistors rather than 24, and why the display works on a coin
+cell at all: only one LED is ever actually lit.
 
 ## Firmware
 
-`firmware/` is an ESP-IDF project that builds today. It contains the
-charlieplex driver (LED-to-pin mapping extracted from the board netlist),
-the LSM6DS3 driver, and a motion-triggered gesture recorder that prints
-labelled CSV over the USB-C console — the tool for building a training set.
+`firmware/` is an ESP-IDF project that builds today. It has the charlieplex
+driver, with the LED-to-pin mapping extracted from the board netlist rather
+than guessed, the LSM6DS3 driver, and a motion-triggered gesture recorder that
+prints labelled CSV over the USB-C console. That recorder is how you build a
+training set.
 
 ```
 cd firmware && idf.py set-target esp32s3 && idf.py build && idf.py flash monitor
@@ -153,38 +159,42 @@ Everything a fab needs is in `fab/`: `NeuralCard_JLCPCB.zip` (gerbers +
 drill), `BOM_JLCPCB.csv` (LCSC part numbers), `NeuralCard-cpl.csv`
 (placements).
 
-**Build spec:** 2 layers, **1.6 mm** standard thickness, green soldermask,
-HASL — the cheap prototype configuration, currently about $2 for five boards.
+Build spec: 2 layers, 1.6 mm thickness, green soldermask, HASL. That is the
+cheap prototype configuration, currently about $2 for five boards.
 
-Two finishes worth knowing about if you make a batch to actually hand out:
-**0.8 mm** feels like a card rather than a circuit board, and **ENIG** turns
-the hairline under the name gold (it is a mask opening over the ground pour,
-so on HASL it comes out tin-coloured). Both cost more; neither changes the
-gerbers, they are order-time options.
+Two finish options are worth knowing about if you ever make a batch to hand
+out. At 0.8 mm the board feels like a card instead of a circuit board. With
+ENIG, the hairline under the name comes out gold, since it is a mask opening
+over the ground pour and plates with whatever finish you pick. Both cost more.
+Neither changes the gerbers, so they are order-time choices.
 
 **Two build routes:**
 
-- *Hand assembly* — order bare boards plus a solder-paste stencil, buy parts
-  from LCSC. Cheapest, and the stencil makes the LGA-14 IMU tractable.
-- *Factory assembly* — JLCPCB Standard PCBA, both sides. Adds roughly $100
-  of fixed setup/feeder overhead, so it only makes sense at 30+ boards.
+Hand assembly means ordering bare boards plus a solder-paste stencil and
+buying parts from LCSC. It is the cheapest route, and the stencil is what makes
+the LGA-14 IMU tractable with hot air.
 
-Two BOM notes: **C12** (NFC tuning) ships as 68 pF and should be re-tuned
-against the built coil — read range is the practical test. The NFC chip is
-specified as **ST25DV04K-IER6S3**, a stock-availability substitute for the
-original KC variant; same package, pinout and function.
+Factory assembly means JLCPCB Standard PCBA on both sides. It adds roughly $100
+of fixed setup and feeder cost, so it only pays off around 30 boards or more.
+
+Two BOM notes. C12, the NFC tuning cap, ships as 68 pF and should be retuned
+against the coil once it exists. Read range is the practical test. The NFC chip
+is specified as ST25DV04K-IER6S3, a substitute for the original KC variant that
+is nearly out of stock everywhere. Same package, same pinout, same function.
 
 ## Status
 
-**Hardware: done and verified at v2.3.1** — DRC 0 violations, 0 unconnected,
-ERC 0, every net a single connected cluster, all footprints datasheet-checked.
-Never fabricated yet: these files would produce the first physical boards.
+The hardware is done and verified at v2.3.1: DRC reports 0 violations and 0
+unconnected, ERC is clean, every net is a single connected cluster, and the
+footprints have been checked against manufacturer datasheets. It has never been
+fabricated. These files would produce the first physical boards.
 
-**Firmware: scaffold builds** — drivers and gesture capture work; the trained
-model is the remaining work, and it needs boards first.
+The firmware scaffold builds. Drivers and gesture capture work. The trained
+model is the remaining piece, and it needs assembled boards before it can
+exist.
 
-So today the card is a very elaborate NFC business card — and that part
-already works the moment the tag is programmed.
+So today the card is a very elaborate NFC business card, and that part works
+the moment the tag is programmed.
 
 ## License
 

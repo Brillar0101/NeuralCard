@@ -1,7 +1,7 @@
-# DRC baselines — branch fix/footprints-from-datasheets, board unmodified
+# DRC baselines: branch fix/footprints-from-datasheets, board unmodified
 
 Captured before any footprint change reached the board. KiCad embeds footprints in
-the .kicad_pcb, so library edits do not alter these until 'Update Footprints from
+the.kicad_pcb, so library edits do not alter these until 'Update Footprints from
 Library' is run. Diff against these afterwards.
 
 | Run | Violations | Unconnected | Parity |
@@ -23,7 +23,7 @@ kicad-cli 10.0.3. Board at commit 1001fda.
 | after-footprint-update.rpt | 9 | 5 | broken footprints stopped hiding real defects |
 | after-refill-and-cell-keepout.rpt | 5 | 7 | antenna keep-out satisfied; more GND islands exposed |
 
-The antenna `items_not_allowed` violations went to zero — finding B1 is resolved in copper.
+The antenna `items_not_allowed` violations went to zero, finding B1 is resolved in copper.
 Three zone-clearance violations also cleared.
 
 Unconnected rose 5 -> 7 and one via became dangling, at (65.14, 36.75), which is 9.3 mm from
@@ -38,7 +38,7 @@ suppressed severity classes hiding 414 violations.
 
 ## After real fab constraints and a selective severity policy
 
-`after-real-constraints.rpt` — **40 violations, 7 unconnected.** This is the first honest
+`after-real-constraints.rpt`, **40 violations, 7 unconnected.** This is the first honest
 number this board has produced.
 
 Constraints set from JLCPCB's published 2-layer 1oz process (jlcpcb.com/capabilities):
@@ -74,7 +74,7 @@ pending a decision, since raising it would flag most of the board's labelling.
 
 ## After GND stitching
 
-`after-gnd-stitching.rpt` — **40 violations, 3 unconnected.** Four stitching vias added,
+`after-gnd-stitching.rpt`, **40 violations, 3 unconnected.** Four stitching vias added,
 0.6/0.3 mm to match the Default net class. No new violations: the count is unchanged and
 only `unconnected_items` moved, 7 -> 3.
 
@@ -155,7 +155,7 @@ the y12-22 band on both layers, or (b) first rerouting 2-3 CP tracks to open a
 lane - option (b) is likely cheaper. Both need a dedicated session. The board is
 committed clean at f393dd8 with the PHY section done and these two nets open.
 
-## After DP/DM completion — USB fully routed
+## After DP/DM completion: USB fully routed
 
 `after-usb-dpdm-complete.rpt` - **41 violations, 7 unconnected. Exact parity with the
 pre-USB baseline: the entire USB-C addition costs zero new DRC items.**

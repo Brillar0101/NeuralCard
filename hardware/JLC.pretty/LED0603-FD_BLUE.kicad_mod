@@ -36,7 +36,7 @@
 	(fp_line (start -0.80 0.40) (end -0.80 -0.40) (layer F.CrtYd) (width 0.05))
 	(fp_line (start -0.80 -0.40) (end 0.80 -0.40) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 0.80 -0.40) (end 0.80 0.40) (layer F.CrtYd) (width 0.05))
-	(model "/Users/barakaeli/kicad-projects/NeuralCard/JLC.3dshapes/LED0603-FD_BLUE.wrl"
+	(model "${KIPRJMOD}/JLC.3dshapes/LED0603-FD_BLUE.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))
