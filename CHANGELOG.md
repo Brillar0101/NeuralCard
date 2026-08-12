@@ -1,5 +1,7 @@
 # NeuralCard: Changelog
 
+Hardware revisions and fab-affecting fixes. Newest first.
+
 ## v2.3.1
 
 Audit against the "6 common PCB design mistakes" checklist, two findings fixed.
@@ -17,8 +19,6 @@ Audit against the "6 common PCB design mistakes" checklist, two findings fixed.
   connected cluster. Fab files, CPL and renders regenerated.
 
 Full findings and remaining backlog in `docs/PCB-AUDIT.md`.
-
-Hardware revisions and fab-affecting fixes. Newest first.
 
 ---
 
