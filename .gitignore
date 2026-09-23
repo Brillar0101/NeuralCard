@@ -37,8 +37,8 @@ fp-info-cache
 NeuralCard.dsn
 NeuralCard.ses
 
-# Note: BOM_JLCPCB.csv and fab/*.csv ARE tracked on purpose — they are the
-# release deliverables uploaded to JLCPCB, not incidental KiCad exports.
+# Note: the fab/*.csv BOMs ARE tracked on purpose. They are release
+# deliverables uploaded to the fab, not incidental KiCad exports.
 
 # --------------------------------------------------------------- heavy / derivable
 *.blend
@@ -89,3 +89,27 @@ firmware/sdkconfig.old
 # Generator scripts live in the private tools repo, never here.
 /hardware/*.py
 /tools/
+
+# ------------------------------------------------- tool binaries
+hardware/tools/freerouting.jar
+
+# ------------------------------------------------- firmware model export
+# The exporter is kept (it documents where the weights come from), but not the
+# ONNX file it downloads. Re-fetch it with tools/export_mnist_weights.py.
+firmware/tools/*.onnx
+
+# third party scene packs, hundreds of MB
+render/cinema4d/
+
+# renders stay local; the README's two hero stills are the exception
+render/*
+!render/NeuralCard_front_v300.png
+!render/NeuralCard_back_v300.png
+render/exports/
+render/clips/
+render/project6_8k/
+render/blender/
+hardware/*.pre_silk_nudge
+hardware/NeuralCard_2L*
+hardware/*.dsn
+hardware/*.ses

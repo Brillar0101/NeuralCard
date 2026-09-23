@@ -2,6 +2,121 @@
 
 Hardware revisions and fab-affecting fixes. Newest first.
 
+## v3.0.0-dev
+
+Major electrical revision, in progress. Copper and power architecture
+changed; not yet sent to fab.
+
+- **Rerouted from scratch, still 2 layers, 56 vias (was 60).** All 171
+  nets autorouted with a raised via cost and no per-layer direction
+  preference, all segments on the 0/45/90 degree grid. A 4 layer variant
+  with GND and +3V3 inner planes was built and verified along the way,
+  then dropped: the plane stitching alone needed 114 vias, and the low
+  via count won. Two spots are hand finished: the ground path from the
+  holder's center pad (the autorouter cannot escape that pad geometry)
+  and a GND run rerouted around FID4's clear zone. About seven vias sit
+  0.17 to 0.43 mm from IC pads in the escape zones around U1, U3, and
+  U5; all clear the 0.16 mm rule and cannot move without new violations.
+- **LIR2450 rechargeable coin cell replaces the CR2032.** A primary
+  CR2032 cannot source the ESP32-S3's 30 to 350 mA draw; a LIR2450
+  (about 120 mAh, 3.0 to 4.2 V) can. BT1 is now a Keystone 3009 holder
+  (24.5 mm, through hole, DigiKey 36-3009-ND). The BOM carries a safety
+  note: fit rechargeable LIR2450 only, since a primary CR2450 would sit
+  on a live charger output.
+- **On-board charging.** New U6 (MCP73831T-2ACI/OT) charges the cell
+  from USB-C at 50 mA (R15 20k on PROG, about 0.4C), with C13/C14 4.7 uF
+  per datasheet. Charging works with SW3 off because U6 feeds the VBAT
+  net upstream of the switch. STAT is unused.
+- **New VSYS supply node.** The cell no longer drives the 3V3 rail
+  directly (fine at 3.0 V, not at 4.2 V). VBUS reaches VSYS through D25
+  (B5819W Schottky) and the cell through Q1; the ME6211 now regulates
+  VSYS down to 3.3 V. Q1 was also reoriented to the load-share direction
+  (drain on the battery, source on VSYS) so its body diode blocks in
+  both idle directions; the old orientation would have dumped VSYS into
+  an empty cell around the charger's regulation.
+- **Fourth fiducial.** FID4 added at (81, 3), completing an aligned
+  rectangle with FID1 to FID3. These four positions are now fixed across
+  revisions. C10 moved to (77.4, 4.5), out of the fiducial clear zone,
+  with the spot computed from measured courtyards.
+- **Placement fixes.** R14 (NFC_GPO series resistor) moved from the far
+  bottom edge to (44, 31.5) beside the ESP32; its old position made the
+  route to U1 pin 23 unroutable. C14 sits at (52, 16.5), clear of the
+  larger holder. The stock Keystone 3009 courtyard is unclosed and fails
+  DRC, so the footprint on this board carries a replacement circular
+  courtyard matching the holder body.
+- Schematic regenerated with the charger in its own section box; library
+  references now use the vendor-neutral `Parts` nickname throughout, so
+  the old library warnings are gone. New parts verified against the LCSC
+  catalogue: U6 C424093, D25 C8598 (basic), C13/C14 C1705, R15 C4184
+  (basic).
+- Verified after: ERC 0 violations, 0 warnings. DRC 0 unconnected, and
+  every remaining finding is inside the documented J2/U2 mask-web
+  exception, identical to the v2.3.1-s baseline.
+- **Version strings bumped to v3.0.0-dev** in the three places that have
+  to agree: the silkscreen legend, the PCB title block, and the schematic
+  revision. The schematic had been stuck at V0.1 since the first draft and
+  is now on the same number as the board. The `-dev` suffix stays until
+  the revision is built and tested; drop it then.
+- **Fab package rebuilt from the v3 board.** Gerbers, drill and map, CPL
+  (66 placements) and the gerber zip all regenerated. The three BOMs were
+  the stale part that mattered most: none of them carried U6, D25, R15,
+  C13 or C14, and BT1 still listed the old CR2032 holder. Those rows are
+  now correct in `BOM_JLCPCB.csv`, `BOM_PCBWay.csv` and `LCSC_order.csv`,
+  with the existing per-part sourcing notes left intact. BT1 carries no
+  LCSC code on purpose, since the Keystone 3009 is not stocked there, and
+  C70377 was dropped from the LCSC order for the same reason.
+- Renders regenerated as `NeuralCard_front_v300.png` and
+  `NeuralCard_back_v300.png`. Fab defaults are unchanged: 2 layers,
+  1.6 mm, green, HASL.
+- Cross-checked the fab package against the board: every placed part
+  appears in both BOMs and the CPL. J1 and the four fiducials are absent
+  by design, since `ProgPads_1x6` is bare copper and nothing is soldered
+  to it.
+
+---
+
+## v2.3.1-s
+
+Sponsorship build, prepared for assembly by PCBWay. No copper changed.
+
+- **Part libraries renamed to be vendor neutral.** `JLC.pretty`, `JLC.3dshapes`,
+  and `JLC.kicad_sym` are now `Parts.pretty`, `Parts.3dshapes`, and
+  `Parts.kicad_sym`, with the library nickname changed from `JLC` to `Parts`
+  across the schematic, the board, both library tables, the netlist, and the
+  model paths inside every footprint. The names carry no fab branding in either
+  direction, so nothing says PCBWay either. `fab/NeuralCard_JLCPCB.zip` became
+  `fab/NeuralCard_gerbers.zip`, since that is the file uploaded to whichever fab
+  builds it. All 3D models still resolve and the board renders.
+  `fab/BOM_JLCPCB.csv` keeps its name: it genuinely is the JLCPCB-format
+  upstream BOM, and renaming it would make it misleading.
+
+- **Sourcing fields added to the design.** Every one of the 61 placed parts in
+  both the schematic and the board carries three new hidden fields: `Alt MPN`,
+  `Alt Mfr`, and `Sourcing`. The last one names the buying channel and the
+  substitution rule, so the decision travels with the design rather than living
+  only in a spreadsheet. Fields are hidden text on the fab layer and touch no
+  copper.
+- **BOM rewritten for PCBWay.** `fab/BOM_PCBWay.csv` replaces LCSC part codes
+  with manufacturer part numbers, since PCBWay buys from Digi-Key, Mouser,
+  Farnell, Arrow, Avnet and local Shenzhen distributors, not the JLCPCB parts
+  library. `fab/BOM_JLCPCB.csv` is unchanged for comparison.
+- **U4 realigned with the schematic.** The old fab BOM asked for
+  ST25DV04K-IER6S3 while the schematic specified ST25DV04KC-IE6S3. The KC is the
+  active part and the K is marked NRND by ST, so the new BOM follows the
+  schematic and lists the K only as a fallback. The substitution had been made
+  at order time for LCSC stock reasons that do not apply here.
+- **Alternates found for two sole-source parts.** U3 (ME6211C33M5G-N, which no
+  Western distributor carries) gets AP2112K-3.3TRG1, pin-identical in SOT-23-5.
+  J2 gets XKB U262-161N-4BVC11, verified drop-in by measuring the land patterns:
+  NPTH pegs and shield legs agree to within 0.01 mm and the shield row spacing is
+  identical at 4.18 mm.
+- Verified after: DRC 0 violations, 0 unconnected; ERC 0 violations. Netlist
+  unchanged.
+
+Reasoning and per-part status in `docs/SOURCING.md`.
+
+---
+
 ## v2.3.1
 
 Audit against the "6 common PCB design mistakes" checklist, two findings fixed.

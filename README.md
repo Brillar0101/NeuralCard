@@ -3,10 +3,20 @@
 [![KiCad 10](https://img.shields.io/badge/KiCad-10.0-0066CC)](https://www.kicad.org/)
 [![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](docs/DESIGN.md)
 [![DRC](https://img.shields.io/badge/DRC-0%20violations%20%C2%B7%200%20unconnected-3E8635)](docs/drc/README.md)
-[![Parts](https://img.shields.io/badge/BOM-61%20placements%20%C2%B7%2021%20unique-3E8635)](fab/BOM_JLCPCB.csv)
+[![Parts](https://img.shields.io/badge/BOM-61%20placements%20%C2%B7%2021%20unique-3E8635)](fab/BOM_PCBWay.csv)
 [![Rev](https://img.shields.io/badge/rev-v2.3.1-5752D1)](CHANGELOG.md)
 
 A business card that runs a neural network.
+
+> This is the sponsorship build, a fork of
+> [NeuralCard](https://github.com/Brillar0101/NeuralCard) prepared for assembly by
+> PCBWay. The BOM has been rewritten from JLCPCB and LCSC part codes into
+> manufacturer part numbers PCBWay can quote, with approved alternates where a swap
+> is safe and do-not-substitute rules where it is not. Every part in the schematic
+> and the board now carries `Alt MPN`, `Alt Mfr`, and `Sourcing` fields alongside
+> the existing MPN. See [`docs/SOURCING.md`](docs/SOURCING.md) for the reasoning and
+> [`fab/BOM_PCBWay.csv`](fab/BOM_PCBWay.csv) for the order-ready BOM. No copper
+> changed, and DRC and ERC still pass clean.
 
 It is a credit-card-sized PCB, 85.6 by 54 mm, carrying an ESP32-S3, a 6-axis
 IMU, and 24 LEDs laid out as the network it actually runs: 6 input neurons,
@@ -21,17 +31,17 @@ tag with a coil antenna etched into the copper, so tapping a phone opens
 That works with a dead battery, or no battery at all, because the phone's own
 field powers the tag.
 
-![front](render/NeuralCard_front_v21.png)
-![back](render/NeuralCard_back_v21.png)
+![front](render/NeuralCard_front_v300.png)
+![back](render/NeuralCard_back_v300.png)
 
 ## Repository layout
 
 | Path | What's in it |
 |---|---|
 | `hardware/` | KiCad 10 project: schematic, board, custom symbol and footprint libraries, 3D models |
-| `fab/` | Manufacturing outputs: gerber zip, drill files, BOM with LCSC part numbers, pick-and-place |
+| `fab/` | Manufacturing outputs: gerber zip, drill files, pick-and-place, and two BOMs: `BOM_PCBWay.csv` (MPN-based, for this build) and `BOM_JLCPCB.csv` (upstream, LCSC codes) |
 | `firmware/` | ESP-IDF project. Charlieplex driver, IMU driver, gesture recorder. Builds today. |
-| `docs/` | Design rationale, datasheet findings, DRC history, audits, FAQ |
+| `docs/` | Design rationale, component sourcing, datasheet findings, DRC history, audits, FAQ |
 | `render/` | The board renders used above |
 | `CHANGELOG.md` | Revision history, newest first |
 
@@ -155,9 +165,11 @@ See [`firmware/README.md`](firmware/README.md).
 
 ## Ordering
 
-Everything a fab needs is in `fab/`: `NeuralCard_JLCPCB.zip` (gerbers +
-drill), `BOM_JLCPCB.csv` (LCSC part numbers), `NeuralCard-cpl.csv`
-(placements).
+Everything a fab needs is in `fab/`: `NeuralCard_gerbers.zip` (gerbers +
+drill), `NeuralCard-cpl.csv` (placements), and a BOM. Use
+`BOM_PCBWay.csv` for this build, which carries manufacturer part numbers,
+approved alternates, and per-line substitution rules. `BOM_JLCPCB.csv` is the
+upstream file and is keyed to LCSC codes instead.
 
 Build spec: 2 layers, 1.6 mm thickness, green soldermask, HASL. That is the
 cheap prototype configuration, currently about $2 for five boards.
@@ -174,13 +186,16 @@ Hand assembly means ordering bare boards plus a solder-paste stencil and
 buying parts from LCSC. It is the cheapest route, and the stencil is what makes
 the LGA-14 IMU tractable with hot air.
 
-Factory assembly means JLCPCB Standard PCBA on both sides. It adds roughly $100
-of fixed setup and feeder cost, so it only pays off around 30 boards or more.
+Factory assembly means turnkey PCBA on both sides. It adds roughly $100 of fixed
+setup and feeder cost at a typical prototype house, so it only pays off around 30
+boards or more. This build is being assembled by PCBWay under sponsorship, so see
+[`docs/SOURCING.md`](docs/SOURCING.md) for how the parts are actually bought.
 
 Two BOM notes. C12, the NFC tuning cap, ships as 68 pF and should be retuned
 against the coil once it exists. Read range is the practical test. The NFC chip
-is specified as ST25DV04K-IER6S3, a substitute for the original KC variant that
-is nearly out of stock everywhere. Same package, same pinout, same function.
+is ST25DV04KC-IE6S3, which is the active part. The older ST25DV04K-IER6S3 is
+marked not recommended for new designs but is still widely stocked, and it is
+listed as the approved fallback: same package, same pinout, same function.
 
 ## Status
 
