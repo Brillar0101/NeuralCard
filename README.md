@@ -2,9 +2,9 @@
 
 [![KiCad 10](https://img.shields.io/badge/KiCad-10.0-0066CC)](https://www.kicad.org/)
 [![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](docs/DESIGN.md)
-[![DRC](https://img.shields.io/badge/DRC-0%20violations%20%C2%B7%200%20unconnected-3E8635)](docs/drc/README.md)
+[![DRC](https://img.shields.io/badge/DRC-413%20violations%20%C2%B7%20not%20fab--ready-C9190B)](docs/drc/v3.0.1-dev-verification.md)
 [![Parts](https://img.shields.io/badge/BOM-61%20placements%20%C2%B7%2021%20unique-3E8635)](fab/BOM_PCBWay.csv)
-[![Rev](https://img.shields.io/badge/rev-v2.3.1-5752D1)](CHANGELOG.md)
+[![Rev](https://img.shields.io/badge/rev-v3.0.1--dev-5752D1)](CHANGELOG.md)
 
 A business card that runs a neural network.
 
@@ -12,11 +12,11 @@ A business card that runs a neural network.
 > [NeuralCard](https://github.com/Brillar0101/NeuralCard) prepared for assembly by
 > PCBWay. The BOM has been rewritten from JLCPCB and LCSC part codes into
 > manufacturer part numbers PCBWay can quote, with approved alternates where a swap
-> is safe and do-not-substitute rules where it is not. Every part in the schematic
-> and the board now carries `Alt MPN`, `Alt Mfr`, and `Sourcing` fields alongside
-> the existing MPN. See [`docs/SOURCING.md`](docs/SOURCING.md) for the reasoning and
-> [`fab/BOM_PCBWay.csv`](fab/BOM_PCBWay.csv) for the order-ready BOM. No copper
-> changed, and DRC and ERC still pass clean.
+> is safe and do-not-substitute rules where it is not. Revision v3.0.1-dev corrects
+> the BOOT and RESET switch pad mapping after the prototype showed IO0/EN shorted to
+> ground. This is still a development board: its latest DRC reports 413 violations
+> and 191 schematic-parity issues. See the [verification report](docs/drc/v3.0.1-dev-verification.md)
+> before using or fabricating this revision.
 
 It is a credit-card-sized PCB, 85.6 by 54 mm, carrying an ESP32-S3, a 6-axis
 IMU, and 24 LEDs laid out as the network it actually runs: 6 input neurons,
@@ -39,9 +39,10 @@ field powers the tag.
 | Path | What's in it |
 |---|---|
 | `hardware/` | KiCad 10 project: schematic, board, custom symbol and footprint libraries, 3D models |
-| `fab/` | Manufacturing outputs: gerber zip, drill files, pick-and-place, and two BOMs: `BOM_PCBWay.csv` (MPN-based, for this build) and `BOM_JLCPCB.csv` (upstream, LCSC codes) |
+| `fab/` | Manufacturing outputs: Gerber zip, drill files, pick-and-place, and three BOM/order files for PCBWay, JLCPCB, and LCSC |
 | `firmware/` | ESP-IDF project. Charlieplex driver, IMU driver, gesture recorder. Builds today. |
 | `docs/` | Design rationale, component sourcing, datasheet findings, DRC history, audits, FAQ |
+| `hardware/datasheets/` | Component datasheets indexed to the v3.0.1-dev BOM |
 | `render/` | The board renders used above |
 | `CHANGELOG.md` | Revision history, newest first |
 
@@ -64,26 +65,29 @@ USB-C arrived in v2.3. The S3 has native USB, so a plain cable flashes the
 board and gives a serial console without an adapter. A USBLC6-2SC6 protects the
 data pair.
 
-Power comes from either a CR2032 through a real slide switch (SW3) or USB 5 V
-through an ME6211 LDO. A P-FET (Q1) disconnects the cell whenever USB is
-present, so the board can never try to charge a cell that is not rechargeable.
+Power comes from a rechargeable LIR2450 coin cell or USB-C. U6 charges the cell
+from USB at 50 mA; D25 and Q1 feed the VSYS node, and U3 regulates VSYS to 3.3 V.
+Use a rechargeable LIR2450 only. Do not install a primary CR2450 on the charger.
 
-Two layers, ground poured on both sides and stitched. Every net is one
-connected cluster.
+Two copper layers with ground pours and stitching. The latest development-board
+checks still report electrical and schematic-parity issues; see the verification
+record before treating any net or layout as fabrication-ready.
 
 ## How it's wired
 
-Power first. Two sources that can never fight each other.
+Power and charging paths.
 
 ```mermaid
 flowchart LR
-    USB["USB-C · J2<br/>5 V VBUS"] --> LDO["U3 · ME6211<br/>3.3 V LDO"]
-    BT1["BT1<br/>CR2032 · 3.0 V"] -->|VBAT| SW3{{"SW3 · MSK12C02<br/>SPDT slide"}}
-    SW3 -->|"ON"| Q1{{"Q1 · AO3401A<br/>P-FET isolation"}}
-    SW3 -.->|"OFF"| NC(["open throw"])
+    USB["USB-C · J2<br/>5 V VBUS"] --> D25["D25 · B5819W<br/>Schottky"]
+    D25 --> VSYS[["VSYS"]]
+    USB --> U6["U6 · MCP73831<br/>50 mA charger"]
+    U6 -->|"charge"| BT1["BT1<br/>LIR2450 · rechargeable"]
+    BT1 --> SW3{{"SW3 · MSK12C02<br/>battery switch"}}
+    SW3 --> Q1{{"Q1 · AO3401A<br/>P-FET isolation"}}
+    Q1 --> VSYS
+    VSYS --> LDO["U3 · ME6211<br/>3.3 V LDO"]
     LDO --> RAIL[["+3V3 rail"]]
-    LDO -.->|"VBUS present<br/>gates the cell off"| Q1
-    Q1 --> RAIL
     RAIL --> U1["ESP32-S3"]
     RAIL --> U2["LSM6DS3TR-C"]
     RAIL --> U4["ST25DV04K"]
@@ -199,10 +203,13 @@ listed as the approved fallback: same package, same pinout, same function.
 
 ## Status
 
-The hardware is done and verified at v2.3.1: DRC reports 0 violations and 0
-unconnected, ERC is clean, every net is a single connected cluster, and the
-footprints have been checked against manufacturer datasheets. It has never been
-fabricated. These files would produce the first physical boards.
+The released v2.3.1 tag is unchanged. The working v3.0.1-dev revision corrects
+the tactile-switch pad assignment that grounded BOOT and RESET on the prototype.
+Its DRC reports 413 violations, 191 schematic-parity issues, and 0 unconnected
+items; ERC reports 42 library-configuration warnings. It is not ready for
+fabrication. See [`docs/drc/v3.0.1-dev-verification.md`](docs/drc/v3.0.1-dev-verification.md)
+for the full reports and [`hardware/datasheets/README.md`](hardware/datasheets/README.md)
+for the component document index.
 
 The firmware scaffold builds. Drivers and gesture capture work. The trained
 model is the remaining piece, and it needs assembled boards before it can

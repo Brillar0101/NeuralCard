@@ -51,6 +51,8 @@ NeuralCard.ses
 !**/*.3dshapes/*.step
 !**/*.3dshapes/*.wrl
 datasheets/
+!hardware/datasheets/
+!hardware/datasheets/**
 
 # ------------------------------------------------------------- superseded fab runs
 # Keep only the current fab/ bundle; dated snapshots live in git history.

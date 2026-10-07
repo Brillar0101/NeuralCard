@@ -1,0 +1,2242 @@
+** Drc report for NeuralCard.kicad_pcb **
+** Created on 2026-10-07T17:31:50 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 413 DRC violations **
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.4526 mm, 12.5096 mm): Track [SCL] on B.Cu, length 0.5703 mm
+    @(22.8143 mm, 13.9107 mm): Track [+3V3] on B.Cu, length 2.1943 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(66.2382 mm, 3.6970 mm): Track [GND] on F.Cu, length 2.8880 mm
+    @(66.4708 mm, 3.1353 mm): Via [USB_DP] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1647 mm)
+    Rule: netclass 'Default'; error
+    @(69.6627 mm, 8.5301 mm): Track [CP4] on F.Cu, length 0.9141 mm
+    @(70.6708 mm, 9.0224 mm): Track [CP3] on F.Cu, length 3.0534 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(67.7340 mm, 4.5000 mm): Pad 2 [SCL] of R12 on B.Cu
+    @(68.2122 mm, 3.7625 mm): Track [+3V3] on B.Cu, length 1.3907 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1633 mm)
+    Rule: netclass 'Default'; error
+    @(10.8000 mm, 7.2250 mm): Pad 2 [GND] of C11 on B.Cu
+    @(11.5750 mm, 7.6155 mm): Track [CP1] on B.Cu, length 0.5438 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1876 mm)
+    Rule: netclass 'Default'; error
+    @(25.8298 mm, 21.8934 mm): Track [CHX2] on B.Cu, length 7.3485 mm
+    @(25.2422 mm, 26.7115 mm): Via [CHX3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1958 mm)
+    Rule: netclass 'Default'; error
+    @(10.8000 mm, 8.7750 mm): Pad 1 [+3V3] of C11 on B.Cu
+    @(10.0292 mm, 8.3169 mm): Track [CP1] on B.Cu, length 1.2023 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1815 mm)
+    Rule: netclass 'Default'; error
+    @(74.7000 mm, 28.0000 mm): PTH pad 1 [VBAT] of BT1
+    @(76.4815 mm, 22.8604 mm): Track [CP6] on F.Cu, length 5.9040 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1624 mm)
+    Rule: netclass 'Default'; error
+    @(23.8846 mm, 13.1484 mm): Via [CP3] on F.Cu - B.Cu
+    @(26.7956 mm, 11.0327 mm): Track [CP2] on F.Cu, length 9.8937 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(38.7555 mm, 3.8021 mm): Track [USB_DP] on B.Cu, length 0.4560 mm
+    @(27.4544 mm, 15.6147 mm): Track [SDA] on B.Cu, length 19.4333 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.3047 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 16.1939 mm
+    @(27.4544 mm, 15.6147 mm): Track [SDA] on B.Cu, length 19.4333 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(67.7340 mm, 4.5000 mm): Pad 2 [SCL] of R12 on B.Cu
+    @(68.3965 mm, 4.5000 mm): Track [+3V3] on B.Cu, length 4.1085 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1698 mm)
+    Rule: netclass 'Default'; error
+    @(67.8722 mm, 11.3698 mm): Track [GND] on B.Cu, length 0.9707 mm
+    @(67.3500 mm, 10.5000 mm): Pad 1 [VSYS] of D25 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 52.3568 mm): Track [GND] on B.Cu, length 3.7320 mm
+    @(83.3811 mm, 48.4750 mm): Track [EN] on B.Cu, length 4.0316 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1977 mm)
+    Rule: netclass 'Default'; error
+    @(81.7500 mm, 20.5500 mm): Pad 1 [VBUS] of Q1 on B.Cu
+    @(81.6673 mm, 21.7883 mm): Track [VSYS] on B.Cu, length 0.9714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(23.2500 mm, 19.3800 mm): Track [USB_DP] on B.Cu, length 1.6132 mm
+    @(22.2383 mm, 18.2670 mm): Track [USB_DM] on B.Cu, length 4.7741 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(26.3407 mm, 13.6061 mm): Via [CHX3] on F.Cu - B.Cu
+    @(26.9025 mm, 13.0262 mm): Track [GND] on B.Cu, length 0.8127 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1921 mm)
+    Rule: netclass 'Default'; error
+    @(42.8648 mm, 24.5560 mm): Track [CP5] on F.Cu, length 0.3695 mm
+    @(43.5000 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(23.8846 mm, 13.1484 mm): Via [CP3] on F.Cu - B.Cu
+    @(23.3229 mm, 12.4521 mm): Track [GND] on B.Cu, length 1.4422 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(7.8766 mm, 44.8054 mm): Track [EN] on B.Cu, length 4.7263 mm
+    @(13.9877 mm, 44.7560 mm): Track [GND] on B.Cu, length 5.5502 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1842 mm)
+    Rule: netclass 'Default'; error
+    @(70.2734 mm, 34.1637 mm): Track [CP5] on F.Cu, length 0.6520 mm
+    @(70.6576 mm, 44.5277 mm): Track [CP4] on F.Cu, length 11.7588 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 13.4774 mm): Track [USB_DP] on B.Cu, length 7.8982 mm
+    @(81.0483 mm, 7.5117 mm): Track [+3V3] on B.Cu, length 1.3623 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(82.0919 mm, 53.2199 mm): Track [GND] on B.Cu, length 0.0645 mm
+    @(83.3811 mm, 52.5066 mm): Track [EN] on B.Cu, length 1.5151 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1640 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 5.5792 mm): Track [USB_DP] on B.Cu, length 3.5273 mm
+    @(78.8021 mm, 3.4878 mm): Track [+3V3] on B.Cu, length 3.1766 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1696 mm)
+    Rule: netclass 'Default'; error
+    @(81.7500 mm, 20.5500 mm): Pad 1 [VBUS] of Q1 on B.Cu
+    @(80.9804 mm, 21.1014 mm): Track [VSYS] on B.Cu, length 1.3710 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(67.7340 mm, 4.5000 mm): Pad 2 [SCL] of R12 on B.Cu
+    @(68.3965 mm, 4.5000 mm): Track [+3V3] on B.Cu, length 0.5532 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(77.1500 mm, 8.9500 mm): Pad 3 [VSYS] of U3 on B.Cu
+    @(77.9902 mm, 8.0189 mm): Track [GND] on B.Cu, length 1.4130 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(39.7017 mm, 19.0516 mm): Track [+3V3] on B.Cu, length 9.5032 mm
+    @(38.9900 mm, 18.1400 mm): Pad 26 [unconnected-(U1-IO45-Pad26)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(82.8829 mm, 48.4883 mm): Track [GND] on B.Cu, length 4.9583 mm
+    @(77.7748 mm, 48.1266 mm): Track [EN] on B.Cu, length 5.2579 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.6408 mm, 10.2500 mm): Track [+3V3] on B.Cu, length 0.5705 mm
+    @(20.2400 mm, 9.7500 mm): Pad 2 [unconnected-(U2-SDx-Pad2)] of U2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.0822 mm, 35.7278 mm): Track [TXD] on B.Cu, length 5.1588 mm
+    @(44.5136 mm, 35.9536 mm): Via [CP3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(66.2382 mm, 3.6970 mm): Track [GND] on F.Cu, length 2.8880 mm
+    @(57.2131 mm, 4.0587 mm): Track [CP6] on F.Cu, length 11.1456 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(20.3116 mm, 19.4755 mm): Track [CP4] on F.Cu, length 3.6934 mm
+    @(20.0714 mm, 19.1138 mm): Track [CHX3] on F.Cu, length 0.7616 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1683 mm)
+    Rule: netclass 'Default'; error
+    @(26.2750 mm, 9.5000 mm): Pad 2 [GND] of C5 on B.Cu
+    @(26.9933 mm, 9.0536 mm): Track [CP3] on B.Cu, length 0.9861 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1741 mm)
+    Rule: netclass 'Default'; error
+    @(74.6500 mm, 16.0500 mm): Pad 1 [USB_DP] of U5 on B.Cu
+    @(75.4477 mm, 17.9500 mm): Track [USB_DM] on B.Cu, length 1.5525 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1972 mm)
+    Rule: netclass 'Default'; error
+    @(35.0070 mm, 4.5000 mm): Pad 2 [CP5] of R5 on B.Cu
+    @(37.2273 mm, 1.1015 mm): Track [GND] on B.Cu, length 4.2827 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1686 mm)
+    Rule: netclass 'Default'; error
+    @(45.0822 mm, 39.0203 mm): Via [TXD] on F.Cu - B.Cu
+    @(44.5136 mm, 35.9536 mm): Track [CP3] on B.Cu, length 4.2842 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(7.8766 mm, 44.8054 mm): Track [EN] on B.Cu, length 4.7263 mm
+    @(8.4375 mm, 44.7560 mm): Track [GND] on B.Cu, length 0.2817 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1640 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 5.5792 mm): Track [USB_DP] on B.Cu, length 3.5273 mm
+    @(81.0483 mm, 5.7340 mm): Track [+3V3] on B.Cu, length 1.7777 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(25.7639 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 1.5408 mm
+    @(27.4544 mm, 15.6147 mm): Track [SDA] on B.Cu, length 19.4333 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 13.4774 mm): Track [USB_DP] on B.Cu, length 7.8982 mm
+    @(78.8021 mm, 3.4878 mm): Track [+3V3] on B.Cu, length 3.1766 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1672 mm)
+    Rule: netclass 'Default'; error
+    @(68.8450 mm, 44.7448 mm): Track [CP5] on F.Cu, length 0.8913 mm
+    @(47.9377 mm, 45.1120 mm): Track [CP4] on F.Cu, length 22.1356 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1756 mm)
+    Rule: netclass 'Default'; error
+    @(44.4868 mm, 22.0665 mm): Track [CP5] on F.Cu, length 2.2939 mm
+    @(43.5000 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1803 mm)
+    Rule: netclass 'Default'; error
+    @(69.8124 mm, 33.7027 mm): Track [CP5] on F.Cu, length 1.2821 mm
+    @(69.3000 mm, 34.3330 mm): Pad 1 [CP1] of D21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1626 mm)
+    Rule: netclass 'Default'; error
+    @(26.0705 mm, 11.4753 mm): Track [CHX3] on B.Cu, length 1.8606 mm
+    @(26.9933 mm, 10.0397 mm): Track [CP3] on B.Cu, length 4.3964 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1627 mm)
+    Rule: netclass 'Default'; error
+    @(26.2750 mm, 9.5000 mm): Pad 2 [GND] of C5 on B.Cu
+    @(22.4397 mm, 4.5000 mm): Track [CP3] on B.Cu, length 6.4398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1876 mm)
+    Rule: netclass 'Default'; error
+    @(44.0000 mm, 16.2250 mm): Pad 2 [GND] of C3 on B.Cu
+    @(43.2374 mm, 17.0124 mm): Track [+3V3] on B.Cu, length 9.3018 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1698 mm)
+    Rule: netclass 'Default'; error
+    @(69.5035 mm, 46.1364 mm): Via [RXD] on F.Cu - B.Cu
+    @(70.0733 mm, 47.6150 mm): Track [CP4] on F.Cu, length 2.5030 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.9880 mm, 14.5295 mm): Track [+3V3] on B.Cu, length 1.9755 mm
+    @(26.9025 mm, 13.8389 mm): Track [GND] on B.Cu, length 0.4651 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.3047 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 16.1939 mm
+    @(37.8827 mm, 4.1634 mm): Track [USB_DM] on B.Cu, length 0.8472 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 14.1663 mm): Track [CP2] on F.Cu, length 27.1092 mm
+    @(67.9000 mm, 14.7780 mm): Pad 2 [CP4] of D17 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(27.7008 mm, 12.2279 mm): Track [CP4] on F.Cu, length 1.0612 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1842 mm)
+    Rule: netclass 'Default'; error
+    @(69.7363 mm, 44.7448 mm): Track [CP5] on F.Cu, length 0.7596 mm
+    @(70.6576 mm, 44.5277 mm): Track [CP4] on F.Cu, length 11.7588 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1636 mm)
+    Rule: netclass 'Default'; error
+    @(19.0241 mm, 9.8870 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(18.7962 mm, 9.3179 mm): Track [+3V3] on B.Cu, length 1.2010 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(49.0199 mm, 50.1484 mm): Track [IO0] on B.Cu, length 39.6582 mm
+    @(22.1033 mm, 36.0250 mm): Track [GND] on B.Cu, length 13.7617 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(20.0714 mm, 19.1138 mm): Track [CHX3] on F.Cu, length 0.7616 mm
+    @(21.2659 mm, 19.4755 mm): Track [CP4] on F.Cu, length 0.9543 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1882 mm)
+    Rule: netclass 'Default'; error
+    @(38.8555 mm, 1.5116 mm): Track [+3V3] on B.Cu, length 4.1567 mm
+    @(38.6253 mm, 2.5736 mm): Via [USB_DM] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1854 mm)
+    Rule: netclass 'Default'; error
+    @(52.7956 mm, 46.3727 mm): Track [IO0] on B.Cu, length 5.3396 mm
+    @(52.2040 mm, 46.1364 mm): Via [RXD] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(18.7378 mm, 15.7717 mm): Track [SDA] on B.Cu, length 3.8015 mm
+    @(18.3761 mm, 13.4401 mm): Track [CHX2] on B.Cu, length 7.0187 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(46.4445 mm, 3.3224 mm): Track [IO0] on B.Cu, length 7.0209 mm
+    @(46.2909 mm, 2.9592 mm): Track [+3V3] on B.Cu, length 7.9671 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(17.2544 mm, 18.0286 mm): Track [CP2] on F.Cu, length 0.2698 mm
+    @(19.9494 mm, 18.3904 mm): Track [CP1] on F.Cu, length 3.6494 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(73.4639 mm, 17.3908 mm): Via [GND] on F.Cu - B.Cu
+    @(73.1502 mm, 17.9525 mm): Track [USB_DM] on B.Cu, length 0.6996 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(70.6708 mm, 17.6845 mm): Track [CP3] on F.Cu, length 8.6621 mm
+    @(70.3091 mm, 14.8988 mm): Track [CP4] on F.Cu, length 0.6942 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1765 mm)
+    Rule: netclass 'Default'; error
+    @(25.9346 mm, 15.6147 mm): Track [SDA] on B.Cu, length 1.5198 mm
+    @(23.2500 mm, 17.7668 mm): Track [USB_DP] on B.Cu, length 3.5552 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(74.7000 mm, 28.0000 mm): PTH pad 1 [VBAT] of BT1
+    @(75.4842 mm, 29.7617 mm): Track [CP6] on F.Cu, length 5.2548 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1646 mm)
+    Rule: netclass 'Default'; error
+    @(69.9474 mm, 9.3980 mm): Track [CP2] on F.Cu, length 0.7118 mm
+    @(42.5405 mm, 8.5301 mm): Track [CP4] on F.Cu, length 27.1222 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(41.2559 mm, 8.5110 mm): Track [IO0] on B.Cu, length 7.3378 mm
+    @(46.2909 mm, 2.9592 mm): Track [+3V3] on B.Cu, length 7.9671 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.1884 mm, 9.8446 mm): Track [CP3] on F.Cu, length 13.1398 mm
+    @(28.6826 mm, 10.4305 mm): Track [CP4] on F.Cu, length 0.3171 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(80.4122 mm, 22.3823 mm): Track [VBUS] on B.Cu, length 1.0650 mm
+    @(81.7500 mm, 22.4500 mm): Pad 2 [VSYS] of Q1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1620 mm)
+    Rule: netclass 'Default'; error
+    @(15.6788 mm, 41.7671 mm): Track [CP2] on F.Cu, length 27.3355 mm
+    @(13.7144 mm, 12.9787 mm): Track [CP3] on F.Cu, length 2.2661 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1628 mm)
+    Rule: netclass 'Default'; error
+    @(24.6728 mm, 26.1487 mm): Via [CHX5] on F.Cu - B.Cu
+    @(25.2422 mm, 26.7115 mm): Track [CHX3] on F.Cu, length 5.7027 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(58.1463 mm, 51.7234 mm): Track [IO0] on B.Cu, length 20.1920 mm
+    @(70.2216 mm, 51.3617 mm): Track [GND] on B.Cu, length 0.9474 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1742 mm)
+    Rule: netclass 'Default'; error
+    @(10.8000 mm, 9.6145 mm): Track [+3V3] on B.Cu, length 0.8395 mm
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(16.8960 mm, 8.8325 mm): Track [CP2] on B.Cu, length 5.5050 mm
+    @(13.1800 mm, 9.0585 mm): Track [+3V3] on B.Cu, length 3.4329 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1805 mm)
+    Rule: netclass 'Default'; error
+    @(43.5000 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+    @(43.0249 mm, 40.6644 mm): Track [CP5] on F.Cu, length 0.1932 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 24.5560 mm): Pad 1 [CP5] of D19 on F.Cu
+    @(69.7955 mm, 25.1677 mm): Track [CP4] on F.Cu, length 0.9780 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(82.2408 mm, 53.5800 mm): Track [EN] on B.Cu, length 72.2308 mm
+    @(8.2383 mm, 51.2483 mm): Track [GND] on B.Cu, length 2.7884 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1634 mm)
+    Rule: netclass 'Default'; error
+    @(77.7176 mm, 18.4951 mm): Track [VBUS] on B.Cu, length 3.8107 mm
+    @(79.4500 mm, 21.5000 mm): Pad 3 [VBAT_SW] of Q1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1698 mm)
+    Rule: netclass 'Default'; error
+    @(82.2410 mm, 53.5799 mm): Track [EN] on B.Cu, length 0.0002 mm
+    @(82.1563 mm, 53.2199 mm): Track [GND] on B.Cu, length 1.2205 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1944 mm)
+    Rule: netclass 'Default'; error
+    @(83.6000 mm, 22.7250 mm): Pad 2 [GND] of R13 on B.Cu
+    @(82.8306 mm, 22.6842 mm): Track [VBUS] on B.Cu, length 0.8398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(48.5488 mm, 29.7938 mm): Track [CP4] on F.Cu, length 18.3897 mm
+    @(47.1502 mm, 28.9067 mm): Track [CP5] on F.Cu, length 7.6739 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(66.2382 mm, 3.6970 mm): Track [GND] on F.Cu, length 2.8880 mm
+    @(68.3587 mm, 4.0587 mm): Track [CP6] on F.Cu, length 1.3312 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(20.0714 mm, 19.1138 mm): Track [CHX3] on F.Cu, length 0.7616 mm
+    @(19.6267 mm, 18.7521 mm): Track [CHX4] on F.Cu, length 0.7554 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(33.0770 mm, 11.0327 mm): Track [CP2] on F.Cu, length 6.2814 mm
+    @(27.8033 mm, 11.3944 mm): Track [CP1] on F.Cu, length 0.8579 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1735 mm)
+    Rule: netclass 'Default'; error
+    @(53.4985 mm, 17.1179 mm): Track [VBUS] on B.Cu, length 2.5702 mm
+    @(52.7750 mm, 16.5000 mm): Pad 2 [GND] of C14 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(47.1502 mm, 26.4210 mm): Track [CP5] on F.Cu, length 2.4857 mm
+    @(50.1565 mm, 24.5560 mm): Track [CP4] on F.Cu, length 3.7400 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1852 mm)
+    Rule: netclass 'Default'; error
+    @(42.8648 mm, 23.6885 mm): Track [CP5] on F.Cu, length 0.8675 mm
+    @(43.5000 mm, 24.1430 mm): Pad 1 [CP6] of D10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.4441 mm, 8.8947 mm): Track [CP2] on F.Cu, length 26.7567 mm
+    @(40.8643 mm, 10.2063 mm): Track [CP4] on F.Cu, length 2.3705 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1665 mm)
+    Rule: netclass 'Default'; error
+    @(17.7000 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+    @(17.0835 mm, 24.2555 mm): Track [CHX3] on F.Cu, length 2.1538 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(42.6874 mm, 8.8947 mm): Track [CP2] on F.Cu, length 2.3664 mm
+    @(28.9068 mm, 10.2063 mm): Track [CP4] on F.Cu, length 11.9575 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1960 mm)
+    Rule: netclass 'Default'; error
+    @(10.0100 mm, 53.5800 mm): Track [EN] on B.Cu, length 3.0171 mm
+    @(8.2383 mm, 51.2483 mm): Track [GND] on B.Cu, length 2.7884 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1631 mm)
+    Rule: netclass 'Default'; error
+    @(10.8000 mm, 9.9582 mm): Track [+3V3] on B.Cu, length 0.3437 mm
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1630 mm)
+    Rule: netclass 'Default'; error
+    @(17.7000 mm, 23.8000 mm): Pad 1 [CP4] of D3 on F.Cu
+    @(19.5395 mm, 26.7115 mm): Track [CHX3] on F.Cu, length 3.4733 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(55.3055 mm, 4.0067 mm): Track [+3V3] on B.Cu, length 1.2596 mm
+    @(54.6430 mm, 4.5000 mm): Pad 2 [IO0] of R10 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(7.8766 mm, 51.4466 mm): Track [EN] on B.Cu, length 6.6412 mm
+    @(8.4375 mm, 44.7560 mm): Track [GND] on B.Cu, length 0.2817 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.6408 mm, 9.6795 mm): Track [+3V3] on B.Cu, length 0.5114 mm
+    @(20.2400 mm, 9.7500 mm): Pad 2 [unconnected-(U2-SDx-Pad2)] of U2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1698 mm)
+    Rule: netclass 'Default'; error
+    @(82.3098 mm, 53.5779 mm): Track [EN] on B.Cu, length 0.0688 mm
+    @(82.1563 mm, 53.2199 mm): Track [GND] on B.Cu, length 1.2205 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(26.9504 mm, 12.9783 mm): Track [CP4] on F.Cu, length 0.8127 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1787 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 24.5560 mm): Pad 1 [CP5] of D19 on F.Cu
+    @(68.8175 mm, 25.1677 mm): Track [CP4] on F.Cu, length 0.4325 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.0485 mm, 22.2975 mm): Via [CP6] on F.Cu - B.Cu
+    @(44.0000 mm, 22.5517 mm): Track [EN] on B.Cu, length 2.1577 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1838 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 44.1110 mm): Pad 1 [CP3] of D23 on F.Cu
+    @(68.8450 mm, 44.7448 mm): Track [CP5] on F.Cu, length 0.8913 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1654 mm)
+    Rule: netclass 'Default'; error
+    @(39.7017 mm, 9.5484 mm): Track [+3V3] on B.Cu, length 9.3185 mm
+    @(46.4445 mm, 3.3224 mm): Track [IO0] on B.Cu, length 7.0209 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(39.7017 mm, 9.5484 mm): Track [+3V3] on B.Cu, length 9.3185 mm
+    @(54.9438 mm, 2.5967 mm): Track [SCL] on B.Cu, length 9.3099 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(16.9117 mm, 9.5294 mm): Track [IMU_INT] on F.Cu, length 1.7716 mm
+    @(16.3000 mm, 11.0000 mm): Pad 2 [CP1] of D1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 44.1110 mm): Pad 1 [CP3] of D23 on F.Cu
+    @(69.7363 mm, 44.7448 mm): Track [CP5] on F.Cu, length 0.7596 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1879 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 24.5560 mm): Pad 1 [CP5] of D19 on F.Cu
+    @(69.9735 mm, 24.9897 mm): Track [CP4] on F.Cu, length 0.2517 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.2659 mm, 19.4755 mm): Track [CP4] on F.Cu, length 0.9543 mm
+    @(20.8330 mm, 19.1138 mm): Track [CHX3] on F.Cu, length 7.7891 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(41.7617 mm, 26.9469 mm): Track [IO0] on B.Cu, length 7.5669 mm
+    @(40.7500 mm, 20.6500 mm): Pad 28 [unconnected-(U1-IO35-Pad28)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.3811 mm, 48.4750 mm): Track [EN] on B.Cu, length 4.0316 mm
+    @(82.1563 mm, 53.2199 mm): Track [GND] on B.Cu, length 1.2205 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(52.2040 mm, 46.1364 mm): Track [RXD] on B.Cu, length 3.7983 mm
+    @(52.7956 mm, 42.4182 mm): Track [IO0] on B.Cu, length 15.0684 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(7.8766 mm, 44.8054 mm): Track [EN] on B.Cu, length 4.7263 mm
+    @(8.2383 mm, 44.9552 mm): Track [GND] on B.Cu, length 6.2931 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(27.6721 mm, 12.6492 mm): Track [GND] on B.Cu, length 0.3926 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.6267 mm, 18.7521 mm): Track [CHX4] on F.Cu, length 0.7554 mm
+    @(17.0835 mm, 22.1017 mm): Track [CHX3] on F.Cu, length 4.2255 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(16.9117 mm, 11.3010 mm): Track [IMU_INT] on F.Cu, length 1.2357 mm
+    @(16.3000 mm, 11.0000 mm): Pad 2 [CP1] of D1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1738 mm)
+    Rule: netclass 'Default'; error
+    @(35.9163 mm, 4.4508 mm): Track [+3V3] on B.Cu, length 1.1504 mm
+    @(28.9127 mm, 13.1334 mm): Track [USB_DM] on B.Cu, length 12.6855 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(22.4397 mm, 4.5000 mm): Track [CP3] on B.Cu, length 6.4398 mm
+    @(26.2750 mm, 9.5000 mm): Track [GND] on B.Cu, length 0.6556 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(78.2875 mm, 12.4774 mm): Track [VBUS] on B.Cu, length 0.5337 mm
+    @(77.6250 mm, 12.2000 mm): Pad 2 [GND] of R7 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 48.6248 mm): Track [GND] on B.Cu, length 0.1930 mm
+    @(77.7748 mm, 48.1266 mm): Track [EN] on B.Cu, length 5.2579 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.5706 mm, 11.9561 mm): Via [CP4] on F.Cu - B.Cu
+    @(27.8033 mm, 11.3944 mm): Track [CP1] on F.Cu, length 0.8579 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(7.8766 mm, 51.4466 mm): Track [EN] on B.Cu, length 6.6412 mm
+    @(8.2383 mm, 51.2483 mm): Track [GND] on B.Cu, length 2.7884 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(73.8594 mm, 7.9187 mm): Track [USB_DM] on F.Cu, length 7.5591 mm
+    @(69.1262 mm, 3.6970 mm): Track [GND] on F.Cu, length 5.5779 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.0485 mm, 22.2975 mm): Via [CP6] on F.Cu - B.Cu
+    @(44.8159 mm, 21.7358 mm): Track [CP5] on F.Cu, length 0.4654 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1719 mm)
+    Rule: netclass 'Default'; error
+    @(24.4719 mm, 24.0510 mm): Via [IMU_INT] on F.Cu - B.Cu
+    @(23.2500 mm, 24.4600 mm): Pad 10 [SCL] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(73.8594 mm, 7.9187 mm): Track [USB_DM] on F.Cu, length 7.5591 mm
+    @(73.0704 mm, 7.6412 mm): Track [GND] on F.Cu, length 9.3561 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(40.7500 mm, 27.0000 mm): Pad 33 [unconnected-(U1-IO40-Pad33)] of U1 on B.Cu
+    @(42.1406 mm, 27.3258 mm): Track [IO0] on B.Cu, length 0.5358 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(82.8829 mm, 48.4883 mm): Track [GND] on B.Cu, length 4.9583 mm
+    @(77.1717 mm, 48.7297 mm): Track [EN] on B.Cu, length 0.8529 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 52.3568 mm): Track [GND] on B.Cu, length 3.7320 mm
+    @(83.0327 mm, 48.1266 mm): Track [EN] on B.Cu, length 0.4927 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1624 mm)
+    Rule: netclass 'Default'; error
+    @(44.0000 mm, 26.0500 mm): Track [GND] on B.Cu, length 1.1164 mm
+    @(42.8482 mm, 26.7982 mm): Track [+3V3] on B.Cu, length 7.8714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(73.8594 mm, 7.9187 mm): Track [USB_DM] on F.Cu, length 7.5591 mm
+    @(66.2382 mm, 3.6970 mm): Track [GND] on F.Cu, length 2.8880 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1635 mm)
+    Rule: netclass 'Default'; error
+    @(48.4141 mm, 3.3679 mm): Track [GND] on F.Cu, length 17.4950 mm
+    @(57.0858 mm, 3.9314 mm): Via [CP6] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 7.8908 mm): Track [GND] on B.Cu, length 6.9156 mm
+    @(21.0000 mm, 7.3999 mm): Track [+3V3] on B.Cu, length 1.0901 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.5736 mm, 14.1678 mm): Track [GND] on B.Cu, length 2.9770 mm
+    @(25.0125 mm, 14.5295 mm): Track [+3V3] on B.Cu, length 3.8762 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 48.6248 mm): Track [GND] on B.Cu, length 0.1930 mm
+    @(83.3811 mm, 48.4750 mm): Track [EN] on B.Cu, length 4.0316 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(78.2875 mm, 12.6666 mm): Track [VBUS] on B.Cu, length 0.1892 mm
+    @(77.6250 mm, 12.2000 mm): Pad 2 [GND] of R7 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1619 mm)
+    Rule: netclass 'Default'; error
+    @(26.9504 mm, 13.7910 mm): Track [CP4] on F.Cu, length 8.0391 mm
+    @(26.3407 mm, 13.6061 mm): Via [CHX3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1742 mm)
+    Rule: netclass 'Default'; error
+    @(12.6240 mm, 9.6145 mm): Track [+3V3] on B.Cu, length 1.8240 mm
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(27.2795 mm, 12.6492 mm): Track [GND] on B.Cu, length 0.5332 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(57.2131 mm, 4.0587 mm): Track [CP6] on F.Cu, length 11.1456 mm
+    @(65.9091 mm, 3.3679 mm): Track [GND] on F.Cu, length 0.4654 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(53.4654 mm, 3.3224 mm): Track [IO0] on B.Cu, length 1.6654 mm
+    @(46.2909 mm, 2.9592 mm): Track [+3V3] on B.Cu, length 7.9671 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1724 mm)
+    Rule: netclass 'Default'; error
+    @(17.2699 mm, 43.6551 mm): Track [CP2] on F.Cu, length 0.5066 mm
+    @(17.7000 mm, 43.0000 mm): Pad 1 [CP1] of D6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1897 mm)
+    Rule: netclass 'Default'; error
+    @(46.3286 mm, 5.4534 mm): Via [GND] on F.Cu - B.Cu
+    @(43.2374 mm, 7.7106 mm): Track [+3V3] on B.Cu, length 4.5405 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1913 mm)
+    Rule: netclass 'Default'; error
+    @(55.3055 mm, 5.2663 mm): Track [+3V3] on B.Cu, length 1.5462 mm
+    @(54.6430 mm, 4.5000 mm): Pad 2 [IO0] of R10 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.5736 mm, 14.1678 mm): Track [GND] on B.Cu, length 2.9770 mm
+    @(26.3407 mm, 13.6061 mm): Via [CHX3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1654 mm)
+    Rule: netclass 'Default'; error
+    @(39.7017 mm, 9.5484 mm): Track [+3V3] on B.Cu, length 9.3185 mm
+    @(41.2559 mm, 19.3800 mm): Track [IO0] on B.Cu, length 10.8690 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(67.9000 mm, 24.5560 mm): Pad 2 [CP4] of D19 on F.Cu
+    @(69.3000 mm, 23.9443 mm): Track [CP5] on F.Cu, length 19.6731 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1619 mm)
+    Rule: netclass 'Default'; error
+    @(27.5706 mm, 11.9561 mm): Via [CP4] on F.Cu - B.Cu
+    @(34.1990 mm, 6.1223 mm): Track [GND] on B.Cu, length 9.2304 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1746 mm)
+    Rule: netclass 'Default'; error
+    @(51.6250 mm, 4.3016 mm): Via [CP6] on F.Cu - B.Cu
+    @(47.2210 mm, 3.7270 mm): Track [+3V3] on B.Cu, length 4.9990 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1842 mm)
+    Rule: netclass 'Default'; error
+    @(70.2734 mm, 44.2077 mm): Track [CP5] on F.Cu, length 10.0440 mm
+    @(70.6576 mm, 44.5277 mm): Track [CP4] on F.Cu, length 11.7588 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.1033 mm, 36.0250 mm): Track [GND] on B.Cu, length 13.7617 mm
+    @(21.0000 mm, 45.4500 mm): Track [EN] on B.Cu, length 6.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(42.1406 mm, 31.7632 mm): Track [IO0] on B.Cu, length 4.4374 mm
+    @(52.2040 mm, 42.3381 mm): Track [RXD] on B.Cu, length 14.7676 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1859 mm)
+    Rule: netclass 'Default'; error
+    @(27.1884 mm, 9.8446 mm): Track [CP3] on F.Cu, length 13.1398 mm
+    @(28.6826 mm, 10.4305 mm): Via [CP4] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(61.3537 mm, 39.0203 mm): Via [TXD] on F.Cu - B.Cu
+    @(64.3657 mm, 38.4586 mm): Track [EN] on B.Cu, length 7.1342 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(44.3114 mm, 26.0500 mm): Track [GND] on B.Cu, length 32.8337 mm
+    @(46.1762 mm, 27.4033 mm): Track [EN] on B.Cu, length 2.4521 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(77.2334 mm, 12.9375 mm): Track [VBUS] on B.Cu, length 0.7832 mm
+    @(77.6250 mm, 12.2000 mm): Pad 2 [GND] of R7 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.9474 mm, 13.4281 mm): Track [CP2] on F.Cu, length 4.0301 mm
+    @(70.3091 mm, 9.1765 mm): Track [CP4] on F.Cu, length 5.7223 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1862 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+    @(44.5307 mm, 37.7506 mm): Track [CP2] on F.Cu, length 4.3191 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1716 mm)
+    Rule: netclass 'Default'; error
+    @(43.5000 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+    @(67.9000 mm, 40.6644 mm): Track [CP5] on F.Cu, length 24.8751 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(26.0705 mm, 11.4753 mm): Track [CHX3] on B.Cu, length 1.8606 mm
+    @(26.6323 mm, 12.5019 mm): Via [CHX4] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1980 mm)
+    Rule: netclass 'Default'; error
+    @(48.0980 mm, 4.5000 mm): Pad 2 [EN] of R9 on B.Cu
+    @(47.2210 mm, 3.7270 mm): Track [+3V3] on B.Cu, length 4.9990 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(33.5417 mm, 10.5680 mm): Track [CP2] on F.Cu, length 0.6572 mm
+    @(28.9068 mm, 10.2063 mm): Track [CP4] on F.Cu, length 11.9575 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(77.1717 mm, 48.7297 mm): Track [EN] on B.Cu, length 0.8529 mm
+    @(77.6110 mm, 48.8019 mm): Track [GND] on B.Cu, length 2.0614 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1634 mm)
+    Rule: netclass 'Default'; error
+    @(58.1463 mm, 51.7234 mm): Track [IO0] on B.Cu, length 20.1920 mm
+    @(77.1700 mm, 51.3043 mm): Track [GND] on B.Cu, length 0.0557 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1926 mm)
+    Rule: netclass 'Default'; error
+    @(57.8347 mm, 4.5240 mm): Track [SCL] on B.Cu, length 0.9636 mm
+    @(57.0858 mm, 3.9314 mm): Via [CP6] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1896 mm)
+    Rule: netclass 'Default'; error
+    @(82.2410 mm, 53.5799 mm): Track [EN] on B.Cu, length 0.0002 mm
+    @(82.0917 mm, 53.2200 mm): Track [GND] on B.Cu, length 0.0002 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(27.3565 mm, 8.8077 mm): Track [CHX3] on B.Cu, length 1.3816 mm
+    @(22.4397 mm, 4.5000 mm): Track [CP3] on B.Cu, length 6.4398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(43.8170 mm, 2.2350 mm): Track [CP6] on B.Cu, length 3.2032 mm
+    @(41.1958 mm, 1.8733 mm): Track [SDA] on B.Cu, length 17.3665 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1732 mm)
+    Rule: netclass 'Default'; error
+    @(17.7855 mm, 12.1748 mm): Via [IMU_INT] on F.Cu - B.Cu
+    @(8.7534 mm, 11.6016 mm): Track [SDA] on B.Cu, length 9.7327 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1749 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 44.1110 mm): Pad 1 [CP3] of D23 on F.Cu
+    @(68.5117 mm, 44.4115 mm): Track [CP5] on F.Cu, length 0.4714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(47.5119 mm, 27.2006 mm): Track [CP4] on F.Cu, length 1.5563 mm
+    @(47.1502 mm, 26.4210 mm): Track [CP5] on F.Cu, length 2.4857 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(12.6434 mm, 3.8771 mm): Track [+3V3] on B.Cu, length 0.6780 mm
+    @(13.0034 mm, 4.9399 mm): Track [CP2] on B.Cu, length 0.9137 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1839 mm)
+    Rule: netclass 'Default'; error
+    @(66.6374 mm, 9.8929 mm): Track [GND] on B.Cu, length 3.7730 mm
+    @(67.3500 mm, 10.5000 mm): Pad 1 [VSYS] of D25 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1787 mm)
+    Rule: netclass 'Default'; error
+    @(68.6883 mm, 38.9162 mm): Track [CP2] on F.Cu, length 1.6484 mm
+    @(67.9000 mm, 39.2220 mm): Pad 2 [CP5] of D22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(13.1800 mm, 5.6256 mm): Track [+3V3] on B.Cu, length 0.7589 mm
+    @(13.0034 mm, 4.9399 mm): Track [CP2] on B.Cu, length 0.9137 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(72.3500 mm, 17.9500 mm): Pad 4 [USB_DM] of U5 on B.Cu
+    @(70.8896 mm, 17.6627 mm): Track [VBUS] on B.Cu, length 1.1771 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 48.6248 mm): Track [GND] on B.Cu, length 0.1930 mm
+    @(83.0327 mm, 48.1266 mm): Track [EN] on B.Cu, length 0.4927 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(17.7972 mm, 9.8054 mm): Track [IMU_INT] on B.Cu, length 0.6095 mm
+    @(18.7962 mm, 9.3179 mm): Track [+3V3] on B.Cu, length 1.2010 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1770 mm)
+    Rule: netclass 'Default'; error
+    @(46.3286 mm, 5.4534 mm): Via [GND] on F.Cu - B.Cu
+    @(45.5257 mm, 7.0723 mm): Track [EN] on B.Cu, length 3.6378 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(54.2450 mm, 10.7486 mm): Track [GND] on B.Cu, length 1.3316 mm
+    @(52.9500 mm, 10.8500 mm): Pad 3 [VBAT] of U6 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1744 mm)
+    Rule: netclass 'Default'; error
+    @(29.1000 mm, 26.7700 mm): Pad 41 [GND] of U1 on B.Cu
+    @(26.7716 mm, 27.8103 mm): Track [+3V3] on B.Cu, length 11.0232 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(22.4397 mm, 4.5000 mm): Track [CP3] on B.Cu, length 6.4398 mm
+    @(24.4906 mm, 7.0600 mm): Track [GND] on B.Cu, length 1.6598 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1651 mm)
+    Rule: netclass 'Default'; error
+    @(22.2984 mm, 3.7496 mm): Track [CHX3] on B.Cu, length 7.1532 mm
+    @(21.9160 mm, 4.5000 mm): Pad 2 [CP3] of R3 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1916 mm)
+    Rule: netclass 'Default'; error
+    @(52.2040 mm, 46.1364 mm): Via [RXD] on F.Cu - B.Cu
+    @(52.7956 mm, 46.3727 mm): Track [IO0] on B.Cu, length 3.9545 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(71.0800 mm, 50.0000 mm): Pad 3 [TXD] of J1 on B.Cu
+    @(77.1126 mm, 51.3617 mm): Track [GND] on B.Cu, length 6.8910 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(40.8643 mm, 10.2063 mm): Track [CP4] on F.Cu, length 2.3705 mm
+    @(41.0141 mm, 10.5680 mm): Track [CP2] on F.Cu, length 7.4724 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(51.9985 mm, 11.6902 mm): Track [GND] on B.Cu, length 0.8578 mm
+    @(51.0500 mm, 10.8500 mm): Pad 1 [unconnected-(U6-STAT-Pad1)] of U6 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1634 mm)
+    Rule: netclass 'Default'; error
+    @(77.1700 mm, 51.3600 mm): Track [GND] on B.Cu, length 0.0557 mm
+    @(58.1463 mm, 51.7234 mm): Track [IO0] on B.Cu, length 20.1920 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1829 mm)
+    Rule: netclass 'Default'; error
+    @(66.9015 mm, 11.3698 mm): Track [GND] on B.Cu, length 0.3735 mm
+    @(67.3500 mm, 10.5000 mm): Pad 1 [VSYS] of D25 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1722 mm)
+    Rule: netclass 'Default'; error
+    @(20.2400 mm, 8.7500 mm): Track [IMU_INT] on B.Cu, length 1.3874 mm
+    @(18.8492 mm, 8.1778 mm): Via [CHX2] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(55.3894 mm, 2.2350 mm): Track [CP6] on B.Cu, length 11.5724 mm
+    @(41.1958 mm, 1.8733 mm): Track [SDA] on B.Cu, length 17.3665 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1970 mm)
+    Rule: netclass 'Default'; error
+    @(67.7839 mm, 5.6280 mm): Track [+3V3] on B.Cu, length 0.8663 mm
+    @(67.7340 mm, 4.5000 mm): Pad 2 [SCL] of R12 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1960 mm)
+    Rule: netclass 'Default'; error
+    @(10.2100 mm, 53.2200 mm): Track [GND] on B.Cu, length 71.8817 mm
+    @(10.0100 mm, 53.5800 mm): Track [EN] on B.Cu, length 3.0171 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(47.5119 mm, 27.2006 mm): Track [CP4] on F.Cu, length 1.5563 mm
+    @(47.1502 mm, 28.9067 mm): Track [CP5] on F.Cu, length 7.6739 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1626 mm)
+    Rule: netclass 'Default'; error
+    @(26.9933 mm, 10.0397 mm): Track [CP3] on B.Cu, length 4.3964 mm
+    @(27.3565 mm, 10.1893 mm): Track [CHX3] on B.Cu, length 1.8187 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1754 mm)
+    Rule: netclass 'Default'; error
+    @(21.9160 mm, 4.5000 mm): Pad 2 [CP3] of R3 on B.Cu
+    @(21.0164 mm, 3.7496 mm): Track [CHX3] on B.Cu, length 1.2820 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1909 mm)
+    Rule: netclass 'Default'; error
+    @(44.3114 mm, 26.0500 mm): Track [GND] on B.Cu, length 32.8337 mm
+    @(66.0000 mm, 50.0000 mm): Pad 1 [+3V3] of J1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(57.0858 mm, 3.9314 mm): Track [CP6] on B.Cu, length 2.3991 mm
+    @(41.1958 mm, 1.8733 mm): Track [SDA] on B.Cu, length 17.3665 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1696 mm)
+    Rule: netclass 'Default'; error
+    @(80.4246 mm, 29.3304 mm): Track [VBAT_SW] on B.Cu, length 1.3681 mm
+    @(79.5050 mm, 28.7500 mm): Pad 2 [VBAT] of SW3 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1626 mm)
+    Rule: netclass 'Default'; error
+    @(75.9750 mm, 12.2000 mm): Pad 1 [CC1] of R7 on B.Cu
+    @(75.4042 mm, 10.5000 mm): Track [VBUS] on B.Cu, length 1.7819 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1773 mm)
+    Rule: netclass 'Default'; error
+    @(22.7600 mm, 10.2500 mm): Pad 11 [unconnected-(U2-NC-Pad11)] of U2 on B.Cu
+    @(24.1409 mm, 9.7388 mm): Track [+3V3] on B.Cu, length 2.3364 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(43.5000 mm, 41.2860 mm): Pad 1 [CP4] of D13 on F.Cu
+    @(42.8883 mm, 40.8010 mm): Track [CP5] on F.Cu, length 4.9756 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.5736 mm, 14.1678 mm): Track [GND] on B.Cu, length 2.9770 mm
+    @(26.9880 mm, 14.5295 mm): Track [+3V3] on B.Cu, length 1.9755 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1636 mm)
+    Rule: netclass 'Default'; error
+    @(40.3282 mm, 9.8446 mm): Track [CP3] on F.Cu, length 3.6205 mm
+    @(42.1000 mm, 7.0000 mm): Pad 2 [CP2] of D7 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(49.0199 mm, 50.1484 mm): Track [IO0] on B.Cu, length 39.6582 mm
+    @(22.1033 mm, 49.7867 mm): Track [GND] on B.Cu, length 1.2738 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1807 mm)
+    Rule: netclass 'Default'; error
+    @(21.7414 mm, 9.9108 mm): Track [+3V3] on B.Cu, length 1.0484 mm
+    @(21.5000 mm, 10.5100 mm): Pad 13 [SCL] of U2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1933 mm)
+    Rule: netclass 'Default'; error
+    @(82.3794 mm, 23.1354 mm): Track [VBUS] on B.Cu, length 0.6381 mm
+    @(81.7500 mm, 22.4500 mm): Pad 2 [VSYS] of Q1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.9117 mm, 38.7267 mm): Track [CP3] on F.Cu, length 4.1609 mm
+    @(69.3000 mm, 39.2220 mm): Pad 1 [CP2] of D22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(17.1877 mm, 9.8054 mm): Track [IMU_INT] on B.Cu, length 0.4859 mm
+    @(17.9470 mm, 10.1671 mm): Track [+3V3] on B.Cu, length 4.7704 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 13.4774 mm): Track [USB_DP] on B.Cu, length 7.8982 mm
+    @(81.0483 mm, 5.7340 mm): Track [+3V3] on B.Cu, length 1.7777 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(41.1958 mm, 1.8733 mm): Track [SDA] on B.Cu, length 17.3665 mm
+    @(63.0956 mm, 1.5116 mm): Track [+3V3] on B.Cu, length 24.2401 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1676 mm)
+    Rule: netclass 'Default'; error
+    @(51.0500 mm, 13.1500 mm): Track [PROG] on B.Cu, length 0.8492 mm
+    @(51.1407 mm, 11.6902 mm): Track [GND] on B.Cu, length 0.9239 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(54.2580 mm, 2.9592 mm): Track [+3V3] on B.Cu, length 1.4814 mm
+    @(54.9438 mm, 2.5967 mm): Track [SCL] on B.Cu, length 9.3099 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(26.2750 mm, 8.8444 mm): Track [GND] on B.Cu, length 2.5235 mm
+    @(22.4397 mm, 4.5000 mm): Track [CP3] on B.Cu, length 6.4398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(83.0194 mm, 52.3568 mm): Track [GND] on B.Cu, length 3.7320 mm
+    @(83.3811 mm, 52.5066 mm): Track [EN] on B.Cu, length 1.5151 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(34.8205 mm, 11.3067 mm): Track [NFC_GPO] on B.Cu, length 4.5093 mm
+    @(35.3822 mm, 15.5834 mm): Via [CHX6] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1869 mm)
+    Rule: netclass 'Default'; error
+    @(49.3000 mm, 28.0000 mm): PTH pad 1 [VBAT] of BT1
+    @(57.2315 mm, 38.4586 mm): Track [EN] on B.Cu, length 15.6346 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1868 mm)
+    Rule: netclass 'Default'; error
+    @(23.2500 mm, 25.7300 mm): Track [CHX6] on B.Cu, length 1.0117 mm
+    @(24.6728 mm, 26.1487 mm): Via [CHX5] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(9.2688 mm, 9.3152 mm): Track [CP3] on F.Cu, length 0.7705 mm
+    @(9.6497 mm, 9.9368 mm): Track [CP2] on F.Cu, length 0.4173 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1859 mm)
+    Rule: netclass 'Default'; error
+    @(16.9359 mm, 29.4804 mm): Track [CHX1] on F.Cu, length 1.0727 mm
+    @(16.3000 mm, 30.2000 mm): Pad 2 [CP1] of D4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1950 mm)
+    Rule: netclass 'Default'; error
+    @(16.9359 mm, 30.5531 mm): Track [CHX1] on F.Cu, length 2.6692 mm
+    @(17.7000 mm, 30.2000 mm): Pad 1 [CP5] of D4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1764 mm)
+    Rule: netclass 'Default'; error
+    @(57.0736 mm, 10.7486 mm): Track [GND] on B.Cu, length 2.8286 mm
+    @(56.1750 mm, 11.5000 mm): Pad 1 [PROG] of R15 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1731 mm)
+    Rule: netclass 'Default'; error
+    @(9.2688 mm, 9.3152 mm): Track [CP3] on F.Cu, length 0.7705 mm
+    @(8.3643 mm, 9.7088 mm): Track [CHX1] on F.Cu, length 5.7034 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1868 mm)
+    Rule: netclass 'Default'; error
+    @(24.6728 mm, 26.1487 mm): Via [CHX5] on F.Cu - B.Cu
+    @(24.2617 mm, 25.7300 mm): Track [CHX6] on B.Cu, length 1.1544 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1900 mm)
+    Rule: netclass 'Default'; error
+    @(35.0070 mm, 5.8658 mm): Track [CP5] on B.Cu, length 10.3875 mm
+    @(34.1990 mm, 4.1298 mm): Track [GND] on B.Cu, length 1.9925 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(35.9163 mm, 5.6012 mm): Track [+3V3] on B.Cu, length 12.6265 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(12.1618 mm, 12.9787 mm): Track [CP3] on F.Cu, length 1.5526 mm
+    @(15.6788 mm, 14.4316 mm): Track [CP2] on F.Cu, length 2.8208 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(77.6250 mm, 12.2000 mm): Pad 2 [GND] of R7 on B.Cu
+    @(78.0166 mm, 12.9375 mm): Track [VBUS] on B.Cu, length 0.3831 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(15.6788 mm, 14.4316 mm): Track [CP2] on F.Cu, length 2.8208 mm
+    @(13.7144 mm, 12.9787 mm): Track [CP3] on F.Cu, length 2.2661 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(13.0034 mm, 4.9399 mm): Track [CP2] on B.Cu, length 0.9137 mm
+    @(12.6434 mm, 5.0890 mm): Track [+3V3] on B.Cu, length 1.2119 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1892 mm)
+    Rule: netclass 'Default'; error
+    @(75.9750 mm, 12.2000 mm): Pad 1 [CC1] of R7 on B.Cu
+    @(76.6642 mm, 11.7600 mm): Track [VBUS] on B.Cu, length 0.6083 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1746 mm)
+    Rule: netclass 'Default'; error
+    @(13.6842 mm, 12.4370 mm): Track [CP2] on F.Cu, length 1.5343 mm
+    @(9.2688 mm, 10.0857 mm): Track [CP3] on F.Cu, length 4.0913 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1673 mm)
+    Rule: netclass 'Default'; error
+    @(16.9359 mm, 29.4804 mm): Via [CHX1] on F.Cu - B.Cu
+    @(16.3000 mm, 30.2000 mm): Pad 2 [CP1] of D4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 12.7553 mm): Via [CHX5] on F.Cu - B.Cu
+    @(22.4526 mm, 12.5096 mm): Track [SCL] on B.Cu, length 0.5703 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1691 mm)
+    Rule: netclass 'Default'; error
+    @(19.0241 mm, 9.8870 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(19.2792 mm, 9.3179 mm): Track [+3V3] on B.Cu, length 0.4830 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1671 mm)
+    Rule: netclass 'Default'; error
+    @(17.6058 mm, 8.6192 mm): Track [CP2] on F.Cu, length 2.2899 mm
+    @(18.8492 mm, 8.1778 mm): Via [CHX2] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1730 mm)
+    Rule: netclass 'Default'; error
+    @(15.3168 mm, 43.1029 mm): Track [CP3] on F.Cu, length 1.2924 mm
+    @(16.3000 mm, 43.0000 mm): Pad 2 [CP2] of D6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1993 mm)
+    Rule: netclass 'Default'; error
+    @(38.7376 mm, 20.0157 mm): Track [+3V3] on B.Cu, length 1.3634 mm
+    @(38.9900 mm, 18.1400 mm): Pad 26 [unconnected-(U1-IO45-Pad26)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(18.8526 mm, 8.7500 mm): Track [IMU_INT] on B.Cu, length 1.4926 mm
+    @(19.2792 mm, 9.3179 mm): Track [+3V3] on B.Cu, length 0.4830 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 7.8908 mm): Track [GND] on B.Cu, length 6.9156 mm
+    @(13.1415 mm, 3.3720 mm): Track [+3V3] on B.Cu, length 3.8306 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1734 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 41.2860 mm): Pad 2 [CP3] of D13 on F.Cu
+    @(41.4766 mm, 40.8047 mm): Track [CP2] on F.Cu, length 2.4941 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(40.8643 mm, 10.2063 mm): Track [CP4] on F.Cu, length 2.3705 mm
+    @(42.6874 mm, 8.8947 mm): Track [CP2] on F.Cu, length 2.3664 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1807 mm)
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 9.9108 mm): Track [+3V3] on B.Cu, length 0.2586 mm
+    @(21.5000 mm, 10.5100 mm): Pad 13 [SCL] of U2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1892 mm)
+    Rule: netclass 'Default'; error
+    @(75.9750 mm, 12.2000 mm): Pad 1 [CC1] of R7 on B.Cu
+    @(76.6642 mm, 12.3683 mm): Track [VBUS] on B.Cu, length 0.8050 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(70.2216 mm, 51.3617 mm): Track [GND] on B.Cu, length 0.9474 mm
+    @(71.0800 mm, 50.0000 mm): Pad 3 [TXD] of J1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(25.6141 mm, 14.8912 mm): Track [USB_DM] on B.Cu, length 1.5237 mm
+    @(26.9880 mm, 14.5295 mm): Track [+3V3] on B.Cu, length 1.9755 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(34.7099 mm, 9.4829 mm): Track [SCL] on F.Cu, length 4.0378 mm
+    @(27.1884 mm, 9.8446 mm): Track [CP3] on F.Cu, length 13.1398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1960 mm)
+    Rule: netclass 'Default'; error
+    @(10.0100 mm, 53.5800 mm): Track [EN] on B.Cu, length 3.0171 mm
+    @(8.2383 mm, 44.9552 mm): Track [GND] on B.Cu, length 6.2931 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1962 mm)
+    Rule: netclass 'Default'; error
+    @(9.1475 mm, 3.0007 mm): Track [GND] on B.Cu, length 1.4743 mm
+    @(8.8250 mm, 4.5000 mm): Pad 2 [CP1] of R1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1853 mm)
+    Rule: netclass 'Default'; error
+    @(22.0777 mm, 8.6589 mm): Track [SCL] on F.Cu, length 11.8082 mm
+    @(20.6375 mm, 8.2736 mm): Track [NFC_GPO] on F.Cu, length 13.6574 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1655 mm)
+    Rule: netclass 'Default'; error
+    @(76.8000 mm, 17.6250 mm): Pad 2 [GND] of R8 on B.Cu
+    @(76.0595 mm, 18.4951 mm): Track [VBUS] on B.Cu, length 1.2766 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(67.7340 mm, 4.5000 mm): Pad 2 [SCL] of R12 on B.Cu
+    @(68.3965 mm, 5.0154 mm): Track [+3V3] on B.Cu, length 0.5154 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1798 mm)
+    Rule: netclass 'Default'; error
+    @(6.6505 mm, 10.2886 mm): Track [+3V3] on B.Cu, length 3.8191 mm
+    @(8.3643 mm, 9.7088 mm): Via [CHX1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(9.2688 mm, 9.3152 mm): Track [CP3] on F.Cu, length 0.7705 mm
+    @(12.1499 mm, 12.4370 mm): Track [CP2] on F.Cu, length 3.5358 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1628 mm)
+    Rule: netclass 'Default'; error
+    @(21.4643 mm, 26.1487 mm): Via [CHX5] on F.Cu - B.Cu
+    @(25.2422 mm, 26.7115 mm): Track [CHX3] on F.Cu, length 5.7027 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1864 mm)
+    Rule: netclass 'Default'; error
+    @(17.7000 mm, 17.4000 mm): Pad 1 [CP3] of D2 on F.Cu
+    @(17.0636 mm, 17.8378 mm): Track [CP2] on F.Cu, length 2.5876 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1853 mm)
+    Rule: netclass 'Default'; error
+    @(19.3728 mm, 11.3638 mm): Track [SCL] on F.Cu, length 3.8253 mm
+    @(20.6375 mm, 8.2736 mm): Track [NFC_GPO] on F.Cu, length 13.6574 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(58.1463 mm, 51.7234 mm): Track [IO0] on B.Cu, length 20.1920 mm
+    @(77.1143 mm, 51.3600 mm): Track [GND] on B.Cu, length 0.0024 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1900 mm)
+    Rule: netclass 'Default'; error
+    @(35.0070 mm, 5.8658 mm): Track [CP5] on B.Cu, length 10.3875 mm
+    @(27.6721 mm, 12.6492 mm): Track [GND] on B.Cu, length 0.3926 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(59.9007 mm, 5.6280 mm): Track [+3V3] on B.Cu, length 7.8832 mm
+    @(67.7340 mm, 4.5000 mm): Track [SCL] on B.Cu, length 1.0837 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.0777 mm, 8.6589 mm): Track [SCL] on F.Cu, length 11.8082 mm
+    @(29.5125 mm, 9.2206 mm): Via [CHX5] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(16.2307 mm, 44.0168 mm): Track [CP3] on F.Cu, length 25.8693 mm
+    @(41.4766 mm, 43.2988 mm): Track [CP2] on F.Cu, length 0.5039 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(13.7144 mm, 12.9787 mm): Track [CP3] on F.Cu, length 2.2661 mm
+    @(13.6830 mm, 13.7417 mm): Via [CHX1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.4171 mm, 18.9617 mm): Track [CHX4] on F.Cu, length 0.2964 mm
+    @(19.9494 mm, 18.3904 mm): Track [CP1] on F.Cu, length 3.6494 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(52.9500 mm, 10.8500 mm): Pad 3 [VBAT] of U6 on B.Cu
+    @(53.3034 mm, 11.6902 mm): Track [GND] on B.Cu, length 1.3019 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1659 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 34.9551 mm): Track [CP3] on F.Cu, length 1.9313 mm
+    @(43.5000 mm, 35.5710 mm): Pad 1 [CP2] of D12 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+    @(10.4696 mm, 10.2886 mm): Track [+3V3] on B.Cu, length 0.4673 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1705 mm)
+    Rule: netclass 'Default'; error
+    @(74.4050 mm, 4.5000 mm): Pad 2 [GND] of C9 on B.Cu
+    @(75.4545 mm, 3.5045 mm): Track [+3V3] on B.Cu, length 1.9540 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(28.1004 mm, 11.6915 mm): Track [CP1] on F.Cu, length 0.4202 mm
+    @(27.5706 mm, 11.9561 mm): Via [CP4] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1752 mm)
+    Rule: netclass 'Default'; error
+    @(76.8000 mm, 17.6250 mm): Pad 2 [GND] of R8 on B.Cu
+    @(76.0595 mm, 17.2185 mm): Track [VBUS] on B.Cu, length 0.4504 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1960 mm)
+    Rule: netclass 'Default'; error
+    @(44.7710 mm, 28.7210 mm): Track [+3V3] on B.Cu, length 2.8330 mm
+    @(44.0000 mm, 30.6750 mm): Pad 2 [NFC_GPO] of R14 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.1884 mm, 9.8446 mm): Track [CP3] on F.Cu, length 13.1398 mm
+    @(38.7477 mm, 9.4829 mm): Track [SCL] on F.Cu, length 0.3117 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1620 mm)
+    Rule: netclass 'Default'; error
+    @(15.3168 mm, 14.5811 mm): Track [CP3] on F.Cu, length 28.5218 mm
+    @(16.3000 mm, 42.3883 mm): Track [CP2] on F.Cu, length 0.8785 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(6.6505 mm, 10.2886 mm): Track [+3V3] on B.Cu, length 3.8191 mm
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1853 mm)
+    Rule: netclass 'Default'; error
+    @(20.6375 mm, 8.2736 mm): Track [NFC_GPO] on F.Cu, length 13.6574 mm
+    @(33.8859 mm, 8.6589 mm): Track [SCL] on F.Cu, length 1.1653 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1624 mm)
+    Rule: netclass 'Default'; error
+    @(43.2106 mm, 22.0144 mm): Track [GND] on B.Cu, length 1.1164 mm
+    @(42.8482 mm, 26.7982 mm): Track [+3V3] on B.Cu, length 7.8714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1626 mm)
+    Rule: netclass 'Default'; error
+    @(77.7847 mm, 9.6374 mm): Track [GND] on B.Cu, length 8.1801 mm
+    @(70.6500 mm, 10.5000 mm): Pad 2 [VBUS] of D25 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1701 mm)
+    Rule: netclass 'Default'; error
+    @(24.4701 mm, 20.7084 mm): Via [SDA] on F.Cu - B.Cu
+    @(23.2500 mm, 20.6500 mm): Pad 13 [USB_DM] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(19.3728 mm, 11.3638 mm): Via [SCL] on F.Cu - B.Cu
+    @(18.8110 mm, 11.9974 mm): Track [CHX2] on F.Cu, length 1.0551 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.8033 mm, 11.3944 mm): Track [CP1] on F.Cu, length 0.8579 mm
+    @(26.7956 mm, 11.0327 mm): Track [CP2] on F.Cu, length 9.8937 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1787 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+    @(42.8883 mm, 12.4082 mm): Track [CP4] on F.Cu, length 0.4552 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(20.3116 mm, 19.4755 mm): Track [CP4] on F.Cu, length 3.6934 mm
+    @(19.8730 mm, 20.7084 mm): Via [SDA] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 13.1301 mm): Track [CHX5] on B.Cu, length 3.9476 mm
+    @(19.8941 mm, 11.9255 mm): Track [SDA] on B.Cu, length 2.6899 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1881 mm)
+    Rule: netclass 'Default'; error
+    @(47.5119 mm, 27.2006 mm): Track [CP4] on F.Cu, length 1.5563 mm
+    @(49.3000 mm, 28.0000 mm): PTH pad 1 [VBAT] of BT1
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.3728 mm, 11.3638 mm): Via [SCL] on F.Cu - B.Cu
+    @(18.8100 mm, 11.9255 mm): Track [SDA] on B.Cu, length 1.0841 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1640 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 5.5792 mm): Track [USB_DP] on B.Cu, length 3.5273 mm
+    @(77.4622 mm, 3.4878 mm): Track [+3V3] on B.Cu, length 1.3399 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1854 mm)
+    Rule: netclass 'Default'; error
+    @(81.7500 mm, 22.4500 mm): Pad 2 [VSYS] of Q1 on B.Cu
+    @(81.1653 mm, 23.1354 mm): Track [VBUS] on B.Cu, length 1.2141 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1791 mm)
+    Rule: netclass 'Default'; error
+    @(74.6500 mm, 17.9500 mm): Pad 3 [USB_DM] of U5 on B.Cu
+    @(71.7219 mm, 18.4951 mm): Track [VBUS] on B.Cu, length 4.3376 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(39.1471 mm, 2.9545 mm): Track [USB_DP] on F.Cu, length 0.5538 mm
+    @(68.5143 mm, 2.5736 mm): Track [USB_DM] on F.Cu, length 29.8890 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1748 mm)
+    Rule: netclass 'Default'; error
+    @(19.0241 mm, 9.8870 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(18.4493 mm, 10.5806 mm): Track [CHX2] on F.Cu, length 2.0029 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1821 mm)
+    Rule: netclass 'Default'; error
+    @(38.9681 mm, 9.2625 mm): Via [SCL] on F.Cu - B.Cu
+    @(27.1884 mm, 9.8446 mm): Track [CP3] on F.Cu, length 13.1398 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1713 mm)
+    Rule: netclass 'Default'; error
+    @(17.1099 mm, 3.0007 mm): Track [GND] on B.Cu, length 7.9624 mm
+    @(16.9721 mm, 3.3720 mm): Track [+3V3] on B.Cu, length 5.6963 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1828 mm)
+    Rule: netclass 'Default'; error
+    @(19.6408 mm, 9.6795 mm): Track [+3V3] on B.Cu, length 0.5114 mm
+    @(19.0241 mm, 9.8870 mm): Via [NFC_GPO] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(25.6141 mm, 14.8912 mm): Track [USB_DM] on B.Cu, length 1.5237 mm
+    @(35.9163 mm, 5.6012 mm): Track [+3V3] on B.Cu, length 12.6265 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(34.9974 mm, 11.1298 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(41.0141 mm, 10.5680 mm): Track [CP2] on F.Cu, length 7.4724 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.4526 mm, 13.0799 mm): Track [SCL] on B.Cu, length 4.2305 mm
+    @(19.0995 mm, 15.9215 mm): Track [CHX5] on B.Cu, length 1.5806 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1661 mm)
+    Rule: netclass 'Default'; error
+    @(75.6521 mm, 16.1931 mm): Via [USB_DM] on F.Cu - B.Cu
+    @(74.6500 mm, 16.0500 mm): Pad 1 [USB_DP] of U5 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1831 mm)
+    Rule: netclass 'Default'; error
+    @(74.6500 mm, 16.0500 mm): Pad 1 [USB_DP] of U5 on B.Cu
+    @(73.8594 mm, 15.3734 mm): Via [USB_DM] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1626 mm)
+    Rule: netclass 'Default'; error
+    @(67.3500 mm, 10.5000 mm): Pad 1 [VSYS] of D25 on B.Cu
+    @(66.6374 mm, 11.1057 mm): Track [GND] on B.Cu, length 1.2128 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.4526 mm, 13.0799 mm): Track [SCL] on B.Cu, length 4.2305 mm
+    @(21.8909 mm, 12.7553 mm): Track [CHX5] on B.Cu, length 0.3748 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1624 mm)
+    Rule: netclass 'Default'; error
+    @(43.2106 mm, 25.2606 mm): Track [GND] on B.Cu, length 3.2462 mm
+    @(42.8482 mm, 26.7982 mm): Track [+3V3] on B.Cu, length 7.8714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1843 mm)
+    Rule: netclass 'Default'; error
+    @(44.0000 mm, 27.9500 mm): Track [+3V3] on B.Cu, length 1.6289 mm
+    @(42.6299 mm, 27.1234 mm): Track [NFC_GPO] on B.Cu, length 0.5142 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1834 mm)
+    Rule: netclass 'Default'; error
+    @(38.7555 mm, 3.3461 mm): Via [USB_DP] on F.Cu - B.Cu
+    @(38.6253 mm, 2.5736 mm): Via [USB_DM] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(41.8182 mm, 11.1298 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(62.7209 mm, 11.6915 mm): Track [CP1] on F.Cu, length 34.6205 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1840 mm)
+    Rule: netclass 'Default'; error
+    @(27.5121 mm, 13.2109 mm): Via [CP5] on F.Cu - B.Cu
+    @(34.1990 mm, 6.1223 mm): Track [GND] on B.Cu, length 9.2304 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(50.6716 mm, 10.0098 mm): Track [VBAT] on B.Cu, length 2.2784 mm
+    @(52.0000 mm, 10.8500 mm): Pad 2 [GND] of U6 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1623 mm)
+    Rule: netclass 'Default'; error
+    @(41.2559 mm, 19.3800 mm): Track [IO0] on B.Cu, length 10.8690 mm
+    @(41.8182 mm, 11.1298 mm): Via [NFC_GPO] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(18.7378 mm, 15.7717 mm): Track [SDA] on B.Cu, length 3.8015 mm
+    @(19.0995 mm, 17.5021 mm): Track [CHX5] on B.Cu, length 3.3443 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(47.5119 mm, 28.7569 mm): Track [CP4] on F.Cu, length 1.4664 mm
+    @(47.1502 mm, 28.9067 mm): Track [CP5] on F.Cu, length 7.6739 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(15.6788 mm, 14.4316 mm): Track [CP2] on F.Cu, length 2.8208 mm
+    @(15.3168 mm, 14.5811 mm): Track [CP3] on F.Cu, length 28.5218 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(34.7099 mm, 9.4829 mm): Track [SCL] on F.Cu, length 4.0378 mm
+    @(34.9425 mm, 8.9212 mm): Via [NFC_GPO] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.9117 mm, 42.8876 mm): Track [CP3] on F.Cu, length 0.8651 mm
+    @(70.2734 mm, 44.2077 mm): Track [CP5] on F.Cu, length 10.0440 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1773 mm)
+    Rule: netclass 'Default'; error
+    @(67.9000 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+    @(68.6883 mm, 9.5852 mm): Track [CP1] on F.Cu, length 0.4366 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1777 mm)
+    Rule: netclass 'Default'; error
+    @(4.2950 mm, 12.2500 mm): Pad 8 [+3V3] of U4 on B.Cu
+    @(3.7173 mm, 10.5243 mm): Track [NFC_ANT_A] on B.Cu, length 2.7595 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1619 mm)
+    Rule: netclass 'Default'; error
+    @(34.9425 mm, 8.9212 mm): Via [NFC_GPO] on F.Cu - B.Cu
+    @(27.4544 mm, 15.6147 mm): Track [SDA] on B.Cu, length 19.4333 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1794 mm)
+    Rule: netclass 'Default'; error
+    @(47.2250 mm, 13.4564 mm): Track [VBAT] on B.Cu, length 4.8742 mm
+    @(51.0500 mm, 10.8500 mm): Pad 1 [unconnected-(U6-STAT-Pad1)] of U6 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1777 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 12.7140 mm): Pad 2 [CP2] of D8 on F.Cu
+    @(42.5664 mm, 12.0863 mm): Track [CP4] on F.Cu, length 14.8656 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.2383 mm, 20.6500 mm): Track [USB_DM] on B.Cu, length 2.3830 mm
+    @(23.2500 mm, 19.3800 mm): Pad 14 [USB_DP] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1636 mm)
+    Rule: netclass 'Default'; error
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+    @(12.1499 mm, 12.4370 mm): Track [CP2] on F.Cu, length 3.5358 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1878 mm)
+    Rule: netclass 'Default'; error
+    @(66.7256 mm, 35.5406 mm): Track [CP3] on F.Cu, length 4.5058 mm
+    @(69.3000 mm, 39.2220 mm): Pad 1 [CP2] of D22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(77.7748 mm, 48.1266 mm): Track [EN] on B.Cu, length 5.2579 mm
+    @(77.9246 mm, 48.4883 mm): Track [GND] on B.Cu, length 0.4435 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.4612 mm, 17.3523 mm): Track [SCL] on B.Cu, length 3.4159 mm
+    @(21.4643 mm, 19.8669 mm): Track [CHX5] on B.Cu, length 6.2818 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(68.3584 mm, 34.9447 mm): Track [CP1] on F.Cu, length 19.1590 mm
+    @(67.9000 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1787 mm)
+    Rule: netclass 'Default'; error
+    @(42.1000 mm, 29.8570 mm): Pad 2 [CP3] of D11 on F.Cu
+    @(42.8883 mm, 29.5512 mm): Track [CP1] on F.Cu, length 0.5148 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1738 mm)
+    Rule: netclass 'Default'; error
+    @(25.6141 mm, 14.8912 mm): Track [USB_DM] on B.Cu, length 1.5237 mm
+    @(27.3047 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 16.1939 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.6627 mm, 8.5301 mm): Track [CP4] on F.Cu, length 0.9141 mm
+    @(70.6708 mm, 17.6845 mm): Track [CP3] on F.Cu, length 8.6621 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1647 mm)
+    Rule: netclass 'Default'; error
+    @(42.5405 mm, 8.5301 mm): Track [CP4] on F.Cu, length 27.1222 mm
+    @(70.6708 mm, 9.0224 mm): Track [CP3] on F.Cu, length 3.0534 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1738 mm)
+    Rule: netclass 'Default'; error
+    @(28.9127 mm, 13.1334 mm): Track [USB_DM] on B.Cu, length 12.6855 mm
+    @(35.9163 mm, 5.6012 mm): Track [+3V3] on B.Cu, length 12.6265 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1792 mm)
+    Rule: netclass 'Default'; error
+    @(19.3149 mm, 12.5013 mm): Via [CHX2] on F.Cu - B.Cu
+    @(19.8941 mm, 11.9255 mm): Track [SDA] on B.Cu, length 2.6899 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1646 mm)
+    Rule: netclass 'Default'; error
+    @(42.5405 mm, 8.5301 mm): Track [CP4] on F.Cu, length 27.1222 mm
+    @(42.6874 mm, 8.8947 mm): Track [CP2] on F.Cu, length 2.3664 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(28.8956 mm, 13.1334 mm): Track [USB_DM] on B.Cu, length 0.0171 mm
+    @(35.9163 mm, 5.6012 mm): Track [+3V3] on B.Cu, length 12.6265 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1647 mm)
+    Rule: netclass 'Default'; error
+    @(70.3091 mm, 9.1765 mm): Track [CP4] on F.Cu, length 5.7223 mm
+    @(70.6708 mm, 9.0224 mm): Track [CP3] on F.Cu, length 3.0534 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(18.7378 mm, 19.5732 mm): Track [SDA] on B.Cu, length 1.6054 mm
+    @(18.3761 mm, 13.4401 mm): Track [CHX2] on B.Cu, length 7.0187 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(23.2500 mm, 20.6500 mm): Track [USB_DM] on B.Cu, length 1.0117 mm
+    @(21.8766 mm, 19.7677 mm): Track [SCL] on B.Cu, length 4.3306 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(70.3091 mm, 9.1765 mm): Track [CP4] on F.Cu, length 5.7223 mm
+    @(69.2092 mm, 14.1663 mm): Track [CP2] on F.Cu, length 1.0440 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(9.2688 mm, 9.3152 mm): Track [CP3] on F.Cu, length 0.7705 mm
+    @(9.6497 mm, 9.5195 mm): Track [CP2] on F.Cu, length 0.9716 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1749 mm)
+    Rule: netclass 'Default'; error
+    @(13.1228 mm, 3.3977 mm): Track [+3V3] on B.Cu, length 0.0444 mm
+    @(13.0034 mm, 4.0262 mm): Track [CP2] on B.Cu, length 0.3797 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(24.2632 mm, 20.7084 mm): Track [SDA] on B.Cu, length 0.2069 mm
+    @(23.2500 mm, 20.6500 mm): Pad 13 [USB_DM] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1746 mm)
+    Rule: netclass 'Default'; error
+    @(9.6497 mm, 9.9368 mm): Track [CP2] on F.Cu, length 0.4173 mm
+    @(9.2688 mm, 10.0857 mm): Track [CP3] on F.Cu, length 4.0913 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(51.0500 mm, 12.3008 mm): Track [PROG] on B.Cu, length 4.3242 mm
+    @(52.9500 mm, 13.1500 mm): Pad 4 [VBUS] of U6 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 13.1301 mm): Track [CHX5] on B.Cu, length 3.9476 mm
+    @(22.4526 mm, 13.0799 mm): Track [SCL] on B.Cu, length 4.2305 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 13.1301 mm): Track [CHX5] on B.Cu, length 3.9476 mm
+    @(18.7378 mm, 15.7717 mm): Track [SDA] on B.Cu, length 3.8015 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 13.1301 mm): Track [CHX5] on B.Cu, length 3.9476 mm
+    @(19.8941 mm, 14.6154 mm): Track [SDA] on B.Cu, length 1.6353 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 7.8908 mm): Track [GND] on B.Cu, length 6.9156 mm
+    @(16.9721 mm, 3.3720 mm): Track [+3V3] on B.Cu, length 5.6963 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1715 mm)
+    Rule: netclass 'Default'; error
+    @(76.1000 mm, 7.8422 mm): Via [VSYS] on F.Cu - B.Cu
+    @(77.1500 mm, 8.0000 mm): Pad 2 [GND] of U3 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1746 mm)
+    Rule: netclass 'Default'; error
+    @(20.3821 mm, 18.7521 mm): Track [CHX4] on F.Cu, length 8.8391 mm
+    @(26.3407 mm, 13.6061 mm): Via [CHX3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.9454 mm, 11.3944 mm): Track [CP1] on F.Cu, length 9.8938 mm
+    @(19.7997 mm, 18.0286 mm): Track [CP2] on F.Cu, length 2.5453 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1749 mm)
+    Rule: netclass 'Default'; error
+    @(13.1672 mm, 3.3977 mm): Track [+3V3] on B.Cu, length 0.0363 mm
+    @(13.0034 mm, 4.0262 mm): Track [CP2] on B.Cu, length 0.3797 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1602 mm)
+    Rule: netclass 'Default'; error
+    @(81.4083 mm, 13.4774 mm): Track [USB_DP] on B.Cu, length 7.8982 mm
+    @(81.9685 mm, 7.8422 mm): Via [VSYS] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1954 mm)
+    Rule: netclass 'Default'; error
+    @(22.2716 mm, 17.2704 mm): Track [+3V3] on B.Cu, length 1.2762 mm
+    @(21.7750 mm, 16.5000 mm): Pad 2 [GND] of C1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.6267 mm, 18.7521 mm): Track [CHX4] on F.Cu, length 0.7554 mm
+    @(26.9454 mm, 11.3944 mm): Track [CP1] on F.Cu, length 9.8938 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(25.7639 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 1.5408 mm
+    @(24.2632 mm, 17.2861 mm): Track [SDA] on B.Cu, length 2.3637 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(16.2307 mm, 44.0168 mm): Track [CP3] on F.Cu, length 25.8693 mm
+    @(41.1203 mm, 43.6551 mm): Track [CP2] on F.Cu, length 23.8504 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(5.8408 mm, 10.3038 mm): Via [NFC_ANT_B] on F.Cu - B.Cu
+    @(5.6080 mm, 10.8655 mm): Track [+3V3] on B.Cu, length 0.4656 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1625 mm)
+    Rule: netclass 'Default'; error
+    @(67.9000 mm, 9.8890 mm): Pad 2 [CP4] of D16 on F.Cu
+    @(68.3796 mm, 9.2765 mm): Track [CP1] on F.Cu, length 3.2437 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(5.8408 mm, 10.3038 mm): Via [NFC_ANT_B] on F.Cu - B.Cu
+    @(6.0736 mm, 10.8655 mm): Track [+3V3] on B.Cu, length 0.8159 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(27.7008 mm, 12.2279 mm): Track [CP4] on F.Cu, length 1.0612 mm
+    @(26.6323 mm, 12.5019 mm): Via [CHX4] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(58.5623 mm, 1.8733 mm): Track [SDA] on B.Cu, length 3.7147 mm
+    @(63.0956 mm, 1.5116 mm): Track [+3V3] on B.Cu, length 24.2401 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(17.2699 mm, 43.6551 mm): Track [CP2] on F.Cu, length 0.5066 mm
+    @(16.2307 mm, 44.0168 mm): Track [CP3] on F.Cu, length 25.8693 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1618 mm)
+    Rule: netclass 'Default'; error
+    @(27.3047 mm, 15.2529 mm): Track [USB_DP] on B.Cu, length 16.1939 mm
+    @(25.9346 mm, 15.6147 mm): Track [SDA] on B.Cu, length 1.5198 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1898 mm)
+    Rule: netclass 'Default'; error
+    @(26.6323 mm, 12.5019 mm): Via [CHX4] on F.Cu - B.Cu
+    @(26.9025 mm, 13.0262 mm): Track [GND] on B.Cu, length 0.8127 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(60.7671 mm, 5.2663 mm): Track [SCL] on B.Cu, length 0.5701 mm
+    @(59.9007 mm, 5.6280 mm): Track [+3V3] on B.Cu, length 7.8832 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(17.6058 mm, 9.2003 mm): Via [CP2] on F.Cu - B.Cu
+    @(18.8526 mm, 8.7500 mm): Track [IMU_INT] on B.Cu, length 1.4926 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 13.1301 mm): Track [CHX5] on B.Cu, length 3.9476 mm
+    @(19.4612 mm, 16.0713 mm): Track [SCL] on B.Cu, length 1.2810 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(69.3000 mm, 14.7780 mm): Pad 1 [CP2] of D17 on F.Cu
+    @(69.8182 mm, 15.3897 mm): Track [CP4] on F.Cu, length 1.9182 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1857 mm)
+    Rule: netclass 'Default'; error
+    @(14.6277 mm, 3.7577 mm): Track [CP2] on B.Cu, length 1.0498 mm
+    @(13.1415 mm, 3.3720 mm): Track [+3V3] on B.Cu, length 3.8306 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1818 mm)
+    Rule: netclass 'Default'; error
+    @(69.4441 mm, 8.8947 mm): Track [CP2] on F.Cu, length 26.7567 mm
+    @(65.1359 mm, 9.2765 mm): Track [CP1] on F.Cu, length 3.4153 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.9880 mm, 14.5295 mm): Track [+3V3] on B.Cu, length 1.9755 mm
+    @(22.2383 mm, 18.2670 mm): Track [USB_DM] on B.Cu, length 4.7741 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1713 mm)
+    Rule: netclass 'Default'; error
+    @(19.9494 mm, 18.3904 mm): Track [CP1] on F.Cu, length 3.6494 mm
+    @(19.4171 mm, 18.9617 mm): Via [CHX4] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1758 mm)
+    Rule: netclass 'Default'; error
+    @(19.3149 mm, 12.5013 mm): Via [CHX2] on F.Cu - B.Cu
+    @(18.8100 mm, 11.9255 mm): Track [SDA] on B.Cu, length 1.0841 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1819 mm)
+    Rule: netclass 'Default'; error
+    @(16.8960 mm, 8.8325 mm): Track [CP2] on B.Cu, length 5.5050 mm
+    @(13.7200 mm, 4.5000 mm): Pad 1 [CHX2] of R2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1741 mm)
+    Rule: netclass 'Default'; error
+    @(75.4477 mm, 16.3975 mm): Track [USB_DM] on B.Cu, length 0.2891 mm
+    @(74.6500 mm, 16.0500 mm): Pad 1 [USB_DP] of U5 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1843 mm)
+    Rule: netclass 'Default'; error
+    @(42.6299 mm, 29.3049 mm): Track [NFC_GPO] on B.Cu, length 2.1815 mm
+    @(44.0000 mm, 27.9500 mm): Track [+3V3] on B.Cu, length 1.6289 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(17.7000 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+    @(22.2209 mm, 37.2117 mm): Track [CP1] on F.Cu, length 5.0034 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1787 mm)
+    Rule: netclass 'Default'; error
+    @(17.7000 mm, 36.6000 mm): Pad 1 [CP6] of D5 on F.Cu
+    @(17.2175 mm, 37.2117 mm): Track [CP1] on F.Cu, length 0.4325 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1718 mm)
+    Rule: netclass 'Default'; error
+    @(59.9260 mm, 3.7532 mm): Track [SCL] on B.Cu, length 1.3205 mm
+    @(59.5390 mm, 4.5000 mm): Pad 1 [+3V3] of R11 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(27.1378 mm, 14.8912 mm): Track [USB_DM] on B.Cu, length 2.4859 mm
+    @(35.9163 mm, 5.6012 mm): Track [+3V3] on B.Cu, length 12.6265 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1600 mm)
+    Rule: netclass 'Default'; error
+    @(12.6434 mm, 3.8771 mm): Track [+3V3] on B.Cu, length 0.6780 mm
+    @(13.0034 mm, 4.0262 mm): Track [CP2] on B.Cu, length 0.3797 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1658 mm)
+    Rule: netclass 'Default'; error
+    @(59.5390 mm, 4.5000 mm): Pad 1 [+3V3] of R11 on B.Cu
+    @(60.3640 mm, 4.1912 mm): Track [SCL] on B.Cu, length 0.6194 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.6339 mm, 2.5967 mm): Track [SCL] on B.Cu, length 9.4269 mm
+    @(55.3894 mm, 2.2350 mm): Track [CP6] on B.Cu, length 11.5724 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1673 mm)
+    Rule: netclass 'Default'; error
+    @(13.2719 mm, 3.7577 mm): Track [CP2] on B.Cu, length 1.3558 mm
+    @(13.7200 mm, 4.5000 mm): Pad 1 [CHX2] of R2 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(22.2383 mm, 20.6500 mm): Track [USB_DM] on B.Cu, length 2.3830 mm
+    @(21.8766 mm, 19.7677 mm): Track [SCL] on B.Cu, length 4.3306 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(68.6883 mm, 34.6148 mm): Track [CP1] on F.Cu, length 0.4665 mm
+    @(67.9000 mm, 34.3330 mm): Pad 2 [CP5] of D21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1913 mm)
+    Rule: netclass 'Default'; error
+    @(66.0840 mm, 4.5000 mm): Pad 1 [+3V3] of R12 on B.Cu
+    @(66.9677 mm, 5.2663 mm): Track [SCL] on B.Cu, length 6.2006 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(54.9438 mm, 2.5967 mm): Track [SCL] on B.Cu, length 9.3099 mm
+    @(55.3894 mm, 2.2350 mm): Track [CP6] on B.Cu, length 11.5724 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1765 mm)
+    Rule: netclass 'Default'; error
+    @(23.2500 mm, 17.7668 mm): Track [USB_DP] on B.Cu, length 3.5552 mm
+    @(24.2632 mm, 20.7084 mm): Track [SDA] on B.Cu, length 3.4223 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(34.8205 mm, 15.8160 mm): Track [NFC_GPO] on B.Cu, length 0.5083 mm
+    @(35.3822 mm, 15.5834 mm): Via [CHX6] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1843 mm)
+    Rule: netclass 'Default'; error
+    @(42.6299 mm, 27.1234 mm): Track [NFC_GPO] on B.Cu, length 0.5142 mm
+    @(42.8482 mm, 26.7982 mm): Track [+3V3] on B.Cu, length 7.8714 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1772 mm)
+    Rule: netclass 'Default'; error
+    @(76.8000 mm, 15.9750 mm): Pad 1 [CC2] of R8 on B.Cu
+    @(75.6521 mm, 15.9731 mm): Track [USB_DM] on B.Cu, length 1.7297 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1922 mm)
+    Rule: netclass 'Default'; error
+    @(27.5706 mm, 11.9561 mm): Via [CP4] on F.Cu - B.Cu
+    @(62.7209 mm, 11.6915 mm): Track [CP1] on F.Cu, length 34.6205 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(26.6323 mm, 12.5019 mm): Via [CHX4] on F.Cu - B.Cu
+    @(26.9454 mm, 11.3944 mm): Track [CP1] on F.Cu, length 9.8938 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(55.3894 mm, 2.2350 mm): Track [CP6] on B.Cu, length 11.5724 mm
+    @(56.8711 mm, 4.5240 mm): Track [SCL] on B.Cu, length 2.7256 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1872 mm)
+    Rule: netclass 'Default'; error
+    @(9.6497 mm, 9.9368 mm): Track [CP2] on F.Cu, length 0.4173 mm
+    @(10.2369 mm, 9.7269 mm): Via [CP1] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1632 mm)
+    Rule: netclass 'Default'; error
+    @(23.2500 mm, 20.6500 mm): Pad 13 [USB_DM] of U1 on B.Cu
+    @(24.2632 mm, 20.7084 mm): Track [SDA] on B.Cu, length 1.1193 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(63.0956 mm, 1.5116 mm): Track [+3V3] on B.Cu, length 24.2401 mm
+    @(27.4544 mm, 15.6147 mm): Track [SDA] on B.Cu, length 19.4333 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(19.0995 mm, 15.9215 mm): Track [CHX5] on B.Cu, length 1.5806 mm
+    @(19.4612 mm, 17.3523 mm): Track [SCL] on B.Cu, length 3.4159 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1789 mm)
+    Rule: netclass 'Default'; error
+    @(41.7617 mm, 31.8958 mm): Track [RXD] on B.Cu, length 1.0858 mm
+    @(52.7956 mm, 42.4182 mm): Track [IO0] on B.Cu, length 15.0684 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1709 mm)
+    Rule: netclass 'Default'; error
+    @(21.8909 mm, 12.7553 mm): Via [CHX5] on F.Cu - B.Cu
+    @(21.6419 mm, 11.6989 mm): Track [SCL] on B.Cu, length 1.1465 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(66.2900 mm, 2.9545 mm): Track [USB_DP] on F.Cu, length 27.1429 mm
+    @(68.5143 mm, 2.5736 mm): Track [USB_DM] on F.Cu, length 29.8890 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1809 mm)
+    Rule: netclass 'Default'; error
+    @(66.4708 mm, 3.1353 mm): Track [USB_DP] on F.Cu, length 0.2557 mm
+    @(68.5143 mm, 2.5736 mm): Track [USB_DM] on F.Cu, length 29.8890 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1789 mm)
+    Rule: netclass 'Default'; error
+    @(40.7500 mm, 30.8100 mm): Track [RXD] on B.Cu, length 1.0117 mm
+    @(42.1406 mm, 31.7632 mm): Track [IO0] on B.Cu, length 4.4374 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1650 mm)
+    Rule: netclass 'Default'; error
+    @(58.5623 mm, 1.8733 mm): Track [SDA] on B.Cu, length 3.7147 mm
+    @(60.3640 mm, 4.8632 mm): Track [SCL] on B.Cu, length 0.6720 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(52.7956 mm, 42.4182 mm): Track [IO0] on B.Cu, length 15.0684 mm
+    @(52.2040 mm, 42.3381 mm): Track [RXD] on B.Cu, length 14.7676 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.0822 mm, 35.7278 mm): Track [TXD] on B.Cu, length 5.1588 mm
+    @(52.2040 mm, 42.3381 mm): Track [RXD] on B.Cu, length 14.7676 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(45.0822 mm, 39.0203 mm): Track [TXD] on B.Cu, length 3.2925 mm
+    @(52.2040 mm, 42.3381 mm): Track [RXD] on B.Cu, length 14.7676 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1756 mm)
+    Rule: netclass 'Default'; error
+    @(41.4344 mm, 32.0800 mm): Track [TXD] on B.Cu, length 0.6844 mm
+    @(52.2040 mm, 42.3381 mm): Track [RXD] on B.Cu, length 14.7676 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1722 mm)
+    Rule: netclass 'Default'; error
+    @(18.8492 mm, 8.1778 mm): Via [CHX2] on F.Cu - B.Cu
+    @(18.8526 mm, 8.7500 mm): Track [IMU_INT] on B.Cu, length 1.4926 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1617 mm)
+    Rule: netclass 'Default'; error
+    @(77.0742 mm, 13.2992 mm): Track [CC1] on B.Cu, length 1.1949 mm
+    @(77.2334 mm, 12.9375 mm): Track [VBUS] on B.Cu, length 0.7832 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1683 mm)
+    Rule: netclass 'Default'; error
+    @(77.2334 mm, 12.9375 mm): Track [VBUS] on B.Cu, length 0.7832 mm
+    @(75.9750 mm, 12.2000 mm): Track [CC1] on B.Cu, length 1.5545 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3000 mm)
+    Rule: board setup constraints edge; error
+    @(82.4200 mm, 53.9800 mm): Segment on Edge.Cuts
+    @(82.2408 mm, 53.5800 mm): Track [EN] on B.Cu, length 72.2308 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3000 mm)
+    Rule: board setup constraints edge; error
+    @(82.4200 mm, 53.9800 mm): Segment on Edge.Cuts
+    @(82.2410 mm, 53.5799 mm): Track [EN] on B.Cu, length 0.0002 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3000 mm)
+    Rule: board setup constraints edge; error
+    @(82.4200 mm, 53.9800 mm): Segment on Edge.Cuts
+    @(10.0100 mm, 53.5800 mm): Track [EN] on B.Cu, length 3.0171 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3001 mm)
+    Rule: board setup constraints edge; error
+    @(82.4200 mm, 53.9800 mm): Segment on Edge.Cuts
+    @(82.3098 mm, 53.5779 mm): Track [EN] on B.Cu, length 0.0688 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3021 mm)
+    Rule: board setup constraints edge; error
+    @(82.4200 mm, 53.9800 mm): Segment on Edge.Cuts
+    @(83.3811 mm, 52.5066 mm): Track [EN] on B.Cu, length 1.5151 mm
+[footprint_type_mismatch]: Footprint component type doesn't match footprint pads (expected 'Through hole'; actual 'SMD')
+    Local override; error (excluded)
+    @(81.7000 mm, 14.5000 mm): Footprint J2
+
+** Found 0 unconnected pads **
+
+** Found 191 Footprint errors **
+[extra_footprint]: Extra footprint
+    Local override; error
+    @(81.0000 mm, 50.5000 mm): Footprint FID3
+[extra_footprint]: Extra footprint
+    Local override; error
+    @(81.0000 mm, 3.0000 mm): Footprint FID4
+[extra_footprint]: Extra footprint
+    Local override; error
+    @(3.5000 mm, 50.5000 mm): Footprint FID2
+[extra_footprint]: Extra footprint
+    Local override; error
+    @(3.5000 mm, 3.0000 mm): Footprint FID1
+[footprint_symbol_mismatch]: NFC_Antenna_13x24 doesn't match footprint given by symbol (NeuralCard:NFC_Antenna_13x24)
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(0.0000 mm, 0.0000 mm): Footprint ANT1
+[footprint_symbol_mismatch]: BatteryHolder_Keystone_3009_1x2450 doesn't match footprint given by symbol (Battery:BatteryHolder_Keystone_3009_1x2450)
+    Local override; warning
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[footprint_symbol_field_mismatch]: Missing symbol field 'BOM Comments' in footprint
+    Local override; warning
+    @(62.0000 mm, 28.0000 mm): Footprint BT1
+[footprint_symbol_mismatch]: Value (C1) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.0000 mm, 16.5000 mm): Footprint C1
+[footprint_symbol_mismatch]: Value (C2) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(20.5000 mm, 35.2500 mm): Footprint C2
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(20.5000 mm, 35.2500 mm): Footprint C2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(20.5000 mm, 35.2500 mm): Footprint C2
+[footprint_symbol_mismatch]: Value (C3) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 17.0000 mm): Footprint C3
+[footprint_symbol_mismatch]: Value (C4) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 22.0000 mm): Footprint C4
+[footprint_symbol_mismatch]: Value (C5) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(25.5000 mm, 9.5000 mm): Footprint C5
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(73.0000 mm, 8.0000 mm): Footprint C6
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(73.0000 mm, 8.0000 mm): Footprint C6
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(79.0000 mm, 7.7000 mm): Footprint C7
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(79.0000 mm, 7.7000 mm): Footprint C7
+[footprint_symbol_mismatch]: Value (C8) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 27.0000 mm): Footprint C8
+[footprint_symbol_mismatch]: Value (C9) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(73.4550 mm, 4.5000 mm): Footprint C9
+[footprint_symbol_mismatch]: Value (C10) doesn't match symbol value (C_0805_2012Metric)
+    Local override; warning
+    @(77.4000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_mismatch]: C_0805_2012Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0805_2012Metric)
+    Local override; warning
+    @(77.4000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(77.4000 mm, 4.5000 mm): Footprint C10
+[footprint_symbol_mismatch]: Value (C11) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(10.8000 mm, 8.0000 mm): Footprint C11
+[footprint_symbol_mismatch]: Value (C12) doesn't match symbol value (C_0603_1608Metric)
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(10.9000 mm, 12.9000 mm): Footprint C12
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(48.0000 mm, 16.0000 mm): Footprint C13
+[footprint_symbol_mismatch]: C_0603_1608Metric doesn't match footprint given by symbol (Capacitor_SMD:C_0603_1608Metric)
+    Local override; warning
+    @(52.0000 mm, 16.5000 mm): Footprint C14
+[footprint_symbol_mismatch]: Value (D1) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 11.0000 mm): Footprint D1
+[footprint_symbol_mismatch]: Value (D2) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 17.4000 mm): Footprint D2
+[footprint_symbol_mismatch]: Value (D3) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 23.8000 mm): Footprint D3
+[footprint_symbol_mismatch]: Value (D4) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 30.2000 mm): Footprint D4
+[footprint_symbol_mismatch]: Value (D5) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 36.6000 mm): Footprint D5
+[footprint_symbol_mismatch]: Value (D6) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(17.0000 mm, 43.0000 mm): Footprint D6
+[footprint_symbol_mismatch]: Value (D7) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 7.0000 mm): Footprint D7
+[footprint_symbol_mismatch]: Value (D8) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 12.7140 mm): Footprint D8
+[footprint_symbol_mismatch]: Value (D9) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 18.4290 mm): Footprint D9
+[footprint_symbol_mismatch]: Value (D10) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 24.1430 mm): Footprint D10
+[footprint_symbol_mismatch]: Value (D11) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 29.8570 mm): Footprint D11
+[footprint_symbol_mismatch]: Value (D12) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 35.5710 mm): Footprint D12
+[footprint_symbol_mismatch]: Value (D13) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 41.2860 mm): Footprint D13
+[footprint_symbol_mismatch]: Value (D14) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(42.8000 mm, 47.0000 mm): Footprint D14
+[footprint_symbol_mismatch]: Value (D15) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 5.0000 mm): Footprint D15
+[footprint_symbol_mismatch]: Value (D16) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 9.8890 mm): Footprint D16
+[footprint_symbol_mismatch]: Value (D17) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 14.7780 mm): Footprint D17
+[footprint_symbol_mismatch]: Value (D18) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 19.6670 mm): Footprint D18
+[footprint_symbol_mismatch]: Value (D19) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 24.5560 mm): Footprint D19
+[footprint_symbol_mismatch]: Value (D20) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 29.4440 mm): Footprint D20
+[footprint_symbol_mismatch]: Value (D21) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 34.3330 mm): Footprint D21
+[footprint_symbol_mismatch]: Value (D22) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 39.2220 mm): Footprint D22
+[footprint_symbol_mismatch]: Value (D23) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 44.1110 mm): Footprint D23
+[footprint_symbol_mismatch]: Value (D24) doesn't match symbol value (LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_mismatch]: LED-SMD_L1.6-W0.8-R-RD doesn't match footprint given by symbol (Parts:LED-SMD_L1.6-W0.8-R-RD)
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(68.6000 mm, 49.0000 mm): Footprint D24
+[footprint_symbol_mismatch]: D_SOD-123 doesn't match footprint given by symbol (Diode_SMD:D_SOD-123)
+    Local override; warning
+    @(69.0000 mm, 10.5000 mm): Footprint D25
+[footprint_symbol_mismatch]: ProgPads_1x6 doesn't match footprint given by symbol (NeuralCard:ProgPads_1x6)
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(66.0000 mm, 50.0000 mm): Footprint J1
+[footprint_symbol_mismatch]: USB-C_SMD-TYPE-C-31-M-12_1 doesn't match footprint given by symbol (Parts:USB-C_SMD-TYPE-C-31-M-12_1)
+    Local override; warning
+    @(81.7000 mm, 14.5000 mm): Footprint J2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(81.7000 mm, 14.5000 mm): Footprint J2
+[net_conflict]: Pad missing net given by schematic (unconnected-(J2-SBU1-PadA8))
+    Local override; warning
+    @(79.2300 mm, 15.7500 mm): Pad A8 [<no net>] of J2 on B.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(J2-SBU2-PadB8))
+    Local override; warning
+    @(79.2300 mm, 12.7500 mm): Pad B8 [<no net>] of J2 on B.Cu
+[footprint_symbol_mismatch]: SOT-23_L2.9-W1.3-P1.90-LS2.4-BR doesn't match footprint given by symbol (Parts:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR)
+    Local override; warning
+    @(80.6000 mm, 21.5000 mm): Footprint Q1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(80.6000 mm, 21.5000 mm): Footprint Q1
+[footprint_symbol_mismatch]: Value (R1) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(8.0000 mm, 4.5000 mm): Footprint R1
+[footprint_symbol_mismatch]: Value (R2) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(14.5450 mm, 4.5000 mm): Footprint R2
+[footprint_symbol_mismatch]: Value (R3) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.0910 mm, 4.5000 mm): Footprint R3
+[footprint_symbol_mismatch]: Value (R4) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(27.6360 mm, 4.5000 mm): Footprint R4
+[footprint_symbol_mismatch]: Value (R5) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(34.1820 mm, 4.5000 mm): Footprint R5
+[footprint_symbol_mismatch]: Value (R6) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(40.7270 mm, 4.5000 mm): Footprint R6
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(76.8000 mm, 12.2000 mm): Footprint R7
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(76.8000 mm, 12.2000 mm): Footprint R7
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(76.8000 mm, 16.8000 mm): Footprint R8
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(76.8000 mm, 16.8000 mm): Footprint R8
+[footprint_symbol_mismatch]: Value (R9) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(47.2730 mm, 4.5000 mm): Footprint R9
+[footprint_symbol_mismatch]: Value (R10) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(53.8180 mm, 4.5000 mm): Footprint R10
+[footprint_symbol_mismatch]: Value (R11) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(60.3640 mm, 4.5000 mm): Footprint R11
+[footprint_symbol_mismatch]: Value (R12) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(66.9090 mm, 4.5000 mm): Footprint R12
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(83.6000 mm, 21.9000 mm): Footprint R13
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(83.6000 mm, 21.9000 mm): Footprint R13
+[footprint_symbol_mismatch]: Value (R14) doesn't match symbol value (R_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 31.5000 mm): Footprint R14
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(44.0000 mm, 31.5000 mm): Footprint R14
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(44.0000 mm, 31.5000 mm): Footprint R14
+[footprint_symbol_mismatch]: R_0603_1608Metric doesn't match footprint given by symbol (Resistor_SMD:R_0603_1608Metric)
+    Local override; warning
+    @(57.0000 mm, 11.5000 mm): Footprint R15
+[footprint_symbol_mismatch]: Value (SW1) doesn't match symbol value (SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_mismatch]: SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 doesn't match footprint given by symbol (Parts:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(12.0000 mm, 47.3000 mm): Footprint SW1
+[footprint_symbol_mismatch]: Value (SW2) doesn't match symbol value (SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_mismatch]: SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 doesn't match footprint given by symbol (Parts:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5)
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(24.0000 mm, 47.3000 mm): Footprint SW2
+[footprint_symbol_mismatch]: Value (SW3) doesn't match symbol value (SW_SPDT_Shouhan_MSK12C02)
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_mismatch]: SW_SPDT_Shouhan_MSK12C02 doesn't match footprint given by symbol (Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02)
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(81.4550 mm, 28.0000 mm): Footprint SW3
+[footprint_symbol_mismatch]: Value (U1) doesn't match symbol value (WIRELM-SMD_ESP32-S3-WROOM-1)
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_mismatch]: WIRELM-SMD_ESP32-S3-WROOM-1 doesn't match footprint given by symbol (Parts:WIRELM-SMD_ESP32-S3-WROOM-1)
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(32.0000 mm, 27.0000 mm): Footprint U1
+[footprint_symbol_mismatch]: Value (U2) doesn't match symbol value (LGA-14_L3.0-W2.5-P0.50-TL)
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: LGA-14_L3.0-W2.5-P0.50-TL doesn't match footprint given by symbol (Parts:LGA-14_L3.0-W2.5-P0.50-TL)
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(21.5000 mm, 9.5000 mm): Footprint U2
+[footprint_symbol_mismatch]: SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL doesn't match footprint given by symbol (Parts:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL)
+    Local override; warning
+    @(76.0000 mm, 8.0000 mm): Footprint U3
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(76.0000 mm, 8.0000 mm): Footprint U3
+[footprint_symbol_mismatch]: Value (U4) doesn't match symbol value (SO-8_L4.9-W3.9-P1.27-LS5.9-BL)
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_symbol_mismatch]: SO-8_L4.9-W3.9-P1.27-LS5.9-BL doesn't match footprint given by symbol (ST25DV:SO-8_L4.9-W3.9-P1.27-LS5.9-BL)
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(6.2000 mm, 9.6000 mm): Footprint U4
+[footprint_symbol_mismatch]: SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL doesn't match footprint given by symbol (Parts:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BL)
+    Local override; warning
+    @(73.5000 mm, 17.0000 mm): Footprint U5
+[footprint_symbol_field_mismatch]: Missing symbol field 'MPN' in footprint
+    Local override; warning
+    @(73.5000 mm, 17.0000 mm): Footprint U5
+[footprint_symbol_mismatch]: SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL doesn't match footprint given by symbol (Parts:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BL)
+    Local override; warning
+    @(52.0000 mm, 12.0000 mm): Footprint U6
+[footprint_symbol_field_mismatch]: Missing symbol field 'BOM Comments' in footprint
+    Local override; warning
+    @(52.0000 mm, 12.0000 mm): Footprint U6
+
+** Ignored checks **
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+
+** End of Report **

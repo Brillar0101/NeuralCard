@@ -2,6 +2,20 @@
 
 Hardware revisions and fab-affecting fixes. Newest first.
 
+## v3.0.1-dev
+
+Switch contact mapping corrected after prototype measurements showed EN and IO0
+held at ground with both buttons released. The TS-1187A-B-A-B datasheet shows
+the two terminals in each physical row are internally common; the previous
+layout split each row between signal and GND. SW1 assigns pads 1-2 (upper row)
+to IO0 and pads 3-4 (lower row) to GND; SW2 assigns pads 1-2 to GND and pads
+3-4 to EN, matching the board orientations. See
+`docs/BOARD-REWORK-SWITCH-PINOUT.md` for the diagnosis, prototype
+rework guidance, and verification procedure. The silkscreen, PCB title block,
+and schematic revision now identify this work as v3.0.1-dev.
+
+**Do not fabricate until the KiCad DRC and schematic-parity checks pass.**
+
 ## v3.0.0-dev
 
 Major electrical revision, in progress. Copper and power architecture

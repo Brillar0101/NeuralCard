@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "NeuralCard")
-		(rev "v3.0.0-dev")
+		(rev "v3.0.1-dev")
 		(company "Barakaeli Lawuo")
 		(comment 1 "AI business card - air-writing digit recognition, ESP32-S3")
 	)
@@ -8788,7 +8788,7 @@
 		)
 		(uuid "ca5b2351-05dc-4281-81bb-b2428bade586")
 	)
-	(global_label "EN"
+	(global_label "GND"
 		(shape bidirectional)
 		(at 55.88 147.32 0)
 		(effects
@@ -8923,69 +8923,17 @@
 		)
 		(uuid "f50748b5-90aa-4c32-973a-cdd5af6858c7")
 	)
-	(symbol
-		(lib_id "power:GND")
+	(global_label "EN"
+		(shape bidirectional)
 		(at 71.12 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "510dcc30-2276-444e-a0c6-7cbf3f6887e2")
-		(property "Reference" "#PWR021"
+		(effects
+			(font (size 1.27 1.27))
+			(justify left)
+		)
+		(uuid "9f2971f5-9d33-4555-9567-9e8b715f2e4b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 71.12 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Value" "GND"
-			(at 71.12 158.242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Datasheet" ""
-			(at 71.12 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Description" ""
-			(at 71.12 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(pin "1"
-			(uuid "a5b8bed1-fb77-4e51-b23d-14de58f153de")
-		)
-		(instances
-			(project "NeuralCard"
-				(path "/a1b2c3d4-0001-4000-8000-000000000001"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
+			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 	)
 	(symbol
@@ -9331,7 +9279,7 @@
 		)
 		(uuid "a69b6bd8-3160-420b-bcdb-0cac9813b476")
 	)
-	(global_label "IO0"
+	(global_label "GND"
 		(shape bidirectional)
 		(at 191.77 154.94 0)
 		(effects
@@ -9361,69 +9309,14 @@
 		)
 		(uuid "e6e87b26-89b3-4bc2-b4d5-75c61948d84b")
 	)
-	(symbol
-		(lib_id "power:GND")
+	(global_label "IO0"
+		(shape bidirectional)
 		(at 207.01 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "076bce87-d6f2-4711-bbb9-7460117b33fe")
-		(property "Reference" "#PWR023"
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "a74b7731-8a67-4585-a9f5-ff3423027938")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Value" "GND"
-			(at 207.01 150.62199999999999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Datasheet" ""
-			(at 207.01 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Description" ""
-			(at 207.01 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(pin "1"
-			(uuid "08e4d37f-c931-4f41-a21c-ca2a072f919b")
-		)
-		(instances
-			(project "NeuralCard"
-				(path "/a1b2c3d4-0001-4000-8000-000000000001"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
+			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 	)
 	(wire
@@ -9436,69 +9329,17 @@
 		)
 		(uuid "5e2da22b-863f-4595-ab79-b34575f75fd1")
 	)
-	(symbol
-		(lib_id "power:GND")
+	(global_label "GND"
+		(shape bidirectional)
 		(at 207.01 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f86c1758-e48d-46ae-b281-360d71cfd978")
-		(property "Reference" "#PWR024"
+		(effects
+			(font (size 1.27 1.27))
+			(justify left)
+		)
+		(uuid "780f2821-4f16-472f-9b21-8324f486381e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 207.01 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Value" "GND"
-			(at 207.01 158.242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Datasheet" ""
-			(at 207.01 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(property "Description" ""
-			(at 207.01 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-			(hide yes)
-		)
-		(pin "1"
-			(uuid "95d7ea8b-9e02-4cdb-986c-dd32d39dce80")
-		)
-		(instances
-			(project "NeuralCard"
-				(path "/a1b2c3d4-0001-4000-8000-000000000001"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
+			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 	)
 	(symbol
