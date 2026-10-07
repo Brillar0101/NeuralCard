@@ -2,7 +2,7 @@
 
 [![KiCad 10](https://img.shields.io/badge/KiCad-10.0-0066CC)](https://www.kicad.org/)
 [![Board](https://img.shields.io/badge/board-85.6%20%C3%97%2054%20mm%20%C2%B7%202--layer-009596)](docs/DESIGN.md)
-[![DRC](https://img.shields.io/badge/DRC-413%20violations%20%C2%B7%20not%20fab--ready-C9190B)](docs/drc/v3.0.1-dev-verification.md)
+[![DRC](https://img.shields.io/badge/DRC-410%20violations%20%C2%B7%20not%20fab--ready-C9190B)](docs/drc/v3.0.1-dev-verification.md)
 [![Parts](https://img.shields.io/badge/BOM-61%20placements%20%C2%B7%2021%20unique-3E8635)](fab/BOM_PCBWay.csv)
 [![Rev](https://img.shields.io/badge/rev-v3.0.1--dev-5752D1)](CHANGELOG.md)
 
@@ -14,7 +14,7 @@ A business card that runs a neural network.
 > manufacturer part numbers PCBWay can quote, with approved alternates where a swap
 > is safe and do-not-substitute rules where it is not. Revision v3.0.1-dev corrects
 > the BOOT and RESET switch pad mapping after the prototype showed IO0/EN shorted to
-> ground. This is still a development board: its latest DRC reports 413 violations
+> ground. This is still a development board: its latest DRC reports 410 violations
 > and 191 schematic-parity issues. See the [verification report](docs/drc/v3.0.1-dev-verification.md)
 > before using or fabricating this revision.
 
@@ -69,9 +69,10 @@ Power comes from a rechargeable LIR2450 coin cell or USB-C. U6 charges the cell
 from USB at 50 mA; D25 and Q1 feed the VSYS node, and U3 regulates VSYS to 3.3 V.
 Use a rechargeable LIR2450 only. Do not install a primary CR2450 on the charger.
 
-Two copper layers with ground pours and stitching. The latest development-board
-checks still report electrical and schematic-parity issues; see the verification
-record before treating any net or layout as fabrication-ready.
+Two copper layers with filled GND pours, set 0.5 mm inside the rounded board
+edge. The latest development-board checks still report electrical and
+schematic-parity issues; see the verification record before treating any net or
+layout as fabrication-ready.
 
 ## How it's wired
 
@@ -205,7 +206,7 @@ listed as the approved fallback: same package, same pinout, same function.
 
 The released v2.3.1 tag is unchanged. The working v3.0.1-dev revision corrects
 the tactile-switch pad assignment that grounded BOOT and RESET on the prototype.
-Its DRC reports 413 violations, 191 schematic-parity issues, and 0 unconnected
+Its DRC reports 410 violations, 191 schematic-parity issues, and 0 unconnected
 items; ERC reports 42 library-configuration warnings. It is not ready for
 fabrication. See [`docs/drc/v3.0.1-dev-verification.md`](docs/drc/v3.0.1-dev-verification.md)
 for the full reports and [`hardware/datasheets/README.md`](hardware/datasheets/README.md)

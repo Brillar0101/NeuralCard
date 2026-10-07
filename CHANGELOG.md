@@ -12,7 +12,8 @@ to IO0 and pads 3-4 (lower row) to GND; SW2 assigns pads 1-2 to GND and pads
 3-4 to EN, matching the board orientations. See
 `docs/BOARD-REWORK-SWITCH-PINOUT.md` for the diagnosis, prototype
 rework guidance, and verification procedure. The silkscreen, PCB title block,
-and schematic revision now identify this work as v3.0.1-dev.
+and schematic revision now identify this work as v3.0.1-dev. Filled GND copper
+zones are present on F.Cu and B.Cu, with 0.5 mm perimeter setback.
 
 **Do not fabricate until the KiCad DRC and schematic-parity checks pass.**
 

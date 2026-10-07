@@ -53,7 +53,7 @@ The revised design keeps each physical pad row on one net. SW1 (BOOT) assigns
 pads 1-2 to IO0 and pads 3-4 to GND; SW2 (RESET) assigns pads 1-2 to GND and
 pads 3-4 to EN, matching their existing copper orientation. The old vertical
 signal bridges are removed. KiCad reports zero unconnected items and no
-`shorting_items` entries, but the full DRC still has 413 violations and 191
+`shorting_items` entries, but the full DRC still has 410 violations and 191
 schematic-parity issues, including two net conflicts and an EN/GND track
 crossing; this is not proof that the whole board is short-free. ERC reports 42 missing project-library warnings in
 the CLI environment. See [`drc/v3.0.1-dev-verification.md`](drc/v3.0.1-dev-verification.md)
